@@ -1,0 +1,25 @@
+.logo {
+    position: relative;
+    gap: 0.9rem;
+    height: 4rem;
+    @include center-block-axis;
+}
+
+.logo-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-image-container,
+.logo-svg {
+    height: 100%;
+}
+
+.logo__mi-blog {
+    font-size: 3rem;
+    font-family: $font-logo-mi-logo;
+    font-weight: bold;
+    // line-height: 5.5rem;
+    text-transform: uppercase;
+}

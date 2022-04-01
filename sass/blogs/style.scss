@@ -1,0 +1,33 @@
+@import "../components/global/global";
+@import "../components/header/header";
+@import "../components/global/footer";
+@import "../components/buttons/buttons";
+
+.blogs-main__principal-blog-container {
+    @include base-content-principal;
+}
+
+.info-principal-blog-container__title,
+.info-principal-blog-container__info {
+    margin-block-end: 2rem;
+}
+
+.blogs-main__blog-post-title {
+    @include title-proyect-main;
+}
+
+.blogs-main__blogs-post-container {
+    @include box-proyects-container;
+}
+
+.post-container__title {
+    @include title-proyect-box;
+}
+
+.post-container__info  {
+    @include info-proyect-box;
+}
+
+.post-container__image {
+    width: 100%;
+}

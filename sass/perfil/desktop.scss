@@ -1,0 +1,19 @@
+@import "../components/global/mixins";
+@import "../components/header/header-desktop";
+
+.profile-main__about-me-container {
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 3rem;
+}
+
+.profile-main__about-me-info-container {
+    align-self: center
+}
+
+.profile-main__proyects-title {
+    @include title-proyect-main__desktop;
+}
+
+.profile-main__proyects-container {
+    @include box-proyects-container__desktop;
+}

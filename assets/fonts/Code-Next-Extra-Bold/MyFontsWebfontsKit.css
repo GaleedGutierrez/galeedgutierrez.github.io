@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4197288, 2021-10-22T17:53:25-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CodeNext-ExtraBold by Fontfabric
+ * URL: https://www.myfonts.com/fonts/font-fabric/code-next/extra-bold/
+ * Copyright: Copyright � 2021 by Fontfabric. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "CodeNext-ExtraBold";
+  src: url('webFonts/CodeNextExtraBold/font.woff2') format('woff2'), url('webFonts/CodeNextExtraBold/font.woff') format('woff');
+}
+

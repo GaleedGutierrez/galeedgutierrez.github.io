@@ -1,0 +1,19 @@
+extend ./components/global/_base.pug
+block head
+    +style-head("perfil/style.css")
+    +style-head-responsive("perfil/tablet.css", "720")
+    +style-head-responsive("perfil/desktop.css", "1024")
+    +titles("Perfil")
+block main
+    main.profile-main.grid-container
+        section.profile-main__about-me-container
+            +img-responsive("profile-main__my-photo", "15f6oIpRKIuw5rqUiKqsZDue5qtV9IWAE", "15f6oIpRKIuw5rqUiKqsZDue5qtV9IWAE", "15f6oIpRKIuw5rqUiKqsZDue5qtV9IWAE", "Dummy photo")
+            .profile-main__about-me-info-container
+                h2.profile-main__title Lorem ipsum
+                p.profile-main__info Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur perferendis neque tempore enim, delectus earum. Dolorem magni veniam atque, quasi voluptate rem inventore excepturi, minus aut quas, laudantium laborum!
+        h3.profile-main__proyects-title Lorem ipsum
+        section.profile-main__proyects-container
+            each number in [1, 2, 3]
+                +box-proyect-summary("1yndMHgtFzlTBegoh9fkUVRVUurtD9oEm","1BZNddydZM10mtx1hrWui7GnsplknMd0b","1LZJfnSzw31hKIBgK81yg258udfkNjfzT","Photo dummy", "Lorem ipsum", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur perferendis neque tempore enim, delectus earum.", "./blog.html")=number
+        section.contact-main-container.grid-container
+            +contact-section
