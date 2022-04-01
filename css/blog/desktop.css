@@ -1,0 +1,26 @@
+.logo {
+    height: 5rem;
+}
+
+.header__social-media-icons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+.header__social-media-icons-container {
+    margin-right: 3.5rem;
+}
+
+.logo__mi-blog {
+    font-size: 5rem;
+}
+
+.blogpost__image-container,
+.blogpost__main-container {
+    padding: 0;
+}
+
+.blogpost__main-type-blog {
+    margin: 2rem 0 0;
+}

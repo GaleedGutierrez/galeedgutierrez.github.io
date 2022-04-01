@@ -1,0 +1,30 @@
+@import "../components/global/global";
+@import "../components/header/header";
+@import "../components/global/footer";
+@import "../components/contact/contact";
+@import "../components/buttons/buttons";
+
+
+.profile-main__about-me-container {
+    @include base-content-principal;
+}
+
+.profile-main__title {
+    margin-block-end: 2rem;
+}
+
+.profile-main__proyects-container {
+    @include box-proyects-container;
+}
+
+.profile-main__proyects-title {
+    @include title-proyect-main
+}
+
+.post-container__title {
+    @include title-proyect-box;
+}
+
+.post-container__info {
+    @include info-proyect-box;
+}

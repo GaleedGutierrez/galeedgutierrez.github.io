@@ -1,0 +1,6 @@
+@import "../components/global/mixins";
+@import "../components/contact/contact-tablet";
+
+.profile-main__proyects-container {
+    @include box-proyects-container__tablet;
+}

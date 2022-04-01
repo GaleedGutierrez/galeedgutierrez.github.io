@@ -1,0 +1,39 @@
+.logo {
+    height: 5rem;
+}
+
+.header__social-media-icons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+.header__social-media-icons-container {
+    margin-right: 3.5rem;
+}
+
+.logo__mi-blog {
+    font-size: 5rem;
+}
+
+.profile-main__about-me-container {
+    -ms-grid-columns: 2fr 3rem 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 3rem;
+}
+
+.profile-main__about-me-info-container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.profile-main__proyects-title {
+    margin: 2rem 0 0;
+}
+
+.profile-main__proyects-container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+}

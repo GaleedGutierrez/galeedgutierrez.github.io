@@ -1,0 +1,24 @@
+// font family
+$font-primary: 'Roboto Mono', sans-serif;
+$font-secondary: 'Roboto', monospace;
+$font-tertiary: 'Roboto Slab', serif;
+$font-logo-mi-logo: 'CodeNext-ExtraBold' ,'Roboto Mono', monospace;
+
+// font size
+$small: 1.4rem;
+$medium: 1.6rem;
+$large: 1.8rem;
+$extra-large: 2.4rem;
+$extra-extra-large: 3.2rem;
+
+h1 {
+    font-size: $large;
+}
+
+p {
+    line-height: 3.25rem;
+}
+
+p, a {
+    font-size: $small;
+}
