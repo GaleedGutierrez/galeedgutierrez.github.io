@@ -8,7 +8,7 @@ const showMenu = () => {
 const hiddeMenu = () => {
     menuElementsContainer.classList.remove('visibleHeaderMenu');
     sandwichMenu.classList.remove('header__menu-sandwich--active');
-}
+};
 
 sandwichMenu.onclick = () => showMenu();
 
