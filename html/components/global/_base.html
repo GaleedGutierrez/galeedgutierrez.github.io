@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  </head>
+  <body class="body" id="body-id">
+    <header class="header" id="header-id">
+      <section class="header__logo-container">
+        <p class="logo__galeed">Galeed</p>
+      </section>
+      <button class="material-symbols-outlined header__menu-sandwich" id="header__menu-sandwich-id">menu</button>
+      <section class="header__nav-container" id="header__nav-container-id">
+        <nav class="header__nav">
+          <ul class="nav__ul-container">
+            <li class="nav__li">
+              <label class="nav__label" for="headerMenu">
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="1" id="nav__input-radio-id-1"/><a class="nav__a" href="#">Menu</a>
+              </label>
+            </li>
+          </ul>
+          <ul class="nav__ul-container">
+            <li class="nav__li">
+              <label class="nav__label" for="headerMenu">
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="2" id="nav__input-radio-id-2"/><a class="nav__a" href="#">Sobre mí</a>
+              </label>
+            </li>
+          </ul>
+          <ul class="nav__ul-container">
+            <li class="nav__li">
+              <label class="nav__label" for="headerMenu">
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="3" id="nav__input-radio-id-3"/><a class="nav__a" href="#">Proyectos</a>
+              </label>
+            </li>
+          </ul>
+          <ul class="nav__ul-container">
+            <li class="nav__li">
+              <label class="nav__label" for="headerMenu">
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="4" id="nav__input-radio-id-4"/><a class="nav__a" href="#">Resume</a>
+              </label>
+            </li>
+          </ul>
+          <ul class="nav__ul-container">
+            <li class="nav__li">
+              <label class="nav__label" for="headerMenu">
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="5" id="nav__input-radio-id-5"/><a class="nav__a" href="#">Contacto</a>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <footer class="footer"></footer>
+    <script type="module" src="../dist/index.js"></script>
+  </body>
+</html>

@@ -4,7 +4,8 @@ html(lang="en")
     head
         include ./_head.pug
         block head
-    body.body
+    body#body-id.body
         include ./_header.pug
         block main
         include ./_footer.pug
+        include ./_scripts.pug

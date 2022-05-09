@@ -10,3 +10,10 @@ mixin style-head-responsive(stylesResponsive, screen)
 mixin img(idImg, classImg, altImg)
     figure(id!=attributes.id ,class!=attributes.class)
         img(id=idImg, class=classImg, alt=altImg)
+
+mixin elements-menu-header(sectionMenu, valueInput, idInput)
+    ul.nav__ul-container
+        li.nav__li
+            label(for="headerMenu").nav__label
+                input(onclick="showMenu()" type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
+                a(href="#").nav__a= sectionMenu
