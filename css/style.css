@@ -81,6 +81,8 @@ svg {
   height: 5.2rem;
   background: none;
   border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,10 +94,12 @@ svg {
           justify-content: center;
 }
 
-.header__menu-sandwich:active {
+.header__menu-sandwich--active {
   color: #f5f5f5;
   background-color: #171616;
   border-radius: 5rem;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .header__nav-container {

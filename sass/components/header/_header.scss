@@ -15,13 +15,15 @@
     height: 5.2rem;
     background: none;
     border: none;
+    transition-duration: 1s;
     @include all-center-flex;
 }
 
-.header__menu-sandwich:active{
+.header__menu-sandwich--active {
     color: $white;
     background-color: $black;
     border-radius: 5rem;
+    transition-duration: 1s;
 }
 
 .header__nav-container {
