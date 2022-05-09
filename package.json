@@ -1,0 +1,27 @@
+{
+  "name": "galeedgutierrez.github.io",
+  "version": "1.0.0",
+  "description": "My personal webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaleedGutierrez/galeedgutierrez.github.io.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "PUG",
+    "CSS",
+    "SASS"
+  ],
+  "author": "Galeed Gutierrez <galeedeveloper@gmail.com> (http://galeedgutierrez.com/)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/GaleedGutierrez/galeedgutierrez.github.io/issues"
+  },
+  "homepage": "https://github.com/GaleedGutierrez/galeedgutierrez.github.io#readme"
+}

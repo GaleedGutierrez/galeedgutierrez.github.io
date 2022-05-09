@@ -1,23 +1,7 @@
 extend ./components/global/_base.pug
 block head
-    +style-head("index/style.css")
-    +style-head-responsive("index/desktop.css", "1024")
-    +titles("Mi Blog")
+    +style-head("style.css")
+    //- +style-head-responsive("index/desktop.css", "1024")
+    +titles("")
 block main
     main.main
-        .main__titles-container
-            h2.main__title Conoce los proyectos que voy desarrollando en mi carrera como fullstack developer
-            h3.main__subtitle Puedes usar los proyectos como fuente de inspiración :D
-            +button("./perfil.html", "¡Entra ya!", "button--secondary main__button")
-        section.main__social-media-icons
-            .main__social-media-icons-container
-                a(href="").main__social-media-icon 
-                    span.flaticon-001-facebook.social-media-icon__span
-                a(href="").main__social-media-icon 
-                    span.flaticon-002-twitter.social-media-icon__span
-                a(href="").main__social-media-icon 
-                    span.flaticon-011-instagram.social-media-icon__span
-                a(href="").main__social-media-icon 
-                    span.flaticon-010-linkedin.social-media-icon__span
-                a(href="").main__social-media-icon 
-                    span.flaticon-008-youtube.social-media-icon__span
