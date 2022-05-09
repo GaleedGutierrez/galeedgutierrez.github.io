@@ -1,9 +1,0 @@
-.contact-main-container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.contact-main {
-    -ms-grid-columns: 20% auto;
-    grid-template-columns: 20% auto;
-}

@@ -7,57 +7,6 @@ mixin style-head(style)
 mixin style-head-responsive(stylesResponsive, screen) 
     link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
 
-mixin figure-img(classFigure, srcImg, altImg)
-    figure(class=classFigure)
-        img(src="https://drive.google.com/uc?id="+srcImg, alt=altImg)
-
-mixin logo-mi-blog
-    .logo
-        a(href="./blogs.html").logo-link
-        figure.logo-image-container(tabindex="0" aria-label="Logo icon")
-            svg(class="logo-svg" viewBox="0 0 95 74" fill="none" xmlns="http://www.w3.org/2000/svg")
-                path(d="M45.6819 31.9513C44.3091 30.6793 44.7441 28.4091 46.4845 27.7627L90.6791 11.3468C92.31 10.741 94.0527 11.9657 94.0527 13.7177L94.0527 71.0851C94.0527 73.2644 91.4766 74.3856 89.8765 72.9028L45.6819 31.9513Z" fill="#48CFAD")
-                rect(y="0.09375" width="94" height="58" rx="12" fill="#48CFAD")
-                rect(width="32.0855" height="10.5229" rx="5.26144" transform="matrix(-0.707107 0.707107 0.707107 0.707107 75.959 20.9282)" fill="white")
-                rect(width="31.0206" height="10.5229" rx="5.26144" transform="matrix(0.707107 0.707107 0.707107 -0.707107 54 13.9048)" fill="white")
-                rect(width="32.0855" height="10.5229" rx="5.26144" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 17.4404 36.1284)" fill="white")
-                rect(width="31.0206" height="10.5229" rx="5.26144" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 39.3994 43.1519)" fill="white")
-        p.logo__mi-blog Mi blog
-
-mixin img-responsive(classFigure ,img1024, img720, img360, altImg)
-        figure(class=classFigure tabindex="0" title=altImg).product-img-container
-            picture
-                source(media="(min-width: 1024px)" srcset="https://drive.google.com/uc?id="+img1024)
-                source(media="(min-width: 720px)" srcset="https://drive.google.com/uc?id="+img720)
-                img(src="https://drive.google.com/uc?id="+img360, alt=altImg).product-img
-
-mixin button(page, content, classInput)
-    form(action=page) 
-        input(type="submit", value=content, class="button "+classInput)
-
-mixin box-blog-post-summary(img1024, img720, img360, altImg, title, content, page)
-    article.post-container 
-        +img-responsive("post-container__image", ""+img1024, ""+img720, ""+img360, ""+altImg)
-        h4.post-container__title=title
-        p.post-container__info=content
-        +button(""+page, "Leer más", "button--primary")
-
-mixin contact-section()
-    .contact-main-left.contact-main 
-        +img-responsive("", "1X1YZYGwFrr1PQnS-RZYzv6EJpuvN8v_X", "1X1YZYGwFrr1PQnS-RZYzv6EJpuvN8v_X", "1X1YZYGwFrr1PQnS-RZYzv6EJpuvN8v_X")
-        .contact-left
-            a.contact-main__type(href="") Contacto
-            p.contact-main__info Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, soluta?
-    .contact-main-right.contact-main
-        +img-responsive("", "132_cgRB6myJ6-7ME-qnG3zhlPLAzd4LU", "132_cgRB6myJ6-7ME-qnG3zhlPLAzd4LU", "132_cgRB6myJ6-7ME-qnG3zhlPLAzd4LU")
-        .contact-right
-            a.contact-main__type(href="") Escribe
-            p.contact-main__info Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, soluta?
-    
-
-mixin box-proyect-summary(img1024, img720, img360, altImg, title, content1, page)
-    article.post-container 
-        +img-responsive("profile-main__proyect-image", ""+img1024, ""+img720, ""+img360, ""+altImg)
-        h4.post-container__title=title
-        p.post-container__info=content1
-        +button(""+page, "Leer más", "button--primary")
+mixin img(idImg, classImg, altImg)
+    figure(id!=attributes.id ,class!=attributes.class)
+        img(id=idImg, class=classImg, alt=altImg)

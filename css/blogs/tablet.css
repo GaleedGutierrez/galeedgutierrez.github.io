@@ -1,5 +1,0 @@
-.blogs-main__blogs-post-container {
-    -ms-grid-columns: 1fr 2rem 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-}
