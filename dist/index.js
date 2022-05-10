@@ -1,7 +1,7 @@
 import { sandwichMenu, menuElementsContainer } from "./components/htmlElements.js";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore: Unreachable code error
-import Typed from "../node_modules_me/typed.js/src/typed.js";
+import Typed from "../dist/components/typed.js/src/typed.js";
 var showMenu = function () {
     menuElementsContainer.classList.toggle('visibleHeaderMenu');
     sandwichMenu.classList.toggle('header__menu-sandwich--active');
