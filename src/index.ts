@@ -23,3 +23,4 @@ const typed = new Typed('.home__my-name', {
     startDelay: 500,
     typeSpeed: 60,
 });
+
