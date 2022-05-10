@@ -3,3 +3,8 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin margin-block-1p6rem {
+    margin-inline-start: 1.6rem;
+    margin-inline-end: 1.6rem;
+}
