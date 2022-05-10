@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
           <ul class="nav__ul-container">
             <li class="nav__li">
               <label class="nav__label" for="headerMenu">
-                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="1" id="nav__input-radio-id-1"/><a class="nav__a" href="#">Menu</a>
+                <input class="nav__input-radio" onclick="showMenu()" type="radio" name="headerMenu" value="1" id="nav__input-radio-id-1"/><a class="nav__a" href="#">Inicio</a>
               </label>
             </li>
           </ul>
@@ -58,7 +58,17 @@
         </nav>
       </section>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="main__home">
+        <h2 class="home__welcome">¡Bienvenido!</h2>
+        <h1 class="home__i-am">Soy <span class="home__my-name"></span></h1>
+        <section class="home__keywords"><span class="home__frontend-developer">Frontend Developer</span>
+          <div class="keywords__point-space"></div><span class="home__web-developer">Web Developer</span>
+        </section>
+        <section class="home__social-media"><a class="icon-facebook home__icons" href="#"></a><a class="icon-instagram home__icons" href="#"></a><a class="icon-twitter home__icons" href="#"></a><a class="icon-github home__icons" href="#"></a><a class="icon-linkedin2 home__icons" href="#"></a></section>
+        <section class="home__arrow-container"><a class="material-symbols-outlined home__arrow-go-about" href="#">keyboard_double_arrow_right</a></section>
+      </section>
+    </main>
     <footer class="footer"></footer>
     <script type="module" src="../dist/index.js"></script>
   </body>

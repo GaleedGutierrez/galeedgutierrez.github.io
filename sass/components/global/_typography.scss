@@ -70,6 +70,10 @@ h1 {
     @include font-x-large;
 }
 
+h2 {
+    @include font-large;
+}
+
 p,
 a {
     @include font-small;

@@ -93,6 +93,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+
+Fuente: https://www.iteramos.com/pregunta/15385/Excepciones-en-gitignore
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -216,11 +218,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-<<<<<<< Updated upstream
 # Prepros
-
 *.config
-=======
-# End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,node
-n
->>>>>>> Stashed changes
+
+#Others

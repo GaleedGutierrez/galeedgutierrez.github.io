@@ -1,4 +1,7 @@
 import { sandwichMenu, menuElementsContainer} from "./components/htmlElements.js";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Unreachable code error
+import Typed from "../node_modules_me/typed.js/src/typed.js";
 
 const showMenu = () => {
     menuElementsContainer.classList.toggle('visibleHeaderMenu');
@@ -13,3 +16,10 @@ const hiddeMenu = () => {
 sandwichMenu.onclick = () => showMenu();
 
 menuElementsContainer.onclick = () => hiddeMenu();
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const typed = new Typed('.home__my-name', {
+    strings: ['Galeed Gutierrez'],
+    startDelay: 500,
+    typeSpeed: 60,
+});
