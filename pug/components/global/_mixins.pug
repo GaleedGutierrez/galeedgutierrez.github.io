@@ -1,19 +1,19 @@
 mixin titles(title)
-    title=title 
+    title=title
 
 mixin style-head(style)
     link(rel="stylesheet" href="../css/"+style)
 
-mixin style-head-responsive(stylesResponsive, screen) 
+mixin style-head-responsive(stylesResponsive, screen)
     link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
 
-mixin img(idImg, classImg, altImg)
+mixin img(idImg, classImg, altImg, srcImg)
     figure(id!=attributes.id ,class!=attributes.class)
-        img(id=idImg, class=classImg, alt=altImg)
+        img(id=idImg, class=classImg, src="https://drive.google.com/uc?id="+srcImg,alt=altImg)
 
-mixin elements-menu-header(sectionMenu, valueInput, idInput)
+mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
     ul.nav__ul-container
         li.nav__li
             label(for="headerMenu").nav__label
                 input(type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
-                a(href="#").nav__a= sectionMenu
+                a(id=idA, href=hrefA).nav__a= sectionMenu

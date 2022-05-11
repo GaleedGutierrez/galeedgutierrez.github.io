@@ -74,6 +74,10 @@ h2 {
     @include font-large;
 }
 
+h3 {
+    @include font-medium;
+}
+
 p,
 a {
     @include font-small;

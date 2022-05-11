@@ -19,6 +19,12 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+
 p,
 a {
   font-size: 1.6rem;
@@ -76,9 +82,12 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 2;
-  margin: 1.6rem;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  background-color: #ffffff;
 }
 
 .header__menu-sandwich {
@@ -140,10 +149,14 @@ svg {
 
 .nav__input-radio {
   position: absolute;
-  left: 0rem;
-  width: 100%;
-  height: 100%;
   opacity: 0;
+}
+
+.nav__a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
 }
 
 .nav__input-radio:checked + .nav__a::before {
@@ -156,8 +169,8 @@ svg {
 
 .visibleHeaderMenu {
   opacity: 1;
-  -webkit-transform: translateY(26.5rem);
-          transform: translateY(26.5rem);
+  -webkit-transform: translateY(25.4rem);
+          transform: translateY(25.4rem);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -216,10 +229,17 @@ svg {
 .main__home {
   position: relative;
   text-align: center;
+  -webkit-padding-before: 6.8rem;
+          padding-block-start: 6.8rem;
   -webkit-margin-start: 1.6rem;
           margin-inline-start: 1.6rem;
   -webkit-margin-end: 1.6rem;
           margin-inline-end: 1.6rem;
+}
+
+.home__welcome {
+  -webkit-margin-before: 1.6rem;
+          margin-block-start: 1.6rem;
 }
 
 .home__i-am {
@@ -328,9 +348,56 @@ svg {
 
 .particles-js {
   position: absolute;
-  top: 0;
+  bottom: 0;
   z-index: 0;
   width: 100%;
-  height: 27.4rem;
+  height: 34.2rem;
+}
+
+.about-me-fronted-dev__title,
+.about-me-technologies__title {
+  text-align: center;
+  -webkit-margin-after: 0.8rem;
+          margin-block-end: 0.8rem;
+}
+
+.main__about-me {
+  margin: 1.6rem;
+}
+
+.about-me__title {
+  text-align: center;
+}
+
+.about-me__line-decoration {
+  width: 0.3rem;
+  height: 2.6rem;
+  margin: 0.8rem auto;
+  background-color: #171616;
+}
+
+.about-me__figure-my-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8rem;
+  margin: 0 auto 0.8rem;
+}
+
+.about-me__img-me {
+  border-radius: 50%;
+}
+
+.about-me__fronted-dev {
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+.what-do-i-do-fronted__second-paragraph__title {
+  text-align: center;
+  -webkit-margin-after: 0.8rem;
+          margin-block-end: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
