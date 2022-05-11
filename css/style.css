@@ -61,8 +61,8 @@ svg {
 }
 
 .logo__galeed {
-  font-size: 4.2rem;
-  line-height: 4.2rem;
+  font-size: 3.4rem;
+  line-height: 3.4rem;
   font-weight: 700;
 }
 
@@ -77,19 +77,20 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 1.6rem;
 }
 
 .header__menu-sandwich {
   position: relative;
   z-index: 1;
-  font-size: 4.4rem;
+  font-size: 3.8rem;
   line-height: normal;
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
   background: none;
   border: none;
+  border-radius: 5rem;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   display: -webkit-box;
@@ -106,7 +107,6 @@ svg {
 .header__menu-sandwich--active {
   color: #ffffff;
   background-color: #171616;
-  border-radius: 5rem;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -202,6 +202,15 @@ svg {
 
 .icon-linkedin2:before {
   content: "";
+}
+
+.home__welcome,
+.home__i-am,
+.home__keywords,
+.home__social-media,
+.home__arrow-container {
+  position: relative;
+  z-index: 1;
 }
 
 .main__home {
@@ -320,6 +329,7 @@ svg {
 .particles-js {
   position: absolute;
   top: 0;
+  z-index: 0;
   width: 100%;
   height: 27.4rem;
 }
