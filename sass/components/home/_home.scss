@@ -10,7 +10,12 @@
 .main__home {
     position: relative;
     text-align: center;
+    padding-block-start: 6.8rem;
     @include margin-block-1p6rem;
+}
+
+.home__welcome {
+margin-block-start: 1.6rem;
 }
 
 .home__i-am {
@@ -81,8 +86,8 @@
 
 .particles-js {
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: 0;
     width: 100%;
-    height: 27.4rem;
+    height: 34.2rem;
 }

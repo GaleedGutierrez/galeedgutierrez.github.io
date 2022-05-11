@@ -2,9 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 2;
-    margin: 1.6rem;
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    background-color: $white;
 }
 
 .header__menu-sandwich {
@@ -54,10 +57,14 @@
 
 .nav__input-radio {
     position: absolute;
-    left: 0rem;
-    width: 100%;
-    height: 100%;
     opacity: 0;
+}
+
+.nav__a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
 }
 
 .nav__input-radio:checked + .nav__a::before {
