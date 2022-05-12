@@ -221,4 +221,8 @@ $RECYCLE.BIN/
 # Prepros
 *.config
 
-#Others
+#Pictures
+*.jpg
+*.png
+*.svg
+*.gif
