@@ -1,5 +1,4 @@
 import { sandwichMenu, menuElementsContainer, inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, aResumeSandwichMenu, aContactSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputResumeSandwichMenu, inputContactSandwichMenu} from "./components/htmlElements.js";
-import proyects from './components/API/proyects.json' assert {type: "json"};
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore: Unreachable code error
@@ -41,9 +40,3 @@ aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
 aResumeSandwichMenu.onclick = () => addBrackets('resume');
 aContactSandwichMenu.onclick = () => addBrackets('contact');
-
-const API_PROYECTS_JSON = proyects;
-const API_PROYECTS = API_PROYECTS_JSON.proyects;
-const fecha = new Date(2021, 8).toJSON();
-console.log(API_PROYECTS);
-console.log({fecha});

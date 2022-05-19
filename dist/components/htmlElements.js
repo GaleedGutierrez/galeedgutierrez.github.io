@@ -11,3 +11,4 @@ export const aAboutSandwichMenu = document.getElementById('header__nav-about');
 export const aProyectsSandwichMenu = document.getElementById('header__nav-proyects');
 export const aResumeSandwichMenu = document.getElementById('header__nav-resume');
 export const aContactSandwichMenu = document.getElementById('header__nav-contact');
+export const containerProyectsSection = document.getElementById('portfolio__proyects-container-id');

@@ -11,6 +11,10 @@ mixin img(idImg, classImg, altImg, srcImg)
     figure(id!=attributes.id ,class!=attributes.class)
         img(id=idImg, class=classImg, src="https://drive.google.com/uc?id="+srcImg,alt=altImg)
 
+mixin imgXD(idImg, classImg, altImg, srcImg)
+    figure(id!=attributes.id ,class!=attributes.class)
+        img(id=idImg, class=classImg, src=srcImg,alt=altImg)
+
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
     ul.nav__ul-container
         li.nav__li

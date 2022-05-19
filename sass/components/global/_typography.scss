@@ -1,5 +1,5 @@
 // font family
-$font-primary: 'Poppins', sans-serif;
+$font-primary: "Poppins", sans-serif;
 
 // font size
 @mixin font-x-large {
@@ -81,4 +81,9 @@ h3 {
 p,
 a {
     @include font-small;
+}
+
+button,
+input[type="submit"] {
+    @include font-button;
 }

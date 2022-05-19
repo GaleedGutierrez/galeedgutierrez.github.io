@@ -11,3 +11,5 @@ export const aAboutSandwichMenu = document.getElementById('header__nav-about') a
 export const aProyectsSandwichMenu = document.getElementById('header__nav-proyects') as HTMLAnchorElement;
 export const aResumeSandwichMenu = document.getElementById('header__nav-resume') as HTMLAnchorElement;
 export const aContactSandwichMenu = document.getElementById('header__nav-contact') as HTMLAnchorElement;
+
+export const containerProyectsSection = document.getElementById('portfolio__proyects-container-id');
