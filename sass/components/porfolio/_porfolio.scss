@@ -36,12 +36,17 @@
 .proyect-container__technologies-container {
     display: flex;
     justify-content: end;
+    align-items: center;
     gap: 0.4rem;
     margin-block-end: 0.4rem;
 }
 
 .technologies__icon-figure {
     width: 2.6rem;
+}
+
+.technologies__pug-icon {
+    height: fit-content;
 }
 
 .portfolio__courses-section {

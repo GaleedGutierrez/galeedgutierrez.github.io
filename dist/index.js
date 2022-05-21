@@ -1,4 +1,4 @@
-import { sandwichMenu, menuElementsContainer, inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, aResumeSandwichMenu, aContactSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputResumeSandwichMenu, inputContactSandwichMenu } from "./components/htmlElements.js";
+import { sandwichMenu, menuElementsContainer, inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, aContactSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputContactSandwichMenu } from "./components/htmlElements.js";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore: Unreachable code error
 import Typed from "../dist/components/typed.js/src/typed.js";
@@ -21,7 +21,7 @@ const addBrackets = (type) => {
         'home': () => inputHomeSandwichMenu.checked = true,
         'about': () => inputAboutSandwichMenu.checked = true,
         'proyects': () => inputProyectsSandwichMenu.checked = true,
-        'resume': () => inputResumeSandwichMenu.checked = true,
+        // 'resume': () => inputResumeSandwichMenu.checked = true,
         'contact': () => inputContactSandwichMenu.checked = true,
     };
     objInputs[type]();
@@ -31,5 +31,21 @@ menuElementsContainer.onclick = () => hiddeMenu();
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
-aResumeSandwichMenu.onclick = () => addBrackets('resume');
+// aResumeSandwichMenu.onclick = () => addBrackets('resume');
 aContactSandwichMenu.onclick = () => addBrackets('contact');
+const anchorsSandwich = [aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu];
+const config = { threshold: 0.28 };
+const observer = new IntersectionObserver(entries => {
+    entries
+        .filter(entry => entry.isIntersecting)
+        .forEach(entry => {
+        const idSection = entry.target.getAttribute('id');
+        addBrackets(idSection);
+    });
+}, config);
+anchorsSandwich.forEach(anchor => {
+    const hash = anchor.getAttribute('href');
+    const target = document.querySelector(hash);
+    if (target)
+        observer.observe(target);
+});

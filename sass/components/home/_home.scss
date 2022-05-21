@@ -9,8 +9,10 @@
 
 .main__home {
     position: relative;
+    display: grid;
+    place-content: center;
     text-align: center;
-    padding-block-start: 6.8rem;
+    height: 85vh;
     @include margin-block-1p6rem;
 }
 
@@ -89,5 +91,5 @@ margin-block-start: 1.6rem;
     bottom: 0;
     z-index: 0;
     width: 100%;
-    height: 34.2rem;
+    height: 100%;
 }

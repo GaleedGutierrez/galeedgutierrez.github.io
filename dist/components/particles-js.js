@@ -1,4 +1,3 @@
-"use strict";
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore: Unreachable code error
