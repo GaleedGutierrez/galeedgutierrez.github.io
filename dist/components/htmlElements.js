@@ -9,6 +9,6 @@ export const header = document.getElementById('header-id');
 export const aHomeSandwichMenu = document.getElementById('header__nav-home');
 export const aAboutSandwichMenu = document.getElementById('header__nav-about');
 export const aProyectsSandwichMenu = document.getElementById('header__nav-proyects');
-export const aResumeSandwichMenu = document.getElementById('header__nav-resume');
+// export const aResumeSandwichMenu = document.getElementById('header__nav-resume') as HTMLAnchorElement;
 export const aContactSandwichMenu = document.getElementById('header__nav-contact');
 export const containerProyectsSection = document.getElementById('portfolio__proyects-container-id');

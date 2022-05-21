@@ -6,11 +6,19 @@ const showProyects = () => {
     for (let i = 0; i < 6; i++) {
         let iconsTechnologies = '';
         for (let j = 0; j < PROYECTS[i].technologies.length; j++) {
-            iconsTechnologies += `
-                <figure class="technologies__icon-figure">
+            if (PROYECTS[i].technologies[j] === "PUG") {
+                iconsTechnologies += `
+                <figure class="technologies__icon-figure technologies__pug-icon">
                     <img id="" src="https://drive.google.com/uc?id=${PROYECTS[i].technologiesIcons[j]}" alt="Icon HTML"/>
                 </figure>
             `;
+            } else {
+                iconsTechnologies += `
+                    <figure class="technologies__icon-figure">
+                        <img id="" src="https://drive.google.com/uc?id=${PROYECTS[i].technologiesIcons[j]}" alt="Icon HTML"/>
+                    </figure>
+                `;
+            }
         }
         const article = document.createElement('article');
         article.innerHTML = `
@@ -65,9 +73,6 @@ const showProyects = () => {
             </section>
         </article>
         `;
-
-
-
         containerProyectsSection?.appendChild(article);
     }
 };
