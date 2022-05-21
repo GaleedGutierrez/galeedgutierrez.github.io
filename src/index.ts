@@ -41,7 +41,7 @@ aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
 // aResumeSandwichMenu.onclick = () => addBrackets('resume');
 aContactSandwichMenu.onclick = () => addBrackets('contact');
 const anchorsSandwich = [aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu];
-const config = {threshold: 0.28};
+const config = {threshold: 0.2};
 
 const observer = new IntersectionObserver( entries  => {
     entries
