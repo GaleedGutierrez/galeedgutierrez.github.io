@@ -64,10 +64,12 @@ const showProyects = () => {
                         />
                     </form>
                     <a
-                        class="icon-github porfolio__icons"
+                        aria-label="Github"
                         target="_blank"
                         href=${PROYECTS[i].repository}
-                    ></a>
+                    >
+                        <i class="icon-github social-media__icons porfolio__icons"></i>
+                    </a>
                 </section>
             </section>
         </article>
