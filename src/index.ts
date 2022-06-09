@@ -58,3 +58,5 @@ anchorsSandwich.forEach( anchor => {
     if (target) observer.observe(target);
 });
 
+menuElementsContainer.classList.add('visibleHeaderMenu');
+sandwichMenu.classList.add('header__menu-sandwich--active');

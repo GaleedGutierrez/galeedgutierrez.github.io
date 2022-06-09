@@ -21,3 +21,11 @@ mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
             label(for="headerMenu").nav__label
                 input(type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
                 a(id=idA, href=hrefA).nav__a= sectionMenu
+
+mixin header-options(idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
+    +img(idImg1, classImg1, altImg1, srcImg1).themes__icons
+    label(for="").options__switch-container
+        input(type="checkbox", name="", class="options__switch-input")
+        .options__switch-circle
+        .options__switch-slider
+    +img(idImg2, classImg2, altImg2, srcImg2).themes__icons
