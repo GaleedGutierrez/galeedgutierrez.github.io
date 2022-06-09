@@ -1,3 +1,5 @@
+@import '../global/buttons';
+
 .main__portfolio {
     padding: 2.4rem 1.6rem;
     background-color: $hard-cultured;
@@ -80,19 +82,19 @@
     width: 3.2rem;
 }
 
-.portfolio__button {
-    width: 12rem;
-    height: 5rem;
-    border: 0.2rem solid $onyx;
-    border-radius: 0.8rem;
-    background-color: $ligt-cultured;
-    color: $onyx;
+// .portfolio__button {
+//     width: 12rem;
+//     height: 5rem;
+//     border: 0.2rem solid $onyx;
+//     border-radius: 0.8rem;
+//     background-color: $ligt-cultured;
+//     color: $onyx;
 
-    &:active {
-        color: $ligt-cultured;
-        background-color: $onyx;
-    }
-}
+//     &:active {
+//         color: $ligt-cultured;
+//         background-color: $onyx;
+//     }
+// }
 
 .portfolio__view-proyect {
     display: flex;
