@@ -42,7 +42,7 @@ margin-block-start: 1.6rem;
     width: 0.4rem;
     height: 0.4rem;
     border-radius: 50%;
-    background-color: $black;
+    background-color: $onyx;
 }
 
 .home__social-media {
@@ -51,8 +51,16 @@ margin-block-start: 1.6rem;
     @include all-center-flex;
 }
 
-.home__icons {
-    font-size: 2rem;
+.social-media__icons {
+    font-size: 2.4rem;
+
+    &:hover {
+        color: $cadet-blue-crayola;
+    }
+
+    &:active {
+        color: $cadet-blue-crayola;
+    }
 }
 
 .home__arrow-container {

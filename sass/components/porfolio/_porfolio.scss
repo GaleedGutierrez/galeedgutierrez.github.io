@@ -1,12 +1,12 @@
 .main__portfolio {
     padding: 2.4rem 1.6rem;
-    background-color: $white-meidum;
+    background-color: $hard-cultured;
 }
 
 .portfolio__title {
     text-align: center;
     padding-block-end: 2rem;
-    border-block-end: 0.3rem solid $black;
+    border-block-end: 0.3rem solid $onyx;
 }
 
 .portfolio__context {
@@ -17,6 +17,7 @@
 .portfolio__proyects-container {
     display: grid;
     gap: 4rem;
+    padding-block-start: 3.6rem;
 }
 
 .proyect-container__img {
@@ -30,7 +31,7 @@
     padding-block-end: 1.6rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: $white;
+    background-color: $ligt-cultured;
 }
 
 .proyect-container__technologies-container {
@@ -82,13 +83,14 @@
 .portfolio__button {
     width: 12rem;
     height: 5rem;
-    border: 0.2rem solid $black;
+    border: 0.2rem solid $onyx;
     border-radius: 0.8rem;
-    background-color: $white;
+    background-color: $ligt-cultured;
+    color: $onyx;
 
     &:active {
-        color: $white;
-        background-color: $black;
+        color: $ligt-cultured;
+        background-color: $onyx;
     }
 }
 
