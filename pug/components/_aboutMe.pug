@@ -1,30 +1,35 @@
 section#about.main__about-me
+    +img("", "main__otter", "Icon otter", "1KFncqvAa4J9ujLg02C9okA43ymJw8vEW")
     h2.about-me__title Sobre mí
-    div.about-me__line-decoration.main__line-decoration
-    +img("about-me__img-id", "about-me__img-me", "A picture of me", "1DBHrdxpxz2RGTdrM3aTTO0KSJwtmQOIs").about-me__figure-my-photo
+    div.main__line-decoration.about-me__line-decoration
+    .about-me__picture-container
+        //- .about__me-circle-left
+        +img("about-me__img-id", "about-me__img-me", "A picture of me", "1DBHrdxpxz2RGTdrM3aTTO0KSJwtmQOIs").about-me__figure-my-photo
+        //- .about__me-circle-rigth
     section.about-me__presentation
         h3.about-me__my-name Hola, soy Galeed Gutierez.
         p.about-me__about-me-text Soy un joven de 21 años, que vive a los alrededores de una pequeña ciudad de Jujuy, Argentina. Apasionado por la tecnología y la fotografía.
-    section.about-me__fronted-dev
-        h3.about-me-fronted-dev__title ¿Qué hago como frontend developer?
-        p.about-me-fronted-dev__text
-            | Creo sitios y aplicaciones web, no uso trucos ni mucho menos se trata de magia. Puedo manipular las materias primas de la web, es decir, las principales tecnologías tales como&nbsp;
-            strong HTML
-            | ,&nbsp;
-            strong CSS
-            | ,&nbsp;
-            strong JavaScript&nbsp;
-            | y&nbsp;
-            strong API REST.&nbsp;
-    section.about-me__technologies
-        h3.about-me-technologies__title Tecnologías que quiero aprender
-        p.what-do-i-do-fronted__second-paragraph
-            | Una de las muchas tecnologías que quiero dominar es, la librería de JavaScript,&nbsp;
-            strong React&nbsp;
-            | tanto como para la web como para aplicaciones móviles, un framework de CSS como
-            strong Tailwind&nbsp;
-            | o&nbsp;
-            strong Boostrap&nbsp;
-            | y sumado a todo esto aprender&nbsp;
-            strong NODE.js&nbsp;
-            | para el backend.
+        button.button.about-me__button Leer más
+    //- section.about-me__fronted-dev
+    //-     h3.about-me-fronted-dev__title ¿Qué hago como frontend developer?
+    //-     p.about-me-fronted-dev__text
+    //-         | Creo sitios y aplicaciones web, no uso trucos ni mucho menos se trata de magia. Puedo manipular las materias primas de la web, es decir, las principales tecnologías tales como&nbsp;
+    //-         strong HTML
+    //-         | ,&nbsp;
+    //-         strong CSS
+    //-         | ,&nbsp;
+    //-         strong JavaScript&nbsp;
+    //-         | y&nbsp;
+    //-         strong API REST.&nbsp;
+    //- section.about-me__technologies
+    //-     h3.about-me-technologies__title Tecnologías que quiero aprender
+    //-     p.what-do-i-do-fronted__second-paragraph
+    //-         | Una de las muchas tecnologías que quiero dominar es, la librería de JavaScript,&nbsp;
+    //-         strong React&nbsp;
+    //-         | tanto como para la web como para aplicaciones móviles, un framework de CSS como
+    //-         strong Tailwind&nbsp;
+    //-         | o&nbsp;
+    //-         strong Boostrap&nbsp;
+    //-         | y sumado a todo esto aprender&nbsp;
+    //-         strong NODE.js&nbsp;
+    //-         | para el backend.

@@ -59,7 +59,7 @@ const showProyects = () => {
                 <section class="portfolio__view-proyect">
                     <form target="_blank" action=${PROYECTS[i].url}>
                         <input
-                            class="portfolio__button"
+                            class="button"
                             type="submit"
                             value="Ver proyecto"
                         />
