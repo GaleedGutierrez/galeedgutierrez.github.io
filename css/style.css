@@ -277,14 +277,6 @@ img {
   content: ' ]';
 }
 
-.visibleHeaderMenu {
-  opacity: 1;
-  -webkit-transform: translateY(27.5rem);
-          transform: translateY(27.5rem);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.ttf?qwt0ly") format("truetype"), url("fonts/icomoon.woff?qwt0ly") format("woff"), url("fonts/icomoon.svg?qwt0ly#icomoon") format("svg");
@@ -529,6 +521,7 @@ img {
 }
 
 .about-me__presentation {
+  position: relative;
   -webkit-margin-before: 4rem;
           margin-block-start: 4rem;
 }
@@ -538,11 +531,15 @@ img {
           margin-block-end: 1.6rem;
 }
 
+.about-me__more-information-container {
+  display: none;
+  -webkit-margin-after: 1.6rem;
+          margin-block-end: 1.6rem;
+}
+
 .about-me__fronted-dev {
-  -webkit-margin-before: 2rem;
-          margin-block-start: 2rem;
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
+  -webkit-margin-after: 1.6rem;
+          margin-block-end: 1.6rem;
 }
 
 .what-do-i-do-fronted__second-paragraph__title {
@@ -745,5 +742,17 @@ img {
   font-size: 2.1rem;
   line-height: 2.8rem;
   font-weight: 400;
+}
+
+.visibleHeaderMenu {
+  opacity: 1;
+  -webkit-transform: translateY(27.5rem);
+          transform: translateY(27.5rem);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.visibleMoreAboutme {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

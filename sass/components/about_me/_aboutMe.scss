@@ -51,6 +51,7 @@
 }
 
 .about-me__presentation {
+    position: relative;
     margin-block-start: 4rem;
 }
 
@@ -58,9 +59,20 @@
     margin-block-end: 1.6rem;
 }
 
+.about-me__more-information-container {
+    display: none;
+    margin-block-end: 1.6rem;
+}
+
+
+
+
+
+
+
+
 .about-me__fronted-dev {
-    margin-block-start: 2rem;
-    margin-block-end: 2rem;
+    margin-block-end: 1.6rem;
 }
 
 .what-do-i-do-fronted__second-paragraph__title {

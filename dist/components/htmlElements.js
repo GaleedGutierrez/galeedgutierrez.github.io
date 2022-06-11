@@ -1,3 +1,4 @@
+// Header Section
 export const sandwichMenu = document.getElementById('header__menu-sandwich-id');
 export const menuElementsContainer = document.getElementById('header__nav-container-id');
 export const inputHomeSandwichMenu = document.getElementById('nav__input-radio-id-1');
@@ -11,4 +12,8 @@ export const aAboutSandwichMenu = document.getElementById('header__nav-about');
 export const aProyectsSandwichMenu = document.getElementById('header__nav-proyects');
 // export const aResumeSandwichMenu = document.getElementById('header__nav-resume') as HTMLAnchorElement;
 export const aContactSandwichMenu = document.getElementById('header__nav-contact');
+// About me section
+export const buttonMoreAboutMe = document.getElementById('about-me__button-id');
+export const textMoreAboutMe = document.getElementById('about-me__more-information-container-id');
+// Proyect Section
 export const containerProyectsSection = document.getElementById('portfolio__proyects-container-id');
