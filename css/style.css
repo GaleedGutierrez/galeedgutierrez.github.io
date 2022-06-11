@@ -391,18 +391,8 @@ img {
 }
 
 .home__social-media {
-  gap: 2.8rem;
   -webkit-margin-after: 3rem;
           margin-block-end: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .social-media__icons {
@@ -580,7 +570,7 @@ img {
   height: 5rem;
   border: 0.2rem solid #343A40;
   border-radius: 0.8rem;
-  background-color: #F8F9FA;
+  background-color: transparent;
   color: #343A40;
 }
 
@@ -711,5 +701,49 @@ img {
 
 .porfolio__icons {
   font-size: 3.6rem;
+}
+
+.porfolio__button {
+  display: block;
+  margin-inline: auto;
+  -webkit-margin-before: 1.6rem;
+          margin-block-start: 1.6rem;
+}
+
+.social-media-container {
+  gap: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer {
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+}
+
+.footer__title {
+  -webkit-margin-after: 1.2rem;
+          margin-block-end: 1.2rem;
+  border: 0.2rem solid #343A40;
+  border-radius: 1rem;
+}
+
+.footer__contact-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__my-emial {
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
