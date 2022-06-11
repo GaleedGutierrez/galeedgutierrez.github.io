@@ -38,8 +38,8 @@ menuElementsContainer.onclick = () => hiddeMenu();
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
-// aResumeSandwichMenu.onclick = () => addBrackets('resume');
 aContactSandwichMenu.onclick = () => addBrackets('contact');
+
 const anchorsSandwich = [aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu];
 const config = {threshold: 0.2};
 

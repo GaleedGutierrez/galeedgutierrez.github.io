@@ -1,0 +1,19 @@
+.footer {
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+}
+
+.footer__title {
+    margin-block-end: 1.2rem;
+    border: 0.2rem solid $onyx;
+    border-radius: 1rem;
+}
+
+.footer__contact-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.footer__my-emial {
+    @include font-medium;
+}
