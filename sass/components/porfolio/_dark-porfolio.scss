@@ -1,0 +1,21 @@
+.main__portfolio {
+    background-color: $light-gray;
+}
+
+.portfolio__title {
+    color: $onyx;
+    border-block-end-color: $onyx;
+}
+
+.portfolio__info-container {
+    background-color: $eerie-black;
+}
+
+.porfolio__button {
+    border-color: $onyx;
+    color: $onyx;
+    &:active {
+        color: $ligt-cultured;
+        background-color: $onyx;
+    }
+}
