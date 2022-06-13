@@ -1,8 +1,9 @@
 import { containerProyectsSection } from './components/htmlElements.js';
 import proyects from './components/API/proyects.json' assert {type: "json"};
+import { Proyect } from './components/interfaces.js';
 
 
-const showProyects = () => {
+const showProyects = (): void => {
     for (let i = 0; i < 6; i++) {
         let iconsTechnologies = '';
         for (let j = 0; j < PROYECTS[i].technologies.length; j++) {
@@ -80,6 +81,6 @@ const showProyects = () => {
 };
 
 const API_PROYECTS_JSON = proyects;
-const PROYECTS = API_PROYECTS_JSON.proyects.reverse();
+const PROYECTS: Proyect[] = API_PROYECTS_JSON.proyects.reverse();
 showProyects();
 

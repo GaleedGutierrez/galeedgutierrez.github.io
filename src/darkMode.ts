@@ -1,11 +1,11 @@
 import { aboutSecction, head, themeInput } from "./components/htmlElements.js";
 
-const changedTheme = () => {
+const changedTheme = (): void => {
     const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     applyThemes(darkMode);
 };
 
-const applyThemes = (theme: boolean) => {
+const applyThemes = (theme: boolean): void => {
     if (theme) {
         applyDarkTheme();
         themeInput.checked = true;
@@ -18,7 +18,7 @@ const applyThemes = (theme: boolean) => {
     particleJs(theme);
 };
 
-const applyDarkTheme = () => {
+const applyDarkTheme = (): void => {
     link.type = 'text/css';
     link.rel = 'stylesheet';
     link.href = '../css/dark.css';
@@ -35,12 +35,12 @@ const generateOtter = (srcImg: string): HTMLElement => {
     return figureOtter;
 };
 
-const applyOtter = (theme: boolean) => {
+const applyOtter = (theme: boolean): void => {
     const otter = theme ? otterWhite : otterDark;
     aboutSecction.appendChild(otter);
 };
 
-const particleJs = (theme: boolean) => {
+const particleJs = (theme: boolean): void => {
     const white = {
         "particles": {
           "number": {
