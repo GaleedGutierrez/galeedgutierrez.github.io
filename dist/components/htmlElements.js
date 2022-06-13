@@ -1,3 +1,5 @@
+// Head Section
+export const head = document.getElementById('head-id');
 // Header Section
 export const sandwichMenu = document.getElementById('header__menu-sandwich-id');
 export const menuElementsContainer = document.getElementById('header__nav-container-id');
