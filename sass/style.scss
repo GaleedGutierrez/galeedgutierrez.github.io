@@ -1,13 +1,13 @@
-@import './components/global/global';
+@import './components/global/general/general';
 @import './components/global/logo';
 @import './components/header/header';
-@import './components/icons/icons';
+@import './components/global/icons/iconsSocialMediaBase';
 @import './components/home/home';
-@import './components/global/lineDecorator';
+@import './components/global/lineDecorator/lineDecorator';
 @import './components/about_me/aboutMe';
 @import './components/porfolio/porfolio';
-@import './components/global/icons-social-media';
-@import './components/global/footer';
+@import './components/global/icons/iconsSocialMedia';
+@import './components/footer/footer';
 @import './components/global/visibleHidden';
 
 

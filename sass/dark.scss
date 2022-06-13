@@ -1,9 +1,7 @@
-@import './components/global/dark-global';
+@import './components/global/general/dark-general';
 @import './components/header/dark-header';
 @import './components/about_me/dark-aboutMe';
-@import './components/global/dark-lineDecorator';
-@import './components/global/dark-buttons';
+@import './components/global/lineDecorator/dark-lineDecorator';
+@import './components/global/buttons/dark-buttons';
 @import './components/porfolio/dark-porfolio';
-@import './components/global/dark-footer';
-
-
+@import './components/footer/dark-footer';
