@@ -1,5 +1,5 @@
 import { objInputRadioType } from "./components/types.js";
-import { inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputContactSandwichMenu, aContactSandwichMenu } from "./components/htmlElements.js";
+import { inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputContactSandwichMenu, aContactSandwichMenu, sandwichMenu, menuElementsContainer } from "./components/htmlElements.js";
 
 const config = {threshold: 0.2};
 const anchorsSandwich = [aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu];
@@ -31,7 +31,20 @@ anchorsSandwich.forEach( anchor => {
     if (target) observer.observe(target);
 });
 
+const showMenu = (): void => {
+    menuElementsContainer.classList.toggle('visibleHeaderMenu');
+    sandwichMenu.classList.toggle('header__menu-sandwich--active');
+};
+
+const hiddeMenu = (): void => {
+    menuElementsContainer.classList.remove('visibleHeaderMenu');
+    sandwichMenu.classList.remove('header__menu-sandwich--active');
+};
+
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
 aContactSandwichMenu.onclick = () => addBrackets('contact');
+
+sandwichMenu.onclick = () => showMenu();
+menuElementsContainer.onclick = () => hiddeMenu();
