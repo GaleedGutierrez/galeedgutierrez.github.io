@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+  <head id="head-id">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/dark.css"/>
     <title>Galeed Gutierrez</title>
   </head>
   <body class="body" id="body-id">
@@ -53,24 +52,24 @@
         <section class="header__options">
           <div class="options__themes options__header">
             <label class="options__switch-container" for="p">
-              <figure class="options__icons"><img class="classImg1" id="idImg1" src="https://drive.google.com/uc?id=13uLYQIqblEyYHekXbPRPXYyrasa6Xs1k" alt="altImg1"/></figure>
-              <input class="options__switch-input" type="checkbox" name="p"/>
+              <figure class="options__icons"><img id="" src="https://drive.google.com/uc?id=13uLYQIqblEyYHekXbPRPXYyrasa6Xs1k" alt="Sun icons"/></figure>
+              <input class="options__switch-input" type="checkbox" name="p" id="header__theme-input-id"/>
               <div class="options__switch-components">
                 <div class="options__switch-circle"></div>
                 <div class="options__switch-slider"></div>
               </div>
-              <figure class="options__icons"><img class="classImg2" id="idImg2" src="https://drive.google.com/uc?id=1LfBey7pN-QzTg9jX-6839xRfaUGcvk-o" alt="altImg2"/></figure>
+              <figure class="options__icons"><img id="" src="https://drive.google.com/uc?id=1LfBey7pN-QzTg9jX-6839xRfaUGcvk-o" alt="Moon icon"/></figure>
             </label>
           </div>
           <div class="options__language options__header">
             <label class="options__switch-container" for="p">
-              <figure class="options__icons"><img class="classImg1" id="idImg1" src="https://drive.google.com/uc?id=1o71lcagpBF2FTO7TlrQ6ecdPv3BFVKQd" alt="altImg1"/></figure>
-              <input class="options__switch-input" type="checkbox" name="p"/>
+              <figure class="options__icons"><img id="" src="https://drive.google.com/uc?id=1o71lcagpBF2FTO7TlrQ6ecdPv3BFVKQd" alt="Spanish icon"/></figure>
+              <input class="options__switch-input" type="checkbox" name="p" id="header__language-input-id"/>
               <div class="options__switch-components">
                 <div class="options__switch-circle"></div>
                 <div class="options__switch-slider"></div>
               </div>
-              <figure class="options__icons"><img class="classImg2" id="idImg2" src="https://drive.google.com/uc?id=1hJoUCcExFdMct7vIQwVuQuGEYueTObH7" alt="altImg2"/></figure>
+              <figure class="options__icons"><img id="" src="https://drive.google.com/uc?id=1hJoUCcExFdMct7vIQwVuQuGEYueTObH7" alt="English icon"/></figure>
             </label>
           </div>
         </section>
@@ -89,7 +88,6 @@
         <div class="particles-js" id="particles-js"></div>
       </section>
       <section class="main__about-me" id="about">
-        <figure><img class="main__otter" id="" src="https://drive.google.com/uc?id=1bTuB7POVArCWZ_mV2DAqsyVwvXJSWVWf" alt="Icon otter"/></figure>
         <h2 class="about-me__title">Sobre mí</h2>
         <div class="main__line-decoration about-me__line-decoration"></div>
         <div class="about-me__picture-container">
@@ -130,10 +128,10 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"></script>
     <script src="../dist/googleAnalytics.js"></script>
-    <script src="../dist/components/particles-js.js"></script>
     <script type="module" src="../dist/header.js"></script>
     <script type="module" src="../dist/home.js"></script>
     <script type="module" src="../dist/about-me.js"></script>
     <script type="module" src="../dist/showProyects.js"></script>
+    <script type="module" src="../dist/darkMode.js"></script>
   </body>
 </html>

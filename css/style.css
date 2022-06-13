@@ -476,7 +476,7 @@ img {
   padding: 2.9rem 1.6rem 1.6rem;
 }
 
-.main__otter {
+.main__otter-figure {
   position: absolute;
   bottom: calc(100% - 2rem);
   left: calc(50% - 2rem);
@@ -654,7 +654,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0rem 0.4rem;
+  gap: 0rem 1.2rem;
   -webkit-margin-before: 0.8rem;
           margin-block-start: 0.8rem;
   -webkit-margin-after: 1.6rem;
