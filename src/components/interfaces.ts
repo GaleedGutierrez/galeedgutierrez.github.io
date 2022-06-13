@@ -2,10 +2,11 @@ export interface Proyect {
     id: number;
     name: string;
     technologies: string[];
+    technologiesIcons: string[];
     repository: string;
     url: string[] | string;
     img: string;
-    date: Date;
+    date: string;
     course: CoursePlataform;
     description: string;
     author: string;

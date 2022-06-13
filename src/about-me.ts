@@ -1,14 +1,14 @@
 import { buttonMoreAboutMe, textMoreAboutMe } from "./components/htmlElements.js";
 
-const originalDates = () => {
+const originalDates = (): () => number => {
     let inicialNumber = 0;
-    return function () {
+    return function (): number {
         inicialNumber++;
         return inicialNumber;
     };
 };
 
-const showMoreAboutMe = () => {
+const showMoreAboutMe = (): void => {
     textMoreAboutMe.classList.toggle('visibleMoreAboutme');
     if (condition() % 2 === 0) {
         buttonMoreAboutMe.innerText = 'Leer más';

@@ -28,6 +28,10 @@ a {
   background-color: #212529;
 }
 
+.keywords__point-space {
+  background-color: #F8F9FA;
+}
+
 .about-me__figure-my-photo::before {
   border-color: #212529;
   border-top-color: #E9ECEF;
