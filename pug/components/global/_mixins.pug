@@ -9,11 +9,7 @@ mixin style-head-responsive(stylesResponsive, screen)
 
 mixin img(idImg, classImg, altImg, srcImg)
     figure(id!=attributes.id ,class!=attributes.class)
-        img(id=idImg, class=classImg, src="https://drive.google.com/uc?id="+srcImg,alt=altImg)
-
-mixin imgXD(idImg, classImg, altImg, srcImg)
-    figure(id!=attributes.id ,class!=attributes.class)
-        img(id=idImg, class=classImg, src=srcImg,alt=altImg)
+        img(id=idImg, class=classImg, src=srcImg, alt=altImg)
 
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
     ul.nav__ul-container
@@ -23,9 +19,9 @@ mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
                 a(id=idA, href=hrefA).nav__a= sectionMenu
 
 mixin header-options(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
-    label(for="p").options__switch-container
+    label(for="switch").options__switch-container
         +img(idImg1, classImg1, altImg1, srcImg1).options__icons
-        input(type="checkbox", name="p", id=idInput,class="options__switch-input")
+        input(type="checkbox", name="switch", id=idInput,class="options__switch-input")
         .options__switch-components
             .options__switch-circle
             .options__switch-slider

@@ -276,8 +276,8 @@ const particleJs = (theme: boolean): void => {
 const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 const link = document.createElement('link');
 const changeTheme = window.matchMedia('(prefers-color-scheme: dark)');
-const otterWhite = generateOtter('https://drive.google.com/uc?id=1bTuB7POVArCWZ_mV2DAqsyVwvXJSWVWf');
-const otterDark = generateOtter('https://drive.google.com/uc?id=1KFncqvAa4J9ujLg02C9okA43ymJw8vEW');
+const otterWhite = generateOtter('../assets/img/animals/otter/otter-white.webp');
+const otterDark = generateOtter('../assets/img/animals/otter/otter-black.webp');
 
 changeTheme.addEventListener('change', changedTheme);
 
