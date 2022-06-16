@@ -10,7 +10,8 @@ const applyThemes = (theme: boolean): void => {
         applyDarkTheme();
         themeInput.checked = true;
     } else {
-        link.parentNode.removeChild(link);
+        linkGral.parentNode.removeChild(linkGral);
+        if (screen.width >= 768) linkWidth768.parentNode.removeChild(linkWidth768);
         themeInput.checked = false;
     }
 
@@ -19,10 +20,20 @@ const applyThemes = (theme: boolean): void => {
 };
 
 const applyDarkTheme = (): void => {
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = '../css/dark.css';
-    head.appendChild(link);
+    linkGral.type = 'text/css';
+    linkGral.rel = 'stylesheet';
+    linkGral.href = '../css/index/dark.css';
+
+    if (screen.width >= 768) apllyDarkThemeWidth768();
+
+    head.appendChild(linkGral);
+    head.appendChild(linkWidth768);
+};
+
+const apllyDarkThemeWidth768 = (): void => {
+    linkWidth768.type = 'text/css';
+    linkWidth768.rel = 'stylesheet';
+    linkWidth768.href = '../css/index/dark-tablet.css';
 };
 
 const generateOtter = (srcImg: string): HTMLElement => {
@@ -274,18 +285,22 @@ const particleJs = (theme: boolean): void => {
 };
 
 const darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-const link = document.createElement('link');
 const changeTheme = window.matchMedia('(prefers-color-scheme: dark)');
-const otterWhite = generateOtter('https://drive.google.com/uc?id=1bTuB7POVArCWZ_mV2DAqsyVwvXJSWVWf');
-const otterDark = generateOtter('https://drive.google.com/uc?id=1KFncqvAa4J9ujLg02C9okA43ymJw8vEW');
+const otterWhite = generateOtter('../assets/img/animals/otter/otter-white.webp');
+const otterDark = generateOtter('../assets/img/animals/otter/otter-black.webp');
+
+const linkGral = document.createElement('link');
+const linkWidth768 = document.createElement('link');
 
 changeTheme.addEventListener('change', changedTheme);
+screen.orientation.addEventListener("change", () => {
+    if (screen.width >= 768 && changeTheme) apllyDarkThemeWidth768();
+});
 
-if (darkMode)  applyThemes(darkMode);
+if (darkMode) applyThemes(darkMode);
 
 applyOtter(darkMode);
 particleJs(darkMode);
 
 themeInput.onclick = () =>  applyThemes(themeInput.checked);
-
 

@@ -1,8 +1,9 @@
 extend ./components/global/_base.pug
 block head
-    +style-head("style.css")
+    +style-head("index/style.css")
     //- +style-head("dark.css")
-    //- +style-head-responsive("index/desktop.css", "1024")
+    +style-head-responsive("index/tablet.css", "768")
+    //- +style-head-responsive("index/dark-tablet.css", "768")
     +titles("Galeed Gutierrez")
 block main
     main.main
