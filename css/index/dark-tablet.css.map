@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,gBAAgB,CAAC;EACb,gBAAgB,EDeL,OAAO;CCdrB",
+    "sources": [
+        "../../sass/index/dark-tablet.scss",
+        "../../sass/components/global/_colors.scss",
+        "../../sass/components/header/_dark-header-tablet.scss"
+    ],
+    "names": [],
+    "file": "dark-tablet.css"
+}
