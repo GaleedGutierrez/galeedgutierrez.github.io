@@ -7,14 +7,14 @@ const showProyects = () => {
             if (PROYECTS[i].technologies[j] === "PUG") {
                 iconsTechnologies += `
                 <figure class="technologies__icon-figure technologies__pug-icon">
-                    <img id="" src="${PROYECTS[i].technologiesIcons[j]}" alt="Icon ${PROYECTS[i].technologies[j]}"/>
+                    <img id="" src="${PROYECTS[i].technologiesIcons[j]}" alt="Icon ${PROYECTS[i].technologies[j]}" loading="lazy"/>
                 </figure>
             `;
             }
             else {
                 iconsTechnologies += `
                     <figure class="technologies__icon-figure">
-                        <img id="" src="${PROYECTS[i].technologiesIcons[j]}" alt="Icon ${PROYECTS[i].technologies[j]}"/>
+                        <img id="" src="${PROYECTS[i].technologiesIcons[j]}" alt="Icon ${PROYECTS[i].technologies[j]}" loading="lazy"/>
                     </figure>
                 `;
             }
@@ -26,6 +26,7 @@ const showProyects = () => {
                 class="proyect-container__img"
                 src=${PROYECTS[i].img}
                 alt="Screenshot de ${PROYECTS[i].name}"
+                loading="lazy"
             />
         </figure>
         <section class="portfolio__info-container">
@@ -45,6 +46,7 @@ const showProyects = () => {
                     <img
                         src=${PROYECTS[i].course.img}
                         alt="Logo del ${PROYECTS[i].course.name}"
+                        loading="lazy"
                     />
                 </figure>
                 <p class="courses-section__course-name">

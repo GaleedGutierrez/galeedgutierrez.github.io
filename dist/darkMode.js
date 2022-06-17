@@ -36,6 +36,7 @@ const generateOtter = (srcImg) => {
     figureOtter.className = 'main__otter-figure';
     img.src = srcImg;
     img.alt = 'Otter Icon';
+    img.loading = 'lazy';
     figureOtter.appendChild(img);
     return figureOtter;
 };

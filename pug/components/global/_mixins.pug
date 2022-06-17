@@ -9,7 +9,7 @@ mixin style-head-responsive(stylesResponsive, screen)
 
 mixin img(idImg, classImg, altImg, srcImg)
     figure(id!=attributes.id ,class!=attributes.class)
-        img(id=idImg, class=classImg, src=srcImg, alt=altImg)
+        img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
 
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
     ul.nav__ul-container
