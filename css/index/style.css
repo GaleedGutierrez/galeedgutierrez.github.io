@@ -603,6 +603,8 @@ a {
 .portfolio__proyects-container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(32.8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32.8rem, 1fr));
   gap: 4rem;
   -webkit-padding-before: 3.6rem;
           padding-block-start: 3.6rem;
@@ -762,7 +764,9 @@ a {
 
 .visible-header__options {
   opacity: 1;
-  -webkit-transform: translateY(10rem);
-          transform: translateY(10rem);
+  -webkit-transform: translateY(11.8rem);
+          transform: translateY(11.8rem);
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
 }
 /*# sourceMappingURL=style.css.map */

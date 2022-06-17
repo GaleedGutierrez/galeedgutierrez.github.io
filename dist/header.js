@@ -34,13 +34,19 @@ const hiddeMenu = () => {
     sandwichMenu.classList.remove('header__menu-sandwich--active');
 };
 const showOptionsMenu = () => {
-    if (screen.width >= 768)
-        optionsMenuContainer.classList.toggle('visible-header__options');
+    optionsMenuContainer.classList.toggle('visible-header__options');
+    optionsMenu.classList.toggle('header__menu-options-changes--active');
 };
 const hiddenOptionsMenu = () => {
-    if (screen.width >= 768)
-        optionsMenuContainer.classList.remove('visible-header__options');
+    optionsMenuContainer.classList.remove('visible-header__options');
+    optionsMenu.classList.remove('header__menu-options-changes--active');
 };
+window.addEventListener("resize", () => {
+    if (screen.width < 768)
+        hiddenOptionsMenu();
+    if (screen.width >= 768)
+        hiddeMenu();
+});
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');

@@ -11,7 +11,7 @@ const applyThemes = (theme: boolean): void => {
         themeInput.checked = true;
     } else {
         linkGral.parentNode.removeChild(linkGral);
-        if (screen.width >= 768) linkWidth768.parentNode.removeChild(linkWidth768);
+        linkWidth768.parentNode.removeChild(linkWidth768);
         themeInput.checked = false;
     }
 

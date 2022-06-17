@@ -35,13 +35,13 @@
 .header__options {
     justify-content: end;
     position: absolute;
-    bottom: 7rem;
+    bottom: 8rem;
     right: 0rem;
     gap: 1.2rem;
     opacity: 0;
     width: 100%;
     padding-block: 1.6rem;
     padding-inline-end: 1.6rem;
-    // transition-duration: 500ms;
+    transition-duration: 250ms;
     background-color: $ligt-cultured;
 }

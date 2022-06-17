@@ -42,12 +42,19 @@ const hiddeMenu = (): void => {
 };
 
 const showOptionsMenu = (): void => {
-    if (screen.width >= 768) optionsMenuContainer.classList.toggle('visible-header__options');
+    optionsMenuContainer.classList.toggle('visible-header__options');
+    optionsMenu.classList.toggle('header__menu-options-changes--active');
 };
 
 const hiddenOptionsMenu = (): void => {
-    if (screen.width >= 768) optionsMenuContainer.classList.remove('visible-header__options');
+    optionsMenuContainer.classList.remove('visible-header__options');
+    optionsMenu.classList.remove('header__menu-options-changes--active');
 };
+
+window.addEventListener("resize", () => {
+    if (screen.width < 768) hiddenOptionsMenu();
+    if (screen.width >= 768) hiddeMenu();
+});
 
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
@@ -59,3 +66,4 @@ menuElementsContainer.onclick = () => hiddeMenu();
 
 optionsMenu.onclick = () => showOptionsMenu();
 optionsMenuContainer.onclick = () => hiddenOptionsMenu();
+
