@@ -1,0 +1,10 @@
+.footer__title {
+    @include limit-width-desktop;
+    margin-block-end: 2rem;
+}
+
+.footer__contact-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    @include limit-width-desktop;
+}
