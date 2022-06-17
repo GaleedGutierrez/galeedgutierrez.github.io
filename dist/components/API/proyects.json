@@ -308,7 +308,7 @@
         },
         {
             "id": 17,
-            "name": "Curso de Consumo de API REST con JavaScript",
+            "name": "Michi App",
             "technologies": ["PUG", "SASS", "TypeScript", "HTML", "CSS", "JavaScript"],
             "technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp", "../../../assets/icons/technologies/typescript/icons-typescript-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
             "repository": "https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript",
