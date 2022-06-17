@@ -16,6 +16,8 @@ export const aProyectsSandwichMenu = document.getElementById('header__nav-proyec
 // export const aResumeSandwichMenu = document.getElementById('header__nav-resume') as HTMLAnchorElement;
 export const aContactSandwichMenu = document.getElementById('header__nav-contact') as HTMLAnchorElement;
 export const themeInput = document.getElementById('header__theme-input-id') as HTMLInputElement;
+export const optionsMenu = document.getElementById('header__menu-options-changes-id');
+export const optionsMenuContainer = document.getElementById('header__options-id');
 
 // About me section
 export const aboutSecction = document.getElementById('about') as HTMLElement;

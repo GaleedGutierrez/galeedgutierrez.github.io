@@ -1,8 +1,4 @@
 @charset "UTF-8";
-a {
-  color: #343A40;
-}
-
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -75,6 +71,10 @@ section[id] {
 img {
   width: 100%;
   height: 100%;
+}
+
+a {
+  color: #343A40;
 }
 
 .header__logo-container {
@@ -178,6 +178,10 @@ img {
   width: 10.4rem;
 }
 
+.header__menu-options-changes {
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,8 +240,8 @@ img {
   -webkit-padding-after: 1.6rem;
           padding-block-end: 1.6rem;
   background-color: #F8F9FA;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
 }
 
 .header__nav {
@@ -279,7 +283,7 @@ img {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.ttf?qwt0ly") format("truetype"), url("fonts/icomoon.woff?qwt0ly") format("woff"), url("fonts/icomoon.svg?qwt0ly#icomoon") format("svg");
+  src: url("../fonts/icomoon.ttf?qwt0ly") format("truetype"), url("../fonts/icomoon.woff?qwt0ly") format("woff"), url("../fonts/icomoon.svg?qwt0ly#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -599,6 +603,8 @@ img {
 .portfolio__proyects-container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(32.8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32.8rem, 1fr));
   gap: 4rem;
   -webkit-padding-before: 3.6rem;
           padding-block-start: 3.6rem;
@@ -648,8 +654,8 @@ img {
 .portfolio__courses-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 12fr;
-      grid-template-columns: 1fr 12fr;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
       grid-template-areas: "logo name" "logo plataform";
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -748,11 +754,19 @@ img {
   opacity: 1;
   -webkit-transform: translateY(27.5rem);
           transform: translateY(27.5rem);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
 }
 
 .visibleMoreAboutme {
   display: block;
+}
+
+.visible-header__options {
+  opacity: 1;
+  -webkit-transform: translateY(11.8rem);
+          transform: translateY(11.8rem);
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
 }
 /*# sourceMappingURL=style.css.map */

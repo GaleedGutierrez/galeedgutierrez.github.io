@@ -1,5 +1,5 @@
 import { objInputRadioType } from "./components/types.js";
-import { inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputContactSandwichMenu, aContactSandwichMenu, sandwichMenu, menuElementsContainer } from "./components/htmlElements.js";
+import { inputHomeSandwichMenu, aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu, inputAboutSandwichMenu, inputProyectsSandwichMenu, inputContactSandwichMenu, aContactSandwichMenu, sandwichMenu, menuElementsContainer, optionsMenu, optionsMenuContainer } from "./components/htmlElements.js";
 
 const config = {threshold: 0.2};
 const anchorsSandwich = [aHomeSandwichMenu, aAboutSandwichMenu, aProyectsSandwichMenu];
@@ -41,6 +41,21 @@ const hiddeMenu = (): void => {
     sandwichMenu.classList.remove('header__menu-sandwich--active');
 };
 
+const showOptionsMenu = (): void => {
+    optionsMenuContainer.classList.toggle('visible-header__options');
+    optionsMenu.classList.toggle('header__menu-options-changes--active');
+};
+
+const hiddenOptionsMenu = (): void => {
+    optionsMenuContainer.classList.remove('visible-header__options');
+    optionsMenu.classList.remove('header__menu-options-changes--active');
+};
+
+window.addEventListener("resize", () => {
+    if (screen.width < 768) hiddenOptionsMenu();
+    if (screen.width >= 768) hiddeMenu();
+});
+
 aHomeSandwichMenu.onclick = () => addBrackets('home');
 aAboutSandwichMenu.onclick = () => addBrackets('about');
 aProyectsSandwichMenu.onclick = () => addBrackets('proyects');
@@ -48,3 +63,7 @@ aContactSandwichMenu.onclick = () => addBrackets('contact');
 
 sandwichMenu.onclick = () => showMenu();
 menuElementsContainer.onclick = () => hiddeMenu();
+
+optionsMenu.onclick = () => showOptionsMenu();
+optionsMenuContainer.onclick = () => hiddenOptionsMenu();
+

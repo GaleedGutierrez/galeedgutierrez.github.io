@@ -1,3 +1,4 @@
+include ../global/_mixins.pug
 header#header-id.header
     section.header__logo-container
         a(href="#home").logo__galeed Galeed
@@ -9,7 +10,8 @@ header#header-id.header
             +elements-menu-header("#proyects", "header__nav-proyects", "Proyectos", "3", "nav__input-radio-id-3")
             //- +elements-menu-header("#resume", "header__nav-resume", "Resume", "4", "nav__input-radio-id-4")
             +elements-menu-header("#contact", "header__nav-contact", "Contacto", "5", "nav__input-radio-id-5")
-        section.header__options
+            button#header__menu-options-changes-id.material-symbols-outlined.header__menu-options-changes apps
+        section#header__options-id.header__options
             .options__themes.options__header
                 +header-options("header__theme-input-id","", "", "Sun icons", "../assets/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "../assets/icons/nature/space/icon-moon.webp")
             .options__language.options__header

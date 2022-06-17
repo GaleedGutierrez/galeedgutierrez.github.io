@@ -1,11 +1,13 @@
+include ./global/_mixins.pug
 section#about.main__about-me
     h2.about-me__title Sobre mí
     div.main__line-decoration.about-me__line-decoration
-    .about-me__picture-container
-        +img("about-me__img-id", "about-me__img-me", "A picture of me", "../assets/img/me/me.webp").about-me__figure-my-photo
-    section.about-me__presentation
-        h3.about-me__my-name Hola, soy Galeed Gutierez.
-        p.about-me__about-me-text Soy un joven de 21 años, que vive a los alrededores de una pequeña ciudad de Jujuy, Argentina. Apasionado por la tecnología y la fotografía.
+    section.about-me__introduce-me
+        .about-me__picture-container
+            +img("about-me__img-id", "about-me__img-me", "A picture of me", "../assets/img/me/me.webp").about-me__figure-my-photo
+        section.about-me__presentation
+            h3.about-me__my-name Hola, soy Galeed Gutierez.
+            p.about-me__about-me-text Soy un joven de 21 años, que vive a los alrededores de una pequeña ciudad de Jujuy, Argentina. Apasionado por la tecnología y la fotografía.
         section#about-me__more-information-container-id.about-me__more-information-container
             section.about-me__fronted-dev
                 h3.about-me-fronted-dev__title ¿Qué hago como frontend developer?

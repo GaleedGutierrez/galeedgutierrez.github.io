@@ -21,58 +21,56 @@ const showProyects = () => {
         }
         const article = document.createElement('article');
         article.innerHTML = `
-        <article>
-            <figure>
-                <img
-                    class="proyect-container__img"
-                    src=${PROYECTS[i].img}
-                    alt="Screenshot de ${PROYECTS[i].name}"
-                />
-            </figure>
-            <section class="portfolio__info-container">
-                <section
-                    class="proyect-container__technologies-container"
-                >
-                    ${iconsTechnologies}
-                </section>
-                <h3>${PROYECTS[i].name}</h3>
-                <p>
-                    ${PROYECTS[i].description}
-                </p>
-                <a class="portfolio__courses-section" target="_blank" href=${PROYECTS[i].course.url} >
-                    <figure
-                        class="courses-section__course-icon-figure"
-                    >
-                        <img
-                            src=${PROYECTS[i].course.img}
-                            alt="Logo del ${PROYECTS[i].course.name}"
-                        />
-                    </figure>
-                    <p class="courses-section__course-name">
-                        ${PROYECTS[i].course.name}
-                    </p>
-                    <p class="courses-section__plataform">
-                        ${PROYECTS[i].course.platform}
-                    </p>
-                </a>
-                <section class="portfolio__view-proyect">
-                    <form target="_blank" action=${PROYECTS[i].url}>
-                        <input
-                            class="button"
-                            type="submit"
-                            value="Ver proyecto"
-                        />
-                    </form>
-                    <a
-                        aria-label="Github"
-                        target="_blank"
-                        href=${PROYECTS[i].repository}
-                    >
-                        <i class="icon-github social-media__icons porfolio__icons"></i>
-                    </a>
-                </section>
+        <figure>
+            <img
+                class="proyect-container__img"
+                src=${PROYECTS[i].img}
+                alt="Screenshot de ${PROYECTS[i].name}"
+            />
+        </figure>
+        <section class="portfolio__info-container">
+            <section
+                class="proyect-container__technologies-container"
+            >
+                ${iconsTechnologies}
             </section>
-        </article>
+            <h3>${PROYECTS[i].name}</h3>
+            <p>
+                ${PROYECTS[i].description}
+            </p>
+            <a class="portfolio__courses-section" target="_blank" href=${PROYECTS[i].course.url} >
+                <figure
+                    class="courses-section__course-icon-figure"
+                >
+                    <img
+                        src=${PROYECTS[i].course.img}
+                        alt="Logo del ${PROYECTS[i].course.name}"
+                    />
+                </figure>
+                <p class="courses-section__course-name">
+                    ${PROYECTS[i].course.name}
+                </p>
+                <p class="courses-section__plataform">
+                    ${PROYECTS[i].course.platform}
+                </p>
+            </a>
+            <section class="portfolio__view-proyect">
+                <form target="_blank" action=${PROYECTS[i].url}>
+                    <input
+                        class="button"
+                        type="submit"
+                        value="Ver proyecto"
+                    />
+                </form>
+                <a
+                    aria-label="Github"
+                    target="_blank"
+                    href=${PROYECTS[i].repository}
+                >
+                    <i class="icon-github social-media__icons porfolio__icons"></i>
+                </a>
+            </section>
+        </section>
         `;
         containerProyectsSection?.appendChild(article);
     }

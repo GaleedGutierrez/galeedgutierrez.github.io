@@ -1,5 +1,9 @@
 @import '../global/switch';
-@import './header-options';
+@import './headerOptions';
+
+.header__menu-options-changes {
+    display: none;
+}
 
 .header {
     display: flex;
@@ -41,7 +45,7 @@
     width: 100%;
     padding-block-end: 1.6rem;
     background-color: $ligt-cultured;
-    transition-duration: 1s;
+    transition-duration: 750ms;
 }
 
 .header__nav {
