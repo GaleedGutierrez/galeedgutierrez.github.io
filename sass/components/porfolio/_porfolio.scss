@@ -109,7 +109,7 @@
 }
 
 .porfolio__button {
-    display: block;
     margin-inline: auto;
     margin-block-start: 1.6rem;
+    @include all-center-flex;
 }

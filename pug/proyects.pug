@@ -1,12 +1,10 @@
-extend ./components/global/base/_base.pug
+extend ./components/global/base/_baseProyects.pug
 block head
     +style-head("index/style.css")
     //- +style-head("dark.css")
     +style-head-responsive("index/tablet.css", "768")
     +style-head-responsive("index/desktop.css", "1024")
-    +titles("Galeed Gutierrez")
+    +titles("Proyectos")
 block main
     main.main
-        include ./components/_home.pug
-        include ./components/_aboutMe.pug
-        include ./components/portfolio/_portfolio.pug
+        include ./components/portfolio/_portfolioProyects.pug
