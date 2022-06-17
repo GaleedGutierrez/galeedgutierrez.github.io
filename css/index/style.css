@@ -183,6 +183,15 @@ a {
 }
 
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #F8F9FA;
+}
+
+.header__container-general {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,13 +201,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  width: 100%;
   padding: 1.2rem 1.6rem;
-  background-color: #F8F9FA;
 }
 
 .header__menu-sandwich {

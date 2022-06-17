@@ -40,22 +40,25 @@
   background-color: #E9ECEF;
 }
 
+.header__options-container {
+  position: absolute;
+  bottom: 8rem;
+  right: 0rem;
+  width: 100%;
+  opacity: 0;
+  background-color: #F8F9FA;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
 .header__options {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  position: absolute;
-  bottom: 8rem;
-  right: 0rem;
   gap: 1.2rem;
-  opacity: 0;
-  width: 100%;
   padding-block: 1.6rem;
   -webkit-padding-end: 1.6rem;
           padding-inline-end: 1.6rem;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  background-color: #F8F9FA;
 }
 
 .visibleHeaderMenu {
@@ -108,7 +111,9 @@
 }
 
 .about-me__presentation {
-  grid: introduce;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: introduce;
   margin: 0;
 }
 

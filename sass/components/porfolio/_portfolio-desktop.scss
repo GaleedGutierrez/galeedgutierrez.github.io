@@ -1,0 +1,10 @@
+.portfolio__title {
+    @include limit-width-desktop;
+}
+
+.portfolio__proyects-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    @include limit-width-desktop;
+}
+

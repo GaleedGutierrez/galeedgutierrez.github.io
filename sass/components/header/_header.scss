@@ -6,15 +6,18 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 2;
     width: 100%;
-    padding: 1.2rem 1.6rem;
     background-color: $ligt-cultured;
+}
+
+.header__container-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
 }
 
 .header__menu-sandwich {

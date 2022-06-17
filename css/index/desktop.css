@@ -1,0 +1,86 @@
+.header__container-general {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__options {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main__about-me {
+  -webkit-padding-after: 6.4rem;
+          padding-block-end: 6.4rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.about-me__picture-container {
+  width: 36rem;
+}
+
+.about-me__introduce-me {
+      grid-template-areas: "picture introduce" "picture more";
+  gap: 1.6rem 7rem;
+}
+
+.about-me__more-information-container {
+  display: block;
+  margin: 0;
+}
+
+.about-me__button {
+  display: none;
+}
+
+.about-me__picture-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: picture;
+}
+
+.about-me__presentation {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: introduce;
+}
+
+.about-me__button {
+  grid-area: button;
+}
+
+.about-me__more-information-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: more;
+}
+
+.portfolio__title {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.portfolio__proyects-container {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  max-width: 1024px;
+  margin: 0 auto;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+.footer__contact-container {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=desktop.css.map */

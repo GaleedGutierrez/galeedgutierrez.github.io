@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AEAA,AAAA,gBAAgB,CAAC;EACb,gBAAgB,EDeL,OAAO;CCdrB;;AAED,AAAA,qCAAqC,CAAC;EAClC,KAAK,EDUF,OAAO;ECTV,gBAAgB,EDKP,OAAO;CCJnB",
+    "mappings": "AEAA,AAAA,gBAAgB,CAAC;EACb,gBAAgB,EDeL,OAAO;CCdrB;;AAED,AAAA,qCAAqC,CAAC;EAClC,KAAK,EDUF,OAAO;ECTV,gBAAgB,EDKP,OAAO;CCJnB;;AAED,AAAA,0BAA0B,CAAC;EACvB,gBAAgB,EDML,OAAO;CCLrB",
     "sources": [
         "../../sass/index/dark-tablet.scss",
         "../../sass/components/global/_colors.scss",
