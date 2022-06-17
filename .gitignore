@@ -226,3 +226,6 @@ $RECYCLE.BIN/
 *.png
 *.svg
 *.gif
+
+*.rar
+*.zip
