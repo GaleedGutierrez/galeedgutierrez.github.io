@@ -1,13 +1,13 @@
 .button {
-    width: 12rem;
-    height: 5rem;
-    border: 0.2rem solid $onyx;
-    border-radius: 0.8rem;
-    background-color: transparent;
-    color: $onyx;
+	width: 12rem;
+	height: 5rem;
+	border: 0.2rem solid $onyx;
+	border-radius: 0.8rem;
+	background-color: transparent;
+	color: $onyx;
 
-    &:active {
-        color: $ligt-cultured;
-        background-color: $onyx;
-    }
+	&:active {
+		background-color: $onyx;
+		color: $light-cultured;
+	}
 }

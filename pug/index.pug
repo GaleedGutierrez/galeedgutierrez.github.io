@@ -1,12 +1,23 @@
-extend ./components/global/base/_base.pug
+extend ./components/global/_global.pug
 block head
-    +style-head("index/style.css")
-    //- +style-head("dark.css")
-    +style-head-responsive("index/tablet.css", "768")
-    +style-head-responsive("index/desktop.css", "1024")
-    +titles("Galeed Gutierrez")
+	- const SEE_HEADER = true
+	- const SEE_FOOTER = true
+	+style-head("index/style.css")
+	//- +style-head("dark.css")
+	+style-head-responsive("index/tablet.css", "768")
+	+style-head-responsive("index/desktop.css", "1024")
+	+titles("Galeed Gutierrez")
+block header
+	include ./components/header/_header.pug
 block main
-    main.main
-        include ./components/_home.pug
-        include ./components/_aboutMe.pug
-        include ./components/portfolio/_portfolio.pug
+	main.main
+		include ./components/_home.pug
+		include ./components/_aboutMe.pug
+		include ./components/portfolio/_portfolio.pug
+block scripts
+	include ./components/scripts/_googleAnalytics.pug
+	script(type="module" src="../dist/header.js")
+	script(type="module" src="../dist/home.js")
+	script(type="module" src="../dist/about-me.js")
+	script(type="module" src="../dist/showProjects.js")
+	script(type="module" src="../dist/darkMode.js")

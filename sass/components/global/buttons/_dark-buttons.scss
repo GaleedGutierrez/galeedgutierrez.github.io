@@ -1,9 +1,9 @@
 .button {
-    border-color: $ligt-cultured;
-    color:  $ligt-cultured;
+	border-color: $light-cultured;
+	color: $light-cultured;
 
-    &:active {
-        color: $eerie-black;
-        background-color:  $ligt-cultured;
-    }
+	&:active {
+		background-color: $light-cultured;
+		color: $eerie-black;
+	}
 }

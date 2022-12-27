@@ -1,50 +1,50 @@
 .options__switch-container {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
 }
 
 .options__switch-input {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
 }
 
 .options__switch-slider {
-    position: absolute;
-    top: calc(50% - 1rem);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: $davys-grey;
-    transition-duration: 500ms;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 1rem);
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background-color: $davys-grey;
+	transition-duration: 500ms;
 }
 
 .options__switch-circle {
-    position: absolute;
-    z-index: 1;
-    top: calc(50% - 0.6rem);
-    left: 0.4rem;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: $ligt-cultured;
-    border-radius: 50%;
-    transition-duration: 500ms;
+	position: absolute;
+	left: 0.4rem;
+	top: calc(50% - 0.6rem);
+	z-index: 1;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background-color: $light-cultured;
+	transition-duration: 500ms;
 }
 
 .options__switch-input:checked + .options__switch-components .options__switch-circle {
-    transform: translateX(2rem);
+	transform: translateX(2rem);
 }
 
 .options__switch-input:checked ~ .options__switch-components .options__switch-slider {
-    background-color: $sonic-silver;
+	background-color: $sonic-silver;
 }
 
 .options__switch-components {
-    position: relative;
-    width: 4rem;
-    height: 2rem;
+	position: relative;
+	width: 4rem;
+	height: 2rem;
 }

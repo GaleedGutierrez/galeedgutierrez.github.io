@@ -1,40 +1,40 @@
 mixin titles(title)
-    title=title
+	title=title
 
 mixin style-head(style)
-    link(rel="stylesheet" href="../css/"+style)
+	link(rel="stylesheet" href="../css/"+style)
 
 mixin style-head-responsive(stylesResponsive, screen)
-    link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
+	link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
 
 mixin img(idImg, classImg, altImg, srcImg)
-    figure(id!=attributes.id ,class!=attributes.class)
-        img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
+	figure(id!=attributes.id ,class!=attributes.class)
+		img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
 
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
-    ul.nav__ul-container
-        li.nav__li
-            label(for="headerMenu").nav__label
-                input(type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
-                a(id=idA, href=hrefA).nav__a= sectionMenu
+	ul.nav__ul-container
+		li.nav__li
+			label(for="headerMenu").nav__label
+				input(type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
+				a(id=idA, href=hrefA).nav__a= sectionMenu
 
 mixin header-options(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
-    label(for="switch").options__switch-container
-        +img(idImg1, classImg1, altImg1, srcImg1).options__icons
-        input(type="checkbox", name="switch", id=idInput,class="options__switch-input")
-        .options__switch-components
-            .options__switch-circle
-            .options__switch-slider
-        +img(idImg2, classImg2, altImg2, srcImg2).options__icons
+	label(for="switch").options__switch-container
+		+img(idImg1, classImg1, altImg1, srcImg1).options__icons
+		input(type="checkbox", name="switch", id=idInput,class="options__switch-input")
+		.options__switch-components
+			.options__switch-circle
+			.options__switch-slider
+		+img(idImg2, classImg2, altImg2, srcImg2).options__icons
 
 mixin social-media
-    a(href="https://www.facebook.com/galeedgutierrez" aria-label="Facebook" target="_blank")
-        i.icon-facebook.social-media__icons
-    a(href="https://www.instagram.com/galeedgutierrez/" aria-label="Instagram" target="_blank")
-        i.icon-instagram.social-media__icons
-    a(href="https://twitter.com/GutierrezGaleed" aria-label="Twitter" target="_blank")
-        i.icon-twitter.social-media__icons
-    a(href="https://github.com/GaleedGutierrez" aria-label="Github" target="_blank")
-        i.icon-github.social-media__icons
-    a(href="https://www.linkedin.com/in/galeedgutierrez" aria-label="Linkedin" target="_blank")
-        i.icon-linkedin2.social-media__icons
+	a(href="https://www.facebook.com/galeedgutierrez" aria-label="Facebook" target="_blank")
+		i.icon-facebook.social-media__icons
+	a(href="https://www.instagram.com/galeedgutierrez/" aria-label="Instagram" target="_blank")
+		i.icon-instagram.social-media__icons
+	a(href="https://twitter.com/GutierrezGaleed" aria-label="Twitter" target="_blank")
+		i.icon-twitter.social-media__icons
+	a(href="https://github.com/GaleedGutierrez" aria-label="Github" target="_blank")
+		i.icon-github.social-media__icons
+	a(href="https://www.linkedin.com/in/galeedgutierrez" aria-label="Linkedin" target="_blank")
+		i.icon-linkedin2.social-media__icons

@@ -1,4 +1,4 @@
-import { buttonMoreAboutMe, textMoreAboutMe } from "./components/htmlElements.js";
+import { BUTTON_MORE_ABOUT_ME, TEXT_MORE_ABOUT_ME } from './components/htmlElements.js';
 const originalDates = () => {
     let inicialNumber = 0;
     return function () {
@@ -7,13 +7,10 @@ const originalDates = () => {
     };
 };
 const showMoreAboutMe = () => {
-    textMoreAboutMe.classList.toggle('visibleMoreAboutme');
-    if (condition() % 2 === 0) {
-        buttonMoreAboutMe.innerText = 'Leer más';
-    }
-    else {
-        buttonMoreAboutMe.innerText = 'Leer menos';
-    }
+    TEXT_MORE_ABOUT_ME.classList.toggle('visible-more-about-me');
+    BUTTON_MORE_ABOUT_ME.innerText = (condition() % 2 === 0)
+        ? 'Leer más'
+        : 'Leer menos';
 };
 const condition = originalDates();
-buttonMoreAboutMe.onclick = () => showMoreAboutMe();
+BUTTON_MORE_ABOUT_ME.onclick = () => showMoreAboutMe();
