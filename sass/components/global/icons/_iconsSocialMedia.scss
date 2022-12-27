@@ -1,4 +1,5 @@
 .social-media-container {
-    gap: 2.8rem;
-    @include all-center-flex;
+	@include all-center-flex;
+
+	gap: 2.8rem;
 }

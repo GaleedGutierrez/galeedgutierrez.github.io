@@ -1,41 +1,32 @@
 .main__about-me {
-    padding-block-end: 6.4rem;
-    @include limit-width-desktop;
-}
+	@include limit-width-desktop;
 
-.about-me__picture-container {
-    width: 36rem;
+	padding-block-end: 6.4rem;
 }
 
 .about-me__introduce-me {
-    grid-template-areas:
-        "picture introduce"
-        "picture more"
-    ;
-    gap: 1.6rem 7rem;
-}
-
-.about-me__more-information-container {
-    display: block;
-    margin: 0;
-}
-
-.about-me__button {
-    display: none;
+	gap: 1.6rem 7rem;
+	grid-template-areas:
+		"picture introduce"
+		"picture more";
 }
 
 .about-me__picture-container {
-    grid-area: picture;
+	grid-area: picture;
+	width: 36rem;
 }
 
 .about-me__presentation {
-    grid-area: introduce;
+	grid-area: introduce;
 }
 
 .about-me__button {
-    grid-area: button;
+	display: none;
+	grid-area: button;
 }
 
 .about-me__more-information-container {
-    grid-area: more;
+	display: block;
+	grid-area: more;
+	margin: 0;
 }

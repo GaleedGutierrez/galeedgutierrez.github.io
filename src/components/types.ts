@@ -1,3 +1,3 @@
-export type objInputRadioType = {
-    [key: string]: () => boolean
+export interface objInputRadioType {
+	[key: string]: () => boolean
 }

@@ -1,87 +1,97 @@
-@import '../global/buttons/buttons';
+@import "../global/buttons/buttons";
 
 .main__portfolio {
-    padding: 2.4rem 1.6rem;
-    background-color: $hard-cultured;
+	padding: 2.4rem 1.6rem;
+	background-color: $hard-cultured;
 }
 
 .portfolio__title {
-    text-align: center;
-    padding-block-end: 2rem;
-    border-block-end: 0.3rem solid $onyx;
+	text-align: center;
+	padding-block-end: 2rem;
+	border-block-end: 0.3rem solid $onyx;
 }
 
 .portfolio__context {
-    margin-block-start: 1rem;
-    margin-block-end: 2rem;
+	margin-block-start: 1rem;
+	margin-block-end: 2rem;
 }
 
-.portfolio__proyects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32.8rem, 1fr));
-    // grid-auto-rows: 51.2rem;
-    gap: 4rem;
-    padding-block-start: 3.6rem;
+.portfolio__projects-container {
+	display: grid;
+
+	// grid-auto-rows: 51.2rem;
+	gap: 4rem;
+	grid-template-columns: repeat(auto-fit, minmax(32.8rem, 1fr));
+	padding-block-start: 3.6rem;
 }
 
-.proyect-container__img {
-    border-top-left-radius: 1.8rem;
-    border-top-right-radius: 1.8rem;
+.project-container__img {
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+
+.portfolio__data-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 2rem;
+	background-color: $light-cultured;
 }
 
 .portfolio__info-container {
-    padding-inline: 1.6rem;
-    padding-block-start: 0.4rem;
-    padding-block-end: 1.6rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    background-color: $ligt-cultured;
+	padding-block: 0.4rem 1.6rem;
+	padding-inline: 1.6rem;
+
+	// border-bottom-left-radius: 2rem;
+	// border-bottom-right-radius: 2rem;
+	// background-color: $light-cultured;
 }
 
-.proyect-container__technologies-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 0.4rem;
-    margin-block-end: 0.4rem;
+.project-container__technologies-container {
+	display: flex;
+	gap: 0.4rem;
+	justify-content: end;
+	align-items: center;
+	margin-block-start: 0.8rem;
+	margin-inline-end: 1.6rem;
 }
 
 .technologies__icon-figure {
-    width: 2.6rem;
+	width: 2.6rem;
 }
 
 .technologies__pug-icon {
-    height: fit-content;
+	height: fit-content;
 }
 
 .portfolio__courses-section {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-        "logo name"
-        "logo plataform"
-    ;
-    align-items: center;
-    gap: 0rem 1.2rem;
-    margin-block-start: 0.8rem;
-    margin-block-end: 1.6rem;
+	display: grid;
+	gap: 0 1.2rem;
+	grid-template-areas:
+		"logo name"
+		"logo platform";
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	margin-block-start: 0.8rem;
+	margin-block-end: 1.6rem;
 }
-
 
 .courses-section__course-name {
-    grid-area: name;
-    line-height: 2rem;
+	grid-area: name;
+	line-height: 2rem;
 }
 
-.courses-section__plataform  {
-    grid-area: plataform;
-    @include font-caption;
-    line-height: 1.3rem;
+.courses-section__platform {
+	grid-area: platform;
+
+	@include font-caption;
+
+	line-height: 1.3rem;
 }
 
 .courses-section__course-icon-figure {
-    grid-area: logo;
-    width: 3.2rem;
+	grid-area: logo;
+	width: 3.2rem;
 }
 
 // .portfolio__button {
@@ -89,27 +99,28 @@
 //     height: 5rem;
 //     border: 0.2rem solid $onyx;
 //     border-radius: 0.8rem;
-//     background-color: $ligt-cultured;
+//     background-color: $light-cultured;
 //     color: $onyx;
 
 //     &:active {
-//         color: $ligt-cultured;
+//         color: $light-cultured;
 //         background-color: $onyx;
 //     }
 // }
 
-.portfolio__view-proyect {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
+.portfolio__view-project {
+	display: flex;
+	gap: 2.4rem;
+	align-items: center;
 }
 
 .porfolio__icons {
-    font-size: 3.6rem;
+	font-size: 3.6rem;
 }
 
 .porfolio__button {
-    margin-inline: auto;
-    margin-block-start: 1.6rem;
-    @include all-center-flex;
+	margin-block-start: 1.6rem;
+	margin-inline: auto;
+
+	@include all-center-flex;
 }

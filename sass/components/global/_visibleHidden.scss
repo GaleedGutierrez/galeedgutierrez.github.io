@@ -1,15 +1,15 @@
-.visibleHeaderMenu {
-    opacity: 1;
-    transform: translateY(27.5rem);
-    transition-duration: 750ms;
+.visible-header-menu {
+	transition-duration: 750ms;
+	transform: translateY(27.5rem);
+	opacity: 1;
 }
 
-.visibleMoreAboutme {
-    display: block;
+.visible-more-about-me {
+	display: block;
 }
 
 .visible-header__options {
-    opacity: 1;
-    transform: translateY(11.8rem);
-    transition-duration: 750ms;
+	transition-duration: 750ms;
+	transform: translateY(11.8rem);
+	opacity: 1;
 }

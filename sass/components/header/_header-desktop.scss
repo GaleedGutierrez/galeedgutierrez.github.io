@@ -1,9 +1,9 @@
-@import '../global/mixins';
+@import "../global/mixins";
 
 .header__container-general {
-    @include limit-width-desktop;
+	@include limit-width-desktop;
 }
 
 .header__options {
-    @include limit-width-desktop;
+	@include limit-width-desktop;
 }

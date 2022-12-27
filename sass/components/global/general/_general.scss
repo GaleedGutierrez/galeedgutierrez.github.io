@@ -1,43 +1,44 @@
 @import "../colors";
 @import "../typography";
 @import "../mixins";
-@import '../icons/googleIcons';
+@import "../icons/googleIcons";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: $ligt-cultured;
-    color: $onyx;
-    @include font-small;
+	background-color: $light-cultured;
+	color: $onyx;
+
+	@include font-small;
 }
 
 figure {
-    display: flex;
+	display: flex;
 }
 
-section[id]{
-    scroll-margin-block-start: 7rem;
+section[id] {
+	scroll-margin-block-start: 7rem;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 a {
-    color: $onyx;
+	color: $onyx;
 }
 
 // .grid-container {
