@@ -2,7 +2,7 @@ mixin titles(title)
 	title=title
 
 mixin style-head(style)
-	link(rel="stylesheet" href="../css/"+style)
+	link(rel="stylesheet" href=require(style))
 
 mixin style-head-responsive(stylesResponsive, screen)
 	link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
@@ -15,13 +15,13 @@ mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
 	ul.nav__ul-container
 		li.nav__li
 			label(for="headerMenu").nav__label
-				input(type="radio", name="headerMenu" value=valueInput id=idInput).nav__input-radio
+				input(type="radio" name="headerMenu" value=valueInput id=idInput).nav__input-radio
 				a(id=idA, href=hrefA).nav__a= sectionMenu
 
 mixin header-options(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
 	label(for="switch").options__switch-container
 		+img(idImg1, classImg1, altImg1, srcImg1).options__icons
-		input(type="checkbox", name="switch", id=idInput,class="options__switch-input")
+		input(type="checkbox" name="switch", id=idInput,class="options__switch-input")
 		.options__switch-components
 			.options__switch-circle
 			.options__switch-slider

@@ -1,4 +1,4 @@
-import { ABOUT_SECTION, HEAD, THEME_INPUT } from './components/htmlElements.js';
+import { ABOUT_SECTION, HEAD, THEME_INPUT } from './components/htmlElements';
 
 const changedTheme = (): void => {
 	const DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -23,7 +23,7 @@ const applyThemes = (theme: boolean): void => {
 const applyDarkTheme = (): void => {
 	LINK_GRAL.type = 'text/css';
 	LINK_GRAL.rel = 'stylesheet';
-	LINK_GRAL.href = '../css/index/dark.css';
+	LINK_GRAL.href = 'dark.css';
 
 	if (screen.width >= 768) applyDarkThemeWidth768();
 
@@ -34,7 +34,7 @@ const applyDarkTheme = (): void => {
 const applyDarkThemeWidth768 = (): void => {
 	LINK_WIDTH_768.type = 'text/css';
 	LINK_WIDTH_768.rel = 'stylesheet';
-	LINK_WIDTH_768.href = '../css/index/dark-tablet.css';
+	LINK_WIDTH_768.href = 'dark-tablet.css';
 };
 
 const generateOtter = (srcImg: string): HTMLElement => {
@@ -285,8 +285,6 @@ const particleJs = (theme: boolean): void => {
 		: white;
 
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore: Unreachable code error
 	particlesJS('particles-js', THEME_APPLY,
 		function () {
 			console.log('callback - particles.js config loaded');
