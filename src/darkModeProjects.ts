@@ -1,4 +1,4 @@
-import { HEAD, THEME_INPUT } from './components/htmlElements.js';
+import { HEAD, THEME_INPUT } from './components/htmlElements';
 
 const changedTheme = (): void => {
 	const DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;

@@ -1,4 +1,4 @@
-import { PROJECTS, showProjects } from './showProjects.js';
+import { PROJECTS, showProjects } from './showProjects';
 
 
 

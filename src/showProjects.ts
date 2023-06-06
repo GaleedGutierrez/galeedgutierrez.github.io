@@ -1,6 +1,6 @@
-import { CONTAINER_PROJECTS_SECTION } from './components/htmlElements.js';
-import projects from './components/API/projects.json' assert {type: 'json'};
-import { ProjectInterface } from './components/interfaces.js';
+import { CONTAINER_PROJECTS_SECTION } from './components/htmlElements';
+import projects from './components/API/projects.json';
+import { ProjectInterface } from './components/interfaces';
 
 
 export const showProjects = (lengthProjects: number): void => {

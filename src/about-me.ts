@@ -1,4 +1,4 @@
-import { BUTTON_MORE_ABOUT_ME, TEXT_MORE_ABOUT_ME } from './components/htmlElements.js';
+import { BUTTON_MORE_ABOUT_ME, TEXT_MORE_ABOUT_ME } from './components/htmlElements';
 
 const originalDates = (): () => number => {
 	let inicialNumber = 0;

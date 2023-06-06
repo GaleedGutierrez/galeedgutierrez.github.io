@@ -4,7 +4,8 @@
 	"description": "My personal webpage",
 	"main": "index.js",
 	"scripts": {
-		"run-pug": "pug --watch ./pug --out ./html -P"
+		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --mode=production",
+		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --mode=development"
 	},
 	"repository": {
 		"type": "git",
@@ -25,19 +26,44 @@
 	},
 	"homepage": "https://github.com/GaleedGutierrez/galeedgutierrez.github.io#readme",
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.21.0",
-		"@typescript-eslint/parser": "^5.21.0",
-		"eslint": "^8.14.0",
+		"@tsconfig/recommended": "1.0.2",
+		"@types/node": "^20.2.5",
+		"@types/webpack": "^5.28.1",
+		"@types/webpack-dev-server": "^4.7.2",
+		"@typescript-eslint/eslint-plugin": "^5.59.8",
+		"@typescript-eslint/parser": "^5.59.8",
+		"babel-plugin-css-modules-transform": "^1.6.2",
+		"copy-webpack-plugin": "^11.0.0",
+		"cross-env": "^7.0.3",
+		"css-loader": "^6.8.1",
+		"eslint": "^8.42.0",
+		"file-loader": "^6.2.0",
+		"install": "^0.13.0",
+		"mini-css-extract-plugin": "^2.7.6",
+		"npm": "^9.6.7",
 		"pug": "^3.0.2",
 		"pug-cli": "^1.0.0-alpha6",
-		"sass": "^1.51.0",
-		"stylelint": "^14.16.0",
+		"pug-plugin": "^4.9.7",
+		"sass": "^1.62.1",
+		"sass-loader": "^13.3.1",
+		"style-loader": "^3.3.3",
+		"stylelint": "^14.16.1",
 		"stylelint-config-standard-scss": "^6.1.0",
 		"stylelint-order": "^5.0.0",
-		"ts-loader": "^9.3.0",
-		"typed.js": "^2.0.12",
-		"typescript": "^4.6.4",
-		"webpack": "^5.72.0",
-		"webpack-cli": "^4.9.2"
+		"ts-loader": "^9.4.3",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typed.js": "^2.0.16",
+		"typescript": "^4.9.5",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.85.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.15.0"
+	},
+	"dependencies": {
+		"@babel/core": "^7.22.1",
+		"@babel/preset-env": "^7.22.4",
+		"@babel/preset-typescript": "^7.21.5",
+		"babel-loader": "^9.1.2"
 	}
 }
