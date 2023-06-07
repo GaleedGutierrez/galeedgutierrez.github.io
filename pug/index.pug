@@ -5,6 +5,8 @@ block head
 	link(rel="stylesheet" href=require("../sass/index/style.scss"))
 	link(rel="stylesheet" href=require("../sass/index/tablet.scss") media="screen and (min-width: 768px)")
 	link(rel="stylesheet" href=require("../sass/index/desktop.scss") media="screen and (min-width: 1024px)")
+	link(rel="stylesheet" href=require("../sass/index/dark.scss") media="(prefers-color-scheme: dark)")
+	link(rel="stylesheet" href=require("../sass/index/dark-tablet.scss") media="(prefers-color-scheme: dark)")
 	+titles("Galeed Gutierrez")
 block header
 	include ./components/header/_header.pug

@@ -1,5 +1,6 @@
 import { ABOUT_SECTION, HEAD, THEME_INPUT } from './components/htmlElements';
 
+
 const changedTheme = (): void => {
 	const DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -301,9 +302,9 @@ const LINK_GRAL = document.createElement('link');
 const LINK_WIDTH_768 = document.createElement('link');
 
 CHANGE_THEME.addEventListener('change', changedTheme);
-screen.orientation.addEventListener('change', () => {
-	if (screen.width >= 768 && CHANGE_THEME) applyDarkThemeWidth768();
-});
+// screen.orientation.addEventListener('change', () => {
+// 	if (screen.width >= 768 && CHANGE_THEME) applyDarkThemeWidth768();
+// });
 
 if (DARK_MODE) applyThemes(DARK_MODE);
 

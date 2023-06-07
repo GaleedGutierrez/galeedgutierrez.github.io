@@ -1,9 +1,14 @@
 import path from 'path';
 import webpack from 'webpack';
 import 'webpack-dev-server';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
+// import HTMLWebpackPlugin from 'html-webpack-plugin';
 
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const PugPlugin = require('pug-plugin');
 
@@ -11,6 +16,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 const config: webpack.Configuration = {
 	entry : {
 		index : './pug/index.pug',
+		guia  : './pug/guia.pug',
 		// projects : './pug/projects.pug'
 	},
 	output : {
@@ -22,11 +28,16 @@ const config: webpack.Configuration = {
 		extensions : [ '.ts', '.js' ],
 	},
 	devServer : {
-		static : {
+		watchFiles : ['pug/*.pug'],
+		hot        : true,
+		static     : {
 			directory : path.join(__dirname, 'dist'),
 		},
-		compress : true,
-		port     : 3006,
+		compress      : true,
+		port          : 8080,
+		devMiddleware : {
+			writeToDisk : true
+		},
 	},
 	module : {
 		rules : [
@@ -86,7 +97,9 @@ const config: webpack.Configuration = {
 				from : path.resolve(__dirname, './', 'assets/'),
 				to   : 'assets/'
 			}]
-		})
+		}),
+		new CleanWebpackPlugin(),
+		// new HTMLWebpackPlugin(),
 	]
 };
 

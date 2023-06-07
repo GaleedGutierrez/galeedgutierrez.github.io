@@ -1,0 +1,31 @@
+@use "../settings/variables";
+
+.a-icon-facebook {
+	&::before {
+		content: variables.$icon-facebook;
+	}
+}
+
+.a-icon-instagram {
+	&::before {
+		content: variables.$icon-instagram;
+	}
+}
+
+.a-icon-twitter {
+	&::before {
+		content: variables.$icon-twitter;
+	}
+}
+
+.a-icon-github {
+	&::before {
+		content: variables.$icon-github;
+	}
+}
+
+.a-icon-linkedin2 {
+	&::before {
+		content: variables.$icon-linkedin2;
+	}
+}

@@ -1,0 +1,15 @@
+extend ./components/global/_global.pug
+block head
+	link(rel="stylesheet" href=require("../sass/guide.scss"))
+block main
+	main.main
+		h1 Hello Word
+		h2 Hello Word
+		h3 Hello Word
+		h4 Hello Word
+		p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus veniam, sequi accusamus perferendis voluptatum temporibus, error illo fuga sit odio debitis impedit alias necessitatibus pariatur voluptas. Tempora nisi odio doloremque!
+		a Link
+		button Button
+		input(type="checkbox" name="")
+block scripts
+	include ./components/scripts/_googleAnalytics.pug

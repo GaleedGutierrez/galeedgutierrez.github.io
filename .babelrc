@@ -1,4 +1,4 @@
 {
-	// "presets": ["@babel/preset-env"],
-	"plugins": ["css-modules-transform"]
+	"presets": ["@babel/preset-env"]
+	// "plugins": ["css-modules-transform"]
 }

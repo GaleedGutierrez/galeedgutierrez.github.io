@@ -1,0 +1,13 @@
+.header__options {
+  background-color: #212529;
+}
+
+.header__menu-options-changes--active {
+  background-color: #ced4da;
+  color: #343a40;
+}
+
+.header__options-container {
+  background-color: #212529;
+}
+/*# sourceMappingURL=dark-tablet.css.map */

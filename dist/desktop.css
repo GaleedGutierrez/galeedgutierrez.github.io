@@ -1,0 +1,66 @@
+.header__container-general {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__options {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main__about-me {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-block-end: 6.4rem;
+}
+
+.about-me__introduce-me {
+  gap: 1.6rem 7rem;
+  grid-template-areas: "picture introduce" "picture more";
+}
+
+.about-me__picture-container {
+  grid-area: picture;
+  width: 36rem;
+}
+
+.about-me__presentation {
+  grid-area: introduce;
+}
+
+.about-me__button {
+  display: none;
+  grid-area: button;
+}
+
+.about-me__more-information-container {
+  display: block;
+  grid-area: more;
+  margin: 0;
+}
+
+.portfolio__title {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.portfolio__projects-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 1.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__title {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-block-end: 2rem;
+}
+
+.footer__contact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+/*# sourceMappingURL=desktop.css.map */
