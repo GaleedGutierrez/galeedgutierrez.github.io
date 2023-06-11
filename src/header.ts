@@ -35,23 +35,23 @@ ANCHOR_SANDWICH.forEach(anchor => {
 });
 
 const showMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.toggle('visible-header-menu');
-	SANDWICH_MENU.classList.toggle('header__menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.toggle('g-header__menu--visible');
+	SANDWICH_MENU.classList.toggle('a-menu-sandwich--active');
 };
 
 const hiddenMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.remove('visible-header-menu');
-	SANDWICH_MENU.classList.remove('header__menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.remove('g-header__menu--visible');
+	SANDWICH_MENU.classList.remove('a-menu-sandwich--active');
 };
 
 const showOptionsMenu = (): void => {
-	OPTIONS_MENU_CONTAINER.classList.toggle('visible-header__options');
-	OPTIONS_MENU.classList.toggle('header__menu-options-changes--active');
+	OPTIONS_MENU_CONTAINER.classList.toggle('g-header__options--visible');
+	OPTIONS_MENU.classList.toggle('g-header__menu-options-changes--active');
 };
 
 const hiddenOptionsMenu = (): void => {
-	OPTIONS_MENU_CONTAINER.classList.remove('visible-header__options');
-	OPTIONS_MENU.classList.remove('header__menu-options-changes--active');
+	OPTIONS_MENU_CONTAINER.classList.remove('g-header__options--visible');
+	OPTIONS_MENU.classList.remove('g-header__menu-options-changes--active');
 };
 
 window.addEventListener('resize', () => {

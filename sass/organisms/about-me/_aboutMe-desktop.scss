@@ -1,0 +1,32 @@
+.main__about-me {
+	@include limit-width-desktop;
+
+	padding-block-end: 6.4rem;
+}
+
+.about-me__introduce-me {
+	gap: 1.6rem 7rem;
+	grid-template-areas:
+		"picture introduce"
+		"picture more";
+}
+
+.about-me__picture-container {
+	grid-area: picture;
+	width: 36rem;
+}
+
+.about-me__presentation {
+	grid-area: introduce;
+}
+
+.about-me__button {
+	display: none;
+	grid-area: button;
+}
+
+.about-me__more-information-container {
+	display: block;
+	grid-area: more;
+	margin: 0;
+}

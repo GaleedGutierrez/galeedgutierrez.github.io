@@ -8,14 +8,18 @@
 @import "./elements/headings";
 @import "./elements/img";
 @import "./elements/html";
-@import "./elements/links";
-@import "./elements/lists";
+@import "./elements/link";
+@import "./elements/list";
+@import "./elements/button";
 
 // Objects
 
 // Atoms
 @import "./atoms/buttons";
 @import "./atoms/icons";
+@import "./atoms/menu-sandwich";
+@import "./atoms/logo";
+@import "./atoms/theme-icon";
 
 // Molecules
 @import "./molecules/switch";

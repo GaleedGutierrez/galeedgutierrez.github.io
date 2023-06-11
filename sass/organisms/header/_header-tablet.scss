@@ -1,78 +1,77 @@
 @use "../../settings/variables";
 
-.header__menu-sandwich {
-	display: none;
-}
+.g-header {
+	&__menu-sandwich-button {
+		display: none;
+	}
 
-.header__nav-container {
-	position: initial;
-	left: initial;
-	bottom: initial;
-	padding: 0;
-	opacity: 1;
-	transition-duration: 0s;
-}
+	&__nav-container {
+		position: initial;
+		left: initial;
+		bottom: initial;
+		padding: 0;
+		opacity: 1;
+		transition-duration: 0s;
+	}
 
-.header__nav {
-	display: flex;
-	gap: 2.4rem;
-	justify-content: end;
-	align-items: center;
-}
+	&__nav {
+		display: flex;
+		gap: 2.4rem;
+		justify-content: end;
+		align-items: center;
+	}
 
-.header__menu-options-changes {
-	display: block;
-	width: 3.6rem;
-	height: 3.6rem;
-	border: none;
-	background: none;
-	font-size: 2.8rem;
-}
+	&__menu-options-changes-button {
+		display: block;
+	}
 
-.header__menu-options-changes--active {
-	border-radius: 50%;
-	background-color: variables.$light-gray-100;
-	color: variables.$gray-100;
-}
+	&__menu-options-changes {
+		width: 3.6rem;
+		height: 3.6rem;
+		border: none;
+		background: none;
+		font-size: 2.8rem;
+	}
 
-.header__options-container {
-	position: absolute;
-	right: 0;
-	bottom: 8rem;
-	width: 100%;
+	&__menu-options-changes--active {
+		border-radius: 50%;
+		background-color: variables.$light-gray-100;
+		fill: variables.$gray-100;
+	}
 
-	// padding-block: 1.6rem;
-	// padding-inline-end: 1.6rem;
-	background-color: variables.$pure-white;
-	opacity: 0;
-	transition-duration: 250ms;
-}
+	&__options-container {
+		position: absolute;
+		right: 0;
+		bottom: 8rem;
+		width: 100%;
+		background-color: variables.$pure-white;
+		opacity: 0;
+		transition-duration: 250ms;
+	}
 
-.header__options {
-	gap: 1.2rem;
+	&__options {
+		padding-block: 1.6rem;
+		padding-inline-end: 1.6rem;
+	}
 
-	// justify-content: end;
-	padding-block: 1.6rem;
-	padding-inline-end: 1.6rem;
-}
+	&__menu--visible {
+		opacity: 1;
+		transition-duration: 750ms;
+		transform: translateY(27.5rem);
+	}
 
-.visible-header-menu {
-	opacity: 1;
-	transition-duration: 750ms;
-	transform: translateY(27.5rem);
+	&__options--visible {
+		opacity: 1;
+		transition-duration: 750ms;
+		transform: translateY(11.8rem);
+	}
+
+	&__change-theme-container {
+		margin-inline-end: initial;
+		margin-inline-start: auto;
+	}
 }
 
 .visible-more-about-me {
 	display: block;
-}
-
-.visible-header__options {
-	opacity: 1;
-	transition-duration: 750ms;
-	transform: translateY(11.8rem);
-}
-
-.options__header {
-	margin-inline-end: initial;
-	margin-inline-start: auto;
 }

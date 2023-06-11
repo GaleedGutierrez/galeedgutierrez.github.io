@@ -1,0 +1,21 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.a-menu-sandwich {
+	position: relative;
+	z-index: 1;
+	width: 4.4rem;
+	height: 4.4rem;
+	border: none;
+	border-radius: 5rem;
+	background: none;
+	font-size: 3.8rem;
+	transition-duration: 1s;
+	line-height: normal;
+
+	&--active {
+		background-color: variables.$light-black;
+		transition-duration: 1s;
+		fill: variables.$pure-white;
+	}
+}

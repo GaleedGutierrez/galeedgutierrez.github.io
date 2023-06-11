@@ -12,19 +12,19 @@ mixin img(idImg, classImg, altImg, srcImg)
 		img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
 
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
-	ul.nav__ul-container
-		li.nav__li
-			label(for="headerMenu").nav__label
-				input(type="radio" name="headerMenu" value=valueInput id=idInput).nav__input-radio
-				a(id=idA, href=hrefA).nav__a= sectionMenu
+	ul.g-header__ul-container
+		li
+			label(for="headerMenu").g-header__label
+				input(type="radio" name="headerMenu" value=valueInput id=idInput).g-header__input-radio
+				a(id=idA, href=hrefA).g-header__a= sectionMenu
 
 mixin header-options(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
-	+img(idImg1, classImg1, altImg1, srcImg1).options__icons
-	label(for="switch").options__switch-container
-		input.options__switch-input(type="checkbox" name="switch", id=idInput,class="options__switch-input")
-		.options__switch-circle
-		.options__switch-slider
-	+img(idImg2, classImg2, altImg2, srcImg2).options__icons
+	+img(idImg1, classImg1, altImg1, srcImg1).a-theme-icon
+	label(for="switch").m-switch-container
+		input.m-switch__input(type="checkbox" name="switch", id=idInput)
+		.m-switch__circle
+		.m-switch__slider
+	+img(idImg2, classImg2, altImg2, srcImg2).a-theme-icon
 
 mixin social-media
 	a(href="https://www.facebook.com/galeedgutierrez" aria-label="Facebook" target="_blank")
