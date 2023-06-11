@@ -65,6 +65,7 @@ A_PROJECTS_SANDWICH_MENU.onclick = () => addBrackets('projects');
 A_CONTACT_SANDWICH_MENU.onclick = () => addBrackets('contact');
 
 SANDWICH_MENU.onclick = () => showMenu();
+// showMenu();
 MENU_ELEMENTS_CONTAINER.onclick = () => hiddenMenu();
 
 OPTIONS_MENU.onclick = () => showOptionsMenu();

@@ -1,0 +1,50 @@
+@use "../settings/variables";
+
+.options__switch-container {
+	position: relative;
+	display: flex;
+	width: 4rem;
+	height: 2rem;
+}
+
+.options__switch-input {
+	position: absolute;
+	z-index: 2;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.options__switch-slider {
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background-color: variables.$gray-300;
+	transition-duration: 500ms;
+}
+
+.options__switch-circle {
+	position: absolute;
+	z-index: 1;
+	left: 0.4rem;
+	top: calc(50% - 0.6rem);
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background-color: variables.$pure-white;
+	transition-duration: 500ms;
+}
+
+.options__switch-input:checked ~ .options__switch-slider {
+	opacity: 0.798;
+}
+
+.options__switch-input:checked + .options__switch-circle {
+	transform: translateX(2rem);
+}
+
+.options__icons {
+	width: 2.8rem;
+	height: 2.8rem;
+}

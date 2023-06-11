@@ -1,0 +1,32 @@
+@use "../settings/variables";
+
+.a-button {
+	padding-inline: variables.$space-6;
+	padding-block: variables.$space-4;
+	border: variables.$border-05 solid variables.$background-dark-color;
+	border-radius: variables.$border-radius-3;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:hover {
+		border-color: variables.$background-light-gray-color;
+		background-color: variables.$background-light-gray-color;
+		color: variables.$pure-white;
+	}
+
+	&:active {
+		border-color: variables.$background-dark-color;
+		background-color: variables.$background-dark-color;
+		color: variables.$pure-white;
+	}
+}
+
+// .a-button--dark {
+// 	border-color: $light-cultured;
+// 	color: $light-cultured;
+
+// 	&:active {
+// 		background-color: $light-cultured;
+// 		color: $eerie-black;
+// 	}
+// }

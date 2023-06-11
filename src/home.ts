@@ -1,10 +1,7 @@
 import Typed from 'typed.js';
-import '../sass/components/global/icons/fonts/icomoon.svg';
-import '../sass/components/global/icons/fonts/icomoon.ttf';
-import '../sass/components/global/icons/fonts/icomoon.woff';
-// import '../sass/index/dark.scss';
-// import '../sass/index/dark-tablet.scss';
-
+import '../sass/assets/icons/Icomoon/icomoon.svg';
+import '../sass/assets/icons/Icomoon/icomoon.ttf';
+import '../sass/assets/icons/Icomoon/icomoon.woff';
 
 const TYPED = new Typed('.home__my-name', {
 	strings    : ['Galeed Gutierrez'],

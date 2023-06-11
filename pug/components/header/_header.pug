@@ -1,6 +1,6 @@
 include ../global/_mixins.pug
-header#header-id.header
-	section.header__container-general
+header#header-id.g-header
+	div.g-header__container
 		section.header__logo-container
 			a(href="#home").logo__galeed Galeed
 		button#header__menu-sandwich-id.material-symbols-outlined.header__menu-sandwich menu
@@ -13,8 +13,8 @@ header#header-id.header
 				+elements-menu-header("#contact", "header__nav-contact", "Contacto", "5", "nav__input-radio-id-5")
 				button#header__menu-options-changes-id.material-symbols-outlined.header__menu-options-changes apps
 			section#header__options-id.header__options-container
-				section.header__options
-					.options__themes.options__header
+				div.header__options
+					.options__header
 						+header-options("header__theme-input-id","", "", "Sun icons", "../assets/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "../assets/icons/nature/space/icon-moon.webp")
-					//- .options__language.options__header
-					//- 	+header-options("header__language-input-id","", "", "Spanish icon", "../assets/icons/languages/flag-spain.webp", "", "", "English icon", "../assets/icons/languages/flag-UK.webp")
+				//- .options__language.options__header
+				//- 	+header-options("header__language-input-id","", "", "Spanish icon", "../assets/icons/languages/flag-spain.webp", "", "", "English icon", "../assets/icons/languages/flag-UK.webp")

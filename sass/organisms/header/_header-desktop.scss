@@ -1,0 +1,9 @@
+@use "../../tools/mixins";
+
+.g-header__container {
+	@include mixins.limit-width-desktop;
+}
+
+.header__options {
+	@include mixins.limit-width-desktop;
+}

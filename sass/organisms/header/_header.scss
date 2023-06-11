@@ -1,0 +1,139 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.header__menu-options-changes {
+	display: none;
+}
+
+.g-header {
+	position: sticky;
+	z-index: 2;
+	top: 0;
+	width: 100%;
+	background-color: variables.$pure-white;
+}
+
+.g-header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1.2rem 1.6rem;
+}
+
+.header__menu-sandwich {
+	position: relative;
+	z-index: 1;
+	width: 4.4rem;
+	height: 4.4rem;
+	border: none;
+	border-radius: 5rem;
+	background: none;
+	font-size: 3.8rem;
+	transition-duration: 1s;
+	line-height: normal;
+
+	@include mixins.center-flex;
+}
+
+.header__menu-sandwich--active {
+	background-color: variables.$light-black;
+	color: variables.$pure-white;
+	transition-duration: 1s;
+}
+
+.header__nav-container {
+	position: absolute;
+	left: 0;
+	bottom: 6.7rem;
+	width: 100%;
+	padding-block-end: 1.6rem;
+	background-color: variables.$pure-white;
+	opacity: 0;
+	transition-duration: 750ms;
+}
+
+.header__nav {
+	text-align: center;
+}
+
+.nav__ul-container {
+	margin-block-start: 1.6rem;
+	margin-block-end: 1.6rem;
+}
+
+.nav__label {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.nav__input-radio {
+	position: absolute;
+	opacity: 0;
+}
+
+.nav__a {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 100%;
+}
+
+.nav__input-radio:checked + .nav__a::before {
+	content: "[ ";
+}
+
+.nav__input-radio:checked + .nav__a::after {
+	content: " ]";
+}
+
+.options__header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 10.4rem;
+	margin-inline: auto;
+}
+
+.options__switch-container {
+	position: initial;
+}
+
+.options__switch-circle {
+	left: 3.6rem;
+}
+
+.header__logo-container {
+	position: relative;
+	z-index: 1;
+	height: fit-content;
+}
+
+.logo__galeed {
+	font-size: 3.4rem;
+	line-height: 3.4rem;
+	font-weight: 700;
+}
+
+.visible-header-menu {
+	opacity: 1;
+	transition-duration: 750ms;
+	transform: translateY(27.5rem);
+}
+
+.visible-more-about-me {
+	display: block;
+}
+
+.visible-header__options {
+	opacity: 1;
+	transition-duration: 750ms;
+	transform: translateY(11.8rem);
+}
+
+// .options__header {
+// 	margin-inline-end: initial;
+// 	margin-inline-start: auto;
+// }

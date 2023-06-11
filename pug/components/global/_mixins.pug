@@ -19,13 +19,12 @@ mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
 				a(id=idA, href=hrefA).nav__a= sectionMenu
 
 mixin header-options(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
+	+img(idImg1, classImg1, altImg1, srcImg1).options__icons
 	label(for="switch").options__switch-container
-		+img(idImg1, classImg1, altImg1, srcImg1).options__icons
-		input(type="checkbox" name="switch", id=idInput,class="options__switch-input")
-		.options__switch-components
-			.options__switch-circle
-			.options__switch-slider
-		+img(idImg2, classImg2, altImg2, srcImg2).options__icons
+		input.options__switch-input(type="checkbox" name="switch", id=idInput,class="options__switch-input")
+		.options__switch-circle
+		.options__switch-slider
+	+img(idImg2, classImg2, altImg2, srcImg2).options__icons
 
 mixin social-media
 	a(href="https://www.facebook.com/galeedgutierrez" aria-label="Facebook" target="_blank")

@@ -19,8 +19,8 @@ $icon-linkedin2: "\eaca";
 	font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="a-icon-"],
+[class*=" a-icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	// font-family: "#{$icomoon-font-family}" !important;
 	font-family: "#{$icomoon-font-family}";
