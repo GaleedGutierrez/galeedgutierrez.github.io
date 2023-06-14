@@ -1,5 +1,11 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
 .a-logo {
-	font-size: 3.4rem;
-	line-height: 3.4rem;
-	font-weight: 700;
+	// font-size: variables.$fs-title-305xl;
+	// line-height: variables.$lh-505;
+	// font-weight: variables.$weight-bold;
+
+	// Lo vamos a probar
+	@include mixins.heading-4xl;
 }

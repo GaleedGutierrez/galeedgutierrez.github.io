@@ -35,23 +35,23 @@ ANCHOR_SANDWICH.forEach(anchor => {
 });
 
 const showMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.toggle('g-header__menu--visible');
-	SANDWICH_MENU.classList.toggle('a-menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.toggle('g-header__menu-container--visible');
+	SANDWICH_MENU.classList.toggle('a-sandwich-menu--active');
 };
 
 const hiddenMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.remove('g-header__menu--visible');
-	SANDWICH_MENU.classList.remove('a-menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.remove('g-header__menu-container--visible');
+	SANDWICH_MENU.classList.remove('a-sandwich-menu--active');
 };
 
 const showOptionsMenu = (): void => {
 	OPTIONS_MENU_CONTAINER.classList.toggle('g-header__options--visible');
-	OPTIONS_MENU.classList.toggle('g-header__menu-options-changes--active');
+	OPTIONS_MENU.classList.toggle('g-header__changes-options-menu--active');
 };
 
 const hiddenOptionsMenu = (): void => {
 	OPTIONS_MENU_CONTAINER.classList.remove('g-header__options--visible');
-	OPTIONS_MENU.classList.remove('g-header__menu-options-changes--active');
+	OPTIONS_MENU.classList.remove('g-header__changes-options-menu--active');
 };
 
 window.addEventListener('resize', () => {

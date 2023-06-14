@@ -1,11 +1,11 @@
 @use "../../settings/variables";
 
 .g-header {
-	&__menu-sandwich-button {
+	&__sandwich-menu-button {
 		display: none;
 	}
 
-	&__nav-container {
+	&__menu-container {
 		position: initial;
 		left: initial;
 		bottom: initial;
@@ -15,25 +15,32 @@
 	}
 
 	&__nav {
+		position: relative;
+		z-index: variables.$z-index-1-screen-foreground;
 		display: flex;
 		gap: 2.4rem;
 		justify-content: end;
 		align-items: center;
 	}
 
-	&__menu-options-changes-button {
-		display: block;
+	&__ul-container {
+		flex-direction: row;
 	}
 
-	&__menu-options-changes {
+	&__menu-options-button {
+		display: flex;
+	}
+
+	&__changes-options-menu {
 		width: 3.6rem;
 		height: 3.6rem;
+		padding: variables.$space-05;
 		border: none;
 		background: none;
 		font-size: 2.8rem;
 	}
 
-	&__menu-options-changes--active {
+	&__changes-options-menu--active {
 		border-radius: 50%;
 		background-color: variables.$light-gray-100;
 		fill: variables.$gray-100;
