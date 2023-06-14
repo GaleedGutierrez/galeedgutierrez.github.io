@@ -14,15 +14,25 @@
 
 // Objects
 
+// Utilities
+@import "./utilities/animation";
+
 // Atoms
 @import "./atoms/buttons";
 @import "./atoms/icons";
 @import "./atoms/menu-sandwich";
 @import "./atoms/logo";
 @import "./atoms/theme-icon";
+@import "./atoms/custom-point";
+@import "./atoms/arrow-down";
 
 // Molecules
 @import "./molecules/switch";
+@import "./molecules/social-media";
+@import "./molecules/particles-js";
 
 // Organisms
 @import "./organisms/header/header";
+@import "./organisms/home/home";
+
+// @import "./organisms/about-me/aboutMe";

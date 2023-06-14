@@ -5,6 +5,7 @@ $weight-regular: 400;
 $weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 700;
+$weight-extrabold: 800;
 
 // Font Family
 @font-face {
@@ -44,6 +45,14 @@ $weight-bold: 700;
 	src: url("../assets/font-family/Poppins/Poppins-Bold.ttf")
 		format("truetype");
 	font-weight: $weight-bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../assets/font-family/Poppins/Poppins-ExtraBold.ttf")
+		format("truetype");
+	font-weight: $weight-extrabold;
 	font-style: normal;
 }
 

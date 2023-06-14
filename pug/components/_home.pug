@@ -1,14 +1,17 @@
 include ./global/_mixins.pug
-section#home.main__home
-	h2.home__welcome ¡Bienvenido!
-	h1.home__i-am Soy&nbsp;
-		span.home__my-name
-	section.home__keywords
-		span.home__frontend-developer Frontend Developer
-		div.keywords__point-space
-		span.home__web-developer Web Developer
-	section.home__social-media.social-media-container
-		+social-media
-	section.home__arrow-container
-		a(href="#about").material-symbols-outlined.home__arrow-go-about keyboard_double_arrow_right
-	#particles-js.particles-js
+
+section#home.g-home
+	div.g-home__container
+		h2 ¡Bienvenido!
+		h1.g-home__i-am Soy&nbsp;
+			span.g-home__my-name
+		section.g-home__keywords
+			span Frontend Developer
+			div.a-custom-point
+			span Web Developer
+		.g-home__social-media
+			+social-media
+		a(href="#about").a-arrow-down--animated
+			svg(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
+				path(d="M480-200 240-440l42-42 198 198 198-198 42 42-240 240Zm0-253L240-693l42-42 198 198 198-198 42 42-240 240Z")
+	#particles-js.m-particles-js

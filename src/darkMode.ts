@@ -1,5 +1,6 @@
 import { ABOUT_SECTION, HEAD, THEME_INPUT } from './components/htmlElements';
 
+declare const particlesJS: any;
 
 const changedTheme = (): void => {
 	const DARK_MODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -60,7 +61,9 @@ const applyOtter = (theme: boolean): void => {
 };
 
 const particleJs = (theme: boolean): void => {
-	const white = {
+	const WHITE_THEME = '#343a40';
+	const DARK_THEME = '#f8f9fa';
+	const OPTIONS = {
 		particles : {
 			number : {
 				value   : 100,
@@ -70,7 +73,9 @@ const particleJs = (theme: boolean): void => {
 				}
 			},
 			color : {
-				value : '#343a40'
+				value : DARK_MODE
+					? DARK_THEME
+					: WHITE_THEME,
 			},
 			shape : {
 				type   : 'circle',
@@ -110,9 +115,11 @@ const particleJs = (theme: boolean): void => {
 			line_linked : {
 				enable   : true,
 				distance : 150,
-				color    : '#343a40',
-				opacity  : 0.4,
-				width    : 1
+				color    : DARK_MODE
+					? DARK_THEME
+					: WHITE_THEME,
+				opacity : 0.4,
+				width   : 1
 			},
 			move : {
 				enable    : true,
@@ -170,123 +177,9 @@ const particleJs = (theme: boolean): void => {
 		},
 		retina_detect : true
 	};
-
-	const dark = {
-		particles : {
-			number : {
-				value   : 100,
-				density : {
-					enable     : true,
-					value_area : 600
-				}
-			},
-			color : {
-				value : '#f8f9fa'
-			},
-			shape : {
-				type   : 'circle',
-				stroke : {
-					width : 0,
-					color : '#000000'
-				},
-				polygon : {
-					nb_sides : 5
-				},
-				image : {
-					src    : 'img/github.svg',
-					width  : 100,
-					height : 100
-				}
-			},
-			opacity : {
-				value  : 0.5,
-				random : false,
-				anim   : {
-					enable      : false,
-					speed       : 1,
-					opacity_min : 0.1,
-					sync        : false
-				}
-			},
-			size : {
-				value  : 3,
-				random : true,
-				anim   : {
-					enable   : false,
-					speed    : 40,
-					size_min : 0.1,
-					sync     : false
-				}
-			},
-			line_linked : {
-				enable   : true,
-				distance : 150,
-				color    : '#f8f9fa',
-				opacity  : 0.4,
-				width    : 1
-			},
-			move : {
-				enable    : true,
-				speed     : 2,
-				direction : 'none',
-				random    : false,
-				straight  : false,
-				out_mode  : 'out',
-				bounce    : false,
-				attract   : {
-					enable  : false,
-					rotateX : 600,
-					rotateY : 1200
-				}
-			}
-		},
-		interactivity : {
-			detect_on : 'canvas',
-			events    : {
-				onhover : {
-					enable : false,
-					mode   : 'repulse'
-				},
-				onclick : {
-					enable : false,
-					mode   : 'push'
-				},
-				resize : true
-			},
-			modes : {
-				grab : {
-					distance    : 400,
-					line_linked : {
-						opacity : 1
-					}
-				},
-				bubble : {
-					distance : 400,
-					size     : 40,
-					duration : 2,
-					opacity  : 8,
-					speed    : 3
-				},
-				repulse : {
-					distance : 200,
-					duration : 0.4
-				},
-				push : {
-					particles_nb : 4
-				},
-				remove : {
-					particles_nb : 2
-				}
-			}
-		},
-		retina_detect : true
-	};
-	const THEME_APPLY = theme
-		? dark
-		: white;
 
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS('particles-js', THEME_APPLY,
+	particlesJS('particles-js', OPTIONS,
 		function () {
 			console.log('callback - particles.js config loaded');
 		});

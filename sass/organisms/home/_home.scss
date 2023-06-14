@@ -1,0 +1,35 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.g-home {
+	position: relative;
+
+	&__container {
+		position: relative;
+		z-index: variables.$z-index-1-screen-foreground;
+		display: grid;
+		place-content: center;
+		height: 85vh;
+		text-align: center;
+	}
+
+	&__i-am {
+		margin-block: variables.$space-5;
+	}
+
+	&__my-name {
+		font-weight: variables.$weight-extrabold;
+	}
+
+	&__keywords {
+		gap: variables.$space-1;
+
+		@include mixins.all-center-flex;
+	}
+
+	&__social-media {
+		margin-block: variables.$space-5;
+	}
+
+	@include mixins.margin-block-1p6rem;
+}
