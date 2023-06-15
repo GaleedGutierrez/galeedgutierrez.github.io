@@ -1,11 +1,12 @@
-.main__line-decoration {
+@use "../settings/variables";
+
+.a-line-decoration {
 	width: 0.3rem;
 	height: 2.6rem;
-	border-radius: 0.2rem;
-	margin: 1rem auto;
-	background-color: $onyx;
-}
+	border-radius: variables.$border-radius-05;
+	background-color: variables.$light-black;
 
-.main__line-decoration--dark {
-	background-color: $light-cultured;
+	&--dark {
+		background-color: variables.$pure-white;
+	}
 }

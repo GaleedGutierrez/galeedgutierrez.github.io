@@ -1,32 +1,32 @@
-.main__about-me {
-	@include limit-width-desktop;
+@use "../../settings/variables";
+@use "../../tools/mixins";
 
-	padding-block-end: 6.4rem;
-}
+.g-about-me {
+	padding-block-end: variables.$space-16;
 
-.about-me__introduce-me {
-	gap: 1.6rem 7rem;
-	grid-template-areas:
-		"picture introduce"
-		"picture more";
-}
+	&__introduce-me {
+		grid-template-areas:
+			"picture info"
+			"picture info";
+	}
 
-.about-me__picture-container {
-	grid-area: picture;
-	width: 36rem;
-}
+	&__presentation-container {
+		grid-area: info;
+	}
 
-.about-me__presentation {
-	grid-area: introduce;
-}
+	&__picture-container {
+		grid-area: picture;
+		width: 36rem;
+	}
 
-.about-me__button {
-	display: none;
-	grid-area: button;
-}
+	&__button {
+		display: none;
+	}
 
-.about-me__more-information-container {
-	display: block;
-	grid-area: more;
-	margin: 0;
+	&__more-information-container {
+		display: block;
+		margin-block-end: 0;
+	}
+
+	@include mixins.limit-width-desktop;
 }

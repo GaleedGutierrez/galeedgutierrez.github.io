@@ -13,6 +13,7 @@
 @import "./elements/button";
 
 // Objects
+@import "./objects/scroll-margin";
 
 // Utilities
 @import "./utilities/animation";
@@ -24,6 +25,8 @@
 @import "./atoms/theme-icon";
 @import "./atoms/custom-point";
 @import "./atoms/arrow-down";
+@import "./atoms/line-decorator";
+@import "./atoms/otter-icon";
 
 // Molecules
 @import "./molecules/switch";
@@ -33,5 +36,8 @@
 // Organisms
 @import "./organisms/header/header";
 @import "./organisms/home/home";
+@import "./organisms/about-me/aboutMe";
 
-// @import "./organisms/about-me/aboutMe";
+.visible-more-about-me {
+	display: block;
+}

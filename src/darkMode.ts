@@ -43,7 +43,7 @@ const generateOtter = (srcImg: string): HTMLElement => {
 	const figureOtter = document.createElement('figure');
 	const img = document.createElement('img');
 
-	figureOtter.className = 'main__otter-figure';
+	figureOtter.className = 'a-otter-icon g-about-me__otter-icon';
 	img.src = srcImg;
 	img.alt = 'Otter Icon';
 	img.loading = 'lazy';
