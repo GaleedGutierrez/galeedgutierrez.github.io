@@ -4,8 +4,8 @@
 	"description": "My personal webpage",
 	"main": "index.js",
 	"scripts": {
-		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --mode=production",
-		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --mode=development"
+		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.config.ts",
+		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.config.dev.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -27,7 +27,6 @@
 	"homepage": "https://github.com/GaleedGutierrez/galeedgutierrez.github.io#readme",
 	"dependencies": {
 		"@babel/core": "^7.22.1",
-		"@babel/preset-env": "^7.22.4",
 		"@babel/preset-typescript": "^7.21.5",
 		"@tsconfig/recommended": "^1.0.2",
 		"@types/node": "^20.2.5",
@@ -40,13 +39,11 @@
 		"copy-webpack-plugin": "^11.0.0",
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.8.1",
-		"eslint": "^8.42.0",
 		"file-loader": "^6.2.0",
 		"mini-css-extract-plugin": "^2.7.6",
 		"pug-plugin": "^4.9.7",
 		"sass": "^1.62.1",
 		"sass-loader": "^13.3.1",
-		"style-loader": "^3.3.3",
 		"stylelint": "^15.7.0",
 		"stylelint-config-standard-scss": "^9.0.0",
 		"stylelint-order": "^6.0.3",
@@ -62,6 +59,16 @@
 		"webpack-dev-server": "^4.15.0"
 	},
 	"devDependencies": {
+		"@babel/preset-env": "^7.22.5",
+		"css-minimizer-webpack-plugin": "^5.0.1",
+		"eslint": "^8.42.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-check-file": "^2.4.0",
+		"eslint-plugin-editorconfig": "^4.0.3",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"eslint-plugin-unused-imports": "^2.0.0",
 		"prettier": "^2.8.8"
 	}
 }

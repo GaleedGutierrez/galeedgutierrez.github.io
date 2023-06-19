@@ -1,0 +1,11 @@
+@use "../settings/variables";
+
+.a-social-media-icon {
+	&:hover {
+		fill: variables.$light-gray-200;
+	}
+
+	&:active {
+		fill: variables.$light-gray-400;
+	}
+}

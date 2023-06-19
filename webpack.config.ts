@@ -1,105 +1,104 @@
-import path from 'path';
-import webpack from 'webpack';
-import 'webpack-dev-server';
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable import/default */
 import CopyPlugin from 'copy-webpack-plugin';
-// import HTMLWebpackPlugin from 'html-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
+import webpack from 'webpack';
 
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const PugPlugin = require('pug-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production';
 const config: webpack.Configuration = {
-	entry : {
-		index : './pug/index.pug',
+	mode: 'production',
+	entry: {
+		index: './pug/index.pug',
 		// guide : './pug/guide.pug',
 		// projects : './pug/projects.pug'
 	},
-	output : {
-		path     : path.resolve(__dirname, 'dist'),
-		filename : '[name].js',
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: '[name].[contenthash].js',
+		assetModuleFilename: 'assets/[hash][ext][query]',
+		clean: true,
 	},
-	devtool : 'source-map',
-	resolve : {
-		extensions : [ '.ts', '.js' ],
+	optimization: {
+		minimize: true,
+		minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
 	},
-	devServer : {
-		// watchFiles : [ 'pug/guide.pug', 'pug/index.pug' ],
-		// hot      : true,
-		static   : path.join(__dirname, 'dist'),
-		compress : true,
-		port     : 8080,
-		// historyApiFallback : true,
-		// devMiddleware      : {
-		// 	writeToDisk : true
-		// },
+	resolve: {
+		extensions: ['.ts', '.js'],
+		alias: {
+			'@utils': path.resolve(__dirname, 'src/utils/'),
+			'@templates': path.resolve(__dirname, 'src/templates/'),
+			'@styles': path.resolve(__dirname, 'styles/'),
+			'@images': path.resolve(__dirname, 'src/assets/images/'),
+		},
 	},
-	module : {
-		rules : [
+	module: {
+		rules: [
 			{
-				test    : /\.ts?$/,
-				exclude : /node_modules/,
-				use     : {
-					loader  : 'babel-loader',
-					options : {
-						presets : [ '@babel/preset-env', '@babel/preset-typescript' ]
-					}
-				}
+				test: /\.ts$|mts/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
 			},
 			{
-				test  : /\.pug$/,
-				oneOf : [
+				test: /\.pug$/,
+				oneOf: [
 					{
-						issuer  : /\.(js|ts)$/,
-						loader  : PugPlugin.loader,
-						options : {
-							method : 'compile',
+						issuer: /\.(js|ts)$/,
+						loader: PugPlugin.loader,
+						options: {
+							method: 'compile',
 						},
 					},
 					{
-						loader : PugPlugin.loader,
+						loader: PugPlugin.loader,
 					},
 				],
 			},
 			{
-				test : /\.s[ac]ss$/i,
-				use  : [
-					devMode
-						? 'style-loader'
-						: MiniCssExtractPlugin.loader,
-					// Creates `style` nodes from JS strings
-					// 'style-loader',
-					// Translates CSS into CommonJS
+				test: /\.s[ac]ss$/i,
+				use: [
+					// MiniCssExtractPlugin.loader,
 					'css-loader',
-					// Compiles Sass to CSS
 					'sass-loader',
 				],
 			},
 			{
-				test      : /\.(woff|woff2|eot|ttf|otf|svg)$/i,
-				type      : 'asset/resource',
-				generator : {
-					filename : 'assets/fonts/[hash][ext][query]',
-				},
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
 			},
-		]
+			// loader para imágenes (Curso de webpack Platzi)
+			{
+				test: /\.(png|jpg|jpeg|gif|webp|ico|svg)$/i,
+				type: 'asset/resource',
+			},
+		],
 	},
-	plugins : [
-		new MiniCssExtractPlugin(),
-		new PugPlugin(),
-		new CopyPlugin({
-			patterns : [{
-				from : path.resolve(__dirname, './', 'assets/'),
-				to   : 'assets/'
-			}]
-		}),
-		// new CleanWebpackPlugin(),
+	plugins: [
+		// new MiniCssExtractPlugin({
+		// 	filename: '[name].[contenthash].css',
+		// }),
 		// new HTMLWebpackPlugin(),
-	]
+		new PugPlugin({
+			css: {
+				filename: '[name].[contenthash].css',
+			},
+		}),
+		new CopyPlugin({
+			patterns: [
+				{
+					from: path.resolve(__dirname, './', 'assets/'),
+					to: 'assets/',
+					// Según curo de webpack de platzi ->
+					// from: path.resolve(__dirname, './', 'assets/images'),
+					// to: 'assets/images',
+				},
+			],
+		}),
+	],
 };
 
 export default config;

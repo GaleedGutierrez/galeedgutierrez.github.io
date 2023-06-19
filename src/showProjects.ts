@@ -1,49 +1,66 @@
-import { CONTAINER_PROJECTS_SECTION } from './components/htmlElements';
 import projects from './components/API/projects.json';
+import { CONTAINER_PROJECTS_SECTION } from './components/htmlElements';
 import { ProjectInterface } from './components/interfaces';
-
 
 export const showProjects = (lengthProjects: number): void => {
 	for (let i = 0; i < lengthProjects; i++) {
 		const ARTICLE = document.createElement('article');
-		let iconsTechnologies = '';
+		const iconsTechnologies: HTMLElement[] = [];
 
-		ARTICLE.setAttribute('class', 'portfolio__data-container');
+		ARTICLE.setAttribute('class', 'm-project-card');
 
 		for (let j = 0; j < PROJECTS[i].technologies.length; j++) {
-			const IS_PUG = PROJECTS[i].technologies[j] === 'PUG';
+			const FIGURE = document.createElement('figure');
+			const IMG = document.createElement('img');
 
-			iconsTechnologies += `<figure class="technologies__icon-figure ${(IS_PUG)
-				? 'technologies__pug-icon'
-				: ''}">
-				<img id="" src="${PROJECTS[i].technologiesIcons[j]}" alt="Icon ${PROJECTS[i].technologies[j]}" loading="lazy"/>
-			</figure>`;
+			FIGURE.className = 'm-project-card__technology-icon';
+			IMG.src = PROJECTS[i].technologiesIcons[j];
+			IMG.alt = `Icon ${PROJECTS[i].technologies[j]}`;
+			IMG.loading = 'lazy';
+			FIGURE.append(IMG);
+			iconsTechnologies.push(FIGURE);
 		}
+
+		const SECTION_PROJECT = document.createElement('section');
+		const FIGURE_PROJECT = document.createElement('figure');
+		const IMG_PROJECT = document.createElement('img');
+		const TECHNOLOGIES_ICONS_CONTAINER = document.createElement('div');
+
+		IMG_PROJECT.src = PROJECTS[i].img;
+		IMG_PROJECT.alt = `Screenshot de ${PROJECTS[i].name}`;
+		IMG_PROJECT.loading = 'lazy';
+		IMG_PROJECT.className = 'm-project-card__img-project';
+		FIGURE_PROJECT.append(IMG_PROJECT);
+		TECHNOLOGIES_ICONS_CONTAINER.append(...iconsTechnologies);
+		SECTION_PROJECT.append(FIGURE_PROJECT, TECHNOLOGIES_ICONS_CONTAINER);
+
+		//klñj
+		const SECTION_DATAILS = document.createElement('section');
 
 		ARTICLE.innerHTML = `
 		<section>
 			<figure>
 				<img
-					class="project-container__img"
+					class="m-project-card__img-project"
 					src=${PROJECTS[i].img}
 					alt="Screenshot de ${PROJECTS[i].name}"
 					loading="lazy"
 				/>
 			</figure>
 			<section
-				class="project-container__technologies-container"
+				class="m-project-card__technology-icons-container"
 			>
 				${iconsTechnologies}
 			</section>
 		</section>
-		<section class="portfolio__info-container">
+		<section class="m-project-card__data-container">
 			<h3>${PROJECTS[i].name}</h3>
 			<p>
 				${PROJECTS[i].description}
 			</p>
-			<a class="portfolio__courses-section" target="_blank" href=${PROJECTS[i].course.url} >
+			<a class="m-project-card__course-info" target="_blank" href=${PROJECTS[i].course.url} >
 				<figure
-					class="courses-section__course-icon-figure"
+					class="m-project-card__course-icon"
 				>
 					<img
 						src=${PROJECTS[i].course.img}
@@ -51,39 +68,39 @@ export const showProjects = (lengthProjects: number): void => {
 						loading="lazy"
 					/>
 				</figure>
-				<p class="courses-section__course-name">
+				<p class="m-project-card__course-name">
 					${PROJECTS[i].course.name}
 				</p>
-				<p class="courses-section__platform">
+				<p class="m-project-card__course-platform">
 					${PROJECTS[i].course.platform}
 				</p>
 			</a>
-			<section class="portfolio__view-project">
+			<section class="m-project-card__view-project-section">
 				<form target="_blank" action=${PROJECTS[i].url}>
 					<input
-						class="button"
+						class="a-button"
 						type="submit"
 						value="Ver proyecto"
 					/>
 				</form>
 				<a
+					class="m-project-card__github-icon-link"
 					aria-label="Github"
 					target="_blank"
 					href=${PROJECTS[i].repository}
 				>
-					<i class="icon-github social-media__icons porfolio__icons"></i>
+					<svg class="a-social-media-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32"><title>Github</title><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></svg>
 				</a>
 			</section>
 		</section>
 		`;
 		CONTAINER_PROJECTS_SECTION?.appendChild(ARTICLE);
-
 	}
 };
 
 const API_PROJECTS_JSON = projects;
 
-export const PROJECTS: ProjectInterface[] = API_PROJECTS_JSON.projects.reverse();
+export const PROJECTS: ProjectInterface[] =
+	API_PROJECTS_JSON.projects.reverse();
 
 showProjects(6);
-

@@ -1,0 +1,69 @@
+@use "../settings/variables";
+
+.m-project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 2rem;
+	background-color: variables.$pure-white;
+
+	&__img-project {
+		border-top-left-radius: 2rem;
+		border-top-right-radius: 2rem;
+	}
+
+	&__technology-icons-container {
+		display: flex;
+		gap: 0.4rem;
+		justify-content: end;
+		align-items: center;
+		margin-block-start: 0.8rem;
+		margin-inline-end: 1.6rem;
+	}
+
+	&__technology-icon {
+		width: 2.6rem;
+	}
+
+	&__data-container {
+		padding-inline: 1.6rem;
+		padding-block: 0.4rem 1.6rem;
+	}
+
+	&__course-info {
+		display: grid;
+		gap: 0 1.2rem;
+		grid-template-columns: auto 1fr;
+		grid-template-areas:
+			"logo name"
+			"logo platform";
+		align-items: center;
+		margin-block-start: 0.8rem;
+		margin-block-end: 1.6rem;
+	}
+
+	&__course-icon {
+		grid-area: logo;
+		width: 3.2rem;
+	}
+
+	&__course-name {
+		grid-area: name;
+		line-height: 2rem;
+	}
+
+	&__course-platform {
+		grid-area: platform;
+		line-height: 1.3rem;
+	}
+
+	&__view-project-section {
+		display: flex;
+		gap: 2.4rem;
+		align-items: center;
+	}
+
+	&__github-icon-link {
+		display: flex;
+	}
+}
