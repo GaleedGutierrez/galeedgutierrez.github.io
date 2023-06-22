@@ -43,7 +43,7 @@ const rules = {
 	// 		allowTemplateLiterals: true,
 	// 	},
 	// ],
-	// indent: ["error", "tab", { SwitchCase: 1 }],
+	// indent: ['error', 'tab', { SwitchCase: 1 }],
 	"comma-spacing": [
 		"error",
 		{
@@ -92,10 +92,10 @@ const rules = {
 			prev: ["const", "let", "var"],
 			next: ["const", "let", "var"],
 		},
-		// { "blankLine": "always", "prev": ["const", "let", "var"], "next": "block-like"},
-		// { "blankLine": "any",    "prev": ["const", "let", "var"], "next": "expression"},
-		// { "blankLine": "always", "prev": "block-like", "next": ["const", "let", "var"]},
-		// { "blankLine": "always", "prev": "block-like", "next": "block-like"},
+		// { 'blankLine': 'always', 'prev': ['const', 'let', 'var'], 'next': 'block-like'},
+		// { 'blankLine': 'any',    'prev': ['const', 'let', 'var'], 'next': 'expression'},
+		// { 'blankLine': 'always', 'prev': 'block-like', 'next': ['const', 'let', 'var']},
+		// { 'blankLine': 'always', 'prev': 'block-like', 'next': 'block-like'},
 		{ blankLine: "always", prev: "block-like", next: "*" },
 		{ blankLine: "always", prev: "expression", next: "*" }, // veremos
 		{ blankLine: "always", prev: "*", next: "expression" }, // veremos
@@ -105,7 +105,7 @@ const rules = {
 		{ blankLine: "always", prev: "export", next: "*" },
 		{ blankLine: "always", prev: "*", next: "export" },
 		{ blankLine: "always", prev: "if", next: "*" },
-		// { "blankLine": "any", "prev": "export", "next": "export" }
+		// { 'blankLine': 'any', 'prev': 'export', 'next': 'export' }
 	],
 	"arrow-spacing": ["error", { before: true, after: true }],
 	"lines-between-class-members": [
@@ -131,13 +131,13 @@ const rules = {
 	// 'multiline-ternary': ['error', 'always'],
 	"no-unneeded-ternary": "error",
 	"no-lone-blocks": "error",
-	// "camelcase": ["error", {"properties": "never" ,"ignoreDestructuring": true}] // Opcional
+	// 'camelcase': ['error', {'properties': 'never' ,'ignoreDestructuring': true}] // Opcional
 	"space-in-parens": ["error", "never"],
 	"func-call-spacing": ["error", "never"],
 	// 'quote-props': ['error', 'consistent-as-needed'],
-	// "brace-style": "error",
+	// 'brace-style': 'error',
 	"no-console": ["warn", { allow: ["warn", "error"] }], // Opcional
-	// "space-in-brackets": ["error", "always"],
+	// 'space-in-brackets': ['error', 'always'],
 
 	//? TypeScript ESLint
 	"@typescript-eslint/type-annotation-spacing": "error",
@@ -150,21 +150,21 @@ const rules = {
 			selector: "class",
 			format: ["PascalCase"],
 		},
-		{
-			selector: "typeLike",
-			format: ["PascalCase"],
-			prefix: ["T"],
-		},
-		{
-			selector: "interface",
-			format: ["PascalCase"],
-			prefix: ["I"],
-		},
-		{
-			selector: "enum",
-			format: ["PascalCase"],
-			prefix: ["E"],
-		},
+		// {
+		// 	selector: "typeLike",
+		// 	format: ["PascalCase"],
+		// 	prefix: ["T"],
+		// },
+		// {
+		// 	selector: "interface",
+		// 	format: ["PascalCase"],
+		// 	prefix: ["I"],
+		// },
+		// {
+		// 	selector: "enum",
+		// 	format: ["PascalCase"],
+		// 	prefix: ["E"],
+		// },
 	],
 
 	//? Codely: plugins
@@ -240,7 +240,12 @@ const rules = {
 
 	// ? Reglas que están a prueba
 };
-
+const settings = {
+	// Para poder usar alias @
+	"import/resolver": {
+		typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+	},
+};
 const ignorePatterns = ["/dist/*"];
 
 module.exports = {
@@ -253,6 +258,8 @@ module.exports = {
 	parser: "@typescript-eslint/parser",
 	ignorePatterns,
 	rules,
-	// "@typescript-eslint/comma-dangle": ["error", "only-multiline"]
-	// "hexagonal-architecture/enforce": ["error"]
+	// Para poder usar alias @
+	settings,
+	// '@typescript-eslint/comma-dangle': ['error', 'only-multiline']
+	// 'hexagonal-architecture/enforce': ['error']
 };

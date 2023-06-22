@@ -4,8 +4,8 @@
 	"description": "My personal webpage",
 	"main": "index.js",
 	"scripts": {
-		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.config.ts",
-		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.config.dev.ts"
+		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
+		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details"
 	},
 	"repository": {
 		"type": "git",
@@ -39,6 +39,7 @@
 		"copy-webpack-plugin": "^11.0.0",
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.8.1",
+		"eslint-import-resolver-typescript": "^3.5.5",
 		"file-loader": "^6.2.0",
 		"mini-css-extract-plugin": "^2.7.6",
 		"pug-plugin": "^4.9.7",

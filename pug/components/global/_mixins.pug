@@ -19,10 +19,12 @@ mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
 
 mixin header__theme-switch(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
 	+img(idImg1, classImg1, altImg1, srcImg1).a-theme-icon
+	//- span ☀️
 	label(for="switch").m-switch-container
 		input.m-switch__input(type="checkbox" name="switch", id=idInput)
 		.m-switch__circle
 		.m-switch__slider
+	//- span 🌑
 	+img(idImg2, classImg2, altImg2, srcImg2).a-theme-icon
 
 mixin social-media

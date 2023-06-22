@@ -1,31 +1,23 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable import/default */
 import CopyPlugin from 'copy-webpack-plugin';
-import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import path from 'path';
-import TerserPlugin from 'terser-webpack-plugin';
-import webpack from 'webpack';
+import { Configuration } from 'webpack';
 
 const PugPlugin = require('pug-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const config: webpack.Configuration = {
-	mode: 'production',
+const common: Configuration = {
 	entry: {
 		index: './pug/index.pug',
 		// guide : './pug/guide.pug',
-		// projects : './pug/projects.pug'
+		projects: './pug/projects.pug',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[contenthash].js',
-		assetModuleFilename: 'assets/[hash][ext][query]',
-		clean: true,
-	},
-	optimization: {
-		minimize: true,
-		minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+		// assetModuleFilename: 'assets/[hash][ext][query]',
 	},
 	resolve: {
 		extensions: ['.ts', '.js'],
@@ -33,7 +25,8 @@ const config: webpack.Configuration = {
 			'@utils': path.resolve(__dirname, 'src/utils/'),
 			'@templates': path.resolve(__dirname, 'src/templates/'),
 			'@styles': path.resolve(__dirname, 'styles/'),
-			'@images': path.resolve(__dirname, 'src/assets/images/'),
+			'@images': path.resolve(__dirname, 'assets/images/'),
+			'@fonts': path.resolve(__dirname, 'assets/fonts/'),
 		},
 	},
 	module: {
@@ -82,17 +75,17 @@ const config: webpack.Configuration = {
 		// 	filename: '[name].[contenthash].css',
 		// }),
 		// new HTMLWebpackPlugin(),
-		new PugPlugin({
-			css: {
-				filename: '[name].[contenthash].css',
-			},
-		}),
+		// new PugPlugin({
+		// 	css: {
+		// 		filename: '[name].[contenthash].css',
+		// 	},
+		// }),
 		new CopyPlugin({
 			patterns: [
 				{
 					from: path.resolve(__dirname, './', 'assets/'),
 					to: 'assets/',
-					// Según curo de webpack de platzi ->
+					// Según curso de webpack de platzi ->
 					// from: path.resolve(__dirname, './', 'assets/images'),
 					// to: 'assets/images',
 				},
@@ -101,4 +94,4 @@ const config: webpack.Configuration = {
 	],
 };
 
-export default config;
+export default common;

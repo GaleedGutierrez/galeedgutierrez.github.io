@@ -1,3 +1,4 @@
 // Organisms
-@import "./organisms/header/header-tablet";
-@import "./organisms/about-me/aboutMe-tablet";
+@use "./organisms/header/header-tablet";
+@use "./organisms/about-me/aboutMe-tablet";
+@use "./organisms/porfolio/portfolio-tablet";

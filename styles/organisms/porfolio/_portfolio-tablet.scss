@@ -1,3 +1,8 @@
-.porfolio__button {
-	margin-block-start: 2.4rem;
+.g-portfolio {
+	&__button {
+		display: block;
+		width: fit-content;
+		margin-inline: auto;
+		margin-block-start: 2.4rem;
+	}
 }
