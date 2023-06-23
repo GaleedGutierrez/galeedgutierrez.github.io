@@ -1,0 +1,33 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.g-footer {
+	padding: variables.$space-8 variables.$space-4;
+	text-align: center;
+
+	&__title {
+		border: variables.$border-05 solid variables.$light-black;
+		border-radius: variables.$border-radius-3;
+		margin-block-end: variables.$space-7;
+	}
+
+	&__contact-container {
+		display: flex;
+		gap: 2rem;
+		flex-direction: column;
+	}
+
+	&__my-email {
+		font-size: variables.$fs-title-xl;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__social-media {
+		gap: variables.$space-8;
+	}
+
+	@include mixins.limit-width-desktop;
+}

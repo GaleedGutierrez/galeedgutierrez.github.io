@@ -28,7 +28,7 @@ mixin header__theme-switch(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2,
 	+img(idImg2, classImg2, altImg2, srcImg2).a-theme-icon
 
 mixin social-media
-	ul.m-social-media
+	ul.m-social-media(class!=attributes.class)
 		li
 			a(href="https://www.facebook.com/galeedgutierrez" aria-label="Facebook" target="_blank").m-social-media__link
 				svg.a-social-media-icon.m-social-media__icons(version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
