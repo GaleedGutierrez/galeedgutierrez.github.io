@@ -51,20 +51,20 @@
 		right: 0;
 		bottom: 8rem;
 		width: 100%;
-		background-color: variables.$pure-white;
+		background-color: var(--background-color);
 		opacity: 0;
 		transition-duration: 250ms;
-	}
-
-	&__options {
-		padding-block: 1.6rem;
-		padding-inline-end: 1.6rem;
 	}
 
 	&__menu--visible {
 		opacity: 1;
 		transition-duration: 750ms;
 		transform: translateY(27.5rem);
+	}
+
+	&__options {
+		padding-block: 1.6rem;
+		padding-inline-end: 1.6rem;
 	}
 
 	&__options--visible {
@@ -77,8 +77,4 @@
 		margin-inline-end: initial;
 		margin-inline-start: auto;
 	}
-}
-
-.visible-more-about-me {
-	display: block;
 }

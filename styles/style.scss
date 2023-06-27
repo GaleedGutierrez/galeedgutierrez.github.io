@@ -1,9 +1,9 @@
-// // Generic
+// Generic
 @use "./generic/normalize";
 @use "./generic/light-reset";
 @use "./generic/box-sizing";
 
-// // Elements
+// Elements
 @use "./elements/body";
 @use "./elements/headings";
 @use "./elements/img";
@@ -11,6 +11,9 @@
 @use "./elements/link";
 @use "./elements/list";
 @use "./elements/button";
+
+// Theme
+@use "./theme/index";
 
 // Objects
 @use "./objects/scroll-margin";
@@ -27,7 +30,7 @@
 @use "./atoms/arrow-down";
 @use "./atoms/line-decorator";
 @use "./atoms/otter-icon";
-@use "./atoms/social-media-icon";
+@use "./atoms/icon";
 
 // Molecules
 @use "./molecules/switch";

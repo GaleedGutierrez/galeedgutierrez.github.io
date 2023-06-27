@@ -8,15 +8,15 @@
 	&__title {
 		padding-block-end: 2rem;
 		border-block-end: 0.3rem solid variables.$light-black;
+		color: variables.$text-color;
 		text-align: center;
 	}
 
 	&__projects-container {
-		display: grid;
-
-		// grid-auto-rows: 51.2rem;
+		display: flex;
+		overflow-wrap: break-word;
 		gap: 4rem;
-		grid-template-columns: repeat(auto-fit, minmax(32.8rem, 1fr));
+		flex-direction: column;
 		padding-block-start: 3.6rem;
 	}
 
@@ -25,32 +25,8 @@
 		width: 100%;
 		margin-block-start: 1.6rem;
 		text-align: center;
-
-		// @include mixins.all-center-flex;
 	}
 }
-
-// .project-container__img {
-// 	border-top-left-radius: 2rem;
-// 	border-top-right-radius: 2rem;
-// }
-
-// .portfolio__data-container {
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: space-between;
-// 	border-radius: 2rem;
-// 	background-color: variables.$pure-white;
-// }
-
-// .portfolio__info-container {
-// 	padding-inline: 1.6rem;
-// 	padding-block: 0.4rem 1.6rem;
-
-// 	// border-bottom-left-radius: 2rem;
-// 	// border-bottom-right-radius: 2rem;
-// 	// background-color: $light-cultured;
-// }
 
 .project-container__technologies-container {
 	display: flex;
@@ -64,60 +40,3 @@
 .technologies__icon-figure {
 	width: 2.6rem;
 }
-
-// .technologies__pug-icon {
-// 	height: fit-content;
-// }
-
-// .portfolio__course-info {
-// 	display: grid;
-// 	gap: 0 1.2rem;
-// 	grid-template-columns: auto 1fr;
-// 	grid-template-areas:
-// 		"logo name"
-// 		"logo platform";
-// 	align-items: center;
-// 	margin-block-start: 0.8rem;
-// 	margin-block-end: 1.6rem;
-// }
-
-// .courses-section__course-name {
-// 	grid-area: name;
-// 	line-height: 2rem;
-// }
-
-// .courses-section__platform {
-// 	grid-area: platform;
-// 	line-height: 1.3rem;
-
-// 	// @include font-caption;
-// }
-
-// .courses-section__course-icon-figure {
-// 	grid-area: logo;
-// 	width: 3.2rem;
-// }
-
-// .portfolio__button {
-//     width: 12rem;
-//     height: 5rem;
-//     border: 0.2rem solid $onyx;
-//     border-radius: 0.8rem;
-//     background-color: $light-cultured;
-//     color: $onyx;
-
-//     &:active {
-//         color: $light-cultured;
-//         background-color: $onyx;
-//     }
-// }
-
-// .portfolio__view-project-section {
-// 	display: flex;
-// 	gap: 2.4rem;
-// 	align-items: center;
-// }
-
-// .porfolio__icons {
-// 	font-size: 3.6rem;
-// }

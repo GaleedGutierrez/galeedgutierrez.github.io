@@ -46,6 +46,9 @@ const OBSERVER = new IntersectionObserver((entries) => {
 
 ANCHOR_SANDWICH.forEach((anchor) => {
 	const hash = anchor.getAttribute('href');
+
+	if (!hash) return;
+
 	const target = document.querySelector(hash);
 
 	if (target) OBSERVER.observe(target);

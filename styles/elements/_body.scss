@@ -2,11 +2,9 @@
 @use "../tools/mixins";
 
 body {
-	// padding-inline: variables.$space-4;
-	// padding-block: variables.$space-6 variables.$space-10;
-	background-color: variables.$background-lightest-color;
+	background-color: var(--background-color);
 	font-family: variables.$primary-font;
-	color: variables.$text-color;
+	color: var(--text-color);
 
 	@include mixins.body-lg;
 }

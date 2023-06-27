@@ -3,18 +3,17 @@
 
 .g-home {
 	position: relative;
+	height: 85vh;
+	padding-inline: variables.$space-4;
 
 	&__container {
 		position: relative;
 		z-index: variables.$z-index-1-screen-foreground;
 		display: grid;
+		gap: variables.$space-5;
 		place-content: center;
 		height: 85vh;
 		text-align: center;
-	}
-
-	&__i-am {
-		margin-block: variables.$space-5;
 	}
 
 	&__my-name {
@@ -26,10 +25,4 @@
 
 		@include mixins.all-center-flex;
 	}
-
-	&__social-media {
-		margin-block: variables.$space-5;
-	}
-
-	@include mixins.margin-block-1p6rem;
 }

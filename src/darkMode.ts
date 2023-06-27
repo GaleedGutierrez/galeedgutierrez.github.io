@@ -1,4 +1,5 @@
-import { ABOUT_SECTION, HEAD, THEME_INPUT } from './components/htmlElements';
+/* eslint-disable camelcase */
+import { HEAD, THEME_INPUT } from './components/htmlElements';
 
 declare const particlesJS: any;
 
@@ -10,15 +11,15 @@ const changedTheme = (): void => {
 
 const applyThemes = (theme: boolean): void => {
 	if (theme) {
-		applyDarkTheme();
+		// applyDarkTheme();
 		THEME_INPUT.checked = true;
 	} else {
-		LINK_GRAL.parentNode.removeChild(LINK_GRAL);
-		LINK_WIDTH_768.parentNode.removeChild(LINK_WIDTH_768);
+		// LINK_GRAL.parentNode.removeChild(LINK_GRAL);
+		// LINK_WIDTH_768.parentNode.removeChild(LINK_WIDTH_768);
 		THEME_INPUT.checked = false;
 	}
 
-	applyOtter(theme);
+	// applyOtter(theme);
 	particleJs(theme);
 };
 
@@ -27,36 +28,28 @@ const applyDarkTheme = (): void => {
 	LINK_GRAL.rel = 'stylesheet';
 	LINK_GRAL.href = 'dark.css';
 
-	if (screen.width >= 768) applyDarkThemeWidth768();
-
 	HEAD.appendChild(LINK_GRAL);
 	HEAD.appendChild(LINK_WIDTH_768);
 };
 
-const applyDarkThemeWidth768 = (): void => {
-	LINK_WIDTH_768.type = 'text/css';
-	LINK_WIDTH_768.rel = 'stylesheet';
-	LINK_WIDTH_768.href = 'dark-tablet.css';
-};
+// const generateOtter = (srcImg: string): HTMLElement => {
+// 	const figureOtter = document.createElement('figure');
+// 	const img = document.createElement('img');
 
-const generateOtter = (srcImg: string): HTMLElement => {
-	const figureOtter = document.createElement('figure');
-	const img = document.createElement('img');
+// 	figureOtter.className = 'a-otter-icon g-about-me__otter-icon';
+// 	img.src = srcImg;
+// 	img.alt = 'Otter Icon';
+// 	img.loading = 'lazy';
+// 	figureOtter.appendChild(img);
 
-	figureOtter.className = 'a-otter-icon g-about-me__otter-icon';
-	img.src = srcImg;
-	img.alt = 'Otter Icon';
-	img.loading = 'lazy';
-	figureOtter.appendChild(img);
+// 	return figureOtter;
+// };
 
-	return figureOtter;
-};
+// const applyOtter = (theme: boolean): void => {
+// 	const OTTER = theme ? OTTER_WHITE : OTTER_DARK;
 
-const applyOtter = (theme: boolean): void => {
-	const OTTER = theme ? OTTER_WHITE : OTTER_DARK;
-
-	ABOUT_SECTION.appendChild(OTTER);
-};
+// 	ABOUT_SECTION.appendChild(OTTER);
+// };
 
 const particleJs = (theme: boolean): void => {
 	const WHITE_THEME = '#343a40';
@@ -71,7 +64,7 @@ const particleJs = (theme: boolean): void => {
 				},
 			},
 			color: {
-				value: DARK_MODE ? DARK_THEME : WHITE_THEME,
+				value: theme ? DARK_THEME : WHITE_THEME,
 			},
 			shape: {
 				type: 'circle',
@@ -111,7 +104,7 @@ const particleJs = (theme: boolean): void => {
 			line_linked: {
 				enable: true,
 				distance: 150,
-				color: DARK_MODE ? DARK_THEME : WHITE_THEME,
+				color: theme ? DARK_THEME : WHITE_THEME,
 				opacity: 0.4,
 				width: 1,
 			},
@@ -172,6 +165,8 @@ const particleJs = (theme: boolean): void => {
 		retina_detect: true,
 	};
 
+	// debugger;
+
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 	particlesJS('particles-js', OPTIONS, function () {
 		console.log('callback - particles.js config loaded');
@@ -182,12 +177,12 @@ const DARK_MODE =
 	window.matchMedia &&
 	window.matchMedia('(prefers-color-scheme: dark)').matches;
 const CHANGE_THEME = window.matchMedia('(prefers-color-scheme: dark)');
-const OTTER_WHITE = generateOtter(
-	'../assets/images/img/animals/otter/otter-white.webp'
-);
-const OTTER_DARK = generateOtter(
-	'../assets/images/img/animals/otter/otter-black.webp'
-);
+// const OTTER_WHITE = generateOtter(
+// 	'../assets/images/img/animals/otter/otter-white.webp'
+// );
+// const OTTER_DARK = generateOtter(
+// 	'../assets/images/img/animals/otter/otter-black.webp'
+// );
 
 const LINK_GRAL = document.createElement('link');
 const LINK_WIDTH_768 = document.createElement('link');
@@ -199,7 +194,7 @@ CHANGE_THEME.addEventListener('change', changedTheme);
 
 if (DARK_MODE) applyThemes(DARK_MODE);
 
-applyOtter(DARK_MODE);
+// applyOtter(DARK_MODE);
 particleJs(DARK_MODE);
 
 THEME_INPUT.onclick = () => applyThemes(THEME_INPUT.checked);

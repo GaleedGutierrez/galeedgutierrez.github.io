@@ -78,7 +78,7 @@
 		position: absolute;
 		inset: -1.5rem;
 		content: "";
-		border: 0.6rem solid variables.$pure-white;
+		border: 0.6rem solid transparent;
 		border-top-color: variables.$gray-100;
 		border-bottom-color: variables.$light-gray-400;
 		border-radius: calc(variables.$border-radius-circle - 1%);

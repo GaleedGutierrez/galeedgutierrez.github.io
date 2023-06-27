@@ -1,12 +1,19 @@
 @use "../../settings/variables";
 @use "../../tools/mixins";
+@use "../../tools/functions";
 
 .g-header {
+	--border-color: #{functions.light-dark(
+			variables.$light-gray-300,
+			variables.$gray-300
+		)};
+
 	position: sticky;
 	z-index: variables.$z-index-2-surface-over;
 	top: 0;
 	width: 100%;
-	background-color: variables.$pure-white;
+	border-block-end: variables.$border-025 solid var(--border-color);
+	background-color: var(--background-color);
 
 	&__container {
 		display: flex;
@@ -53,17 +60,20 @@
 		margin-inline: auto;
 	}
 
+	&__options {
+		border-block-end: variables.$border-025 solid var(--border-color);
+	}
+
 	&__options--visible {
 		opacity: 1;
 		transition-duration: 750ms;
 		transform: translateY(11.8rem);
 	}
 
-	// &__link {
-	// 	&:hover {
-	// 		text-decoration: underline;
-	// 	}
-	// }
+	&__link {
+		display: block;
+		width: 100%;
+	}
 
 	@include mixins.center-flex;
 }
@@ -74,7 +84,7 @@
 	bottom: 6.7rem;
 	width: 100%;
 	padding-block-end: variables.$space-4;
-	background-color: variables.$pure-white;
+	background-color: var(--background-color);
 	opacity: 0;
 	transition-duration: 750ms;
 

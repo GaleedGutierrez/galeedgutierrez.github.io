@@ -1,4 +1,6 @@
 .a-arrow-down {
+	display: block;
+
 	&--animated {
 		animation: up-and-down-arrow;
 		animation-duration: 1.5s;

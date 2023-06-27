@@ -50,7 +50,16 @@
 			"bottom",
 
 			"display",
+
 			"overflow",
+			"overflow-x",
+			"overflow-y",
+			"overflow-inline",
+			"overflow-block",
+			"overflow-anchor",
+			"overflow-wrap",
+			"overflow-clip-margin",
+
 			"gap",
 
 			"grid-template",
@@ -255,10 +264,11 @@
 			"writing-mode",
 			"direction",
 			"color",
+			"fill",
 
 			"text-orientation",
-			"text-align",
 			"text-justify",
+			"text-align",
 			"text-decoration",
 			"text-decoration-line",
 			"text-decoration-color",

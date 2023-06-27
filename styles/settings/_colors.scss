@@ -1,20 +1,20 @@
 // Olds
 // Primary colors
-$white: #fff;
-$white-hard: #dce1e9;
-$white-medium: #f5f5f5;
-$white-light: #e6eaf0;
-$black: #171616;
-$gray: #505050;
-$light-cultured: #f8f9fa;
-$hard-cultured: #e9ecef;
-$gainsboro: #dee2e6;
-$light-gray: #ced4da;
-$cadet-blue-crayola: #adb5bd;
-$sonic-silver: #6c757d;
-$davys-grey: #495057;
-$onyx: #343a40;
-$eerie-black: #212529;
+// $white: #fff;
+// $white-hard: #dce1e9;
+// $white-medium: #f5f5f5;
+// $white-light: #e6eaf0;
+// $black: #171616;
+// $gray: #505050;
+// $light-cultured: #f8f9fa;
+// $hard-cultured: #e9ecef;
+// $gainsboro: #dee2e6;
+// $light-gray: #ced4da;
+// $cadet-blue-crayola: #adb5bd;
+// $sonic-silver: #6c757d;
+// $davys-grey: #495057;
+// $onyx: #343a40;
+// $eerie-black: #212529;
 
 // Base colors
 $_white: #fff;
@@ -61,16 +61,26 @@ $primary-color: $black;
 // $params-box-shadow: 0 2.4rem 3.2rem -0.8rem rgb($pure-black, 8%);
 
 // Background
+// Background White
 $background-light-color: $light-white-100;
 $background-lightest-color: $pure-white;
+
+// Background Gray
 $background-light-gray-color: $gray-100;
+$background-lighter-gray-color: $light-gray-200;
+$background-lightest-gray-color: $light-gray-300;
+
+// Background Dark
+$background-light-dark-color: $light-black;
 $background-dark-color: $black;
 
 // $background-wrong-color: $wrong-color;
 
 // Text
 $text-color: $black;
-$text-color-white: $pure-white;
+$text-color-hover: $gray-100;
+$text-color-pure-white: $pure-white;
+$text-color-white: $light-gray-200;
 
 // $text-blue-light-color: $dark-blue-200;
 // $text-blue-lighter-color: $dark-blue-100;
