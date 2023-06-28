@@ -2,10 +2,10 @@ extend ./components/global/_global.pug
 block head
 	- const SEE_HEADER = true
 	- const SEE_FOOTER = true
-	+style-head("index/style.css")
-	//- +style-head("dark.css")
-	+style-head-responsive("index/tablet.css", "768")
-	+style-head-responsive("index/desktop.css", "1024")
+	//- +style-head("index/style.css")
+	//- //- +style-head("dark.css")
+	//- +style-head-responsive("index/tablet.css", "768")
+	//- +style-head-responsive("index/desktop.css", "1024")
 	+titles("Proyectos")
 block header
 	include ./components/header/_headerPorfolio.pug
@@ -14,6 +14,6 @@ block main
 		include ./components/portfolio/_portfolioProjects.pug
 block scripts
 	include ./components/scripts/_googleAnalytics.pug
-	script(type="module" src="../dist/headerPorfolio.js")
-	script(type="module" src="../dist/showProjectsPorfolio.js")
-	script(type="module" src="../dist/darkModeProjects.js")
+	script(type="module" src=require("../src/headerPorfolio.ts"))
+	script(type="module" src=require("../src/showProjectsPorfolio.ts"))
+	script(type="module" src=require("../src/darkModeProjects.ts"))

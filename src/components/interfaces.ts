@@ -1,20 +1,20 @@
-export interface ProjectInterface {
+export interface CoursePlatform {
+	name: string;
+	platform: string;
+	url: string;
+	img: string;
+}
+
+export interface Project {
 	id: number;
 	name: string;
 	technologies: string[];
 	technologiesIcons: string[];
 	repository: string;
-	url: string[] | string;
-	img: string;
-	date: string;
-	course: CoursePlatformInterface;
-	description: string;
-	author: string;
-}
-
-export interface CoursePlatformInterface {
-	name: string;
-	platform: string;
 	url: string;
 	img: string;
+	date: string;
+	course: CoursePlatform;
+	description: string;
+	author: string;
 }

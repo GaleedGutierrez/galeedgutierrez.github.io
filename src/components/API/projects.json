@@ -4,7 +4,10 @@
 			"id": 0,
 			"name": "Brand",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Brand-Platzi",
 			"url": "https://galeedgutierrez.com/Brand-Platzi/",
 			"img": "../../../assets/img/screenshot-courses/brand.webp",
@@ -22,7 +25,10 @@
 			"id": 1,
 			"name": "Portfolio Leonidas Esteban",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban",
 			"url": "https://galeedgutierrez.com/Portafolio-LeonidasEsteban/",
 			"img": "../../../assets/img/screenshot-courses/portfolio-leonidas-esteban.webp",
@@ -40,7 +46,10 @@
 			"id": 2,
 			"name": "Movie.es",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Movi.es",
 			"url": "https://galeedgutierrez.com/Movi.es/",
 			"img": "../../../assets/img/screenshot-courses/movie.es.webp",
@@ -58,7 +67,10 @@
 			"id": 3,
 			"name": "Platzi-Video",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Platzi-Video",
 			"url": "https://galeedgutierrez.com/Platzi-Video/",
 			"img": "../../../assets/img/screenshot-courses/platzi-video.webp",
@@ -76,7 +88,12 @@
 			"id": 4,
 			"name": "Mi Blog",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp" ,"../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/galeedgutierrez.github.io",
 			"url": "https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/",
 			"img": "../../../assets/img/screenshot-courses/mi-blog.webp",
@@ -94,7 +111,10 @@
 			"id": 5,
 			"name": "Generador de figuras geométricas",
 			"technologies": ["HTML", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Proyecto-generador-de-figuras",
 			"url": "https://galeedgutierrez.com/Proyecto-generador-de-figuras/",
 			"img": "../../../assets/img/screenshot-courses/proyecto-generador-de-figuras.webp",
@@ -112,7 +132,10 @@
 			"id": 6,
 			"name": "Villa Platzi",
 			"technologies": ["HTML", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Villa-Platzi",
 			"url": "https://galeedgutierrez.com/Villa-Platzi/",
 			"img": "../../../assets/img/screenshot-courses/villa-platzi.webp",
@@ -130,7 +153,10 @@
 			"id": 7,
 			"name": "Google Clone",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/my-Google-clone",
 			"url": "https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/",
 			"img": "../../../assets/img/screenshot-courses/google-clone.webp",
@@ -148,7 +174,10 @@
 			"id": 8,
 			"name": "Wikipedia Clone",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/WikipediaClone",
 			"url": "https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/",
 			"img": "../../../assets/img/screenshot-courses/wikipedia-clone.webp",
@@ -166,7 +195,12 @@
 			"id": 9,
 			"name": "Platzi Video",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp" ,"../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Frontend-Developer-2019",
 			"url": "https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html",
 			"img": "../../../assets/img/screenshot-courses/platzi-video-curso-frontend-developer-2019.webp",
@@ -184,7 +218,12 @@
 			"id": 10,
 			"name": "Steam",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp" ,"../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Disenio-para-Programadores",
 			"url": "https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/",
 			"img": "../../../assets/img/screenshot-courses/steam.webp",
@@ -202,7 +241,12 @@
 			"id": 11,
 			"name": "Yard Sale",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp" ,"../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-Practico-de-Frontend-Developer",
 			"url": "https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html",
 			"img": "../../../assets/img/screenshot-courses/curso-practico-de-frontend-developer.webp",
@@ -220,7 +264,12 @@
 			"id": 12,
 			"name": "Batabit",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Responsive-Design-Maquetacion-Mobile-First",
 			"url": "https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/",
 			"img": "../../../assets/img/screenshot-courses/batabit.webp",
@@ -238,7 +287,10 @@
 			"id": 13,
 			"name": "Check the best food",
 			"technologies": ["HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-CSS-Grid-Basico",
 			"url": "https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/",
 			"img": "../../../assets/img/screenshot-courses/check-the-best-food.webp",
@@ -256,7 +308,12 @@
 			"id": 14,
 			"name": "Animationland",
 			"technologies": ["PUG", "SASS", "HTML", "CSS"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Animaciones-con-CSS",
 			"url": "https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/",
 			"img": "../../../assets/img/screenshot-courses/curso-de-animaciones-con-css.webp",
@@ -274,7 +331,13 @@
 			"id": 15,
 			"name": "Tienda Online",
 			"technologies": ["PUG", "SASS", "HTML", "CSS", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-Practico-de-JavaScript/tree/main/TallerN2",
 			"url": "https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/",
 			"img": "../../../assets/img/screenshot-courses/curso-practico-de-javascript-02.webp",
@@ -292,7 +355,13 @@
 			"id": 16,
 			"name": "Figura Geométricas",
 			"technologies": ["PUG", "SASS", "HTML", "CSS", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/tree/main/TallerN1",
 			"url": "https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/",
 			"img": "../../../assets/img/screenshot-courses/curso-practico-de-javaScript.webp",
@@ -309,8 +378,22 @@
 		{
 			"id": 17,
 			"name": "Michi App",
-			"technologies": ["PUG", "SASS", "TypeScript", "HTML", "CSS", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp", "../../../assets/icons/technologies/typescript/icons-typescript-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologies": [
+				"PUG",
+				"SASS",
+				"TypeScript",
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/typescript/icons-typescript-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript",
 			"url": "https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/",
 			"img": "../../../assets/img/screenshot-courses/michis-app.webp",
@@ -327,8 +410,22 @@
 		{
 			"id": 18,
 			"name": "Platziv - Juego Online",
-			"technologies": ["PUG", "SASS", "TypeScript", "HTML", "CSS", "JavaScript"],
-			"technologiesIcons": ["../../../assets/icons/technologies/pug/pug-icon.webp","../../../assets/icons/technologies/sass/icons-sass-small.webp", "../../../assets/icons/technologies/typescript/icons-typescript-small.webp","../../../assets/icons/technologies/html/icon-html-small.webp", "../../../assets/icons/technologies/css/icons-css3-small.webp", "../../../assets/icons/technologies/javascript/icons-javascript-small.webp"],
+			"technologies": [
+				"PUG",
+				"SASS",
+				"TypeScript",
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"technologiesIcons": [
+				"../../../assets/icons/technologies/pug/pug-icon.webp",
+				"../../../assets/icons/technologies/sass/icons-sass-small.webp",
+				"../../../assets/icons/technologies/typescript/icons-typescript-small.webp",
+				"../../../assets/icons/technologies/html/icon-html-small.webp",
+				"../../../assets/icons/technologies/css/icons-css3-small.webp",
+				"../../../assets/icons/technologies/javascript/icons-javascript-small.webp"
+			],
 			"repository": "https://github.com/GaleedGutierrez/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022",
 			"url": "https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html",
 			"img": "../../../assets/img/screenshot-courses/Platziv-juego-online.webp",

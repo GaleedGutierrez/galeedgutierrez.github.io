@@ -12,9 +12,9 @@ header#header-id.header
 				//- +elements-menu-header("#resume", "header__nav-resume", "Resume", "4", "nav__input-radio-id-4")
 				+elements-menu-header("#contact", "header__nav-contact", "Contacto", "5", "nav__input-radio-id-5")
 				button#header__menu-options-changes-id.material-symbols-outlined.header__menu-options-changes apps
-			section#header__options-id.header__options-container
-				section.header__options
-					.options__themes.options__header
-						+header-options("header__theme-input-id","", "", "Sun icons", "../assets/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "../assets/icons/nature/space/icon-moon.webp")
+			section#header__options-id.g-header__options-container
+				.g-header__options
+					.g-header__change-theme-container
+						+header__theme-switch("header__theme-input-id","", "", "Sun icons", "../assets/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "../assets/icons/nature/space/icon-moon.webp")
 					//- .options__language.options__header
 					//- 	+header-options("header__language-input-id","", "", "Spanish icon", "../assets/icons/languages/flag-spain.webp", "", "", "English icon", "../assets/icons/languages/flag-UK.webp")

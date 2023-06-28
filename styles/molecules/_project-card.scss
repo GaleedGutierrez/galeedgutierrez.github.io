@@ -1,0 +1,69 @@
+@use "../settings/variables";
+
+.m-project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: variables.$border-radius-5;
+	background-color: var(--background-color);
+
+	&__img-project {
+		border-top-left-radius: variables.$border-radius-5;
+		border-top-right-radius: variables.$border-radius-5;
+	}
+
+	&__technology-icons-container {
+		display: flex;
+		gap: variables.$space-1;
+		justify-content: end;
+		align-items: center;
+		margin-block-start: variables.$space-2;
+		margin-inline-end: variables.$space-4;
+	}
+
+	&__technology-icon {
+		width: 2.6rem;
+	}
+
+	&__data-container {
+		padding-inline: variables.$space-4;
+		padding-block: variables.$space-1 variables.$space-4;
+	}
+
+	&__course-info {
+		display: grid;
+		gap: variables.$space-1 variables.$space-3;
+		grid-template-columns: auto 1fr;
+		grid-template-areas:
+			"logo name"
+			"logo platform";
+		align-items: center;
+		margin-block-start: variables.$space-2;
+		margin-block-end: variables.$space-4;
+	}
+
+	&__course-icon {
+		grid-area: logo;
+		width: 3.2rem;
+	}
+
+	&__course-name {
+		grid-area: name;
+		line-height: 2rem;
+	}
+
+	&__course-platform {
+		grid-area: platform;
+		line-height: 1.3rem;
+	}
+
+	&__view-project-section {
+		display: flex;
+		gap: variables.$space-6;
+		align-items: center;
+	}
+
+	&__github-icon-link {
+		display: flex;
+	}
+}

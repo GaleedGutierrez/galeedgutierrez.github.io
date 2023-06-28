@@ -1,0 +1,48 @@
+extend ./components/global/_global.pug
+block head
+	//- link(rel="stylesheet" href=require("../sass/guide.scss"))
+block main
+	main.main
+		h1 Hello Word
+		h2 Hello Word
+		h3 Hello Word
+		h4 Hello Word
+		p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus veniam, sequi accusamus perferendis voluptatum temporibus, error illo fuga sit odio debitis impedit alias necessitatibus pariatur voluptas. Tempora nisi odio doloremque!
+		a 	Link
+		br
+		button.a-button Leer más
+		br
+		button.a-button Ver proyecto
+		br
+		label.options__switch-container
+			input.options__switch-input(type="checkbox" name="")
+			//- .options__switch-components
+			.options__switch-circle
+			.options__switch-slider
+		br
+		svg(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
+			path(d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z")
+		i.a-icon-facebook
+		br
+		i.a-icon-instagram
+		br
+		i.a-icon-twitter
+		br
+		i.a-icon-github
+		br
+		i.a-icon-linkedin2
+		br
+		svg(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
+			path(d="M480-200 240-440l42-42 198 198 198-198 42 42-240 240Zm0-253L240-693l42-42 198 198 198-198 42 42-240 240Z")
+		figure
+			img(src="../assets/img/animals/otter/otter-black.webp" alt="")
+		figure
+			img(src="../assets/img/animals/otter/otter-white.webp" alt="")
+		figure
+			img(src="../assets/img/me/me.webp" alt="")
+		figure
+			img(src="../assets/icons/nature/space/icon-moon.webp" alt="")
+		figure
+			img(src="../assets/icons/nature/space/icon-sun.webp" alt="")
+block scripts
+	//- script(src=require("../src/guide.ts"))

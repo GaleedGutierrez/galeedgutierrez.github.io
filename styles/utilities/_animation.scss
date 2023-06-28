@@ -1,0 +1,22 @@
+@use "../settings/variables";
+
+@keyframes up-and-down-arrow {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		opacity: 0.3;
+		transform: translateY(0.6rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

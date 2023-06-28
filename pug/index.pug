@@ -2,9 +2,14 @@ extend ./components/global/_global.pug
 block head
 	- const SEE_HEADER = true
 	- const SEE_FOOTER = true
-	link(rel="stylesheet" href=require("../sass/index/style.scss"))
-	link(rel="stylesheet" href=require("../sass/index/tablet.scss") media="screen and (min-width: 768px)")
-	link(rel="stylesheet" href=require("../sass/index/desktop.scss") media="screen and (min-width: 1024px)")
+	//- link(rel="stylesheet" href=require("../sass/index/style.scss"))
+	link(rel="stylesheet" href=require("@styles/style.scss"))
+	//- link(rel="stylesheet" href=require("../sass/index/tablet.scss") media="screen and (min-width: 768px)")
+	link(rel="stylesheet" href=require("@styles/tablet.scss") media="screen and (min-width: 768px)")
+	//- link(rel="stylesheet" href=require("../sass/index/desktop.scss") media="screen and (min-width: 1024px)")
+	link(rel="stylesheet" href=require("@styles/desktop.scss") media="screen and (min-width: 1024px)")
+	//- link(rel="stylesheet" href=require("@styles/index/dark.scss") media="(prefers-color-scheme: dark)")
+	//- link(rel="stylesheet" href=require("../sass/index/dark-tablet.scss") media="(prefers-color-scheme: dark)")
 	+titles("Galeed Gutierrez")
 block header
 	include ./components/header/_header.pug
@@ -15,8 +20,4 @@ block main
 		include ./components/portfolio/_portfolio.pug
 block scripts
 	include ./components/scripts/_googleAnalytics.pug
-	script(type="module" src=require("../src/header.ts"))
-	script(type="module" src=require("../src/home.ts"))
-	script(type="module" src=require("../src/about-me.ts"))
-	script(type="module" src=require("../src/showProjects.ts"))
-	script(type="module" src=require("../src/darkMode.ts"))
+	script(type="module" src=require("../src/index.ts"))

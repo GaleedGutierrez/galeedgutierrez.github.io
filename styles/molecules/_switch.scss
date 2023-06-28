@@ -1,0 +1,56 @@
+@use "../settings/variables";
+
+.m-switch-container {
+	position: relative;
+	display: flex;
+	width: 4rem;
+	height: 2rem;
+}
+
+.m-switch {
+	width: 100%;
+	height: 100%;
+
+	// Background
+	&::before {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 100%;
+		border-radius: variables.$border-radius-3;
+		background-color: variables.$gray-300;
+		transition-duration: 500ms;
+	}
+
+	// Circle
+	&::after {
+		position: absolute;
+		z-index: variables.$z-index-1-screen-foreground;
+		left: 0.4rem;
+		top: calc(50% - 0.6rem);
+		display: block;
+		content: "";
+		width: 1.2rem;
+		height: 1.2rem;
+		border-radius: variables.$border-radius-circle;
+		background-color: variables.$pure-white;
+		transition-duration: 500ms;
+	}
+}
+
+.m-switch__input {
+	position: absolute;
+	z-index: variables.$z-index-2-surface-over;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+
+	&:checked ~ .m-switch::before {
+		opacity: 0.798;
+	}
+
+	&:checked + .m-switch::after {
+		transform: translateX(2rem);
+	}
+}
