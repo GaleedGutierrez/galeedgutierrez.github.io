@@ -27,21 +27,14 @@
 @use "../atoms/sandwich-menu";
 @use "../atoms/logo";
 @use "../atoms/theme-icon";
-@use "../atoms/custom-point";
-@use "../atoms/arrow-down";
-@use "../atoms/line-decorator";
-@use "../atoms/otter-icon";
 @use "../atoms/icon";
 
 // Molecules
 @use "../molecules/switch";
 @use "../molecules/social-media";
-@use "../molecules/particles-js";
 @use "../molecules/project-card";
 
 // Organisms
 @use "../organisms/header/header";
-@use "../organisms/home/home";
-@use "../organisms/about-me/aboutMe";
 @use "../organisms/porfolio/porfolio";
 @use "../organisms/footer/footer";

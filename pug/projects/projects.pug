@@ -2,10 +2,9 @@ extend ../settings/_global.pug
 block head
 	- const SEE_HEADER = true
 	- const SEE_FOOTER = true
-	//- +style-head("index/style.css")
-	//- //- +style-head("dark.css")
-	//- +style-head-responsive("index/tablet.css", "768")
-	//- +style-head-responsive("index/desktop.css", "1024")
+	link(rel="stylesheet" href=require("@styles/projects/style.scss"))
+	link(rel="stylesheet" href=require("@styles/projects/tablet.scss") media="screen and (min-width: 768px)")
+	link(rel="stylesheet" href=require("@styles/projects/desktop.scss") media="screen and (min-width: 1024px)")
 	title Proyectos
 block header
 	include ./organisms/header/_headerPorfolio.pug

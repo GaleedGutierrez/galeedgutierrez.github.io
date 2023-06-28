@@ -1,59 +1,75 @@
+import {
+	A_CONTACT_SANDWICH_MENU,
+	A_PROJECTS_SANDWICH_MENU,
+	INPUT_CONTACT_SANDWICH_MENU,
+	INPUT_PROJECTS_SANDWICH_MENU,
+	MENU_ELEMENTS_CONTAINER,
+	OPTIONS_MENU,
+	OPTIONS_MENU_CONTAINER,
+	SANDWICH_MENU,
+} from './components/htmlElements';
 import { objInputRadioType } from './components/types';
-import { A_PROJECTS_SANDWICH_MENU, INPUT_PROJECTS_SANDWICH_MENU, INPUT_CONTACT_SANDWICH_MENU, A_CONTACT_SANDWICH_MENU, SANDWICH_MENU, MENU_ELEMENTS_CONTAINER, OPTIONS_MENU, OPTIONS_MENU_CONTAINER } from './components/htmlElements';
 
-const config = { threshold: 0.2 };
-const anchorsSandwich = [ A_PROJECTS_SANDWICH_MENU, A_CONTACT_SANDWICH_MENU ];
+const CONFIG = { threshold: 0.2 };
+const ANCHOR_SANDWICH = [A_PROJECTS_SANDWICH_MENU, A_CONTACT_SANDWICH_MENU];
 
 const addBrackets = (type: string): void => {
-	const objInputs: objInputRadioType = {
-		projects : () => INPUT_PROJECTS_SANDWICH_MENU.checked = true,
-		contact  : () => INPUT_CONTACT_SANDWICH_MENU.checked = true,
+	const OBJ_INPUTS: objInputRadioType = {
+		projects: () => (INPUT_PROJECTS_SANDWICH_MENU.checked = true),
+		// 'resume': () => inputResumeSandwichMenu.checked = true,
+		contact: () => (INPUT_CONTACT_SANDWICH_MENU.checked = true),
 	};
 
-	objInputs[type]();
+	OBJ_INPUTS[type]();
 };
 
-const observer = new IntersectionObserver(entries => {
+const OBSERVER = new IntersectionObserver((entries) => {
 	entries
-		.filter(entry => entry.isIntersecting)
-		.forEach(entry => {
-			const idSection = entry.target.getAttribute('id');
+		.filter((entry) => entry.isIntersecting)
+		.forEach((entry) => {
+			const ID_SECTION = entry.target.getAttribute('id');
 
-			addBrackets(idSection);
+			addBrackets(ID_SECTION);
 		});
-}, config);
+}, CONFIG);
 
-
-anchorsSandwich.forEach(anchor => {
-	// debugger
+ANCHOR_SANDWICH.forEach((anchor) => {
 	const hash = anchor.getAttribute('href');
+
+	if (!hash) return;
+
 	const target = document.querySelector(hash);
 
-	if (target) observer.observe(target);
+	if (target) OBSERVER.observe(target);
 });
 
 const showMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.toggle('visible-header-menu');
-	SANDWICH_MENU.classList.toggle('header__menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.toggle(
+		'g-header__menu-container--visible'
+	);
+	SANDWICH_MENU.classList.toggle('a-sandwich-menu--active');
 };
 
 const hiddenMenu = (): void => {
-	MENU_ELEMENTS_CONTAINER.classList.remove('visible-header-menu');
-	SANDWICH_MENU.classList.remove('header__menu-sandwich--active');
+	MENU_ELEMENTS_CONTAINER.classList.remove(
+		'g-header__menu-container--visible'
+	);
+	SANDWICH_MENU.classList.remove('a-sandwich-menu--active');
 };
 
 const showOptionsMenu = (): void => {
-	OPTIONS_MENU_CONTAINER.classList.toggle('visible-header__options');
-	OPTIONS_MENU.classList.toggle('header__menu-options-changes--active');
+	OPTIONS_MENU_CONTAINER.classList.toggle('g-header__options--visible');
+	OPTIONS_MENU.classList.toggle('g-header__changes-options-menu--active');
 };
 
 const hiddenOptionsMenu = (): void => {
-	OPTIONS_MENU_CONTAINER.classList.remove('visible-header__options');
-	OPTIONS_MENU.classList.remove('header__menu-options-changes--active');
+	OPTIONS_MENU_CONTAINER.classList.remove('g-header__options--visible');
+	OPTIONS_MENU.classList.remove('g-header__changes-options-menu--active');
 };
 
 window.addEventListener('resize', () => {
 	if (screen.width < 768) hiddenOptionsMenu();
+
 	if (screen.width >= 768) hiddenMenu();
 });
 
@@ -61,8 +77,8 @@ A_PROJECTS_SANDWICH_MENU.onclick = () => addBrackets('projects');
 A_CONTACT_SANDWICH_MENU.onclick = () => addBrackets('contact');
 
 SANDWICH_MENU.onclick = () => showMenu();
+// showMenu();
 MENU_ELEMENTS_CONTAINER.onclick = () => hiddenMenu();
 
 OPTIONS_MENU.onclick = () => showOptionsMenu();
 OPTIONS_MENU_CONTAINER.onclick = () => hiddenOptionsMenu();
-
