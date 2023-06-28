@@ -63,8 +63,8 @@
 	}
 
 	&__options {
-		padding-block: 1.6rem;
-		padding-inline-end: 1.6rem;
+		padding-block-start: variables.$space-4;
+		padding-inline-end: variables.$space-4;
 	}
 
 	&__options--visible {

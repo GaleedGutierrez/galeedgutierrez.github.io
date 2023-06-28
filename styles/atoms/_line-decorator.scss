@@ -1,12 +1,14 @@
 @use "../settings/variables";
+@use "../tools/functions";
 
 .a-line-decoration {
+	--background-color: #{functions.light-dark(
+			variables.$background-dark-color,
+			variables.$background-lighter-gray-color
+		)};
+
 	width: 0.3rem;
 	height: 2.6rem;
 	border-radius: variables.$border-radius-05;
-	background-color: variables.$light-black;
-
-	&--dark {
-		background-color: variables.$pure-white;
-	}
+	background-color: var(--background-color);
 }

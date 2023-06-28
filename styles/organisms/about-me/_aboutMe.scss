@@ -1,4 +1,5 @@
 @use "../../settings/variables";
+@use "../../tools/functions";
 
 .g-about-me {
 	position: relative;
@@ -71,6 +72,11 @@
 }
 
 .g-about-me__figure-my-photo {
+	--border-color-block-start: #{functions.light-dark(
+			variables.$gray-100,
+			variables.$light-gray-100
+		)};
+
 	position: relative;
 	width: 100%;
 
@@ -78,10 +84,12 @@
 		position: absolute;
 		inset: -1.5rem;
 		content: "";
-		border: 0.6rem solid transparent;
-		border-top-color: variables.$gray-100;
-		border-bottom-color: variables.$light-gray-400;
+		border-width: variables.$border-1;
+		border-style: solid;
+		border-inline-color: transparent;
+		border-block-start-color: var(--border-color-block-start);
+		border-block-end-color: variables.$light-gray-400;
 		border-radius: calc(variables.$border-radius-circle - 1%);
-		animation: spin 6s linear infinite;
+		animation: spin variables.$time-11 linear infinite;
 	}
 }

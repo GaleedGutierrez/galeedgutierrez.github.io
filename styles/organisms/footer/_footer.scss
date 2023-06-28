@@ -34,6 +34,4 @@
 	&__social-media {
 		gap: variables.$space-8;
 	}
-
-	@include mixins.limit-width-desktop;
 }

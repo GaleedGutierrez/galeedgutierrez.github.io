@@ -60,8 +60,12 @@
 		margin-inline: auto;
 	}
 
-	&__options {
+	&__options-container {
 		border-block-end: variables.$border-025 solid var(--border-color);
+	}
+
+	&__options {
+		padding-block-end: variables.$space-4;
 	}
 
 	&__options--visible {
@@ -83,7 +87,6 @@
 	left: 0;
 	bottom: 6.7rem;
 	width: 100%;
-	padding-block-end: variables.$space-4;
 	background-color: var(--background-color);
 	opacity: 0;
 	transition-duration: 750ms;

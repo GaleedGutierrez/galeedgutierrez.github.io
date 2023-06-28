@@ -4,21 +4,21 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-radius: 2rem;
+	border-radius: variables.$border-radius-5;
 	background-color: var(--background-color);
 
 	&__img-project {
-		border-top-left-radius: 2rem;
-		border-top-right-radius: 2rem;
+		border-top-left-radius: variables.$border-radius-5;
+		border-top-right-radius: variables.$border-radius-5;
 	}
 
 	&__technology-icons-container {
 		display: flex;
-		gap: 0.4rem;
+		gap: variables.$space-1;
 		justify-content: end;
 		align-items: center;
-		margin-block-start: 0.8rem;
-		margin-inline-end: 1.6rem;
+		margin-block-start: variables.$space-2;
+		margin-inline-end: variables.$space-4;
 	}
 
 	&__technology-icon {
@@ -26,20 +26,20 @@
 	}
 
 	&__data-container {
-		padding-inline: 1.6rem;
-		padding-block: 0.4rem 1.6rem;
+		padding-inline: variables.$space-4;
+		padding-block: variables.$space-1 variables.$space-4;
 	}
 
 	&__course-info {
 		display: grid;
-		gap: 0 1.2rem;
+		gap: variables.$space-1 variables.$space-3;
 		grid-template-columns: auto 1fr;
 		grid-template-areas:
 			"logo name"
 			"logo platform";
 		align-items: center;
-		margin-block-start: 0.8rem;
-		margin-block-end: 1.6rem;
+		margin-block-start: variables.$space-2;
+		margin-block-end: variables.$space-4;
 	}
 
 	&__course-icon {
@@ -59,7 +59,7 @@
 
 	&__view-project-section {
 		display: flex;
-		gap: 2.4rem;
+		gap: variables.$space-6;
 		align-items: center;
 	}
 

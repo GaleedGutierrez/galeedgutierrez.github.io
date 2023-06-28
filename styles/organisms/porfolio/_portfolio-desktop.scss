@@ -1,13 +1,7 @@
-@use "../../tools/mixins";
+@use "../../settings/variables";
 
 .g-portfolio {
 	&__projects-container {
-		gap: 1.6rem;
-
-		@include mixins.limit-width-desktop;
-	}
-
-	&__title {
-		@include mixins.limit-width-desktop;
+		gap: variables.$space-4;
 	}
 }

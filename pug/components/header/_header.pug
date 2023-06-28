@@ -1,6 +1,6 @@
 include ../global/_mixins.pug
 header#header-id.g-header
-	div.g-header__container
+	div.o-container.g-header__container
 		//- section.g-header__logo-container
 		a(href="#home").a-logo.g-header__logo Galeed
 		button.g-header__sandwich-menu-button
@@ -19,7 +19,7 @@ header#header-id.g-header
 					svg#header__menu-options-changes-id.a-icon.g-header__changes-options-menu(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
 						path(d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z")
 			section#header__options-id.g-header__options-container
-				.g-header__options
+				.o-container.g-header__options
 					.g-header__change-theme-container
 						+header__theme-switch("header__theme-input-id","", "", "Sun icons", "../assets/images/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "../assets/images/icons/nature/space/icon-moon.webp")
 				//- .options__language.options__header
