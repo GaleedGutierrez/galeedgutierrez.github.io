@@ -1,12 +1,3 @@
-mixin titles(title)
-	title=title
-
-mixin style-head(style)
-	link(rel="stylesheet" href=require(style))
-
-mixin style-head-responsive(stylesResponsive, screen)
-	link(rel="stylesheet" href="../css/"+stylesResponsive media="screen and (min-width:" +screen+"px)")
-
 mixin img(idImg, classImg, altImg, srcImg)
 	figure(id!=attributes.id ,class!=attributes.class)
 		img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")

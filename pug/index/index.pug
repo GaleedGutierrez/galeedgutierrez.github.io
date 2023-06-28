@@ -1,0 +1,19 @@
+extend ../settings/_global.pug
+block head
+	- const SEE_HEADER = true
+	- const SEE_FOOTER = true
+	link(rel="stylesheet" href=require("@styles/index/style.scss"))
+	link(rel="stylesheet" href=require("@styles/index/tablet.scss") media="screen and (min-width: 768px)")
+	link(rel="stylesheet" href=require("@styles/index/desktop.scss") media="screen and (min-width: 1024px)")
+	title Galeed Gutierrez
+block header
+	include ./organisms/header/_header.pug
+block main
+	main.main
+		include ./organisms/home/_home.pug
+		include ./organisms/about-me/_aboutMe.pug
+		include ./organisms/portfolio/_portfolio.pug
+block scripts
+	include ../organisms/scripts/_googleAnalytics.pug
+	script(src=require("../../src/particles.min.js"))
+	script(src=require("../../src/index.ts"))
