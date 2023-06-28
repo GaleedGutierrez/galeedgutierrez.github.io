@@ -10,9 +10,8 @@ const PugPlugin = require('pug-plugin');
 
 const common: Configuration = {
 	entry: {
-		index: './pug/index.pug',
-		// guide : './pug/guide.pug',
-		projects: './pug/projects.pug',
+		index: './pug/index/index.pug',
+		projects: './pug/projects/projects.pug',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
