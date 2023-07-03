@@ -41,8 +41,9 @@ import GENERADOR_DE_FIGURAS from '@images/img/screenshot-courses/proyecto-genera
 import STREAM_BURGER from '@images/img/screenshot-courses/steam.webp';
 import VILLA_PLATZI from '@images/img/screenshot-courses/villa-platzi.webp';
 import WIKIPEDIA_CLONE from '@images/img/screenshot-courses/wikipedia-clone.webp';
+import { Project } from '@interface/interfaces';
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
 	{
 		id: 18,
 		name: 'Platziv - Juego Online',

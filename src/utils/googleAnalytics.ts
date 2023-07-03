@@ -2,7 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 window.dataLayer = window.dataLayer || [];
 
-function gtag () {
+function gtag() {
 	// eslint-disable-next-line prefer-rest-params
 	dataLayer.push(arguments);
 }

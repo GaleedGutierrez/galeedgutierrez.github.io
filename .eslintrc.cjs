@@ -209,12 +209,12 @@ const rules = {
 	"no-unused-private-class-members": "error",
 	"no-use-before-define": [
 		"error",
-		{
-			functions: true,
-			classes: true,
-			variables: false,
-			allowNamedExports: false,
-		},
+		// {
+		// 	functions: true,
+		// 	classes: true,
+		// 	variables: false,
+		// 	allowNamedExports: true,
+		// },
 	],
 	"require-atomic-updates": "error",
 

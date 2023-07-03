@@ -13,6 +13,4 @@ block main
 		include ./organisms/portfolio/_portfolioProjects.pug
 block scripts
 	include ../organisms/scripts/_googleAnalytics.pug
-	script(type="module" src=require("../../src/headerPorfolio.ts"))
-	script(type="module" src=require("../../src/showProjectsPorfolio.ts"))
-	script(type="module" src=require("../../src/darkModeProjects.ts"))
+	script(type="module" src=require("@src/indexProjects.ts"))
