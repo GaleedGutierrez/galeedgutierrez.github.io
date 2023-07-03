@@ -1,0 +1,4 @@
+/dist/*"
+/build/*"
+/src/utils/particles.min.js
+/src/utils/googleAnalytics.ts

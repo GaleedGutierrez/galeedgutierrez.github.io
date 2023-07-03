@@ -246,7 +246,7 @@ const settings = {
 		typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
 	},
 };
-const ignorePatterns = ["/dist/*"];
+// const ignorePatterns = ["/dist/*"];
 
 module.exports = {
 	root: true,
@@ -256,7 +256,7 @@ module.exports = {
 	overrides,
 	parserOptions,
 	parser: "@typescript-eslint/parser",
-	ignorePatterns,
+	// ignorePatterns,
 	rules,
 	// Para poder usar alias @
 	settings,
