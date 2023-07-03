@@ -6,7 +6,11 @@
 	"scripts": {
 		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
 		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"lint": "eslint ./",
+		"lint:fix": "npx eslint --fix ./",
+		"stylelint": "npx stylelint \"**/*.scss\"",
+		"stylelint:fix": "npx stylelint --fix \"**/*.scss\""
 	},
 	"repository": {
 		"type": "git",
