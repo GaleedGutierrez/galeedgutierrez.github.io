@@ -50,10 +50,8 @@
 		"pug-plugin": "^4.9.7",
 		"sass": "^1.62.1",
 		"sass-loader": "^13.3.1",
-		"stylelint": "^15.7.0",
 		"stylelint-config-standard-scss": "^9.0.0",
 		"stylelint-order": "^6.0.3",
-		"stylelint-prettier": "^1.0.6",
 		"ts-loader": "^9.4.3",
 		"ts-node": "^10.9.1",
 		"tsconfig-paths": "^4.2.0",
@@ -78,7 +76,10 @@
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.2.3",
-		"prettier": "^2.8.8"
+		"prettier": "^2.8.8",
+		"stylelint": "^15.9.0",
+		"stylelint-prettier": "^3.0.0",
+		"stylelint-scss": "^5.0.1"
 	},
 	"lint-staged": {
 		"*.(j|t)s": "eslint --fix",
