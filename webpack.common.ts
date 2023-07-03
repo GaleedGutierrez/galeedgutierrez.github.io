@@ -21,8 +21,10 @@ const common: Configuration = {
 	resolve: {
 		extensions: ['.ts', '.js'],
 		alias: {
+			'@src': path.resolve(__dirname, 'src/'),
 			'@utils': path.resolve(__dirname, 'src/utils/'),
 			'@templates': path.resolve(__dirname, 'src/templates/'),
+			'@interface': path.resolve(__dirname, 'src/interface/'),
 			'@styles': path.resolve(__dirname, 'styles/'),
 			'@images': path.resolve(__dirname, 'assets/images/'),
 			'@fonts': path.resolve(__dirname, 'assets/fonts/'),
