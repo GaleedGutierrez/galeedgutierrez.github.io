@@ -29,8 +29,11 @@
 		"BASICO",
 		"batabit",
 		"Batabit",
+		"CIENTIFICO",
 		"diseno",
 		"ecma",
+		"introduccion",
+		"INTRODUCCION",
 		"leonidas",
 		"maquetacion",
 		"MAQUETACION",
@@ -40,7 +43,9 @@
 		"PLATZIV",
 		"programacion",
 		"PROGRAMACION",
+		"rickandmortyapi",
 		"saurus",
+		"tifi",
 		"typedjs",
 		"wikipedia"
 	]

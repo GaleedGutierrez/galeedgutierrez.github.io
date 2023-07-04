@@ -1,14 +1,14 @@
 import { CONTAINER_PROJECTS_SECTION } from '@utils/nodes';
 import { PROJECTS } from '@utils/projects';
 
-const createIcons = (technologiesIcons: string[]) => {
-	return technologiesIcons.map((icon) => {
+const createIcons = (technologies: string[], technologiesIcons: string[]) => {
+	return technologiesIcons.map((icon, index) => {
 		const FIGURE = document.createElement('figure');
 		const IMG = document.createElement('img');
 
 		FIGURE.className = 'm-project-card__technology-icon';
 		IMG.src = icon;
-		IMG.alt = `Icon ${icon}`;
+		IMG.alt = `Icono de ${technologies[index]}`;
 		IMG.loading = 'lazy';
 		FIGURE.append(IMG);
 
@@ -23,7 +23,10 @@ const showProjects = (lengthProjects: number): void => {
 
 	for (let i = 0; i < lengthProjects; i++) {
 		const ARTICLE = document.createElement('article');
-		const iconsTechnologies = createIcons(PROJECTS[i].technologiesIcons);
+		const iconsTechnologies = createIcons(
+			PROJECTS[i].technologies,
+			PROJECTS[i].technologiesIcons
+		);
 
 		ARTICLE.setAttribute('class', 'm-project-card');
 
