@@ -7,13 +7,17 @@ import CURSO_DE_DISENO_PARA_PROGRAMADORES from '@images/icons/courses/curso-de-d
 import CURSO_DE_FRONTEND_DEVELOPER_PLATZI from '@images/icons/courses/curso-de-frontend-developer.webp';
 import CURSO_DE_FRONTEND_DEVELOPER_2019_PLATZI from '@images/icons/courses/curso-de-frontend-developer-2019.webp';
 import CURSO_DE_HTML_Y_CSS_2019_PLATZI from '@images/icons/courses/curso-de-html-y-css-2019.webp';
+import CURSO_DE_INTRODUCCION_A_EMPAQUETADORES_WEB_ICON from '@images/icons/courses/curso-de-introduccion-a-empaquetadores-web.webp';
 import CURSO_DE_RESPONSIVE_DESIGN_LEONIDAS_ESTEBAN_PLATZI from '@images/icons/courses/curso-de-responsive-design-leonidas-esteban.webp';
 import CURSO_DE_RESPONSIVE_DESIGN_MAQUETACION_MOBILE_FIRST_PLATZI from '@images/icons/courses/Curso-de-Responsive-Design-Maquetación-Mobile-First.webp';
+import CURSO_DE_SPA_CON_JAVASCRIPT_VANILLA_2021 from '@images/icons/courses/curso-de-single-page-application-con-javaScript-vanilla-2021.webp';
 import CURSO_GRATIS_DE_PROGRAMACION_BASICA_OLD_PLATZI from '@images/icons/courses/curso-gratis-de-programacion-basica.webp';
 import CURSO_PRACTICO_DE_HTML_Y_CSS_PLATZI from '@images/icons/courses/curso-practico-de-html-y-css.webp';
 import CURSO_PRACTICO_DE_JAVASCRIPT_PLATZI from '@images/icons/courses/curso-practico-de-javascript.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_CSS from '@images/icons/courses/curso-practico-de-maquetacion-en-css.webp';
+import CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON from '@images/icons/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp';
 import TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI from '@images/icons/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp';
+import ALURA_ICON from '@images/icons/platform/alura.webp';
 // icons Technologies
 import CSS_ICON from '@images/icons/technologies/css/icons-css3-small.webp';
 import HTML_ICON from '@images/icons/technologies/html/icon-html-small.webp';
@@ -21,29 +25,120 @@ import JAVASCRIPT_ICON from '@images/icons/technologies/javascript/icons-javascr
 import PUG_ICON from '@images/icons/technologies/pug/pug-icon.webp';
 import SASS_ICON from '@images/icons/technologies/sass/icons-sass-small.webp';
 import TYPESCRIPT_ICON from '@images/icons/technologies/typescript/icons-typescript-small.webp';
+import VITEJS_ICON from '@images/icons/technologies/vitejs/vitejs.webp';
+import WEBPACK_ICON from '@images/icons/technologies/webpack/icons-webpack-small.webp';
 // Projects Images
-import BATABIT from '@images/img/screenshot-courses/batabit.webp';
-import BRAND from '@images/img/screenshot-courses/brand.webp';
-import CHECK_THE_BEST_FOOD from '@images/img/screenshot-courses/check-the-best-food.webp';
-import ANIMATIONLAND from '@images/img/screenshot-courses/curso-de-animaciones-con-css.webp';
-import YARD_SALE from '@images/img/screenshot-courses/curso-practico-de-frontend-developer.webp';
-import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-courses/curso-practico-de-javaScript.webp';
-import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-courses/curso-practico-de-javascript-02.webp';
-import GOOGLE_CLONE from '@images/img/screenshot-courses/google-clone.webp';
-import MY_BLOG from '@images/img/screenshot-courses/mi-blog.webp';
-import MICHI_APP from '@images/img/screenshot-courses/michis-app.webp';
-import MOVIE_ES from '@images/img/screenshot-courses/movie.es.webp';
-import PLATZI_VIDEO_2017 from '@images/img/screenshot-courses/platzi-video.webp';
-import PLATZI_VIDEO from '@images/img/screenshot-courses/platzi-video-curso-frontend-developer-2019.webp';
-import PLATZIV from '@images/img/screenshot-courses/Platziv-juego-online.webp';
-import PORTFOLIO_LEONIDAS_ESTEBAN from '@images/img/screenshot-courses/portfolio-leonidas-esteban.webp';
-import GENERADOR_DE_FIGURAS from '@images/img/screenshot-courses/proyecto-generador-de-figuras.webp';
-import STREAM_BURGER from '@images/img/screenshot-courses/steam.webp';
-import VILLA_PLATZI from '@images/img/screenshot-courses/villa-platzi.webp';
-import WIKIPEDIA_CLONE from '@images/img/screenshot-courses/wikipedia-clone.webp';
+import CIENTIFICO_CO from '@images/img/screenshot-projects/100rifi.co.webp';
+import BATABIT from '@images/img/screenshot-projects/batabit.webp';
+import BRAND from '@images/img/screenshot-projects/brand.webp';
+import CHECK_THE_BEST_FOOD from '@images/img/screenshot-projects/check-the-best-food.webp';
+import ANIMATIONLAND from '@images/img/screenshot-projects/curso-de-animaciones-con-css.webp';
+import YARD_SALE from '@images/img/screenshot-projects/curso-practico-de-frontend-developer.webp';
+import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-projects/curso-practico-de-javaScript.webp';
+import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-projects/curso-practico-de-javascript-02.webp';
+import ENCRIPTADOR_DE_TEXT_ALURA_ONE from '@images/img/screenshot-projects/encriptador-de-texto-alura-challenges-one.webp';
+import GOOGLE_CLONE from '@images/img/screenshot-projects/google-clone.webp';
+import LEGO from '@images/img/screenshot-projects/lego.webp';
+import MY_BLOG from '@images/img/screenshot-projects/mi-blog.webp';
+import MICHI_APP from '@images/img/screenshot-projects/michis-app.webp';
+import MOVIE_ES from '@images/img/screenshot-projects/movie.es.webp';
+import MY_LINK_IN_BIO from '@images/img/screenshot-projects/my-link-in-bio.webp';
+import PLATZI_VIDEO_2017 from '@images/img/screenshot-projects/platzi-video.webp';
+import PLATZI_VIDEO from '@images/img/screenshot-projects/platzi-video-curso-frontend-developer-2019.webp';
+import PLATZIV from '@images/img/screenshot-projects/Platziv-juego-online.webp';
+import PORTFOLIO_LEONIDAS_ESTEBAN from '@images/img/screenshot-projects/portfolio-leonidas-esteban.webp';
+import GENERADOR_DE_FIGURAS from '@images/img/screenshot-projects/proyecto-generador-de-figuras.webp';
+import STREAM_BURGER from '@images/img/screenshot-projects/steam.webp';
+import VILLA_PLATZI from '@images/img/screenshot-projects/villa-platzi.webp';
+import WIKIPEDIA_CLONE from '@images/img/screenshot-projects/wikipedia-clone.webp';
 import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
+	{
+		id: 22,
+		name: 'LEGO',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021',
+		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
+		img: LEGO,
+		date: '2023-04-22T03:00:00.000Z',
+		course: {
+			name: 'Curso Practico de Maquetacion y Animaciones con CSS',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/animaciones-css-practico/',
+			img: CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON,
+		},
+		description:
+			'En este proyecto 🚀, cree una página web con temática de LEGO, utilizando diferentes técnicas de animación para darle vida y dinamismo al sitio. 🎨',
+		author: 'Galeed Gutierrez',
+	},
+	{
+		id: 21,
+		name: '100tifi.co',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021',
+		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
+		img: CIENTIFICO_CO,
+		date: '2023-04-12T03:00:00.000Z',
+		course: {
+			name: 'Curso de Single Page Application con JavaScript Vanilla 2021',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/spa-javascript/',
+			img: CURSO_DE_SPA_CON_JAVASCRIPT_VANILLA_2021,
+		},
+		description:
+			'Web 🌐 que usa API de rickandmortyapi.com para ver detalles de personajes de “Rick y Morty” 🧪.',
+		author: 'Galeed Gutierrez',
+	},
+	{
+		id: 20,
+		name: 'Encriptador de texto',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023',
+		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
+		img: ENCRIPTADOR_DE_TEXT_ALURA_ONE,
+		date: '2023-04-01T03:00:00.000Z',
+		course: {
+			name: 'Challenge ONE: Principiante en programación',
+			platform: 'Alura',
+			url: 'https://www.aluracursos.com/',
+			img: ALURA_ICON,
+		},
+		description:
+			'Encriptación y desencriptación de texto 📋 con un algoritmo de sustitución de vocales 🔡.',
+		author: 'Galeed Gutierrez',
+	},
+	{
+		id: 19,
+		name: 'Link in bio',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
+		technologiesIcons: [
+			TYPESCRIPT_ICON,
+			SASS_ICON,
+			HTML_ICON,
+			WEBPACK_ICON,
+		],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-de-Introduccion-a-Empaquetadores-Web/tree/main/webpack',
+		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
+		img: MY_LINK_IN_BIO,
+		date: '2023-03-11T03:00:00.000Z',
+		course: {
+			name: 'Curso de Introducción a Empaquetadores Web',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/empaquetadores/',
+			img: CURSO_DE_INTRODUCCION_A_EMPAQUETADORES_WEB_ICON,
+		},
+		description:
+			'Es un ejemplo de un link in bio 🔗, que dirige a una página con varios enlaces de redes sociales 📱 y otros sitios de interés 💡.',
+		author: 'Galeed Gutierrez',
+	},
 	{
 		id: 18,
 		name: 'Platziv - Juego Online',
