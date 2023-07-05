@@ -83,6 +83,6 @@
 	},
 	"lint-staged": {
 		"*.(j|t)s": "eslint --fix",
-		"*.s(a|c)ss": "stylelint --fix"
+		"*.s(a|c)ss": "stylelint --fix --allow-empty-input"
 	}
 }
