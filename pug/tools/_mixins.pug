@@ -1,6 +1,6 @@
 mixin img(idImg, classImg, altImg, srcImg)
 	figure(id!=attributes.id ,class!=attributes.class)
-		img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
+		img(id=idImg, class=classImg, src=require(srcImg), alt=altImg loading="lazy")
 
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
 	li

@@ -8,8 +8,6 @@ import { merge } from 'webpack-merge';
 
 import common from './webpack.common';
 
-const PugPlugin = require('pug-plugin');
-
 const config: Configuration = {
 	mode: 'development',
 	devtool: 'source-map',
@@ -17,19 +15,11 @@ const config: Configuration = {
 		static: path.join(__dirname, 'dist'),
 		compress: true,
 		port: 8080,
-		// historyApiFallback: true,
+		historyApiFallback: true,
 		// devMiddleware      : {
 		// 	writeToDisk : true
 		// },
 	},
-	plugins: [
-		new PugPlugin({
-			pretty: true,
-			css: {
-				filename: '[name].[contenthash].css',
-			},
-		}),
-	],
 };
 
 export default merge(common, config);

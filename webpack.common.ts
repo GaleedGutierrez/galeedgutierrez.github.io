@@ -63,11 +63,17 @@ const common: Configuration = {
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: 'asset/resource',
+				generator: {
+					filename: 'assets/fonts/[name][ext][query]',
+				},
 			},
 			// loader para imágenes (Curso de webpack Platzi)
 			{
 				test: /\.(png|jpg|jpeg|gif|webp|ico|svg)$/i,
 				type: 'asset/resource',
+				generator: {
+					filename: 'assets/images/[name].[hash][ext]',
+				},
 			},
 		],
 	},
@@ -83,14 +89,28 @@ const common: Configuration = {
 		// }),
 		new CopyPlugin({
 			patterns: [
+				// {
+				// 	from: path.resolve(__dirname, './', 'assets/'),
+				// 	to: 'assets/',
+				// },
 				{
-					from: path.resolve(__dirname, './', 'assets/'),
-					to: 'assets/',
-					// Según curso de webpack de platzi ->
-					// from: path.resolve(__dirname, './', 'assets/images'),
-					// to: 'assets/images',
+					from: path.resolve(__dirname, './robots.txt'),
+					to: 'robots.txt',
 				},
+				// {
+				// 	// Según curso de webpack de platzi ->
+				// 	from: path.resolve(__dirname, './', 'assets/images'),
+				// 	to: 'assets/images',
+				// },
 			],
+		}),
+		new PugPlugin({
+			js: {
+				filename: 'src/[name].[contenthash].js',
+			},
+			css: {
+				filename: 'styles/[name].[contenthash].css',
+			},
 		}),
 	],
 };

@@ -7,7 +7,6 @@ import { merge } from 'webpack-merge';
 
 import common from './webpack.common';
 
-const PugPlugin = require('pug-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -20,17 +19,6 @@ const config: Configuration = {
 	output: {
 		clean: true,
 	},
-	plugins: [
-		// new MiniCssExtractPlugin({
-		// 	filename: '[name].[contenthash].css',
-		// }),
-		// new HTMLWebpackPlugin(),
-		new PugPlugin({
-			css: {
-				filename: '[name].[contenthash].css',
-			},
-		}),
-	],
 };
 
 export default merge(common, config);
