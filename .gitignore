@@ -223,8 +223,6 @@ $RECYCLE.BIN/
 
 #Pictures
 *.jpg
-*.png
-*.svg
 *.gif
 
 *.rar
