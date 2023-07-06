@@ -48,5 +48,9 @@
 	},
 	"extends": "@tsconfig/recommended/tsconfig.json",
 	"exclude": ["node_modules"],
-	"include": ["./**/*.ts"]
+	"include": [
+		"./**/*.ts",
+		"src/utils/web-vitals.js",
+		"src/utils/googleAnalytics.js"
+	]
 }
