@@ -1,7 +1,5 @@
 name: 💅 Lint
-
 on: push
-
 jobs:
     lint:
         runs-on: ubuntu-latest
