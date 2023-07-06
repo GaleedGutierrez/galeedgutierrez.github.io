@@ -1,4 +1,5 @@
 import '@utils/header';
+import '@utils/web-vitals';
 
 import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';

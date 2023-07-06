@@ -97,6 +97,10 @@ const common: Configuration = {
 					from: path.resolve(__dirname, './robots.txt'),
 					to: 'robots.txt',
 				},
+				{
+					from: path.resolve(__dirname, './CNAME'),
+					to: 'CNAME',
+				},
 				// {
 				// 	// Según curso de webpack de platzi ->
 				// 	from: path.resolve(__dirname, './', 'assets/images'),
