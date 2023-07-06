@@ -19,6 +19,10 @@ const config: Configuration = {
 	output: {
 		clean: true,
 	},
+
+	performance: {
+		hints: 'warning',
+	},
 };
 
 export default merge(common, config);

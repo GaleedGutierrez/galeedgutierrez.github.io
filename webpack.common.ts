@@ -14,7 +14,7 @@ const common: Configuration = {
 		'projects/index': './pug/projects/index.pug',
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'build'),
 		filename: '[name].[contenthash].js',
 		// assetModuleFilename: 'assets/[hash][ext][query]',
 	},
@@ -113,6 +113,10 @@ const common: Configuration = {
 			},
 		}),
 	],
+
+	// performance: {
+	// 	hints: 'warning',
+	// },
 };
 
 export default common;
