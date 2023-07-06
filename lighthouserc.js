@@ -1,9 +1,7 @@
-const LIGHTHOUSE = {
+module.exports = {
 	ci: {
 		assert: {
 			preset: "lighthouse:no-pwa",
 		},
 	},
 };
-
-export default LIGHTHOUSE;
