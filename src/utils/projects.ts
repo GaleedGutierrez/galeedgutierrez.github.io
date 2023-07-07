@@ -16,6 +16,7 @@ import CURSO_PRACTICO_DE_HTML_Y_CSS_PLATZI from '@images/icons/courses/curso-pra
 import CURSO_PRACTICO_DE_JAVASCRIPT_PLATZI from '@images/icons/courses/curso-practico-de-javascript.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_CSS from '@images/icons/courses/curso-practico-de-maquetacion-en-css.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON from '@images/icons/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp';
+import CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD from '@images/icons/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.avif';
 import TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI from '@images/icons/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp';
 import ALURA_ICON from '@images/icons/platform/alura.webp';
 // icons Technologies
@@ -43,6 +44,7 @@ import MY_BLOG from '@images/img/screenshot-projects/mi-blog.webp';
 import MICHI_APP from '@images/img/screenshot-projects/michis-app.webp';
 import MOVIE_ES from '@images/img/screenshot-projects/movie.es.webp';
 import MY_LINK_IN_BIO from '@images/img/screenshot-projects/my-link-in-bio.webp';
+import PLATZI_MOVIES_2022 from '@images/img/screenshot-projects/platzi-movies-2022.webp';
 import PLATZI_VIDEO_2017 from '@images/img/screenshot-projects/platzi-video.webp';
 import PLATZI_VIDEO from '@images/img/screenshot-projects/platzi-video-curso-frontend-developer-2019.webp';
 import PLATZIV from '@images/img/screenshot-projects/Platziv-juego-online.webp';
@@ -55,7 +57,7 @@ import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
 	{
-		id: 22,
+		id: 23,
 		name: 'LEGO',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
@@ -75,7 +77,7 @@ export const PROJECTS: Project[] = [
 		author: 'Galeed Gutierrez',
 	},
 	{
-		id: 21,
+		id: 22,
 		name: '100tifi.co',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
@@ -95,7 +97,7 @@ export const PROJECTS: Project[] = [
 		author: 'Galeed Gutierrez',
 	},
 	{
-		id: 20,
+		id: 21,
 		name: 'Encriptador de texto',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
@@ -115,7 +117,7 @@ export const PROJECTS: Project[] = [
 		author: 'Galeed Gutierrez',
 	},
 	{
-		id: 19,
+		id: 20,
 		name: 'Link in bio',
 		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [
@@ -137,6 +139,26 @@ export const PROJECTS: Project[] = [
 		},
 		description:
 			'Es un ejemplo de un link in bio 🔗, que dirige a una página con varios enlaces de redes sociales 📱 y otros sitios de interés 💡.',
+		author: 'Galeed Gutierrez',
+	},
+	{
+		id: 19,
+		name: 'Platzi Movies',
+		technologies: ['TypeScript', 'SASS', 'PUG'],
+		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, PUG_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022',
+		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
+		img: PLATZI_MOVIES_2022,
+		date: '2023-01-01T03:00:00.000Z',
+		course: {
+			name: 'Curso de API REST con Javascript: Performance y Usabilidad',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/api-profesional/',
+			img: CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD,
+		},
+		description:
+			'Descubre y disfruta de las mejores películas 🎥 con esta web que te permite buscar por nombre o categoría y ver las más populares 🚀 usando la API de The Movie DB 🍿.',
 		author: 'Galeed Gutierrez',
 	},
 	{
