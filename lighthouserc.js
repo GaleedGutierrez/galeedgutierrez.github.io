@@ -13,6 +13,8 @@ module.exports = {
 				"unminified-css": "warn",
 				"third-party-facades": "warn",
 				"offscreen-images": "warn",
+				"lcp-lazy-loaded": "warn",
+				"uses-rel-preconnect": "warn",
 				label: "warn",
 				// Not performance related
 				"tap-targets": "off",

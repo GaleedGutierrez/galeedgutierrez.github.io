@@ -14,9 +14,9 @@ block main
 		include ./organisms/about-me/_aboutMe.pug
 		include ./organisms/portfolio/_portfolio.pug
 block scripts
-	include ../organisms/scripts/_googleAnalytics.pug
 	script(src=require("@utils/particles.min.js"))
 	script(src=require("@src/index.ts"))
+	include ../organisms/scripts/_googleAnalytics.pug
 	script(type="application/ld+json").
 		{
 			"@context": "https://schema.org",

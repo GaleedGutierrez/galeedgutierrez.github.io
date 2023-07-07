@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable import/default */
 import 'webpack-dev-server';
 
 import path from 'path';

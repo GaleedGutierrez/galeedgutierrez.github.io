@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable import/default */
 import CopyPlugin from 'copy-webpack-plugin';
 import path from 'path';
 import { Configuration } from 'webpack';
