@@ -23,9 +23,6 @@ const config: Configuration = {
 		hints: 'warning',
 	},
 	plugins: IS_DEV ? [new BundleAnalyzerPlugin()] : [],
-	// plugins: [new BundleAnalyzerPlugin()],
 };
-
-console.log(IS_DEV);
 
 export default merge(common, config);
