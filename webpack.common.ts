@@ -68,7 +68,7 @@ const common: Configuration = {
 			},
 			// loader para imágenes (Curso de webpack Platzi)
 			{
-				test: /\.(png|jpg|jpeg|gif|webp|ico|svg)$/i,
+				test: /\.(png|jpg|jpeg|gif|webp|ico|svg|avif)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'assets/images/[name].[hash][ext]',
