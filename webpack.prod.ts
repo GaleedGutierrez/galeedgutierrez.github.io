@@ -8,6 +8,7 @@ import common from './webpack.common';
 
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
+const IS_DEV = process.env.IS_DEV === 'true';
 
 const config: Configuration = {
 	mode: 'production',
@@ -21,7 +22,10 @@ const config: Configuration = {
 	performance: {
 		hints: 'warning',
 	},
-	plugins: [new BundleAnalyzerPlugin()],
+	plugins: IS_DEV ? [new BundleAnalyzerPlugin()] : [],
+	// plugins: [new BundleAnalyzerPlugin()],
 };
+
+console.log(IS_DEV);
 
 export default merge(common, config);
