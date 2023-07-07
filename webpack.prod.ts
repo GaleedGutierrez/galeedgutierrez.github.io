@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable import/default */
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import { Configuration } from 'webpack';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { merge } from 'webpack-merge';
 
 import common from './webpack.common';
@@ -19,10 +18,10 @@ const config: Configuration = {
 	output: {
 		clean: true,
 	},
-
 	performance: {
 		hints: 'warning',
 	},
+	plugins: [new BundleAnalyzerPlugin()],
 };
 
 export default merge(common, config);
