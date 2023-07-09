@@ -14,7 +14,7 @@ const common: Configuration = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'build'),
-		filename: '[name].[contenthash].js',
+		filename: '[name].bundle.[contenthash].js',
 		// assetModuleFilename: 'assets/[hash][ext][query]',
 	},
 	resolve: {
@@ -109,10 +109,10 @@ const common: Configuration = {
 		}),
 		new PugPlugin({
 			js: {
-				filename: 'src/[name].[contenthash].js',
+				filename: 'src/[name].bundle.[contenthash].js',
 			},
 			css: {
-				filename: 'styles/[name].[contenthash].css',
+				filename: 'styles/[name].bundle.[contenthash].css',
 			},
 		}),
 	],

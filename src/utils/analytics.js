@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable prefer-rest-params */
-/* eslint-disable camelcase */
 import { onCLS, onFID, onLCP } from "web-vitals";
 
 // Google Analytics

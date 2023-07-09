@@ -1,5 +1,6 @@
 import '@utils/header';
 import '@utils/typedjs';
+import '@utils/particles';
 
 import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';
