@@ -15,6 +15,9 @@ const config: Configuration = {
 	optimization: {
 		minimize: true,
 		minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+		splitChunks: {
+			chunks: 'all',
+		},
 	},
 	output: {
 		clean: true,
