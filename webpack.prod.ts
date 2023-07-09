@@ -4,6 +4,7 @@ import { Configuration } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { merge } from 'webpack-merge';
 
+// import { GenerateSW } from 'workbox-webpack-plugin';
 import common from './webpack.common';
 
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -25,7 +26,11 @@ const config: Configuration = {
 	performance: {
 		hints: 'warning',
 	},
-	plugins: IS_DEV ? [new BundleAnalyzerPlugin()] : [],
+	plugins: [],
 };
+
+if (IS_DEV) {
+	config?.plugins?.push(new BundleAnalyzerPlugin());
+}
 
 export default merge(common, config);
