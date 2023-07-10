@@ -28,43 +28,94 @@ import SASS_ICON from '@images/icons/technologies/sass/icons-sass-small.webp';
 import TYPESCRIPT_ICON from '@images/icons/technologies/typescript/icons-typescript-small.webp';
 import VITEJS_ICON from '@images/icons/technologies/vitejs/vitejs.webp';
 import WEBPACK_ICON from '@images/icons/technologies/webpack/icons-webpack-small.webp';
+import CIENTIFICO_CO_L from '@images/screenshot-projects/large/100rifi.co.webp';
 // Projects Images
-import CIENTIFICO_CO from '@images/img/screenshot-projects/100rifi.co.webp';
-import BATABIT from '@images/img/screenshot-projects/batabit.webp';
-import BRAND from '@images/img/screenshot-projects/brand.webp';
-import CHECK_THE_BEST_FOOD from '@images/img/screenshot-projects/check-the-best-food.webp';
-import ANIMATIONLAND from '@images/img/screenshot-projects/curso-de-animaciones-con-css.webp';
-import YARD_SALE from '@images/img/screenshot-projects/curso-practico-de-frontend-developer.webp';
-import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-projects/curso-practico-de-javaScript.webp';
-import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT from '@images/img/screenshot-projects/curso-practico-de-javascript-02.webp';
-import ENCRIPTADOR_DE_TEXT_ALURA_ONE from '@images/img/screenshot-projects/encriptador-de-texto-alura-challenges-one.webp';
-import GOOGLE_CLONE from '@images/img/screenshot-projects/google-clone.webp';
-import LEGO from '@images/img/screenshot-projects/lego.webp';
-import MY_BLOG from '@images/img/screenshot-projects/mi-blog.webp';
-import MICHI_APP from '@images/img/screenshot-projects/michis-app.webp';
-import MOVIE_ES from '@images/img/screenshot-projects/movie.es.webp';
-import MY_LINK_IN_BIO from '@images/img/screenshot-projects/my-link-in-bio.webp';
-import PLATZI_MOVIES_2022 from '@images/img/screenshot-projects/platzi-movies-2022.webp';
-import PLATZI_VIDEO_2017 from '@images/img/screenshot-projects/platzi-video.webp';
-import PLATZI_VIDEO from '@images/img/screenshot-projects/platzi-video-curso-frontend-developer-2019.webp';
-import PLATZIV from '@images/img/screenshot-projects/Platziv-juego-online.webp';
-import PORTFOLIO_LEONIDAS_ESTEBAN from '@images/img/screenshot-projects/portfolio-leonidas-esteban.webp';
-import GENERADOR_DE_FIGURAS from '@images/img/screenshot-projects/proyecto-generador-de-figuras.webp';
-import STREAM_BURGER from '@images/img/screenshot-projects/steam.webp';
-import VILLA_PLATZI from '@images/img/screenshot-projects/villa-platzi.webp';
-import WIKIPEDIA_CLONE from '@images/img/screenshot-projects/wikipedia-clone.webp';
+// Projects Images - Large
+import BATABIT_L from '@images/screenshot-projects/large/batabit.webp';
+import BRAND_L from '@images/screenshot-projects/large/brand.webp';
+import CHECK_THE_BEST_FOOD_L from '@images/screenshot-projects/large/check-the-best-food.webp';
+import ANIMATIONLAND_L from '@images/screenshot-projects/large/curso-de-animaciones-con-css.webp';
+import YARD_SALE_L from '@images/screenshot-projects/large/curso-practico-de-frontend-developer.webp';
+import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L from '@images/screenshot-projects/large/curso-practico-de-javaScript.webp';
+import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L from '@images/screenshot-projects/large/curso-practico-de-javascript-02.webp';
+import ENCRIPTADOR_DE_TEXT_ALURA_ONE_L from '@images/screenshot-projects/large/encriptador-de-texto-alura-challenges-one.webp';
+import GOOGLE_CLONE_L from '@images/screenshot-projects/large/google-clone.webp';
+import LEGO_L from '@images/screenshot-projects/large/lego.webp';
+import MY_BLOG_L from '@images/screenshot-projects/large/mi-blog.webp';
+import MICHI_APP_L from '@images/screenshot-projects/large/michis-app.webp';
+import MOVIE_ES_L from '@images/screenshot-projects/large/movie.es.webp';
+import MY_LINK_IN_BIO_L from '@images/screenshot-projects/large/my-link-in-bio.webp';
+import PLATZI_MOVIES_2022_L from '@images/screenshot-projects/large/platzi-movies-2022.webp';
+import PLATZI_VIDEO_2017_L from '@images/screenshot-projects/large/platzi-video.webp';
+import PLATZI_VIDEO_L from '@images/screenshot-projects/large/platzi-video-curso-frontend-developer-2019.webp';
+import PLATZIV_L from '@images/screenshot-projects/large/platziv-juego-online.webp';
+import PORTFOLIO_LEONIDAS_ESTEBAN_L from '@images/screenshot-projects/large/portfolio-leonidas-esteban.webp';
+import GENERADOR_DE_FIGURAS_L from '@images/screenshot-projects/large/proyecto-generador-de-figuras.webp';
+import STREAM_BURGER_L from '@images/screenshot-projects/large/steam.webp';
+import VILLA_PLATZI_L from '@images/screenshot-projects/large/villa-platzi.webp';
+import WIKIPEDIA_CLONE_L from '@images/screenshot-projects/large/wikipedia-clone.webp';
+import CIENTIFICO_CO_M from '@images/screenshot-projects/medium/100rifi.co.webp';
+// Projects Images - Medium
+import BATABIT_M from '@images/screenshot-projects/medium/batabit.webp';
+import BRAND_M from '@images/screenshot-projects/medium/brand.webp';
+import CHECK_THE_BEST_FOOD_M from '@images/screenshot-projects/medium/check-the-best-food.webp';
+import ANIMATIONLAND_M from '@images/screenshot-projects/medium/curso-de-animaciones-con-css.webp';
+import YARD_SALE_M from '@images/screenshot-projects/medium/curso-practico-de-frontend-developer.webp';
+import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M from '@images/screenshot-projects/medium/curso-practico-de-javaScript.webp';
+import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M from '@images/screenshot-projects/medium/curso-practico-de-javascript-02.webp';
+import ENCRIPTADOR_DE_TEXT_ALURA_ONE_M from '@images/screenshot-projects/medium/encriptador-de-texto-alura-challenges-one.webp';
+import GOOGLE_CLONE_M from '@images/screenshot-projects/medium/google-clone.webp';
+import LEGO_M from '@images/screenshot-projects/medium/lego.webp';
+import MY_BLOG_M from '@images/screenshot-projects/medium/mi-blog.webp';
+import MICHI_APP_M from '@images/screenshot-projects/medium/michis-app.webp';
+import MOVIE_ES_M from '@images/screenshot-projects/medium/movie.es.webp';
+import MY_LINK_IN_BIO_M from '@images/screenshot-projects/medium/my-link-in-bio.webp';
+import PLATZI_MOVIES_2022_M from '@images/screenshot-projects/medium/platzi-movies-2022.webp';
+import PLATZI_VIDEO_2017_M from '@images/screenshot-projects/medium/platzi-video.webp';
+import PLATZI_VIDEO_M from '@images/screenshot-projects/medium/platzi-video-curso-frontend-developer-2019.webp';
+import PLATZIV_M from '@images/screenshot-projects/medium/platziv-juego-online.webp';
+import PORTFOLIO_LEONIDAS_ESTEBAN_M from '@images/screenshot-projects/medium/portfolio-leonidas-esteban.webp';
+import GENERADOR_DE_FIGURAS_M from '@images/screenshot-projects/medium/proyecto-generador-de-figuras.webp';
+import STREAM_BURGER_M from '@images/screenshot-projects/medium/steam.webp';
+import VILLA_PLATZI_M from '@images/screenshot-projects/medium/villa-platzi.webp';
+import WIKIPEDIA_CLONE_M from '@images/screenshot-projects/medium/wikipedia-clone.webp';
+// Projects Images - Small
+import CIENTIFICO_CO_S from '@images/screenshot-projects/small/100rifi.co.webp';
+import BATABIT_S from '@images/screenshot-projects/small/batabit.webp';
+import BRAND_S from '@images/screenshot-projects/small/brand.webp';
+import CHECK_THE_BEST_FOOD_S from '@images/screenshot-projects/small/check-the-best-food.webp';
+import ANIMATIONLAND_S from '@images/screenshot-projects/small/curso-de-animaciones-con-css.webp';
+import YARD_SALE_S from '@images/screenshot-projects/small/curso-practico-de-frontend-developer.webp';
+import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S from '@images/screenshot-projects/small/curso-practico-de-javaScript.webp';
+import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S from '@images/screenshot-projects/small/curso-practico-de-javascript-02.webp';
+import ENCRIPTADOR_DE_TEXT_ALURA_ONE_S from '@images/screenshot-projects/small/encriptador-de-texto-alura-challenges-one.webp';
+import GOOGLE_CLONE_S from '@images/screenshot-projects/small/google-clone.webp';
+import LEGO_S from '@images/screenshot-projects/small/lego.webp';
+import MY_BLOG_S from '@images/screenshot-projects/small/mi-blog.webp';
+import MICHI_APP_S from '@images/screenshot-projects/small/michis-app.webp';
+import MOVIE_ES_S from '@images/screenshot-projects/small/movie.es.webp';
+import MY_LINK_IN_BIO_S from '@images/screenshot-projects/small/my-link-in-bio.webp';
+import PLATZI_MOVIES_2022_S from '@images/screenshot-projects/small/platzi-movies-2022.webp';
+import PLATZI_VIDEO_2017_S from '@images/screenshot-projects/small/platzi-video.webp';
+import PLATZI_VIDEO_S from '@images/screenshot-projects/small/platzi-video-curso-frontend-developer-2019.webp';
+import PLATZIV_S from '@images/screenshot-projects/small/platziv-juego-online.webp';
+import PORTFOLIO_LEONIDAS_ESTEBAN_S from '@images/screenshot-projects/small/portfolio-leonidas-esteban.webp';
+import GENERADOR_DE_FIGURAS_S from '@images/screenshot-projects/small/proyecto-generador-de-figuras.webp';
+import STREAM_BURGER_S from '@images/screenshot-projects/small/steam.webp';
+import VILLA_PLATZI_S from '@images/screenshot-projects/small/villa-platzi.webp';
+import WIKIPEDIA_CLONE_S from '@images/screenshot-projects/small/wikipedia-clone.webp';
 import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
 	{
 		id: 23,
 		name: 'LEGO',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/',
-		img: LEGO,
+		images: { small: LEGO_S, medium: LEGO_M, large: LEGO_L },
 		date: '2023-04-22T03:00:00.000Z',
 		course: {
 			name: 'Curso Practico de Maquetacion y Animaciones con CSS',
@@ -79,12 +130,16 @@ export const PROJECTS: Project[] = [
 	{
 		id: 22,
 		name: '100tifi.co',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021',
 		url: 'https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html',
-		img: CIENTIFICO_CO,
+		images: {
+			small: CIENTIFICO_CO_S,
+			medium: CIENTIFICO_CO_M,
+			large: CIENTIFICO_CO_L,
+		},
 		date: '2023-04-12T03:00:00.000Z',
 		course: {
 			name: 'Curso de Single Page Application con JavaScript Vanilla 2021',
@@ -99,12 +154,16 @@ export const PROJECTS: Project[] = [
 	{
 		id: 21,
 		name: 'Encriptador de texto',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJs'],
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
 		technologiesIcons: [TYPESCRIPT_ICON, SASS_ICON, HTML_ICON, VITEJS_ICON],
 		repository:
 			'https://github.com/GaleedGutierrez/Encriptador-de-texto-Alura-Challenges-ONE-2023',
 		url: 'https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/',
-		img: ENCRIPTADOR_DE_TEXT_ALURA_ONE,
+		images: {
+			small: ENCRIPTADOR_DE_TEXT_ALURA_ONE_S,
+			medium: ENCRIPTADOR_DE_TEXT_ALURA_ONE_M,
+			large: ENCRIPTADOR_DE_TEXT_ALURA_ONE_L,
+		},
 		date: '2023-04-01T03:00:00.000Z',
 		course: {
 			name: 'Challenge ONE: Principiante en programación',
@@ -129,7 +188,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Introduccion-a-Empaquetadores-Web/tree/main/webpack',
 		url: 'https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html',
-		img: MY_LINK_IN_BIO,
+		images: {
+			small: MY_LINK_IN_BIO_S,
+			medium: MY_LINK_IN_BIO_M,
+			large: MY_LINK_IN_BIO_L,
+		},
 		date: '2023-03-11T03:00:00.000Z',
 		course: {
 			name: 'Curso de Introducción a Empaquetadores Web',
@@ -149,7 +212,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022',
 		url: 'https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home',
-		img: PLATZI_MOVIES_2022,
+		images: {
+			small: PLATZI_MOVIES_2022_S,
+			medium: PLATZI_MOVIES_2022_M,
+			large: PLATZI_MOVIES_2022_L,
+		},
 		date: '2023-01-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de API REST con Javascript: Performance y Usabilidad',
@@ -183,7 +250,7 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022',
 		url: 'https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html',
-		img: PLATZIV,
+		images: { small: PLATZIV_S, medium: PLATZIV_M, large: PLATZIV_L },
 		date: '2022-11-09T03:00:00.000Z',
 		course: {
 			name: 'Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!',
@@ -217,7 +284,7 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Consumo-de-API-REST-con-JavaScript',
 		url: 'https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/',
-		img: MICHI_APP,
+		images: { small: MICHI_APP_S, medium: MICHI_APP_M, large: MICHI_APP_L },
 		date: '2022-05-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Consumo de API REST con JavaScript',
@@ -243,7 +310,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/tree/main/TallerN1',
 		url: 'https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/',
-		img: TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT,
+		images: {
+			small: TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S,
+			medium: TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M,
+			large: TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L,
+		},
 		date: '2022-02-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Programación Orientada a Objetos en JavaScript',
@@ -269,7 +340,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-JavaScript/tree/main/TallerN2',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/',
-		img: TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT,
+		images: {
+			small: TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S,
+			medium: TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M,
+			large: TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L,
+		},
 		date: '2021-12-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Practico de JavaScript',
@@ -289,7 +364,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Animaciones-con-CSS',
 		url: 'https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/',
-		img: ANIMATIONLAND,
+		images: {
+			small: ANIMATIONLAND_S,
+			medium: ANIMATIONLAND_M,
+			large: ANIMATIONLAND_L,
+		},
 		date: '2021-12-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Animaciones con CSS',
@@ -308,7 +387,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-CSS-Grid-Basico',
 		url: 'https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/',
-		img: CHECK_THE_BEST_FOOD,
+		images: {
+			small: CHECK_THE_BEST_FOOD_S,
+			medium: CHECK_THE_BEST_FOOD_M,
+			large: CHECK_THE_BEST_FOOD_L,
+		},
 		date: '2021-11-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de CSS Grid Básico',
@@ -327,7 +410,7 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Responsive-Design-Maquetacion-Mobile-First',
 		url: 'https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/',
-		img: BATABIT,
+		images: { small: BATABIT_S, medium: BATABIT_M, large: BATABIT_L },
 		date: '2021-11-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Responsive Design: Maquetación Mobile First',
@@ -347,7 +430,7 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-Practico-de-Frontend-Developer',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html',
-		img: YARD_SALE,
+		images: { small: YARD_SALE_S, medium: YARD_SALE_M, large: YARD_SALE_L },
 		date: '2021-10-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Frontend Developer',
@@ -366,7 +449,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Disenio-para-Programadores',
 		url: 'https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/',
-		img: STREAM_BURGER,
+		images: {
+			small: STREAM_BURGER_S,
+			medium: STREAM_BURGER_M,
+			large: STREAM_BURGER_L,
+		},
 		date: '2021-09-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Diseño para Developers',
@@ -385,7 +472,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-de-Frontend-Developer-2019',
 		url: 'https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html',
-		img: PLATZI_VIDEO,
+		images: {
+			small: PLATZI_VIDEO_S,
+			medium: PLATZI_VIDEO_M,
+			large: PLATZI_VIDEO_L,
+		},
 		date: '2021-09-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Frontend Developer 2019',
@@ -405,7 +496,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/WikipediaClone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/',
-		img: WIKIPEDIA_CLONE,
+		images: {
+			small: WIKIPEDIA_CLONE_S,
+			medium: WIKIPEDIA_CLONE_M,
+			large: WIKIPEDIA_CLONE_L,
+		},
 		date: '2021-09-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Práctico de HTML y CSS',
@@ -424,7 +519,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Curso-practico-de-HTML-y-CSS/tree/main/my-Google-clone',
 		url: 'https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/',
-		img: GOOGLE_CLONE,
+		images: {
+			small: GOOGLE_CLONE_S,
+			medium: GOOGLE_CLONE_M,
+			large: GOOGLE_CLONE_L,
+		},
 		date: '2021-09-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Práctico de HTML y CSS',
@@ -442,7 +541,11 @@ export const PROJECTS: Project[] = [
 		technologiesIcons: [HTML_ICON, JAVASCRIPT_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Villa-Platzi',
 		url: 'https://galeedgutierrez.com/Villa-Platzi/',
-		img: VILLA_PLATZI,
+		images: {
+			small: VILLA_PLATZI_S,
+			medium: VILLA_PLATZI_M,
+			large: VILLA_PLATZI_L,
+		},
 		date: '2021-01-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Gratis de Programación Básica',
@@ -461,7 +564,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Proyecto-generador-de-figuras',
 		url: 'https://galeedgutierrez.com/Proyecto-generador-de-figuras/',
-		img: GENERADOR_DE_FIGURAS,
+		images: {
+			small: GENERADOR_DE_FIGURAS_S,
+			medium: GENERADOR_DE_FIGURAS_M,
+			large: GENERADOR_DE_FIGURAS_L,
+		},
 		date: '2021-01-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Gratis de Programación Básica',
@@ -480,7 +587,7 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/galeedgutierrez.github.io',
 		url: 'https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/',
-		img: MY_BLOG,
+		images: { small: MY_BLOG_S, medium: MY_BLOG_M, large: MY_BLOG_L },
 		date: '2020-07-01T03:00:00.000Z',
 		course: {
 			name: 'Curso Práctico de Maquetación en CSS',
@@ -498,7 +605,11 @@ export const PROJECTS: Project[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Platzi-Video',
 		url: 'https://galeedgutierrez.com/Platzi-Video/',
-		img: PLATZI_VIDEO_2017,
+		images: {
+			small: PLATZI_VIDEO_2017_S,
+			medium: PLATZI_VIDEO_2017_M,
+			large: PLATZI_VIDEO_2017_L,
+		},
 		date: '2020-05-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de CSS Grid Layout 2017',
@@ -516,7 +627,7 @@ export const PROJECTS: Project[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Movi.es',
 		url: 'https://galeedgutierrez.com/Movi.es/',
-		img: MOVIE_ES,
+		images: { small: MOVIE_ES_S, medium: MOVIE_ES_M, large: MOVIE_ES_L },
 		date: '2020-05-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de CSS Grid Layout 2017',
@@ -535,7 +646,11 @@ export const PROJECTS: Project[] = [
 		repository:
 			'https://github.com/GaleedGutierrez/Portafolio-LeonidasEsteban',
 		url: 'https://galeedgutierrez.com/Portafolio-LeonidasEsteban/',
-		img: PORTFOLIO_LEONIDAS_ESTEBAN,
+		images: {
+			small: PORTFOLIO_LEONIDAS_ESTEBAN_S,
+			medium: PORTFOLIO_LEONIDAS_ESTEBAN_M,
+			large: PORTFOLIO_LEONIDAS_ESTEBAN_L,
+		},
 		date: '2020-02-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de Responsive Design',
@@ -554,7 +669,7 @@ export const PROJECTS: Project[] = [
 		technologiesIcons: [HTML_ICON, CSS_ICON],
 		repository: 'https://github.com/GaleedGutierrez/Brand-Platzi',
 		url: 'https://galeedgutierrez.com/Brand-Platzi/',
-		img: BRAND,
+		images: { small: BRAND_S, medium: BRAND_M, large: BRAND_L },
 		date: '2020-01-01T03:00:00.000Z',
 		course: {
 			name: 'Curso de HTML y CSS 2019',

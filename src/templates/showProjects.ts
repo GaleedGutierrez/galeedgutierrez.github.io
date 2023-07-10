@@ -32,20 +32,27 @@ const showProjects = (lengthProjects: number): void => {
 
 		// Project screenshot and technologies
 		const SECTION_PROJECT = document.createElement('section');
-		const FIGURE_PROJECT = document.createElement('figure');
 		const IMG_PROJECT = document.createElement('img');
 		const TECHNOLOGIES_ICONS_CONTAINER = document.createElement('div');
+		const PICTURE_IMG = document.createElement('picture');
+		const SOURCE_MEDIUM = document.createElement('source');
+		const SOURCE_LARGE = document.createElement('source');
 
 		// Create image project and append technologies's icons
-		IMG_PROJECT.src = PROJECTS[i].img;
+		SOURCE_MEDIUM.srcset = PROJECTS[i]?.images?.medium;
+		SOURCE_MEDIUM.media = '(min-width: 768px)';
+		SOURCE_LARGE.srcset = PROJECTS[i]?.images?.large;
+		SOURCE_LARGE.media = '(min-width: 1024px)';
+		IMG_PROJECT.src = PROJECTS[i].images.small;
 		IMG_PROJECT.alt = `Screenshot de ${PROJECTS[i].name}`;
 		IMG_PROJECT.className = 'm-project-card__img-project';
 		IMG_PROJECT.loading = 'lazy';
-		FIGURE_PROJECT.append(IMG_PROJECT);
 		TECHNOLOGIES_ICONS_CONTAINER.className =
 			'm-project-card__technology-icons-container';
+
+		PICTURE_IMG.append(SOURCE_LARGE, SOURCE_MEDIUM, IMG_PROJECT);
 		TECHNOLOGIES_ICONS_CONTAINER.append(...iconsTechnologies);
-		SECTION_PROJECT.append(FIGURE_PROJECT, TECHNOLOGIES_ICONS_CONTAINER);
+		SECTION_PROJECT.append(PICTURE_IMG, TECHNOLOGIES_ICONS_CONTAINER);
 
 		// Details of project
 		const SECTION_DETAILS = document.createElement('section');

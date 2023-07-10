@@ -6,6 +6,12 @@ export interface CoursePlatform {
 	img: string;
 }
 
+export interface ImagesProject {
+	small: string;
+	medium: string;
+	large: string;
+}
+
 export interface Project {
 	id: number;
 	name: string;
@@ -13,7 +19,7 @@ export interface Project {
 	technologiesIcons: string[];
 	repository: string;
 	url: string;
-	img: string;
+	images: ImagesProject;
 	date: string;
 	course: CoursePlatform;
 	description: string;
