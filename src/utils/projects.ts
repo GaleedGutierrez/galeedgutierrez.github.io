@@ -16,7 +16,7 @@ import CURSO_PRACTICO_DE_HTML_Y_CSS_PLATZI from '@images/icons/courses/curso-pra
 import CURSO_PRACTICO_DE_JAVASCRIPT_PLATZI from '@images/icons/courses/curso-practico-de-javascript.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_CSS from '@images/icons/courses/curso-practico-de-maquetacion-en-css.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON from '@images/icons/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp';
-import CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD from '@images/icons/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.avif';
+import CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD from '@images/icons/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp';
 import TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI from '@images/icons/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp';
 import ALURA_ICON from '@images/icons/platform/alura.webp';
 // icons Technologies
