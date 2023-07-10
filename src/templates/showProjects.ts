@@ -47,6 +47,8 @@ const showProjects = (lengthProjects: number): void => {
 		IMG_PROJECT.alt = `Screenshot de ${PROJECTS[i].name}`;
 		IMG_PROJECT.className = 'm-project-card__img-project';
 		IMG_PROJECT.loading = 'lazy';
+		IMG_PROJECT.width = 1280;
+		IMG_PROJECT.height = 720;
 		TECHNOLOGIES_ICONS_CONTAINER.className =
 			'm-project-card__technology-icons-container';
 

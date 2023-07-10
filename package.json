@@ -86,7 +86,7 @@
 		"webpack-cli": "^5.1.4"
 	},
 	"lint-staged": {
-		"*.(j|t)s": "eslint --fix",
-		"*.s(a|c)ss": "stylelint --fix --allow-empty-input"
+		"*.(j|t)s": "lint:fix",
+		"*.s(a|c)ss": "stylelint:fix"
 	}
 }

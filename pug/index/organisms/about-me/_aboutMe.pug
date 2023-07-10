@@ -6,7 +6,8 @@ section#about.g-about-me.o-scroll-margin
 	.a-line-decoration.g-about-me__line-decoration
 	section.g-about-me__introduce-me
 		.g-about-me__picture-container
-			+img("about-me__img-id", "g-about-me__img-me", "A picture of me", "@images/me/me.webp").g-about-me__figure-my-photo
+			figure.g-about-me__figure-my-photo
+				img(id="about-me__img-id" class="g-about-me__img-me", src=require("@images/me/me.webp"), alt="Yo mirando a la cámara, estoy de frente" loading="lazy" width="645" height="645")
 		.g-about-me__presentation-container
 			section.g-about-me__presentation
 				h3.g-about-me__presentation-title Hola, soy Galeed Gutierrez.
