@@ -88,10 +88,10 @@ const common: Configuration = {
 		// }),
 		new CopyPlugin({
 			patterns: [
-				// {
-				// 	from: path.resolve(__dirname, './', 'assets/'),
-				// 	to: 'assets/',
-				// },
+				{
+					from: path.resolve(__dirname, './', 'assets/'),
+					to: 'assets/',
+				},
 				{
 					from: path.resolve(__dirname, './robots.txt'),
 					to: 'robots.txt',
@@ -101,7 +101,7 @@ const common: Configuration = {
 					to: 'CNAME',
 				},
 				// {
-				// 	// Según curso de webpack de platzi ->
+				// 	// 	// Según curso de webpack de platzi ->
 				// 	from: path.resolve(__dirname, './', 'assets/images'),
 				// 	to: 'assets/images',
 				// },

@@ -1,8 +1,7 @@
 import '@utils/header';
 import '@utils/typedjs';
-import '@utils/particles';
+import '@utils/particles.js';
 
-import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';
 import {
 	BUTTON_MORE_ABOUT_ME,
@@ -10,6 +9,8 @@ import {
 	THEME_INPUT,
 } from '@utils/nodes';
 import showParticles from '@utils/particlesJs';
+
+import showProjects from './templates/showProjects';
 
 // Function to toggle the visibility of the text more about me and toggle button
 const showMoreAboutMe = (): void => {

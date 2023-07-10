@@ -60,6 +60,7 @@
 	&__view-project-section {
 		display: flex;
 		gap: variables.$space-6;
+		flex-wrap: wrap;
 		align-items: center;
 	}
 
