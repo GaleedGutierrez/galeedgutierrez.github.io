@@ -1,16 +1,15 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import CopyPlugin from 'copy-webpack-plugin';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import { Configuration } from 'webpack';
 
-const PugPlugin = require('pug-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const common: Configuration = {
 	entry: {
-		index: './pug/index/index.pug',
-		'projects/index': './pug/projects/index.pug',
+		index: './src/index.ts',
+		'projects/index': './src/indexProjects.ts',
 	},
 	output: {
 		path: path.resolve(__dirname, 'build'),
@@ -37,27 +36,8 @@ const common: Configuration = {
 				loader: 'babel-loader',
 			},
 			{
-				test: /\.pug$/,
-				oneOf: [
-					{
-						issuer: /\.(js|ts)$/,
-						loader: PugPlugin.loader,
-						options: {
-							method: 'compile',
-						},
-					},
-					{
-						loader: PugPlugin.loader,
-					},
-				],
-			},
-			{
 				test: /\.s[ac]ss$/i,
-				use: [
-					// MiniCssExtractPlugin.loader,
-					'css-loader',
-					'sass-loader',
-				],
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -77,15 +57,21 @@ const common: Configuration = {
 		],
 	},
 	plugins: [
-		// new MiniCssExtractPlugin({
-		// 	filename: '[name].[contenthash].css',
-		// }),
-		// new HTMLWebpackPlugin(),
-		// new PugPlugin({
-		// 	css: {
-		// 		filename: '[name].[contenthash].css',
-		// 	},
-		// }),
+		new MiniCssExtractPlugin({
+			filename: '[name].css',
+		}),
+		new HTMLWebpackPlugin({
+			inject: true,
+			template: './public/index/index.html',
+			filename: 'index.html',
+			chunks: ['index'],
+		}),
+		new HTMLWebpackPlugin({
+			inject: true,
+			template: './public/projects/index.html',
+			filename: 'projects/index.html',
+			chunks: ['projects/index'],
+		}),
 		new CopyPlugin({
 			patterns: [
 				{
@@ -97,29 +83,12 @@ const common: Configuration = {
 					to: 'robots.txt',
 				},
 				{
-					from: path.resolve(__dirname, './CNAME'),
-					to: 'CNAME',
+					from: path.resolve(__dirname, 'CNAME'),
+					to: './',
 				},
-				// {
-				// 	// 	// Según curso de webpack de platzi ->
-				// 	from: path.resolve(__dirname, './', 'assets/images'),
-				// 	to: 'assets/images',
-				// },
 			],
 		}),
-		new PugPlugin({
-			js: {
-				filename: 'src/[name].bundle.[contenthash].js',
-			},
-			css: {
-				filename: 'styles/[name].bundle.[contenthash].css',
-			},
-		}),
 	],
-
-	// performance: {
-	// 	hints: 'warning',
-	// },
 };
 
 export default common;

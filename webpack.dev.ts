@@ -18,6 +18,14 @@ const config: Configuration = {
 		// 	writeToDisk : true
 		// },
 	},
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.s[ac]ss$/i,
+	// 			use: ['style-loader', 'css-loader', 'sass-loader'],
+	// 		},
+	// 	],
+	// },
 };
 
 export default merge(common, config);

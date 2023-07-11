@@ -1,3 +1,6 @@
-// Organisms
-@use "../organisms/about-me/aboutMe-desktop";
-@use "../organisms/porfolio/portfolio-desktop";
+/* stylelint-disable no-invalid-position-at-import-rule */
+@media screen and (width >= 1024px) {
+	// Organisms
+	@import "../organisms/about-me/aboutMe-desktop";
+	@import "../organisms/porfolio/portfolio-desktop";
+}

@@ -10,7 +10,8 @@
 		"lint": "eslint ./src/** webpack.common.ts webpack.dev.ts webpack.prod.ts .eslintrc.cjs",
 		"lint:fix": "npx eslint --fix ./",
 		"stylelint": "npx stylelint \"**/*.scss\"",
-		"stylelint:fix": "npx stylelint --fix \"**/*.scss\""
+		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
+		"pug": "pug --watch ./pug --out ./public -P"
 	},
 	"repository": {
 		"type": "git",
@@ -47,9 +48,9 @@
 		"eslint-import-resolver-typescript": "^3.5.5",
 		"file-loader": "^6.2.0",
 		"mini-css-extract-plugin": "^2.7.6",
-		"pug-plugin": "^4.9.7",
 		"sass": "^1.62.1",
 		"sass-loader": "^13.3.1",
+		"style-loader": "^3.3.3",
 		"stylelint-config-standard-scss": "^9.0.0",
 		"stylelint-order": "^6.0.3",
 		"ts-loader": "^9.4.3",
@@ -75,9 +76,12 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"eslint-plugin-unused-imports": "^2.0.0",
+		"html-webpack-plugin": "^5.5.3",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.2.3",
 		"prettier": "^2.8.8",
+		"pug": "^3.0.2",
+		"pug-cli2": "^1.0.0-alpha6.1",
 		"stylelint": "^15.10.1",
 		"stylelint-prettier": "^3.0.0",
 		"stylelint-scss": "^5.0.1",

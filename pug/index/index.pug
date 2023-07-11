@@ -2,9 +2,9 @@ extend ../settings/_global.pug
 block head
 	- const SEE_HEADER = true
 	- const SEE_FOOTER = true
-	link(rel="stylesheet" href=require("@styles/index/style.scss"))
-	link(rel="stylesheet" href=require("@styles/index/tablet.scss") media="screen and (min-width: 768px)")
-	link(rel="stylesheet" href=require("@styles/index/desktop.scss") media="screen and (min-width: 1024px)")
+	//- link(rel="stylesheet" href="../../styles/index/style.css")
+	//- link(rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px)")
+	//- link(rel="stylesheet" href="desktop.css" media="screen and (min-width: 1024px)")
 	title Galeed Gutierrez
 block header
 	include ./organisms/header/_header.pug
@@ -14,7 +14,6 @@ block main
 		include ./organisms/about-me/_aboutMe.pug
 		include ./organisms/portfolio/_portfolio.pug
 block scripts
-	script(src=require("@src/index.ts"))
 	include ../organisms/scripts/_analytics.pug
 	script(type="application/ld+json").
 		{
