@@ -1,4 +1,7 @@
 import '@utils/header';
+import '@styles/projects/style.scss';
+import '@styles/projects/tablet.scss';
+import '@styles/projects/desktop.scss';
 
 import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';

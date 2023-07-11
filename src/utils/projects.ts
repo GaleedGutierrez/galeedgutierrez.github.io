@@ -376,7 +376,7 @@ export const PROJECTS: Project[] = [
 			url: 'https://platzi.com/clases/2337-animaciones-css/37995-sabes-mas-de-animaciones-de-lo-que-crees/',
 			img: CURSO_DE_ANIMACIONES_CON_CSS_PLATZI,
 		},
-		description: 'Una pequeña animación con el perrito de Chems.',
+		description: 'Una pequeña animación con el perrito de Cheems.',
 		author: 'Galeed Gutierrez',
 	},
 	{
