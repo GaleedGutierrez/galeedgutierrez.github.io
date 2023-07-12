@@ -10,7 +10,24 @@ const config: Configuration = {
 	mode: 'development',
 	devtool: 'source-map',
 	devServer: {
-		static: path.join(__dirname, 'build'),
+		static: [
+			path.join(__dirname, 'build'),
+			{
+				directory: path.join(
+					__dirname,
+					'assets/images/icons/nature/space/'
+				),
+				publicPath: '/assets/images',
+			},
+			{
+				directory: path.join(__dirname, 'assets/images/me/'),
+				publicPath: '/assets/images',
+			},
+			{
+				directory: path.join(__dirname, 'assets/images/favicon/'),
+				publicPath: '/assets/images',
+			},
+		],
 		compress: true,
 		port: 8080,
 		historyApiFallback: true,
@@ -18,14 +35,14 @@ const config: Configuration = {
 		// 	writeToDisk : true
 		// },
 	},
-	// module: {
-	// 	rules: [
-	// 		{
-	// 			test: /\.s[ac]ss$/i,
-	// 			use: ['style-loader', 'css-loader', 'sass-loader'],
-	// 		},
-	// 	],
-	// },
+	module: {
+		rules: [
+			{
+				test: /\.s[ac]ss$/i,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
+		],
+	},
 };
 
 export default merge(common, config);

@@ -19,9 +19,9 @@
     <meta name="twitter:image" content="https://drive.google.com/uc?id=16ejNn81naE2X8KrloYv37t6RsiN_3TRM">
     <meta name="twitter:site" content="@GutierrezGaleed">
     <meta name="twitter:creator" content="@GutierrezGaleed">
-    <link rel="icon" href="../../assets/images/favicon/favicon.ico" type="any">
-    <link rel="icon" href="../../assets/images/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="../../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="assets/images/favicon.ico" type="any">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <title>Galeed Gutierrez</title>
   </head>
   <body class="body" id="body-id">
@@ -29,6 +29,7 @@
       <div class="o-container g-header__container"><a class="a-logo g-header__logo" href="#home">Galeed</a>
         <button class="g-header__sandwich-menu-button">
           <svg class="a-sandwich-menu" id="header__menu-sandwich-id" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+            <title>Menú</title>
             <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path>
           </svg>
         </button>
@@ -36,23 +37,23 @@
           <nav class="g-header__nav">
             <ul class="g-header__ul-container">
                   <li>
-                    <label class="g-header__label" for="headerMenu">
-                      <input class="g-header__input-radio" type="radio" name="headerMenu" value="1" id="nav__input-radio-id-1"><a class="g-header__link" id="header__nav-home" href="#home">Inicio</a>
+                    <label class="g-header__label" for="nav__input-radio-id-1">
+                      <input class="g-header__input-radio" type="radio" name="nav__input-radio-id-1" value="1" id="nav__input-radio-id-1"><a class="g-header__link" id="header__nav-home" href="#home">Inicio</a>
                     </label>
                   </li>
                   <li>
-                    <label class="g-header__label" for="headerMenu">
-                      <input class="g-header__input-radio" type="radio" name="headerMenu" value="2" id="nav__input-radio-id-2"><a class="g-header__link" id="header__nav-about" href="#about">Sobre mí</a>
+                    <label class="g-header__label" for="nav__input-radio-id-2">
+                      <input class="g-header__input-radio" type="radio" name="nav__input-radio-id-2" value="2" id="nav__input-radio-id-2"><a class="g-header__link" id="header__nav-about" href="#about">Sobre mí</a>
                     </label>
                   </li>
                   <li>
-                    <label class="g-header__label" for="headerMenu">
-                      <input class="g-header__input-radio" type="radio" name="headerMenu" value="3" id="nav__input-radio-id-3"><a class="g-header__link" id="header__nav-projects" href="#projects">Proyectos</a>
+                    <label class="g-header__label" for="nav__input-radio-id-3">
+                      <input class="g-header__input-radio" type="radio" name="nav__input-radio-id-3" value="3" id="nav__input-radio-id-3"><a class="g-header__link" id="header__nav-projects" href="#projects">Proyectos</a>
                     </label>
                   </li>
                   <li>
-                    <label class="g-header__label" for="headerMenu">
-                      <input class="g-header__input-radio" type="radio" name="headerMenu" value="5" id="nav__input-radio-id-5"><a class="g-header__link" id="header__nav-contact" href="#contact">Contacto</a>
+                    <label class="g-header__label" for="nav__input-radio-id-5">
+                      <input class="g-header__input-radio" type="radio" name="nav__input-radio-id-5" value="5" id="nav__input-radio-id-5"><a class="g-header__link" id="header__nav-contact" href="#contact">Contacto</a>
                     </label>
                   </li>
             </ul>
@@ -65,12 +66,12 @@
           <section class="g-header__options-container" id="header__options-id">
             <div class="o-container g-header__options">
               <div class="g-header__change-theme-container">
-                        <figure class="a-theme-icon"><img id="" src="../../assets/images/icons/nature/space/icon-sun.webp" alt="Sun icons" loading="lazy"></figure>
-                    <label class="m-switch-container" for="switch">
-                      <input class="m-switch__input" type="checkbox" name="switch" id="header__theme-input-id">
+                        <figure class="a-theme-icon"><img id="" src="assets/images/icon-sun.webp" alt="Sun icons" loading="lazy"></figure>
+                    <label class="m-switch-container" for="switch_theme">
+                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" data-id="header__theme-input-id">
                       <div class="m-switch"></div>
                     </label>
-                        <figure class="a-theme-icon"><img id="" src="../../assets/images/icons/nature/space/icon-moon.webp" alt="Moon icon" loading="lazy"></figure>
+                        <figure class="a-theme-icon"><img id="" src="assets/images/icon-moon.webp" alt="Moon icon" loading="lazy"></figure>
               </div>
             </div>
           </section>
@@ -117,6 +118,7 @@
                       </svg></a></li>
                 </ul><a class="a-arrow-down a-arrow-down--animated" href="#about">
             <svg class="a-icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+              <title>Ir a la sección sobre mi</title>
               <path d="M480-200 240-440l42-42 198 198 198-198 42 42-240 240Zm0-253L240-693l42-42 198 198 198-198 42 42-240 240Z"></path>
             </svg></a>
         </div>
@@ -136,7 +138,7 @@
         <div class="a-line-decoration g-about-me__line-decoration"></div>
         <section class="g-about-me__introduce-me">
           <div class="g-about-me__picture-container">
-            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="../../assets/images/me/me.webp" alt="Yo mirando a la cámara, estoy de frente" loading="lazy" width="645" height="645"></figure>
+            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="assets/images/me.webp" alt="Yo mirando a la cámara, estoy de frente" loading="lazy" width="645" height="645"></figure>
           </div>
           <div class="g-about-me__presentation-container">
             <section class="g-about-me__presentation">
