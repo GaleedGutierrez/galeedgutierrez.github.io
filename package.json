@@ -91,6 +91,10 @@
 		"webpack-bundle-analyzer": "^4.9.0",
 		"webpack-cli": "^5.1.4"
 	},
+	"browserslist": [
+		"defaults and supports es6-module",
+		"maintained node versions"
+	],
 	"lint-staged": {
 		"*.(j|t)s": "eslint --fix",
 		"*.s(a|c)ss": "stylelint --fix"

@@ -41,7 +41,7 @@ export const A_PROJECTS_SANDWICH_MENU = $(
 export const A_CONTACT_SANDWICH_MENU = $(
 	'#header__nav-contact'
 ) as HTMLAnchorElement;
-export const THEME_INPUT = $('#header__theme-input-id') as HTMLInputElement;
+export const THEME_INPUT = $('#switch_theme') as HTMLInputElement;
 export const OPTIONS_MENU = $(
 	'#header__menu-options-changes-id'
 ) as HTMLButtonElement;

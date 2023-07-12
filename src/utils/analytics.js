@@ -1,12 +1,11 @@
 import { onCLS, onFID, onLCP } from "web-vitals";
 
 // Google Analytics
-window.dataLayer = window.dataLayer || [];
-
 function gtag() {
 	dataLayer.push(arguments);
 }
 
+window.dataLayer = window.dataLayer || [];
 gtag("js", new Date());
 gtag("config", "G-M8H4YB694S");
 
