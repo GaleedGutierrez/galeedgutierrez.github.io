@@ -11,8 +11,8 @@ header#header-id.g-header
 		section#header__nav-container-id.g-header__menu-container
 			nav.g-header__nav
 				ul.g-header__ul-container
-					+elements-menu-header("https://galeedgutierrez.com/#home", "header__nav-home", "Inicio", "1", "")
-					+elements-menu-header("https://galeedgutierrez.com/#about", "header__nav-about", "Sobre mí", "2", "")
+					+elements-menu-header("https://galeedgutierrez.com/#home", "header__nav-home", "Inicio", "1", "nothing-1")
+					+elements-menu-header("https://galeedgutierrez.com/#about", "header__nav-about", "Sobre mí", "2", "nothing-2")
 					+elements-menu-header("#projects", "header__nav-projects", "Proyectos", "3", "nav__input-radio-id-3")
 					//- +elements-menu-header("#resume", "header__nav-resume", "Resume", "4", "nav__input-radio-id-4")
 					+elements-menu-header("#contact", "header__nav-contact", "Contacto", "5", "nav__input-radio-id-5")
@@ -22,6 +22,6 @@ header#header-id.g-header
 			section#header__options-id.g-header__options-container
 				.o-container.g-header__options
 					.g-header__change-theme-container
-						+header__theme-switch("header__theme-input-id","", "", "Sun icons", "assets/icons/nature/space/icon-sun.webp", "", "", "Moon icon", "assets/icons/nature/space/icon-moon.webp")
+						+header__theme-switch("header__theme-input-id","", "", "Sun icons", "/assets/images/icon-sun.webp", "", "", "Moon icon", "/assets/images/icon-moon.webp")
 				//- .options__language.options__header
 				//- 	+header-options("header__language-input-id","", "", "Spanish icon", "../assets/images/icons/languages/flag-spain.webp", "", "", "English icon", "../assets/images/icons/languages/flag-UK.webp")

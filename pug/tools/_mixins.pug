@@ -5,7 +5,7 @@ mixin img(idImg, classImg, altImg, srcImg)
 mixin elements-menu-header(hrefA, idA, sectionMenu, valueInput, idInput)
 	li
 		label(for=idInput).g-header__label
-			input(type="radio" name=idInput value=valueInput id=idInput).g-header__input-radio
+			input(type="radio" name='gral' value=valueInput id=idInput).g-header__input-radio
 			a(id=idA, href=hrefA).g-header__link= sectionMenu
 
 mixin header__theme-switch(idInput, idImg1, classImg1, altImg1, srcImg1, idImg2, classImg2, altImg2, srcImg2)
@@ -57,3 +57,21 @@ mixin otter-icon
 			path(d="M4273 3975 c-48 -34 -54 -146 -11 -192 29 -31 89 -31 117 -2 42 46 35 161 -12 194 -27 19 -67 19 -94 0z")
 			path(d="M4041 3553 c-12 -10 -24 -35 -28 -56 -5 -36 -3 -40 64 -107 59 -60 75 -70 104 -70 28 0 43 9 80 48 87 89 100 132 54 177 -23 24 -30 25 -138 25 -95 0 -119 -3 -136 -17z")
 			path(d="M4026 2513 c-13 -16 -42 -49 -63 -74 -48 -59 -94 -98 -163 -140 -30 -18 -61 -40 -68 -49 -14 -17 -12 -72 9 -233 12 -90 12 -100 -5 -131 -39 -73 -143 -88 -196 -29 -17 19 -57 119 -120 297 -100 287 -107 299 -172 299 -37 0 -78 -41 -78 -78 0 -13 19 -76 41 -140 23 -64 40 -118 37 -120 -7 -7 -171 -33 -258 -41 -74 -6 -88 -10 -112 -35 -39 -38 -34 -90 11 -127 20 -16 147 -9 306 18 61 10 113 15 116 11 4 -3 12 -24 19 -46 23 -74 59 -132 105 -173 90 -79 215 -95 323 -41 65 32 100 66 135 133 24 46 29 154 14 276 l-8 65 66 50 c107 80 205 202 205 254 0 74 -93 108 -144 54z")
+
+mixin skeleton-card(numberCards)
+	each items in numberCards
+		.m-skeleton-card
+			.m-skeleton-card__img-technology-icons-container
+				.m-skeleton-card__img.blinking
+				.m-skeleton-card__technology-icons.blinking
+			.m-skeleton-card__info-container
+				.m-skeleton-card__title.blinking
+				.m-skeleton-card__text.blinking
+				.m-skeleton-card__text.blinking
+				.m-skeleton-card__platform-container
+					.m-skeleton-card__platform-icon.blinking
+					.m-skeleton-card__platform-title.blinking
+					.m-skeleton-card__platform-name.blinking
+				.m-skeleton-card__demo-container
+					.m-skeleton-card__button.blinking
+					.m-skeleton-card__github.blinking
