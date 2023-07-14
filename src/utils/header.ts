@@ -19,7 +19,6 @@ import {
 	OPTIONS_MENU_CONTAINER,
 	SANDWICH_MENU,
 } from '@utils/nodes';
-import { OBSERVER_SECTIONS } from '@utils/observer';
 
 const IS_INDEX_FILE =
 	Boolean(INPUT_HOME_SANDWICH_MENU) && Boolean(INPUT_ABOUT_SANDWICH_MENU);
@@ -52,15 +51,15 @@ const ANCHOR_SANDWICH = IS_INDEX_FILE
 
 const TABLET_SIZE = 768;
 
-ANCHOR_SANDWICH.forEach((anchor) => {
-	const hash = anchor.getAttribute('href');
+// ANCHOR_SANDWICH.forEach((anchor) => {
+// 	const hash = anchor.getAttribute('href');
 
-	if (!hash) return;
+// 	if (!hash) return;
 
-	const SECTION = document.querySelector(hash);
+// 	const SECTION = document.querySelector(hash);
 
-	if (SECTION) OBSERVER_SECTIONS.observe(SECTION);
-});
+// 	if (SECTION) OBSERVER_SECTIONS.observe(SECTION);
+// });
 
 window.addEventListener('resize', () => {
 	if (screen.width < TABLET_SIZE) {

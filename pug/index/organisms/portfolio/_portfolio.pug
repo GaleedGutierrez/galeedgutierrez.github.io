@@ -1,4 +1,7 @@
+include ../../../tools/_mixins.pug
+- const numberCards = [0, 1, 2, 3, 4, 5]
 section#projects.g-portfolio.o-scroll-margin
 	h2.o-container.g-portfolio__title Mi portafolio
 	section#portfolio__projects-container-id.o-container.g-portfolio__projects-container
+		+skeleton-card(numberCards)
 	a(href="https://galeedgutierrez.com/projects").a-button--unique.g-portfolio__button Ver todos

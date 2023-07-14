@@ -17,8 +17,8 @@
 			variables.$background-lighter-gray-color
 		)};
 	--hover-color: #{functions.light-dark(
-			variables.$background-light-gray-color,
-			variables.$background-lightest-gray-color
+			variables.$background-lightest-gray-color,
+			variables.$background-light-gray-color
 		)};
 	--active-color: #{functions.light-dark(
 			variables.$background-dark-color,
@@ -52,8 +52,8 @@
 	color: variables.$text-color;
 
 	&:hover {
-		border-color: variables.$background-light-gray-color;
-		background-color: variables.$background-light-gray-color;
+		border-color: variables.$background-lightest-gray-color;
+		background-color: variables.$background-lightest-gray-color;
 		color: variables.$text-color-white;
 	}
 

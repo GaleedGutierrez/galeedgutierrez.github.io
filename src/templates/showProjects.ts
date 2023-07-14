@@ -125,6 +125,7 @@ const showProjects = (lengthProjects: number): void => {
 		ALL_PROJECTS.push(ARTICLE);
 	}
 
+	CONTAINER_PROJECTS_SECTION.innerHTML = '';
 	CONTAINER_PROJECTS_SECTION.append(...ALL_PROJECTS);
 };
 
