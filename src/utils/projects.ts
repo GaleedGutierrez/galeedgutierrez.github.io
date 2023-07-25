@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
 			img: CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON,
 		},
 		description:
-			'En este proyecto 🚀, cree una página web con temática de LEGO, utilizando diferentes técnicas de animación para darle vida y dinamismo al sitio. 🎨',
+			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span>, cree una página web con temática de LEGO, utilizando diferentes técnicas de animación para darle vida y dinamismo al sitio. <span aria-hidden="true" tabindex="-1">🎨</span>',
 		author: 'Galeed Gutierrez',
 	},
 	{
@@ -148,7 +148,7 @@ export const PROJECTS: Project[] = [
 			img: CURSO_DE_SPA_CON_JAVASCRIPT_VANILLA_2021,
 		},
 		description:
-			'Web 🌐 que usa API de rickandmortyapi.com para ver detalles de personajes de “Rick y Morty” 🧪.',
+			'Web <span aria-hidden="true" tabindex="-1">🌐</span> que usa API de rickandmortyapi.com para ver detalles de personajes de “Rick y Morty” <span aria-hidden="true" tabindex="-1">🧪</span>.',
 		author: 'Galeed Gutierrez',
 	},
 	{
@@ -172,7 +172,7 @@ export const PROJECTS: Project[] = [
 			img: ALURA_ICON,
 		},
 		description:
-			'Encriptación y desencriptación de texto 📋 con un algoritmo de sustitución de vocales 🔡.',
+			'Encriptación y desencriptación de texto <span aria-hidden="true" tabindex="-1">📋</span> con un algoritmo de sustitución de vocales <span aria-hidden="true" tabindex="-1">🔡</span>.',
 		author: 'Galeed Gutierrez',
 	},
 	{
@@ -201,7 +201,7 @@ export const PROJECTS: Project[] = [
 			img: CURSO_DE_INTRODUCCION_A_EMPAQUETADORES_WEB_ICON,
 		},
 		description:
-			'Es un ejemplo de un link in bio 🔗, que dirige a una página con varios enlaces de redes sociales 📱 y otros sitios de interés 💡.',
+			'Es un ejemplo de un link in bio <span aria-hidden="true" tabindex="-1">🔗</span>, que dirige a una página con varios enlaces de redes sociales <span aria-hidden="true" tabindex="-1">📱</span> y otros sitios de interés <span aria-hidden="true" tabindex="-1">💡</span>.',
 		author: 'Galeed Gutierrez',
 	},
 	{
@@ -225,7 +225,7 @@ export const PROJECTS: Project[] = [
 			img: CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD,
 		},
 		description:
-			'Descubre y disfruta de las mejores películas 🎥 con esta web que te permite buscar por nombre o categoría y ver las más populares 🚀 usando la API de The Movie DB 🍿.',
+			'Descubre y disfruta de las mejores películas <span aria-hidden="true" tabindex="-1">🎥</span> con esta web que te permite buscar por nombre o categoría y ver las más populares <span aria-hidden="true" tabindex="-1">🚀</span> usando la API de The Movie DB <span aria-hidden="true" tabindex="-1">🍿</span>.',
 		author: 'Galeed Gutierrez',
 	},
 	{
@@ -259,7 +259,7 @@ export const PROJECTS: Project[] = [
 			img: TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI,
 		},
 		description:
-			'El juego trata de un programador 👨‍💻 que tiene que llegar a su meta ✅ evitando los diferentes bugs 👾 que puede tener en el camino.',
+			'El juego trata de un programador <span aria-hidden="true" tabindex="-1">👨‍💻</span> que tiene que llegar a su meta <span aria-hidden="true" tabindex="-1">✅</span> evitando los diferentes bugs <span aria-hidden="true" tabindex="-1">👾</span> que puede tener en el camino.',
 		author: 'Galeed Gutierrez',
 	},
 	{
