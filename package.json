@@ -46,7 +46,6 @@
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.8.1",
 		"eslint-import-resolver-typescript": "^3.5.5",
-		"file-loader": "^6.2.0",
 		"mini-css-extract-plugin": "^2.7.6",
 		"sass": "^1.62.1",
 		"sass-loader": "^13.3.1",
@@ -58,7 +57,6 @@
 		"tsconfig-paths": "^4.2.0",
 		"typed.js": "^2.0.16",
 		"typescript": "^5.0.4",
-		"url-loader": "^4.1.1",
 		"web-vitals": "^3.3.2",
 		"webpack-dev-server": "^4.15.0",
 		"workbox-webpack-plugin": "^7.0.0"

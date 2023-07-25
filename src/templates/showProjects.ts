@@ -44,13 +44,15 @@ const showProjects = (lengthProjects: number): void => {
 		SOURCE_LARGE.srcset = PROJECTS[i]?.images?.large;
 		SOURCE_LARGE.media = '(min-width: 1024px)';
 		IMG_PROJECT.src = PROJECTS[i].images.small;
-		IMG_PROJECT.alt = `Screenshot de ${PROJECTS[i].name}`;
+		IMG_PROJECT.alt = `Screenshot del proyecto ${PROJECTS[i].name}`;
 		IMG_PROJECT.className = 'm-project-card__img-project';
 		IMG_PROJECT.loading = 'lazy';
 		IMG_PROJECT.width = 1280;
 		IMG_PROJECT.height = 720;
 		TECHNOLOGIES_ICONS_CONTAINER.className =
 			'm-project-card__technology-icons-container';
+		TECHNOLOGIES_ICONS_CONTAINER.ariaHidden = 'true';
+		TECHNOLOGIES_ICONS_CONTAINER.tabIndex = -1;
 
 		PICTURE_IMG.append(SOURCE_LARGE, SOURCE_MEDIUM, IMG_PROJECT);
 		TECHNOLOGIES_ICONS_CONTAINER.append(...iconsTechnologies);
@@ -72,7 +74,7 @@ const showProjects = (lengthProjects: number): void => {
 		// Create course's information and append it to the details of the project
 		SECTION_DETAILS.className = 'm-project-card__data-container';
 		TITLE.innerText = PROJECTS[i].name;
-		DESCRIPTION.innerText = PROJECTS[i].description;
+		DESCRIPTION.innerHTML = PROJECTS[i].description;
 
 		LINK_COURSE_CONTAINER.target = '_blank';
 		LINK_COURSE_CONTAINER.href = PROJECTS[i].course.url;
@@ -108,7 +110,7 @@ const showProjects = (lengthProjects: number): void => {
 		PROJECT_BUTTON.className = 'a-button';
 
 		GITHUB_ICON_LINK.target = '_blank';
-		GITHUB_ICON_LINK.ariaLabel = 'Github';
+		GITHUB_ICON_LINK.ariaLabel = `Ir al repositorio de Github del proyecto ${PROJECTS[i].name}`;
 		GITHUB_ICON_LINK.href = PROJECTS[i].repository;
 		GITHUB_ICON_LINK.innerHTML = GITHUB_ICON;
 

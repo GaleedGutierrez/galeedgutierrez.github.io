@@ -97,22 +97,3 @@
 		transform: translateY(27.5rem);
 	}
 }
-
-.g-header__input-radio {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
-
-	// &:checked + .g-header__link::before {
-	// 	content: "[ ";
-	// }
-
-	// &:checked + .g-header__link::after {
-	// 	content: " ]";
-	// }
-
-	&:not(:checked) + .g-header__link:hover {
-		text-decoration: underline;
-	}
-}

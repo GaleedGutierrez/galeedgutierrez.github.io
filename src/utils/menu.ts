@@ -2,21 +2,21 @@ import {
 	MENU_ELEMENTS_CONTAINER,
 	OPTIONS_MENU,
 	OPTIONS_MENU_CONTAINER,
-	SANDWICH_MENU,
+	SANDWICH_MENU_ICON,
 } from '@utils/nodes';
 
 export const showMenu = (): void => {
 	MENU_ELEMENTS_CONTAINER.classList.toggle(
 		'g-header__menu-container--visible'
 	);
-	SANDWICH_MENU.classList.toggle('a-sandwich-menu--active');
+	SANDWICH_MENU_ICON.classList.toggle('a-sandwich-menu--active');
 };
 
 export const hiddenMenu = (): void => {
 	MENU_ELEMENTS_CONTAINER.classList.remove(
 		'g-header__menu-container--visible'
 	);
-	SANDWICH_MENU.classList.remove('a-sandwich-menu--active');
+	SANDWICH_MENU_ICON.classList.remove('a-sandwich-menu--active');
 };
 
 export const showOptionsMenu = (): void => {

@@ -2,8 +2,8 @@ include ../../../tools/_mixins.pug
 header#header-id.g-header
 	div.o-container.g-header__container
 		//- section.g-header__logo-container
-		a(href="https://galeedgutierrez.com").a-logo.g-header__logo Galeed
-		button.g-header__sandwich-menu-button
+		a(href="https://galeedgutierrez.com" aria-label="Ir al inicio de la página").a-logo.g-header__logo Galeed
+		button#header__menu-sandwich-button.g-header__sandwich-menu-button
 			svg#header__menu-sandwich-id.a-sandwich-menu(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
 				title Menú
 				path(d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z")
@@ -11,11 +11,11 @@ header#header-id.g-header
 		section#header__nav-container-id.g-header__menu-container
 			nav.g-header__nav
 				ul.g-header__ul-container
-					+elements-menu-header("https://galeedgutierrez.com/#home", "header__nav-home", "Inicio", "1", "nothing-1")
-					+elements-menu-header("https://galeedgutierrez.com/#about", "header__nav-about", "Sobre mí", "2", "nothing-2")
-					+elements-menu-header("#projects", "header__nav-projects", "Proyectos", "3", "nav__input-radio-id-3")
-					//- +elements-menu-header("#resume", "header__nav-resume", "Resume", "4", "nav__input-radio-id-4")
-					+elements-menu-header("#contact", "header__nav-contact", "Contacto", "5", "nav__input-radio-id-5")
+					+elements-menu-header("https://galeedgutierrez.com/#home", "header__nav-home", "Inicio")
+					+elements-menu-header("https://galeedgutierrez.com/#about", "header__nav-about", "Sobre mí")
+					+elements-menu-header("#projects", "header__nav-projects", "Proyectos")
+					//- +elements-menu-header("#resume", "header__nav-resume", "Resume")
+					+elements-menu-header("#contact", "header__nav-contact", "Contacto")
 				button.g-header__menu-options-button
 					svg#header__menu-options-changes-id.a-icon.g-header__changes-options-menu(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
 						path(d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z")
