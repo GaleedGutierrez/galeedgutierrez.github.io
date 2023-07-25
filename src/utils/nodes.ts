@@ -8,6 +8,9 @@ export const HEAD = $('#head-id') as HTMLHeadElement;
 
 // Header Section
 export const SANDWICH_MENU = $(
+	'#header__menu-sandwich-button'
+) as HTMLButtonElement;
+export const SANDWICH_MENU_ICON = $(
 	'#header__menu-sandwich-id'
 ) as HTMLButtonElement;
 export const MENU_ELEMENTS_CONTAINER = $(
