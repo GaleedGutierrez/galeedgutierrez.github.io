@@ -35,11 +35,11 @@
         </button>
         <section class="g-header__menu-container" aria-hidden="true" tabindex="-1" id="header__nav-container-id">
           <nav class="g-header__nav">
-            <ul class="g-header__ul-container" aria-hidden="true">
-                  <li><a class="g-header__link" href="#home">Inicio</a></li>
-                  <li><a class="g-header__link" href="#about">Sobre mí</a></li>
-                  <li><a class="g-header__link" href="#projects">Proyectos</a></li>
-                  <li><a class="g-header__link" href="#contact">Contacto</a></li>
+            <ul class="g-header__ul-container">
+                  <li><a class="g-header__link" href="#home" aria-label="Ir a la sección de Inicio">Inicio</a></li>
+                  <li><a class="g-header__link" href="#about" aria-label="Ir a la sección de Sobre mí">Sobre mí</a></li>
+                  <li><a class="g-header__link" href="#projects" aria-label="Ir a la sección de Proyectos">Proyectos</a></li>
+                  <li><a class="g-header__link" href="#contact" aria-label="Ir a la sección de Contacto">Contacto</a></li>
             </ul>
             <button class="g-header__menu-options-button" id="header__menu-options-changes-button">
               <svg class="a-icon g-header__changes-options-menu" id="header__menu-options-changes-id" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -51,9 +51,9 @@
           <section class="g-header__options-container" id="header__options-id">
             <div class="o-container g-header__options">
               <div class="g-header__change-theme-container">
-                    <label class="m-switch-container" for="switch_theme"><span class="a-theme-icon">☀️</span>
-                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme">
-                      <div class="m-switch"></div><span class="a-theme-icon">🌑</span>
+                    <label class="m-switch-container" for="switch_theme"><span class="a-theme-icon" aria-hidden="true" tabindex="-1">☀️</span>
+                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" aria-label="Switch para usar el modo oscuro">
+                      <div class="m-switch"></div><span class="a-theme-icon" aria-hidden="true" tabindex="-1">🌑</span>
                     </label>
               </div>
             </div>
@@ -76,13 +76,12 @@
                         <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
                         <path d="M2 12h6v18h-6v-18z"></path>
                         <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
-                      </svg></a>
-                    <li><a class="m-social-media__link" href="https://github.com/GaleedGutierrez" target="_blank">
-                        <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                          <title>Ir al Github de Galeed Gutierrez</title>
-                          <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
-                        </svg></a></li>
-                  </li>
+                      </svg></a></li>
+                  <li><a class="m-social-media__link" href="https://github.com/GaleedGutierrez" target="_blank">
+                      <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>Ir al Github de Galeed Gutierrez</title>
+                        <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+                      </svg></a></li>
                   <li><a class="m-social-media__link" href="https://twitter.com/GutierrezGaleed" target="_blank">
                       <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>Ir al Twitter de Galeed Gutierrez</title>
@@ -90,14 +89,14 @@
                       </svg></a></li>
                 </ul><a class="a-arrow-down a-arrow-down--animated" href="#about">
             <svg class="a-icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-              <title>Ir a la sección sobre mi</title>
+              <title>Ir a la sección sobre mí</title>
               <path d="M480-200 240-440l42-42 198 198 198-198 42 42-240 240Zm0-253L240-693l42-42 198 198 198-198 42 42-240 240Z"></path>
             </svg></a>
         </div>
         <div class="m-particles-js" id="particles-js"></div>
       </section>
       <section class="g-about-me o-scroll-margin" id="about">
-              <svg class="a-otter-icon g-about-me__otter-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+              <svg class="a-otter-icon g-about-me__otter-icon" aria-hidden="true" tabindex="-1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                   <path d="M3334 4641 c-94 -23 -205 -117 -246 -208 -32 -71 -36 -191 -9 -267 11 -32 31 -73 45 -90 l24 -33 -58 -82 c-33 -45 -78 -116 -100 -157 -43 -77 -81 -113 -139 -133 -53 -17 -70 -14 -243 44 -90 30 -221 67 -293 82 -123 26 -145 27 -385 27 -239 0 -263 -1 -381 -27 -402 -85 -734 -268 -1026 -565 -582 -590 -684 -1358 -265 -2002 290 -447 810 -760 1262 -760 235 0 441 72 794 279 274 161 368 200 538 226 48 7 117 60 145 110 63 113 26 238 -96 324 -108 75 -146 86 -311 85 -168 -1 -213 -12 -480 -116 -398 -156 -548 -193 -691 -169 -156 25 -283 120 -355 267 -38 76 -39 80 -39 188 0 107 1 113 34 173 38 70 71 106 79 85 12 -35 106 -133 168 -175 147 -100 208 -109 729 -105 393 3 412 4 456 24 93 43 149 132 149 237 0 74 -19 123 -67 177 -54 60 -100 79 -214 87 -76 5 -89 8 -85 22 42 139 32 281 -30 403 -85 167 -308 279 -497 250 -79 -12 -114 -32 -123 -69 -18 -69 41 -117 123 -101 68 13 138 2 210 -33 179 -86 227 -305 107 -483 -40 -60 -43 -95 -10 -133 l24 -28 176 -3 c175 -4 176 -4 196 -29 27 -35 26 -85 -4 -120 l-24 -28 -397 -3 c-245 -2 -418 1 -453 8 -179 33 -312 166 -343 344 -8 51 -8 98 0 198 7 72 14 135 17 139 2 5 -2 23 -9 42 -29 69 -124 71 -152 3 -20 -47 -38 -260 -30 -354 l6 -83 -64 -69 c-107 -116 -149 -225 -149 -385 0 -164 67 -313 199 -442 53 -53 96 -83 156 -113 210 -104 415 -92 773 45 451 172 515 191 644 183 91 -6 168 -37 210 -85 49 -55 26 -97 -59 -108 -129 -17 -256 -71 -476 -200 -311 -183 -458 -250 -615 -279 -473 -90 -1073 260 -1351 787 -63 121 -101 223 -130 357 -35 155 -33 380 4 537 137 588 666 1113 1278 1268 362 92 731 71 1109 -65 63 -22 140 -43 170 -47 101 -10 231 38 302 114 14 15 54 75 87 132 65 109 103 163 157 221 64 69 64 119 -2 173 -81 68 -99 188 -38 264 68 86 178 106 265 49 32 -22 48 -43 72 -96 23 -52 38 -72 59 -81 30 -12 37 -11 143 21 46 14 110 24 185 27 144 7 241 -15 379 -84 133 -66 157 -62 205 38 42 86 88 121 164 127 90 6 162 -38 197 -120 18 -45 19 -77 3 -131 -18 -58 -63 -101 -137 -127 -53 -20 -66 -29 -77 -57 -13 -30 -12 -38 11 -95 40 -102 55 -177 55 -276 0 -122 -22 -216 -75 -327 -118 -244 -324 -375 -591 -375 -236 0 -441 100 -604 295 -66 79 -74 85 -109 85 -49 0 -81 -32 -81 -82 0 -26 12 -51 49 -99 130 -173 325 -297 548 -350 119 -28 331 -23 438 11 278 88 483 304 567 595 20 69 23 103 23 240 0 124 -4 175 -19 225 l-18 65 29 20 c55 39 111 104 139 161 24 51 28 71 29 149 0 77 -4 98 -27 147 -35 76 -104 148 -175 184 -53 26 -67 29 -158 29 -89 0 -106 -3 -157 -28 -34 -17 -78 -51 -110 -85 l-52 -57 -81 32 c-126 50 -227 66 -374 60 -69 -3 -150 -12 -178 -20 l-52 -14 -38 51 c-86 115 -239 170 -379 137z"></path>
                   <path d="M3729 3961 c-24 -25 -29 -38 -29 -80 0 -68 14 -99 51 -115 72 -30 119 12 119 108 -1 64 -10 85 -47 104 -35 19 -63 14 -94 -17z"></path>
@@ -110,12 +109,12 @@
         <div class="a-line-decoration g-about-me__line-decoration"></div>
         <section class="g-about-me__introduce-me">
           <div class="g-about-me__picture-container">
-            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="assets/images/me.webp" alt="Yo mirando a la cámara, estoy de frente" loading="lazy" width="645" height="645"></figure>
+            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="assets/images/me.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645"></figure>
           </div>
           <div class="g-about-me__presentation-container">
             <section class="g-about-me__presentation">
               <h3 class="g-about-me__presentation-title">Hola, soy Galeed Gutierrez.</h3>
-              <p class="g-about-me__about-me-text">Soy de Argentina y apasionado por la tecnología.</p>
+              <p class="g-about-me__about-me-text">Argentino apasionado por la tecnología.</p>
             </section>
             <section class="g-about-me__more-information-container" id="about-me__more-information-container-id">
               <section class="g-about-me__fronted-dev">
@@ -267,13 +266,12 @@
                     <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
                     <path d="M2 12h6v18h-6v-18z"></path>
                     <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
-                  </svg></a>
-                <li><a class="m-social-media__link" href="https://github.com/GaleedGutierrez" target="_blank">
-                    <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                      <title>Ir al Github de Galeed Gutierrez</title>
-                      <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
-                    </svg></a></li>
-              </li>
+                  </svg></a></li>
+              <li><a class="m-social-media__link" href="https://github.com/GaleedGutierrez" target="_blank">
+                  <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>Ir al Github de Galeed Gutierrez</title>
+                    <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+                  </svg></a></li>
               <li><a class="m-social-media__link" href="https://twitter.com/GutierrezGaleed" target="_blank">
                   <svg class="a-icon m-social-media__icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                     <title>Ir al Twitter de Galeed Gutierrez</title>
