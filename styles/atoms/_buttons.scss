@@ -52,15 +52,15 @@
 	color: variables.$text-color;
 
 	&:hover {
-		border-color: variables.$background-lightest-gray-color;
-		background-color: variables.$background-lightest-gray-color;
-		color: variables.$text-color-white;
+		border-color: variables.$background-dark-gray-color;
+		background-color: variables.$background-dark-gray-color;
+		color: variables.$text-color-pure-white;
 	}
 
 	&:active {
 		border-color: variables.$background-dark-color;
 		background-color: variables.$background-dark-color;
-		color: variables.$text-color-white;
+		color: variables.$text-color-pure-white;
 	}
 
 	@extend %a-button-base;

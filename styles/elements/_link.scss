@@ -1,14 +1,24 @@
 @use "../settings/variables";
+@use "../tools/functions";
 
 a {
+	--hover-text-color: #{functions.light-dark(
+			variables.$gray-200,
+			variables.$light-gray-400
+		)};
+	--active-text-color: #{functions.light-dark(
+			variables.$light-black,
+			variables.$light-gray-100
+		)};
+
 	color: var(--text-color);
 	text-decoration: none;
 
 	&:hover {
-		color: variables.$gray-100;
+		color: var(--hover-text-color);
 	}
 
 	&:active {
-		color: variables.$gray-200;
+		color: var(--active-text-color);
 	}
 }
