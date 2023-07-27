@@ -1,13 +1,23 @@
 @use "../settings/variables";
+@use "../tools/functions";
 
 .a-icon {
+	--hover-color: #{functions.light-dark(
+			variables.$gray-200,
+			variables.$light-gray-400
+		)};
+	--active-color: #{functions.light-dark(
+			variables.$light-black,
+			variables.$light-gray-100
+		)};
+
 	fill: var(--icon-color);
 
 	&:hover {
-		fill: variables.$gray-100;
+		fill: var(--hover-color);
 	}
 
 	&:active {
-		fill: variables.$gray-200;
+		fill: var(--active-color);
 	}
 }
