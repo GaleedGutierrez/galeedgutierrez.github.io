@@ -1,0 +1,31 @@
+@use "../settings/variables";
+@use "../tools/functions";
+
+.is-skip-link {
+	--background-color: #{functions.light-dark(
+			variables.$background-light-dark-color,
+			variables.$background-lighter-gray-color
+		)};
+	--text-color: #{functions.light-dark(
+			variables.$text-color-white,
+			variables.$text-color
+		)};
+
+	position: absolute;
+	z-index: variables.$z-index-9-accessibility;
+	display: inline-block;
+	overflow: hidden;
+	padding: variables.$space-4;
+	border-radius: variables.$border-2;
+	margin-block-start: variables.$space-5;
+	margin-inline-start: variables.$space-5;
+	background-color: var(--background-color);
+	font-weight: variables.$weight-semibold;
+	color: var(--text-color);
+	transition: transform variables.$time-001;
+	transform: translateY(-200%);
+
+	&:focus {
+		transform: translateY(0%);
+	}
+}
