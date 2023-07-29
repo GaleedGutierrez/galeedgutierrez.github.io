@@ -33,7 +33,7 @@
 	&__sandwich-menu-button {
 		display: flex;
 
-		&:focus {
+		&:focus-visible {
 			@include mixins.focus-button;
 		}
 	}

@@ -19,7 +19,7 @@ a {
 		color: var(--hover-text-color);
 	}
 
-	&:focus {
+	&:focus-visible {
 		@include mixins.focus-anchor;
 	}
 

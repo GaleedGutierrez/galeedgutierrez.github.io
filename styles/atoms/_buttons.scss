@@ -39,7 +39,7 @@
 		color: var(--text-hover-color);
 	}
 
-	&:focus {
+	&:focus-visible {
 		@include mixins.focus-button;
 	}
 
@@ -62,7 +62,7 @@
 		color: variables.$text-color-pure-white;
 	}
 
-	&:focus {
+	&:focus-visible {
 		@include mixins.focus-button;
 		/* stylelint-disable-next-line order/order */
 		outline: variables.$border-1 solid variables.$background-dark-color;
