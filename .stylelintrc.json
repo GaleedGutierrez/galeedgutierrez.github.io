@@ -240,6 +240,12 @@
 			"background-origin",
 			"background-blend-mode",
 
+			"outline",
+			"outline-style",
+			"outline-width",
+			"outline-color",
+			"outline-offset",
+
 			"font-family",
 			"src",
 			"font-size",

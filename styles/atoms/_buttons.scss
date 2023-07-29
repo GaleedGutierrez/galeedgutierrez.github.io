@@ -1,5 +1,6 @@
 @use "../settings/variables";
 @use "../tools/functions";
+@use "../tools/mixins";
 
 %a-button-base {
 	padding-inline: variables.$space-6;
@@ -39,6 +40,10 @@
 	}
 
 	&:focus {
+		@include mixins.focus-button;
+	}
+
+	&:active {
 		border-color: var(--active-color);
 		background-color: var(--active-color);
 		color: var(--text-hover-color);
@@ -55,6 +60,12 @@
 		border-color: variables.$background-dark-gray-color;
 		background-color: variables.$background-dark-gray-color;
 		color: variables.$text-color-pure-white;
+	}
+
+	&:focus {
+		@include mixins.focus-button;
+		/* stylelint-disable-next-line order/order */
+		outline: variables.$border-1 solid variables.$background-dark-color;
 	}
 
 	&:active {

@@ -1,5 +1,6 @@
 @use "../settings/variables";
 @use "../tools/functions";
+@use "../tools/mixins";
 
 .a-sandwich-menu {
 	--background-color: #{functions.light-dark(

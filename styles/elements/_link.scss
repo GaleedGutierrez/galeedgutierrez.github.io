@@ -1,5 +1,6 @@
 @use "../settings/variables";
 @use "../tools/functions";
+@use "../tools/mixins";
 
 a {
 	--hover-text-color: #{functions.light-dark(
@@ -16,6 +17,10 @@ a {
 
 	&:hover {
 		color: var(--hover-text-color);
+	}
+
+	&:focus {
+		@include mixins.focus-anchor;
 	}
 
 	&:active {

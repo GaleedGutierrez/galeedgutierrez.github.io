@@ -30,6 +30,14 @@
 		z-index: variables.$z-index-1-screen-foreground;
 	}
 
+	&__sandwich-menu-button {
+		display: flex;
+
+		&:focus {
+			@include mixins.focus-button;
+		}
+	}
+
 	&__nav {
 		margin-block: variables.$space-4;
 		text-align: center;

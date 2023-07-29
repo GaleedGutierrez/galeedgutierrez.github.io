@@ -1,5 +1,6 @@
 @use "../settings/variables";
 @use "../tools/functions";
+@use "../tools/mixins";
 
 .is-skip-link {
 	--background-color: #{functions.light-dark(
@@ -17,8 +18,8 @@
 	overflow: hidden;
 	padding: variables.$space-4;
 	border-radius: variables.$border-2;
-	margin-block-start: variables.$space-5;
-	margin-inline-start: variables.$space-5;
+	margin-inline: variables.$space-6;
+	margin-block-start: variables.$space-6;
 	background-color: var(--background-color);
 	font-weight: variables.$weight-semibold;
 	color: var(--text-color);
@@ -27,5 +28,7 @@
 
 	&:focus {
 		transform: translateY(0%);
+
+		@include mixins.focus-skip-link;
 	}
 }
