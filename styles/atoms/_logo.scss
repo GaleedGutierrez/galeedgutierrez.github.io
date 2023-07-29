@@ -2,7 +2,7 @@
 @use "../tools/mixins";
 
 .a-logo {
-	&:focus {
+	&:focus-visible {
 		@include mixins.focus-anchor;
 	}
 
