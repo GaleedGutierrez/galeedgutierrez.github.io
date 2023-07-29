@@ -3,7 +3,7 @@ on: push
 jobs:
     lint:
         runs-on: ubuntu-latest
-        name: 💅 Lint
+        name: Eslint - Stylelint
         steps:
             - name: 👍 Checkout
               uses: actions/checkout@v2
