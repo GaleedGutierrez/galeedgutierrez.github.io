@@ -1,5 +1,6 @@
 // Icons Courses
 import CURSO_CSS_GRID_BASICO_PLATZI from '@images/icons/courses/curso-css-grid-basico.webp';
+import CURSO_DE_ACCESIBILIDAD_WEB_2019 from '@images/icons/courses/curso-de-accesibilidad-web-2019.webp';
 import CURSO_DE_ANIMACIONES_CON_CSS_PLATZI from '@images/icons/courses/Curso-de-Animaciones-con-CSS.webp';
 import CURSO_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PLATZI from '@images/icons/courses/curso-de-consumo-de-api-rest-con-javaScript.webp';
 import CURSO_DE_CSS_GRID_LAYOUT_2017 from '@images/icons/courses/curso-de-css-grid-layout-2017.webp';
@@ -42,6 +43,7 @@ import ENCRIPTADOR_DE_TEXT_ALURA_ONE_L from '@images/screenshot-projects/large/e
 import GOOGLE_CLONE_L from '@images/screenshot-projects/large/google-clone.webp';
 import LEGO_L from '@images/screenshot-projects/large/lego.webp';
 import MY_BLOG_L from '@images/screenshot-projects/large/mi-blog.webp';
+import MI_PORTAFOLIO_JULIANA_GOMEZ_L from '@images/screenshot-projects/large/mi-portafolio-juliana-gomez.webp';
 import MICHI_APP_L from '@images/screenshot-projects/large/michis-app.webp';
 import MOVIE_ES_L from '@images/screenshot-projects/large/movie.es.webp';
 import MY_LINK_IN_BIO_L from '@images/screenshot-projects/large/my-link-in-bio.webp';
@@ -67,6 +69,7 @@ import ENCRIPTADOR_DE_TEXT_ALURA_ONE_M from '@images/screenshot-projects/medium/
 import GOOGLE_CLONE_M from '@images/screenshot-projects/medium/google-clone.webp';
 import LEGO_M from '@images/screenshot-projects/medium/lego.webp';
 import MY_BLOG_M from '@images/screenshot-projects/medium/mi-blog.webp';
+import MI_PORTAFOLIO_JULIANA_GOMEZ_M from '@images/screenshot-projects/medium/mi-portafolio-juliana-gomez.webp';
 import MICHI_APP_M from '@images/screenshot-projects/medium/michis-app.webp';
 import MOVIE_ES_M from '@images/screenshot-projects/medium/movie.es.webp';
 import MY_LINK_IN_BIO_M from '@images/screenshot-projects/medium/my-link-in-bio.webp';
@@ -92,6 +95,7 @@ import ENCRIPTADOR_DE_TEXT_ALURA_ONE_S from '@images/screenshot-projects/small/e
 import GOOGLE_CLONE_S from '@images/screenshot-projects/small/google-clone.webp';
 import LEGO_S from '@images/screenshot-projects/small/lego.webp';
 import MY_BLOG_S from '@images/screenshot-projects/small/mi-blog.webp';
+import MI_PORTAFOLIO_JULIANA_GOMEZ_S from '@images/screenshot-projects/small/mi-portafolio-juliana-gomez.webp';
 import MICHI_APP_S from '@images/screenshot-projects/small/michis-app.webp';
 import MOVIE_ES_S from '@images/screenshot-projects/small/movie.es.webp';
 import MY_LINK_IN_BIO_S from '@images/screenshot-projects/small/my-link-in-bio.webp';
@@ -107,6 +111,35 @@ import WIKIPEDIA_CLONE_S from '@images/screenshot-projects/small/wikipedia-clone
 import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
+	{
+		id: 24,
+		name: 'Mi portafolio - Juliana Gómez',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
+		technologiesIcons: [
+			TYPESCRIPT_ICON,
+			SASS_ICON,
+			HTML_ICON,
+			WEBPACK_ICON,
+		],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-de-Accesibilidad-Web-2019',
+		url: 'https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/',
+		images: {
+			small: MI_PORTAFOLIO_JULIANA_GOMEZ_S,
+			medium: MI_PORTAFOLIO_JULIANA_GOMEZ_M,
+			large: MI_PORTAFOLIO_JULIANA_GOMEZ_L,
+		},
+		date: '2023-08-04T03:00:00.000Z',
+		course: {
+			name: 'Curso de Accesibilidad Web',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/accesibilidad-web/',
+			img: CURSO_DE_ACCESIBILIDAD_WEB_2019,
+		},
+		description:
+			'En este proyecto <span aria-hidden="true" tabindex="-1">🚀</span> se mejoró el portafolio de Juliana Gómez, pasando de una web con casi nula accesibilidad a una web con una buena accesibilidad. <span aria-hidden="true" tabindex="-1">🌐</span>',
+		author: 'Galeed Gutierrez',
+	},
 	{
 		id: 23,
 		name: 'LEGO',

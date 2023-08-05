@@ -12,21 +12,21 @@ const config: Configuration = {
 	devServer: {
 		static: [
 			path.join(__dirname, 'build'),
-			{
-				directory: path.join(
-					__dirname,
-					'assets/images/icons/nature/space/'
-				),
-				publicPath: '/assets/images',
-			},
-			{
-				directory: path.join(__dirname, 'assets/images/me/'),
-				publicPath: '/assets/images',
-			},
-			{
-				directory: path.join(__dirname, 'assets/images/favicon/'),
-				publicPath: '/assets/images',
-			},
+			// {
+			// 	directory: path.join(
+			// 		__dirname,
+			// 		'assets/images/icons/nature/space/'
+			// 	),
+			// 	publicPath: '/assets/images',
+			// },
+			// {
+			// 	directory: path.join(__dirname, 'assets/images/me/'),
+			// 	publicPath: '/assets/images',
+			// },
+			// {
+			// 	directory: path.join(__dirname, 'assets/images/favicon/'),
+			// 	publicPath: '/assets/images',
+			// },
 		],
 		compress: true,
 		port: 8080,
