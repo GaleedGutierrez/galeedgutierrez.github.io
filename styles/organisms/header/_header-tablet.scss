@@ -1,4 +1,5 @@
 @use "../../settings/variables";
+@use "../../tools/mixins";
 
 .g-header {
 	&__sandwich-menu-button {
@@ -29,6 +30,10 @@
 
 	&__menu-options-button {
 		display: flex;
+
+		&:focus-visible {
+			@include mixins.focus-button;
+		}
 	}
 
 	&__changes-options-menu {

@@ -15,6 +15,8 @@ import {
 } from '@utils/nodes';
 import showParticles from '@utils/particlesJs';
 
+import { ScreenSize } from './enum/enums';
+
 // Function to toggle the visibility of the text more about me and toggle button
 const showMoreAboutMe = (): void => {
 	TEXT_MORE_ABOUT_ME.classList.toggle('visible');
@@ -22,6 +24,18 @@ const showMoreAboutMe = (): void => {
 	const IS_VISIBLE = TEXT_MORE_ABOUT_ME.classList.contains('visible');
 
 	BUTTON_MORE_ABOUT_ME.innerText = IS_VISIBLE ? 'Ocultar' : 'Leer más';
+	BUTTON_MORE_ABOUT_ME.ariaLabel = IS_VISIBLE
+		? 'Ocultar sección de leer más sobre Galeed Gutierrez'
+		: 'Leer más sobre Galeed Gutierrez';
+
+	if (IS_VISIBLE) {
+		const TITLE = TEXT_MORE_ABOUT_ME.parentElement?.querySelector(
+			'div > h3'
+		) as HTMLHeadElement;
+
+		TITLE.tabIndex = 0;
+		TITLE.focus();
+	}
 };
 
 const NUMBER_PROJECTS = 6;
@@ -29,6 +43,12 @@ const IS_DARK_MODE =
 	window.matchMedia &&
 	window.matchMedia('(prefers-color-scheme: dark)').matches;
 const CHECK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
+const CURRENT_SCREEN_SIZE = globalThis.innerWidth;
+
+if (CURRENT_SCREEN_SIZE >= ScreenSize.TABLET) {
+	THEME_INPUT.ariaHidden = 'true';
+	THEME_INPUT.tabIndex = -1;
+}
 
 setTheme({ particles: true });
 showParticles(IS_DARK_MODE);

@@ -3,6 +3,8 @@ block head
 	- const SEE_HEADER = true
 	- const SEE_FOOTER = true
 	title Proyectos
+block skip-links
+	include ./organisms/skip-links/_skip-links.pug
 block header
 	include ./organisms/header/_headerPorfolio.pug
 block main
@@ -28,6 +30,11 @@ block scripts
 			"mainEntity": {
 				"@type": "ItemList",
 				"itemListElement": [
+					{
+						"@type": "CreativeWork",
+						"name": "Mi portafolio - Juliana Gómez",
+						"url": "https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/"
+					},
 					{
 						"@type": "CreativeWork",
 						"name": "LEGO",
@@ -151,4 +158,3 @@ block scripts
 				]
 			}
 		}
-

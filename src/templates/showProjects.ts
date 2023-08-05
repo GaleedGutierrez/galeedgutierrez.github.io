@@ -44,7 +44,7 @@ const showProjects = (lengthProjects: number): void => {
 		SOURCE_LARGE.srcset = PROJECTS[i]?.images?.large;
 		SOURCE_LARGE.media = '(min-width: 1024px)';
 		IMG_PROJECT.src = PROJECTS[i].images.small;
-		IMG_PROJECT.alt = `Screenshot del proyecto ${PROJECTS[i].name}`;
+		IMG_PROJECT.alt = `Captura de pantalla del proyecto ${PROJECTS[i].name}`;
 		IMG_PROJECT.className = 'm-project-card__img-project';
 		IMG_PROJECT.loading = 'lazy';
 		IMG_PROJECT.width = 1280;

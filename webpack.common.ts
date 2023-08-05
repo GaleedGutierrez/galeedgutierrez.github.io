@@ -19,13 +19,13 @@ const common: Configuration = {
 	resolve: {
 		extensions: ['.ts', '.js'],
 		alias: {
-			'@src': path.resolve(__dirname, 'src/'),
-			'@utils': path.resolve(__dirname, 'src/utils/'),
-			'@templates': path.resolve(__dirname, 'src/templates/'),
-			'@interface': path.resolve(__dirname, 'src/interface/'),
-			'@styles': path.resolve(__dirname, 'styles/'),
-			'@images': path.resolve(__dirname, 'assets/images/'),
-			'@fonts': path.resolve(__dirname, 'assets/fonts/'),
+			'@src': path.resolve(__dirname, './src/'),
+			'@utils': path.resolve(__dirname, './src/utils/'),
+			'@templates': path.resolve(__dirname, './src/templates/'),
+			'@interface': path.resolve(__dirname, './src/interface/'),
+			'@styles': path.resolve(__dirname, './styles/'),
+			'@images': path.resolve(__dirname, './assets/images/'),
+			'@fonts': path.resolve(__dirname, './assets/fonts/'),
 		},
 	},
 	module: {
@@ -34,6 +34,10 @@ const common: Configuration = {
 				test: /\.ts$|mts/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
+			},
+			{
+				test: /\.html$/,
+				use: ['html-loader'],
 			},
 			// {
 			// 	test: /\.s[ac]ss$/i,

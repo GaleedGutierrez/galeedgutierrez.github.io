@@ -2,14 +2,14 @@ mixin img(idImg, classImg, altImg, srcImg)
 	figure(id!=attributes.id ,class!=attributes.class)
 		img(id=idImg, class=classImg, src=srcImg, alt=altImg loading="lazy")
 
-mixin elements-menu-header(hrefA, sectionMenu)
+mixin elements-menu-header(hrefA, sectionMenu, idA)
 	li
-		a(href=hrefA aria-label="Ir a la sección de "+sectionMenu).g-header__link= sectionMenu
+		a(id=idA href=hrefA aria-label="Ir a la sección de "+sectionMenu).g-header__link= sectionMenu
 
 mixin header__theme-switch()
-	label(for="switch_theme").m-switch-container
+	label(for="switch_theme")#switch-label.m-switch-container
 		span(aria-hidden="true" tabindex="-1").a-theme-icon ☀️
-		input.m-switch__input(type="checkbox" name="switch_theme" id="switch_theme" aria-label="Switch para usar el modo oscuro")
+		input.m-switch__input(type="checkbox" name="switch_theme" id="switch_theme" aria-label="Interruptor para usar el modo oscuro")
 		.m-switch
 		span(aria-hidden="true" tabindex="-1").a-theme-icon 🌑
 

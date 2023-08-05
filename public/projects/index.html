@@ -19,30 +19,35 @@
     <meta name="twitter:image" content="https://drive.google.com/uc?id=16ejNn81naE2X8KrloYv37t6RsiN_3TRM">
     <meta name="twitter:site" content="@GutierrezGaleed">
     <meta name="twitter:creator" content="@GutierrezGaleed">
-    <link rel="icon" href="/assets/images/favicon.ico" type="any">
-    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" href="~@images/favicon/favicon.ico" type="any">
+    <link rel="icon" href="~@images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="~@images/favicon/apple-touch-icon.png">
     <title>Proyectos</title>
   </head>
   <body class="body" id="body-id">
+    <ul>
+      <li><a class="is-skip-link" href="#projects">Ir a la sección de proyectos</a></li>
+      <li><a class="is-skip-link" href="#contact">Ir a la sección de contacto</a></li>
+    </ul>
     <header class="g-header" id="header-id">
-      <div class="o-container g-header__container"><a class="a-logo g-header__logo" href="https://galeedgutierrez.com" aria-label="Ir al inicio de la página">Galeed</a>
+      <div class="o-container g-header__container"><a class="a-logo g-header__logo" href="https://galeedgutierrez.com" aria-label="Ir a la página principal">Galeed</a>
         <button class="g-header__sandwich-menu-button" id="header__menu-sandwich-button">
           <svg class="a-sandwich-menu" id="header__menu-sandwich-id" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
-            <title>Menú</title>
+            <title>Menú de secciones de la página</title>
             <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path>
           </svg>
         </button>
         <section class="g-header__menu-container" id="header__nav-container-id">
           <nav class="g-header__nav">
             <ul class="g-header__ul-container">
-                  <li><a class="g-header__link" href="https://galeedgutierrez.com/#home" aria-label="Ir a la sección de header__nav-home">header__nav-home</a></li>
-                  <li><a class="g-header__link" href="https://galeedgutierrez.com/#about" aria-label="Ir a la sección de header__nav-about">header__nav-about</a></li>
-                  <li><a class="g-header__link" href="#projects" aria-label="Ir a la sección de header__nav-projects">header__nav-projects</a></li>
-                  <li><a class="g-header__link" href="#contact" aria-label="Ir a la sección de header__nav-contact">header__nav-contact</a></li>
+                  <li><a class="g-header__link" id="header__nav-home" href="https://galeedgutierrez.com/#home" aria-label="Ir a la sección de Inicio">Inicio</a></li>
+                  <li><a class="g-header__link" href="https://galeedgutierrez.com/#about" aria-label="Ir a la sección de Sobre mí">Sobre mí</a></li>
+                  <li><a class="g-header__link" href="#projects" aria-label="Ir a la sección de Proyectos">Proyectos</a></li>
+                  <li><a class="g-header__link" href="#contact" aria-label="Ir a la sección de Contacto">Contacto</a></li>
             </ul>
-            <button class="g-header__menu-options-button">
+            <button class="g-header__menu-options-button" id="header__menu-options-changes-button">
               <svg class="a-icon g-header__changes-options-menu" id="header__menu-options-changes-id" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <title>Menú de preferencias</title>
                 <path d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
               </svg>
             </button>
@@ -50,8 +55,8 @@
           <section class="g-header__options-container" id="header__options-id">
             <div class="o-container g-header__options">
               <div class="g-header__change-theme-container">
-                    <label class="m-switch-container" for="switch_theme"><span class="a-theme-icon" aria-hidden="true" tabindex="-1">☀️</span>
-                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" aria-label="Switch para usar el modo oscuro">
+                    <label class="m-switch-container" for="switch_theme" id="switch-label"><span class="a-theme-icon" aria-hidden="true" tabindex="-1">☀️</span>
+                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" aria-label="Interruptor para usar el modo oscuro">
                       <div class="m-switch"></div><span class="a-theme-icon" aria-hidden="true" tabindex="-1">🌑</span>
                     </label>
               </div>
@@ -589,6 +594,11 @@
       	"mainEntity": {
       		"@type": "ItemList",
       		"itemListElement": [
+      			{
+      				"@type": "CreativeWork",
+      				"name": "Mi portafolio - Juliana Gómez",
+      				"url": "https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/"
+      			},
       			{
       				"@type": "CreativeWork",
       				"name": "LEGO",

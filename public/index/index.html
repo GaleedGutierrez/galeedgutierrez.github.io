@@ -19,9 +19,9 @@
     <meta name="twitter:image" content="https://drive.google.com/uc?id=16ejNn81naE2X8KrloYv37t6RsiN_3TRM">
     <meta name="twitter:site" content="@GutierrezGaleed">
     <meta name="twitter:creator" content="@GutierrezGaleed">
-    <link rel="icon" href="/assets/images/favicon.ico" type="any">
-    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" href="~@images/favicon/favicon.ico" type="any">
+    <link rel="icon" href="~@images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="~@images/favicon/apple-touch-icon.png">
     <title>Galeed Gutierrez</title>
   </head>
   <body class="body" id="body-id">
@@ -42,7 +42,7 @@
         <section class="g-header__menu-container" aria-hidden="true" tabindex="-1" id="header__nav-container-id">
           <nav class="g-header__nav">
             <ul class="g-header__ul-container">
-                  <li><a class="g-header__link" href="#home" aria-label="Ir a la sección de Inicio">Inicio</a></li>
+                  <li><a class="g-header__link" id="header__nav-home" href="#home" aria-label="Ir a la sección de Inicio">Inicio</a></li>
                   <li><a class="g-header__link" href="#about" aria-label="Ir a la sección de Sobre mí">Sobre mí</a></li>
                   <li><a class="g-header__link" href="#projects" aria-label="Ir a la sección de Proyectos">Proyectos</a></li>
                   <li><a class="g-header__link" href="#contact" aria-label="Ir a la sección de Contacto">Contacto</a></li>
@@ -57,8 +57,8 @@
           <section class="g-header__options-container" id="header__options-id">
             <div class="o-container g-header__options">
               <div class="g-header__change-theme-container">
-                    <label class="m-switch-container" for="switch_theme"><span class="a-theme-icon" aria-hidden="true" tabindex="-1">☀️</span>
-                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" aria-label="Switch para usar el modo oscuro">
+                    <label class="m-switch-container" for="switch_theme" id="switch-label"><span class="a-theme-icon" aria-hidden="true" tabindex="-1">☀️</span>
+                      <input class="m-switch__input" type="checkbox" name="switch_theme" id="switch_theme" aria-label="Interruptor para usar el modo oscuro">
                       <div class="m-switch"></div><span class="a-theme-icon" aria-hidden="true" tabindex="-1">🌑</span>
                     </label>
               </div>
@@ -117,7 +117,7 @@
         <div class="a-line-decoration g-about-me__line-decoration"></div>
         <section class="g-about-me__introduce-me">
           <div class="g-about-me__picture-container">
-            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="assets/images/me.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645"></figure>
+            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="~@images/me/me.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645"></figure>
           </div>
           <div class="g-about-me__presentation-container">
             <section class="g-about-me__presentation">
@@ -125,14 +125,14 @@
               <p class="g-about-me__about-me-text">Argentino apasionado por la tecnología.</p>
             </section>
             <section class="g-about-me__more-information-container" id="about-me__more-information-container-id">
-              <section class="g-about-me__fronted-dev">
+              <div class="g-about-me__fronted-dev">
                 <h3 class="g-about-me__presentation-title">¿Qué hago como frontend developer?</h3>
                 <p>Creo sitios y aplicaciones web, no uso trucos ni mucho menos se trata de magia. Puedo manipular las materias primas de la web, es decir, las principales tecnologías tales como&nbsp;<strong>HTML</strong>,&nbsp;<strong>CSS</strong>,&nbsp;<strong>JavaScript&nbsp;</strong>y&nbsp;<strong>API REST.&nbsp;</strong></p>
-              </section>
-              <section class="about-me__technologies">
+              </div>
+              <div class="about-me__technologies">
                 <h3 class="g-about-me__presentation-title">Tecnologías que quiero aprender</h3>
                 <p>Una de las muchas tecnologías que quiero dominar es, la librería de JavaScript,&nbsp;<strong>React&nbsp;</strong>tanto como para la web como para aplicaciones móviles, un framework de CSS como&nbsp;<strong>Tailwind&nbsp;</strong>o&nbsp;<strong>Bootstrap&nbsp;</strong>y sumado a todo esto aprender&nbsp;<strong>NODE.js&nbsp;</strong>para el backend.</p>
-              </section>
+              </div>
             </section>
             <button class="g-about-me__button a-button" id="about-me__button-id" aria-label="Leer más sobre Galeed Gutierrez">Leer más</button>
           </div>
@@ -308,6 +308,11 @@
       		"itemListElement": [
       			{
       				"@type": "CreativeWork",
+      				"name": "Mi portafolio - Juliana Gómez",
+      				"url": "https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/"
+      			},
+      			{
+      				"@type": "CreativeWork",
       				"name": "LEGO",
       				"url": "https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/"
       			},
@@ -330,11 +335,6 @@
       				"@type": "CreativeWork",
       				"name": "Platzi Movies",
       				"url": "https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home"
-      			},
-      			{
-      				"@type": "CreativeWork",
-      				"name": "Platziv - Juego Online",
-      				"url": "https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html"
       			}
       		]
       	}
