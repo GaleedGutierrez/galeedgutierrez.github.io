@@ -1,3 +1,4 @@
+import { ScreenSize } from '@src/enum/enums';
 import {
 	hiddenMenu,
 	hiddenOptionsMenu,
@@ -40,8 +41,6 @@ import {
 // 	  ]
 // 	: [A_PROJECTS_SANDWICH_MENU, A_CONTACT_SANDWICH_MENU];
 
-const TABLET_SIZE = 768;
-
 // ANCHOR_SANDWICH.forEach((anchor) => {
 // 	const hash = anchor.getAttribute('href');
 
@@ -51,19 +50,21 @@ const TABLET_SIZE = 768;
 
 // 	if (SECTION) OBSERVER_SECTIONS.observe(SECTION);
 // });
+const CURRENT_SCREEN_SIZE = globalThis.innerWidth;
 
 window.addEventListener('resize', () => {
-	if (screen.width < TABLET_SIZE) {
+	if (screen.width < ScreenSize.TABLET) {
 		hiddenOptionsMenu();
 	} else {
 		hiddenMenu();
 	}
 });
 
-// A_HOME_SANDWICH_MENU.onclick = () => addBrackets('home');
-// A_ABOUT_SANDWICH_MENU.onclick = () => addBrackets('about');
-// A_PROJECTS_SANDWICH_MENU.onclick = () => addBrackets('projects');
-// A_CONTACT_SANDWICH_MENU.onclick = () => addBrackets('contact');
+if (CURRENT_SCREEN_SIZE >= ScreenSize.TABLET) {
+	MENU_ELEMENTS_CONTAINER.ariaHidden = 'false';
+	MENU_ELEMENTS_CONTAINER.tabIndex = -1;
+}
+
 SANDWICH_MENU.addEventListener('click', showMenu);
 MENU_ELEMENTS_CONTAINER.addEventListener('click', hiddenMenu);
 

@@ -21,6 +21,8 @@
 
 // Utilities
 @use "../utilities/animation";
+@use "../utilities/sr-only";
+@use "../utilities/skip-link";
 
 // Atoms
 @use "../atoms/buttons";
@@ -39,3 +41,11 @@
 @use "../organisms/header/header";
 @use "../organisms/porfolio/porfolio";
 @use "../organisms/footer/footer";
+/* stylelint-disable no-invalid-position-at-import-rule */
+@media screen and (width >= 768px) {
+	@import "./tablet";
+}
+
+@media screen and (width >= 1024px) {
+	@import "./desktop";
+}

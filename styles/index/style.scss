@@ -51,3 +51,12 @@
 
 // Utilities (I put here to avoid using !important)
 @use "../utilities/visible";
+
+/* stylelint-disable no-invalid-position-at-import-rule */
+// @media screen and (width >= 768px) {
+// 	@import "./tablet";
+// }
+
+// @media screen and (width >= 1024px) {
+// 	@import "./desktop";
+// }
