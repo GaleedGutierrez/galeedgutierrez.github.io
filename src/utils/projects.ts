@@ -30,6 +30,7 @@ import TYPESCRIPT_ICON from '@images/icons/technologies/typescript/icons-typescr
 import VITEJS_ICON from '@images/icons/technologies/vitejs/vitejs.webp';
 import WEBPACK_ICON from '@images/icons/technologies/webpack/icons-webpack-small.webp';
 import CIENTIFICO_CO_L from '@images/screenshot-projects/large/100rifi.co.webp';
+import APEPERIA_ALURA_L from '@images/screenshot-projects/large/apeperia-alura.webp';
 // Projects Images
 // Projects Images - Large
 import BATABIT_L from '@images/screenshot-projects/large/batabit.webp';
@@ -57,6 +58,7 @@ import STREAM_BURGER_L from '@images/screenshot-projects/large/steam.webp';
 import VILLA_PLATZI_L from '@images/screenshot-projects/large/villa-platzi.webp';
 import WIKIPEDIA_CLONE_L from '@images/screenshot-projects/large/wikipedia-clone.webp';
 import CIENTIFICO_CO_M from '@images/screenshot-projects/medium/100rifi.co.webp';
+import APEPERIA_ALURA_M from '@images/screenshot-projects/medium/apeperia-alura.webp';
 // Projects Images - Medium
 import BATABIT_M from '@images/screenshot-projects/medium/batabit.webp';
 import BRAND_M from '@images/screenshot-projects/medium/brand.webp';
@@ -84,6 +86,7 @@ import VILLA_PLATZI_M from '@images/screenshot-projects/medium/villa-platzi.webp
 import WIKIPEDIA_CLONE_M from '@images/screenshot-projects/medium/wikipedia-clone.webp';
 // Projects Images - Small
 import CIENTIFICO_CO_S from '@images/screenshot-projects/small/100rifi.co.webp';
+import APEPERIA_ALURA_S from '@images/screenshot-projects/small/apeperia-alura.webp';
 import BATABIT_S from '@images/screenshot-projects/small/batabit.webp';
 import BRAND_S from '@images/screenshot-projects/small/brand.webp';
 import CHECK_THE_BEST_FOOD_S from '@images/screenshot-projects/small/check-the-best-food.webp';
@@ -112,9 +115,38 @@ import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
 	{
+		id: 25,
+		name: 'Apeperia',
+		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
+		technologiesIcons: [
+			TYPESCRIPT_ICON,
+			SASS_ICON,
+			HTML_ICON,
+			WEBPACK_ICON,
+		],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023',
+		url: 'https://galeedgutierrez.com/Curso-de-Layouts-Responsivos-Trabajando-con-layouts-mobile-Alura-G5-2023/',
+		images: {
+			small: APEPERIA_ALURA_S,
+			medium: APEPERIA_ALURA_M,
+			large: APEPERIA_ALURA_L,
+		},
+		date: '2023-08-14T03:00:00.000Z',
+		course: {
+			name: 'Curso de Layouts Responsivos: Trabajando con layouts mobile',
+			platform: 'Alura',
+			url: 'https://app.aluracursos.com/course/layouts-responsivos-layouts-mobile',
+			img: ALURA_ICON,
+		},
+		description:
+			'Landing Page de Apeperia <span aria-hidden="true" tabindex="-1">🚀</span>, una empresa emergente que innovadora la forma de comprar y crear aplicaciones móviles y web.',
+		author: 'Galeed Gutierrez',
+	},
+	{
 		id: 24,
 		name: 'Mi portafolio - Juliana Gómez',
-		technologies: ['TypeScript', 'SASS', 'HTML', 'ViteJS'],
+		technologies: ['TypeScript', 'SASS', 'HTML', 'Webpack'],
 		technologiesIcons: [
 			TYPESCRIPT_ICON,
 			SASS_ICON,
