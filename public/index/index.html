@@ -117,7 +117,10 @@
         <div class="a-line-decoration g-about-me__line-decoration"></div>
         <section class="g-about-me__introduce-me">
           <div class="g-about-me__picture-container">
-            <figure class="g-about-me__figure-my-photo"><img class="g-about-me__img-me" id="about-me__img-id" src="~@images/me/me.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645"></figure>
+            <picture class="g-about-me__figure-my-photo">
+              <source media="(min-width: 1024px)" srcset="~@images/me/me-large.webp">
+              <source media="(min-width: 768px)" srcset="~@images/me/me-medium.webp"><img class="g-about-me__img-me" id="about-me__img-id" src="~@images/me/me-small.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645">
+            </picture>
           </div>
           <div class="g-about-me__presentation-container">
             <section class="g-about-me__presentation">

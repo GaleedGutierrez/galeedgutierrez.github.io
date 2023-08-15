@@ -6,8 +6,10 @@ section#about.g-about-me.o-scroll-margin
 	.a-line-decoration.g-about-me__line-decoration
 	section.g-about-me__introduce-me
 		.g-about-me__picture-container
-			figure.g-about-me__figure-my-photo
-				img(id="about-me__img-id" class="g-about-me__img-me" src="~@images/me/me.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645")
+			picture.g-about-me__figure-my-photo
+				source(media="(min-width: 1024px)" srcset="~@images/me/me-large.webp")
+				source(media="(min-width: 768px)" srcset="~@images/me/me-medium.webp")
+				img(id="about-me__img-id" class="g-about-me__img-me" src="~@images/me/me-small.webp" alt="Galeed Gutierrez mirando a la cámara, foto de perfil de frente" loading="lazy" width="645" height="645")
 		.g-about-me__presentation-container
 			section.g-about-me__presentation
 				h3.g-about-me__presentation-title Hola, soy Galeed Gutierrez.

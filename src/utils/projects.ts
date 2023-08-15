@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
 			img: ALURA_ICON,
 		},
 		description:
-			'Landing Page de Apeperia <span aria-hidden="true" tabindex="-1">🚀</span>, una empresa emergente que innovadora la forma de comprar y crear aplicaciones móviles y web.',
+			'Landing Page de Apeperia <span aria-hidden="true" tabindex="-1">🚀</span>, una empresa emergente que innova la forma de comprar y crear aplicaciones móviles y web.',
 		author: 'Galeed Gutierrez',
 	},
 	{
