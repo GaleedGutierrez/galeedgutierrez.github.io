@@ -1,0 +1,12 @@
+@use "../settings/variables";
+
+.a-arrow-down {
+	display: block;
+
+	&--animated {
+		animation: up-and-down-arrow;
+		animation-duration: calc(variables.$time-1 + variables.$time-005);
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+}

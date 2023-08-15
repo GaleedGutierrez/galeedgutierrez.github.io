@@ -1,0 +1,85 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.g-header {
+	&__sandwich-menu-button {
+		display: none;
+	}
+
+	&__menu-container {
+		position: initial;
+		left: initial;
+		bottom: initial;
+		padding: 0;
+		opacity: 1;
+		transition-duration: 0s;
+	}
+
+	&__nav {
+		position: relative;
+		z-index: variables.$z-index-1-screen-foreground;
+		display: flex;
+		gap: 2.4rem;
+		justify-content: end;
+		align-items: center;
+	}
+
+	&__ul-container {
+		flex-direction: row;
+	}
+
+	&__menu-options-button {
+		display: flex;
+
+		&:focus-visible {
+			@include mixins.focus-button;
+		}
+	}
+
+	&__changes-options-menu {
+		width: 3.6rem;
+		height: 3.6rem;
+		padding: variables.$space-05;
+		border: none;
+		background: none;
+		font-size: 2.8rem;
+	}
+
+	&__changes-options-menu--active {
+		border-radius: 50%;
+		background-color: variables.$light-gray-100;
+		fill: variables.$gray-100;
+	}
+
+	&__options-container {
+		position: absolute;
+		right: 0;
+		bottom: 8rem;
+		width: 100%;
+		background-color: var(--background-color);
+		opacity: 0;
+		transition-duration: 250ms;
+	}
+
+	&__menu--visible {
+		opacity: 1;
+		transition-duration: 750ms;
+		transform: translateY(27.5rem);
+	}
+
+	&__options {
+		padding-block-start: variables.$space-4;
+		padding-inline-end: variables.$space-4;
+	}
+
+	&__options--visible {
+		opacity: 1;
+		transition-duration: 750ms;
+		transform: translateY(11.8rem);
+	}
+
+	&__change-theme-container {
+		margin-inline-end: initial;
+		margin-inline-start: auto;
+	}
+}

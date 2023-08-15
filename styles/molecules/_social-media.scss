@@ -1,0 +1,40 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+@use "../tools/functions";
+
+.m-social-media {
+	gap: variables.$space-7;
+	flex-wrap: wrap;
+
+	&__icons {
+		width: variables.$space-8;
+	}
+
+	&__link {
+		--hover-text-color: #{functions.light-dark(
+				variables.$gray-200,
+				variables.$light-gray-400
+			)};
+		--active-text-color: #{functions.light-dark(
+				variables.$light-black,
+				variables.$light-gray-100
+			)};
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		cursor: pointer;
+
+		&:hover .m-social-media__icons {
+			color: var(--hover-text-color);
+			fill: var(--hover-text-color);
+		}
+
+		&:active .m-social-media__icons {
+			color: var(--active-text-color);
+			fill: var(--active-text-color);
+		}
+	}
+
+	@include mixins.center-flex;
+}

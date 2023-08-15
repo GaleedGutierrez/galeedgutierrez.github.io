@@ -1,0 +1,26 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.g-home {
+	position: relative;
+	height: 90vh;
+	height: 90svh;
+	padding-inline: variables.$space-4;
+
+	&__container {
+		position: relative;
+		z-index: variables.$z-index-1-screen-foreground;
+		display: grid;
+		gap: variables.$space-5;
+		place-content: center;
+		height: 90vh;
+		height: 90svh;
+		text-align: center;
+	}
+
+	&__keywords {
+		gap: variables.$space-1;
+
+		@include mixins.all-center-flex;
+	}
+}

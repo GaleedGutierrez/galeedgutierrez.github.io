@@ -1,0 +1,7 @@
+@use "../../settings/variables";
+
+.g-portfolio {
+	&__projects-container {
+		gap: variables.$space-4;
+	}
+}

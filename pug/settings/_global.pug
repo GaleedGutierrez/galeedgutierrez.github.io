@@ -1,0 +1,14 @@
+include ../tools/_mixins.pug
+doctype html
+html(lang="es")
+	head#head-id
+		include ./_head.pug
+		block head
+	body#body-id.body
+		block skip-links
+		if SEE_HEADER
+			block header
+		block main
+		if SEE_FOOTER
+			include ../organisms/footer/_footer.pug
+		block scripts

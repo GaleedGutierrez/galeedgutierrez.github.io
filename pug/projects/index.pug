@@ -1,0 +1,160 @@
+extend ../settings/_global.pug
+block head
+	- const SEE_HEADER = true
+	- const SEE_FOOTER = true
+	title Proyectos
+block skip-links
+	include ./organisms/skip-links/_skip-links.pug
+block header
+	include ./organisms/header/_headerPorfolio.pug
+block main
+	main.main
+		include ./organisms/portfolio/_portfolioProjects.pug
+block scripts
+	include ../organisms/scripts/_analytics.pug
+	script(type="application/ld+json").
+		{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			"name": "Galeed Gutierrez",
+			"description": "Bienvenido a mi web personal, donde puedes conocer más sobre mí, mis intereses, mis proyectos personales y cómo contactarme. Aquí encontrarás información relevante y actualizada sobre mi perfil profesional.",
+			"url": "https://galeedgutierrez.com/projects",
+			"author": {
+				"@type": "Person",
+				"name": "Galeed Gutierrez"
+			},
+			"mainContentOfPage": {
+				"@type": "WebPageElement",
+				"cssSelector": "#projects"
+			},
+			"mainEntity": {
+				"@type": "ItemList",
+				"itemListElement": [
+					{
+						"@type": "CreativeWork",
+						"name": "Mi portafolio - Juliana Gómez",
+						"url": "https://galeedgutierrez.com/Curso-de-Accesibilidad-Web-2019/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "LEGO",
+						"url": "https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "100tifi.co",
+						"url": "https://galeedgutierrez.com/Curso-de-Single-Page-Application-con-JavaScript-Vanilla-2021/dist/public/index.html"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Encriptador de texto",
+						"url": "https://galeedgutierrez.com/Encriptador-de-texto-Alura-Challenges-ONE-2023/dist/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Link in bio",
+						"url": "https://galeedgutierrez.com/Curso-de-Introduccion-a-Empaquetadores-Web/webpack/dist/index.html"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Platzi Movies",
+						"url": "https://galeedgutierrez.com/Curso-Profesional-de-Consumo-de-API-REST-con-JavaScript-2022/html/#home"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Platziv - Juego Online",
+						"url": "https://galeedgutierrez.com/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego-2022/html/index.html"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Michi App",
+						"url": "https://galeedgutierrez.com/Curso-de-Consumo-de-API-REST-con-JavaScript/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Figura Geométricas",
+						"url": "https://galeedgutierrez.com/Curso-de-Programacion-Orientada-a-Objetos-en-JavaScript/TallerN1/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Tienda Online",
+						"url": "https://galeedgutierrez.com/Curso-Practico-de-JavaScript/TallerN2/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Animationland",
+						"url": "https://galeedgutierrez.com/Curso-de-Animaciones-con-CSS/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Check the best food",
+						"url": "https://galeedgutierrez.com/Curso-de-CSS-Grid-Basico/Proyecto/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Batabit",
+						"url": "https://galeedgutierrez.com/Curso-de-Responsive-Design-Maquetacion-Mobile-First/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Yard Sale",
+						"url": "https://galeedgutierrez.com/Curso-Practico-de-Frontend-Developer/html/homepage.html"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Steam Burger",
+						"url": "https://galeedgutierrez.com/Curso-de-Disenio-para-Programadores/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Platzi Video",
+						"url": "https://galeedgutierrez.com/Curso-de-Frontend-Developer-2019/platzi-video/html/homepage.html"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Wikipedia Clone",
+						"url": "https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/WikipediaClone/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Google Clone",
+						"url": "https://galeedgutierrez.com/Curso-practico-de-HTML-y-CSS/my-Google-clone/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Villa Platzi",
+						"url": "https://galeedgutierrez.com/Villa-Platzi/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Generador de figuras geométricas",
+						"url": "https://galeedgutierrez.com/Proyecto-generador-de-figuras/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Mi Blog",
+						"url": "https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-en-CSS/html/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Platzi-Video",
+						"url": "https://galeedgutierrez.com/Platzi-Video/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Movie.es",
+						"url": "https://galeedgutierrez.com/Movi.es/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Portfolio Leonidas Esteban",
+						"url": "https://galeedgutierrez.com/Portafolio-LeonidasEsteban/"
+					},
+					{
+						"@type": "CreativeWork",
+						"name": "Brand",
+						"url": "https://galeedgutierrez.com/Brand-Platzi/"
+					}
+				]
+			}
+		}

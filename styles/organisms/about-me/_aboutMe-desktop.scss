@@ -1,0 +1,30 @@
+@use "../../settings/variables";
+@use "../../tools/mixins";
+
+.g-about-me {
+	padding-block-end: variables.$space-16;
+
+	&__introduce-me {
+		grid-template-areas:
+			"picture info"
+			"picture info";
+	}
+
+	&__presentation-container {
+		grid-area: info;
+	}
+
+	&__picture-container {
+		grid-area: picture;
+		width: 36rem;
+	}
+
+	&__button {
+		display: none;
+	}
+
+	&__more-information-container {
+		display: block;
+		margin-block-end: 0;
+	}
+}

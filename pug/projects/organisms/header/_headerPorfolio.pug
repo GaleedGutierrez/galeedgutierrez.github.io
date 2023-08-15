@@ -1,0 +1,28 @@
+include ../../../tools/_mixins.pug
+header#header-id.g-header
+	div.o-container.g-header__container
+		//- section.g-header__logo-container
+		a(href="https://galeedgutierrez.com" aria-label="Ir a la página principal").a-logo.g-header__logo Galeed
+		button#header__menu-sandwich-button.g-header__sandwich-menu-button
+			svg#header__menu-sandwich-id.a-sandwich-menu(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
+				title Menú de secciones de la página
+				path(d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z")
+
+		section#header__nav-container-id.g-header__menu-container
+			nav.g-header__nav
+				ul.g-header__ul-container
+					+elements-menu-header("https://galeedgutierrez.com/#home", "Inicio", "header__nav-home")
+					+elements-menu-header("https://galeedgutierrez.com/#about", "Sobre mí")
+					+elements-menu-header("#projects", "Proyectos")
+					//- +elements-menu-header("#resume", "Resume")
+					+elements-menu-header("#contact", "Contacto")
+				button#header__menu-options-changes-button.g-header__menu-options-button
+					svg#header__menu-options-changes-id.a-icon.g-header__changes-options-menu(xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48")
+						title Menú de preferencias
+						path(d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z")
+			section#header__options-id.g-header__options-container
+				.o-container.g-header__options
+					.g-header__change-theme-container
+						+header__theme-switch("header__theme-input-id","", "", "Sun icons", "/assets/images/icon-sun.webp", "", "", "Moon icon", "/assets/images/icon-moon.webp")
+				//- .options__language.options__header
+				//- 	+header-options("header__language-input-id","", "", "Spanish icon", "../assets/images/icons/languages/flag-spain.webp", "", "", "English icon", "../assets/images/icons/languages/flag-UK.webp")

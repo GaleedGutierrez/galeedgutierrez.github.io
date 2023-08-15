@@ -1,0 +1,26 @@
+@use "../../settings/variables";
+
+.g-about-me {
+	padding-block-end: variables.$space-13;
+
+	&__introduce-me {
+		display: grid;
+		gap: variables.$space-17;
+		grid-template-columns: auto 1fr;
+		width: fit-content;
+		margin-inline: auto;
+	}
+
+	&__picture-container {
+		width: 22.1rem;
+		margin-block-end: 0;
+	}
+
+	&__about-me-text {
+		margin-block-end: 0;
+	}
+
+	&__button {
+		max-width: 14.5rem;
+	}
+}

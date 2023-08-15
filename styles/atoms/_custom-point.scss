@@ -1,0 +1,15 @@
+@use "../settings/variables";
+@use "../tools/functions";
+
+.a-custom-point {
+	--background-color: #{functions.light-dark(
+			variables.$background-dark-color,
+			variables.$background-lightest-color
+		)};
+
+	display: inline-block;
+	width: variables.$space-1;
+	height: variables.$space-1;
+	border-radius: variables.$border-radius-circle;
+	background-color: var(--background-color);
+}
