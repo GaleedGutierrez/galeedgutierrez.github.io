@@ -51,17 +51,17 @@
 @mixin body-lg {
 	font-size: variables.$fs-body-lg;
 	line-height: variables.$lh-3;
-	font-weight: variables.$weight-regular;
+	font-weight: variables.$weight-normal;
 }
 
 @mixin body-md {
 	font-size: variables.$fs-body-md;
 	line-height: variables.$lh-2;
-	font-weight: variables.$weight-regular;
+	font-weight: variables.$weight-normal;
 }
 
 @mixin body-sd {
 	font-size: variables.$fs-body-sm;
 	line-height: variables.$lh-1;
-	font-weight: variables.$weight-regular;
+	font-weight: variables.$weight-normal;
 }
