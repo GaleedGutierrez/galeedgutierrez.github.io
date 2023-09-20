@@ -3,8 +3,8 @@
 @use "../tools/mixins";
 
 %a-button-base {
-	padding-inline: variables.$space-6;
 	padding-block: variables.$space-4;
+	padding-inline: variables.$space-6;
 	border-width: variables.$border-05;
 	border-style: solid;
 	border-radius: variables.$border-radius-3;
