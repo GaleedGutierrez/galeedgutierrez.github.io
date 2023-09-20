@@ -8,14 +8,14 @@
 			variables.$background-lightest-color
 		)};
 
-	width: 4.4rem;
 	height: 4.4rem;
+	width: 4.4rem;
 	padding: variables.$space-05;
 	border-radius: variables.$border-radius-circle;
 	background: none;
+	line-height: normal;
 	fill: var(--icon-color);
 	transition-duration: variables.$time-1;
-	line-height: normal;
 
 	&--active {
 		background-color: var(--background-color);

@@ -8,7 +8,7 @@
 		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details",
 		"prepare": "husky install",
 		"lint": "eslint ./src/** webpack.common.ts webpack.dev.ts webpack.prod.ts .eslintrc.cjs",
-		"lint:fix": "npx eslint --fix ./",
+		"lint:fix": "npx eslint --fix ./src/** webpack.common.ts webpack.dev.ts webpack.prod.ts .eslintrc.cjs",
 		"stylelint": "npx stylelint \"**/*.scss\"",
 		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
 		"pug": "pug --watch ./pug --out ./public -P"
@@ -95,7 +95,7 @@
 		"maintained node versions"
 	],
 	"lint-staged": {
-		"*.(j|t)s": "eslint --fix",
-		"*.s(a|c)ss": "stylelint --fix"
+		"*.(j|t)s": "eslint --fix ./src/** webpack.common.ts webpack.dev.ts webpack.prod.ts .eslintrc.cjs",
+		"*.s(a|c)ss": "stylelint --fix \"**/*.scss\""
 	}
 }

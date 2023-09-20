@@ -30,8 +30,8 @@ $weight-black: 900;
 	font-family: Poppins;
 	src: local("Poppins Regular"), local("Poppins-Regular"),
 		url("@fonts/Poppins/Poppins-Regular.woff2") format("woff2");
-	font-weight: $weight-normal;
 	font-style: normal;
+	font-weight: $weight-normal;
 	font-display: swap;
 }
 
@@ -39,8 +39,8 @@ $weight-black: 900;
 	font-family: Poppins;
 	src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
 		url("@fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
-	font-weight: $weight-semibold;
 	font-style: normal;
+	font-weight: $weight-semibold;
 	font-display: swap;
 }
 
@@ -48,8 +48,8 @@ $weight-black: 900;
 	font-family: Poppins;
 	src: local("Poppins Bold"), local("Poppins-Bold"),
 		url("@fonts/Poppins/Poppins-Bold.woff2") format("woff2");
-	font-weight: $weight-bold;
 	font-style: normal;
+	font-weight: $weight-bold;
 	font-display: swap;
 }
 
