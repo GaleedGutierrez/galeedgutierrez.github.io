@@ -19,6 +19,16 @@
 		"selector-list-comma-newline-after": "always",
 		"block-opening-brace-space-before": "always",
 		"string-quotes": "double",
+		"color-no-hex": true,
+		"color-function-notation": "modern",
+		"function-disallowed-list": [
+			"rgba",
+			"hsla",
+			"rgb",
+			"hsl",
+			"lab",
+			"hwb"
+		],
 		"order/order": [
 			"custom-properties",
 			"dollar-variables",
@@ -36,8 +46,8 @@
 
 			"inset",
 
-			"inset-inline",
 			"inset-block",
+			"inset-inline",
 
 			"inset-block-start",
 			"inset-inline-end",
@@ -52,15 +62,17 @@
 			"display",
 
 			"overflow",
-			"overflow-x",
 			"overflow-y",
-			"overflow-inline",
+			"overflow-x",
 			"overflow-block",
+			"overflow-inline",
 			"overflow-anchor",
 			"overflow-wrap",
 			"overflow-clip-margin",
 
 			"gap",
+			"row-gap",
+			"column-gap",
 
 			"grid-template",
 			"grid-template-rows",
@@ -78,33 +90,29 @@
 			"grid-column-end",
 
 			"box-sizing",
-			"flex",
-			"flex-basis",
-			"flex-direction",
 			"flex-flow",
+			"flex-direction",
+			"flex-wrap",
+			"flex",
 			"flex-grow",
 			"flex-shrink",
-			"flex-wrap",
+			"flex-basis",
 
 			"place-content",
-			"place-items",
-			"place-self",
-			"justify-content",
 			"align-content",
-			"justify-items",
+			"justify-content",
+
+			"place-items",
 			"align-items",
-			"justify-self",
+			"justify-items",
+
+			"place-self",
 			"align-self",
+			"justify-self",
+
 			"order",
 
 			"content",
-
-			"inline-size",
-			"width",
-			"max-inline-size",
-			"max-width",
-			"min-inline-size",
-			"min-width",
 
 			"block-size",
 			"height",
@@ -113,10 +121,17 @@
 			"min-block-size",
 			"min-height",
 
+			"inline-size",
+			"width",
+			"max-inline-size",
+			"max-width",
+			"min-inline-size",
+			"min-width",
+
 			"padding",
 
-			"padding-inline",
 			"padding-block",
+			"padding-inline",
 
 			"padding-block-start",
 			"padding-inline-end",
@@ -130,8 +145,8 @@
 
 			"border",
 
-			"border-inline",
 			"border-block",
+			"border-inline",
 
 			"border-block-start",
 			"border-inline-end",
@@ -145,8 +160,8 @@
 
 			"border-width",
 
-			"border-inline-width",
 			"border-block-width",
+			"border-inline-width",
 
 			"border-block-start-width",
 			"border-inline-end-width",
@@ -160,8 +175,8 @@
 
 			"border-style",
 
-			"border-inline-style",
 			"border-block-style",
+			"border-inline-style",
 
 			"border-block-start-style",
 			"border-inline-end-style",
@@ -175,45 +190,47 @@
 
 			"border-color",
 
-			"border-top-color",
-			"border-right-color",
-			"border-bottom-color",
-			"border-left-color",
-
-			"border-inline-color",
 			"border-block-color",
+			"border-inline-color",
 
 			"border-block-start-color",
 			"border-inline-end-color",
 			"border-block-end-color",
 			"border-inline-start-color",
 
-			"border-radius",
+			"border-top-color",
+			"border-right-color",
+			"border-bottom-color",
+			"border-left-color",
 
-			"border-top-left-radius",
-			"border-top-right-radius",
-			"border-bottom-right-radius",
-			"border-bottom-left-radius",
+			"border-radius",
 
 			"border-start-start-radius",
 			"border-start-end-radius",
 			"border-end-start-radius",
 			"border-end-end-radius",
 
+			"border-top-left-radius",
+			"border-top-right-radius",
+			"border-bottom-right-radius",
+			"border-bottom-left-radius",
+
 			"border-collapse",
 			"border-spacing",
 
 			"border-image",
+			"border-image-source",
+			"border-image-slice",
+			"border-image-width",
 			"border-image-outset",
 			"border-image-repeat",
-			"border-image-slice",
-			"border-image-source",
-			"border-image-width",
 
 			"margin",
 
-			"margin-inline",
+			"margin-trim",
+
 			"margin-block",
+			"margin-inline",
 
 			"margin-block-start",
 			"margin-inline-end",
@@ -225,36 +242,36 @@
 			"margin-bottom",
 			"margin-right",
 
-			"margin-trim",
-
 			"background",
 			"background-image",
-			"background-color",
 			"background-position",
-			"background-repeat",
-			"background-size",
-			"background-clip",
-			"background-attachment",
 			"background-position-x",
 			"background-position-y",
+			"background-size",
+			"background-repeat",
 			"background-origin",
+			"background-clip",
+			"background-attachment",
+			"background-color",
 			"background-blend-mode",
 
 			"outline",
+			"outline-color",
 			"outline-style",
 			"outline-width",
-			"outline-color",
 			"outline-offset",
 
+			"font",
 			"font-family",
 			"src",
 			"font-size",
-			"font-weight",
-			"font-style",
-			"font-display",
-			"font-variant",
-			"font-feature-settings",
 			"font-stretch",
+			"font-style",
+			"font-variant",
+			"font-weight",
+			"line-height",
+			"font-display",
+			"font-feature-settings",
 			"font-variant-ligatures",
 			"font-variant-numeric",
 			"font-kerning",
@@ -273,17 +290,18 @@
 			"fill",
 
 			"text-orientation",
-			"text-justify",
 			"text-align",
+			"text-justify",
 			"text-decoration",
-			"text-decoration-line",
 			"text-decoration-color",
-			"text-decoration-skip",
+			"text-decoration-line",
 			"text-decoration-style",
-			"text-decoration-skip-ink",
 			"text-decoration-thickness",
+			"text-decoration-skip",
+			"text-decoration-skip-ink",
 			"text-transform",
 			"text-overflow",
+			"-webkit-line-clamp",
 			"text-shadow",
 			"text-rendering",
 			"text-indent",
@@ -293,8 +311,8 @@
 			"text-combine-upright",
 			"text-emphasis",
 			"text-emphasis-color",
-			"text-emphasis-position",
 			"text-emphasis-style",
+			"text-emphasis-position",
 			"text-combine-upright",
 			"text-underline-offset",
 			"text-underline-position",
@@ -307,10 +325,10 @@
 			"opacity",
 
 			"transition",
-			"transition-property",
-			"transition-duration",
-			"transition-timing-function",
 			"transition-delay",
+			"transition-duration",
+			"transition-property",
+			"transition-timing-function",
 
 			"transform",
 			"transform-origin",
@@ -325,12 +343,12 @@
 			"animation-duration",
 			"animation-timing-function",
 			"animation-delay",
-			"animation-iteration-count",
 			"animation-direction",
+			"animation-iteration-count",
 			"animation-fill-mode",
 			"animation-play-state",
-			"animation-composition",
 			"animation-timeline",
+			"animation-composition",
 
 			"cursor"
 		],
