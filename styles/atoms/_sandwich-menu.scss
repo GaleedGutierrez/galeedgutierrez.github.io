@@ -22,11 +22,11 @@
 	border-radius: variables.$border-radius-circle;
 	background: none;
 	line-height: normal;
-	transition-duration: variables.$time-1;
+	transition-duration: variables.$time-002;
 	fill: currentcolor;
 
 	&--active {
 		background-color: var(--background-color);
-		transition-duration: variables.$time-007;
+		transition-duration: variables.$time-002;
 	}
 }

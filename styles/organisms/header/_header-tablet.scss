@@ -52,17 +52,17 @@
 	}
 
 	&__options-container {
-		position: absolute;
+		position: fixed;
+		top: -3rem;
 		right: 0;
-		bottom: 8rem;
 		width: 100%;
 		background-color: var(--background-color);
-		transition-duration: 250ms;
+		transition-duration: variables.$time-002;
 		opacity: 0;
 	}
 
 	&__menu--visible {
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(27.5rem);
 		opacity: 1;
 	}
@@ -73,7 +73,7 @@
 	}
 
 	&__options--visible {
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(11.8rem);
 		opacity: 1;
 	}

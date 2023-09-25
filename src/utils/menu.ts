@@ -33,6 +33,7 @@ export const hiddenMenu = (): void => {
 		'g-header__menu-container--visible'
 	);
 	SANDWICH_MENU_ICON.classList.remove('a-sandwich-menu--active');
+	SANDWICH_MENU.classList.remove('a-sandwich-menu-button--active');
 
 	if (CURRENT_SCREEN_SIZE < ScreenSize.TABLET) {
 		MENU_ELEMENTS_CONTAINER.ariaHidden = 'true';
