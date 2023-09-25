@@ -4,6 +4,7 @@ import {
 	MENU_ELEMENTS_CONTAINER,
 	OPTIONS_MENU_CONTAINER,
 	OPTIONS_MENU_ICON,
+	SANDWICH_MENU,
 	SANDWICH_MENU_ICON,
 	THEME_INPUT,
 } from '@utils/nodes';
@@ -15,6 +16,7 @@ export const showMenu = (): void => {
 		'g-header__menu-container--visible'
 	);
 	SANDWICH_MENU_ICON.classList.toggle('a-sandwich-menu--active');
+	SANDWICH_MENU.classList.toggle('a-sandwich-menu-button--active');
 
 	const IS_VISIBLE_MENU = MENU_ELEMENTS_CONTAINER.classList.contains(
 		'g-header__menu-container--visible'

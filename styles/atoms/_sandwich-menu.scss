@@ -2,6 +2,14 @@
 @use "../tools/functions";
 @use "../tools/mixins";
 
+.a-sandwich-menu-button {
+	color: var(--icon-color);
+
+	&--active {
+		color: var(--icon-active-color);
+	}
+}
+
 .a-sandwich-menu {
 	--background-color: #{functions.light-dark(
 			variables.$background-dark-color,
@@ -15,11 +23,10 @@
 	background: none;
 	line-height: normal;
 	transition-duration: variables.$time-1;
-	fill: var(--icon-color);
+	fill: currentcolor;
 
 	&--active {
 		background-color: var(--background-color);
 		transition-duration: variables.$time-007;
-		fill: var(--icon-active-color);
 	}
 }
