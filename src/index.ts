@@ -40,9 +40,9 @@ const showMoreAboutMe = (): void => {
 
 const NUMBER_PROJECTS = 6;
 const IS_DARK_MODE =
-	window.matchMedia &&
-	window.matchMedia('(prefers-color-scheme: dark)').matches;
-const CHECK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
+	globalThis.matchMedia &&
+	globalThis.matchMedia('(prefers-color-scheme: dark)').matches;
+const CHECK_THEME = globalThis.matchMedia('(prefers-color-scheme: dark)');
 const CURRENT_SCREEN_SIZE = globalThis.innerWidth;
 
 if (CURRENT_SCREEN_SIZE >= ScreenSize.TABLET) {

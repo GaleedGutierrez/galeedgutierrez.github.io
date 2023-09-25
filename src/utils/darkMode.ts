@@ -27,7 +27,9 @@ const setTheme = ({
 		return;
 	}
 
-	const IS_LIGHT = window.matchMedia('(prefers-color-scheme: light)').matches;
+	const IS_LIGHT = globalThis.matchMedia(
+		'(prefers-color-scheme: light)'
+	).matches;
 
 	HTML_ROOT.classList.toggle('light-theme', IS_LIGHT);
 	HTML_ROOT.classList.toggle('dark-theme', !IS_LIGHT);
