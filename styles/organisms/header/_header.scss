@@ -3,6 +3,8 @@
 @use "../../tools/functions";
 
 .g-header {
+	@include mixins.center-flex;
+
 	--border-color: #{functions.light-dark(
 			variables.$light-gray-300,
 			variables.$gray-300
@@ -86,8 +88,6 @@
 		display: block;
 		width: 100%;
 	}
-
-	@include mixins.center-flex;
 }
 
 .g-header__menu-container {

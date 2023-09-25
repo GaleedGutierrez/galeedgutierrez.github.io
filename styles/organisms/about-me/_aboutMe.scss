@@ -1,4 +1,5 @@
 @use "../../settings/variables";
+@use "../../tools/mixins";
 @use "../../tools/functions";
 
 .g-about-me {
@@ -66,9 +67,9 @@
 	}
 
 	&__otter-icon {
-		position: absolute;
-		left: calc(50% - 2rem);
-		bottom: calc(100% - 2rem);
+		@include mixins.center-position-absolute;
+
+		top: 0;
 	}
 }
 

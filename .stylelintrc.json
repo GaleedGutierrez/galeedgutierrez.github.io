@@ -30,11 +30,11 @@
 			"hwb"
 		],
 		"order/order": [
+			"at-rules",
 			"custom-properties",
 			"dollar-variables",
 			"declarations",
-			"rules",
-			"at-rules"
+			"rules"
 		],
 		"declaration-block-no-redundant-longhand-properties": [
 			true,

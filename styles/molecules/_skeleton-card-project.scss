@@ -36,13 +36,13 @@
 	}
 
 	& &__technology-icons {
+		@extend %base;
+
 		height: 2.6rem;
 		width: 12rem;
 		margin-block-start: 0.8rem;
 		margin-inline-end: 1.6rem;
 		margin-inline-start: auto;
-
-		@extend %base;
 	}
 
 	&__info-container {
@@ -52,19 +52,19 @@
 	}
 
 	& &__title {
+		@extend %base;
+
 		height: 3.2rem;
 		width: 55%;
 		margin-block-end: variables.$space-6;
-
-		@extend %base;
 	}
 
 	& &__text {
+		@extend %base;
+
 		height: 3.2rem;
 		width: 100%;
 		margin-block-end: variables.$space-3;
-
-		@extend %base;
 	}
 
 	&__platform-container {
@@ -79,26 +79,26 @@
 	}
 
 	& &__platform-icon {
+		@extend %base-circle;
+
 		grid-area: icon;
 		height: 3.2rem;
 		width: 3.2rem;
-
-		@extend %base-circle;
 	}
 
 	& &__platform-title {
+		@extend %base;
+
 		height: 3.2rem;
 		width: 100%;
-
-		@extend %base;
 	}
 
 	& &__platform-name {
+		@extend %base;
+
 		grid-area: name;
 		height: 0.8rem;
 		width: 20%;
-
-		@extend %base;
 	}
 
 	&__demo-container {
@@ -109,17 +109,17 @@
 	}
 
 	& &__button {
+		@extend %base;
+
 		height: 6rem;
 		width: 15.5rem;
-
-		@extend %base;
 	}
 
 	& &__github {
+		@extend %base-circle;
+
 		height: 4rem;
 		width: 4rem;
-
-		@extend %base-circle;
 	}
 }
 

@@ -2,14 +2,14 @@
 @use "../tools/mixins";
 
 .a-logo {
-	&:focus-visible {
-		@include mixins.focus-anchor;
-	}
-
 	// font-size: variables.$fs-title-305xl;
 	// line-height: variables.$lh-505;
 	// font-weight: variables.$weight-bold;
 
 	// Lo vamos a probar
 	@include mixins.heading-4xl;
+
+	&:focus-visible {
+		@include mixins.focus-anchor;
+	}
 }

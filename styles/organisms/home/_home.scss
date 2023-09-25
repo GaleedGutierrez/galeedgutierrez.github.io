@@ -19,8 +19,8 @@
 	}
 
 	&__keywords {
-		gap: variables.$space-1;
-
 		@include mixins.all-center-flex;
+
+		gap: variables.$space-1;
 	}
 }

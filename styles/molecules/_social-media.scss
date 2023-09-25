@@ -3,6 +3,8 @@
 @use "../tools/functions";
 
 .m-social-media {
+	@include mixins.center-flex;
+
 	flex-wrap: wrap;
 	gap: variables.$space-7;
 
@@ -35,6 +37,4 @@
 			fill: var(--active-text-color);
 		}
 	}
-
-	@include mixins.center-flex;
 }

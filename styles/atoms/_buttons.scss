@@ -13,6 +13,8 @@
 }
 
 .a-button {
+	@extend %a-button-base;
+
 	--border-color: #{functions.light-dark(
 			variables.$background-dark-color,
 			variables.$background-lighter-gray-color
@@ -48,11 +50,11 @@
 		background-color: var(--active-color);
 		color: var(--text-hover-color);
 	}
-
-	@extend %a-button-base;
 }
 
 .a-button--unique {
+	@extend %a-button-base;
+
 	border-color: variables.$background-dark-color;
 	color: variables.$text-color;
 
@@ -64,7 +66,7 @@
 
 	&:focus-visible {
 		@include mixins.focus-button;
-		/* stylelint-disable-next-line order/order */
+
 		outline: variables.$border-1 solid variables.$background-dark-color;
 	}
 
@@ -73,6 +75,4 @@
 		background-color: variables.$background-dark-color;
 		color: variables.$text-color-pure-white;
 	}
-
-	@extend %a-button-base;
 }
