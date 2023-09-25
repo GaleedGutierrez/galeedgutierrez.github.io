@@ -11,8 +11,8 @@
 		left: initial;
 		bottom: initial;
 		padding: 0;
-		opacity: 1;
 		transition-duration: 0s;
+		opacity: 1;
 	}
 
 	&__nav {
@@ -20,7 +20,7 @@
 		z-index: variables.$z-index-1-screen-foreground;
 		display: flex;
 		gap: 2.4rem;
-		justify-content: end;
+		justify-content: flex-end;
 		align-items: center;
 	}
 
@@ -57,14 +57,14 @@
 		bottom: 8rem;
 		width: 100%;
 		background-color: var(--background-color);
-		opacity: 0;
 		transition-duration: 250ms;
+		opacity: 0;
 	}
 
 	&__menu--visible {
-		opacity: 1;
 		transition-duration: 750ms;
 		transform: translateY(27.5rem);
+		opacity: 1;
 	}
 
 	&__options {
@@ -73,9 +73,9 @@
 	}
 
 	&__options--visible {
-		opacity: 1;
 		transition-duration: 750ms;
 		transform: translateY(11.8rem);
+		opacity: 1;
 	}
 
 	&__change-theme-container {

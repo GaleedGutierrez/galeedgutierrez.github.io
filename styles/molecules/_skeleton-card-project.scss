@@ -69,11 +69,11 @@
 
 	&__platform-container {
 		display: grid;
-		gap: variables.$space-1 variables.$space-3;
 		grid-template-columns: auto 1fr;
 		grid-template-areas:
 			"icon title"
 			"icon name";
+		gap: variables.$space-1 variables.$space-3;
 		margin-block-start: variables.$space-2;
 		margin-block-end: variables.$space-4;
 	}
@@ -103,8 +103,8 @@
 
 	&__demo-container {
 		display: flex;
-		gap: variables.$space-6;
 		flex-wrap: wrap;
+		gap: variables.$space-6;
 		align-items: center;
 	}
 

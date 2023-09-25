@@ -3,8 +3,8 @@
 @use "../tools/functions";
 
 .m-social-media {
-	gap: variables.$space-7;
 	flex-wrap: wrap;
+	gap: variables.$space-7;
 
 	&__icons {
 		width: variables.$space-8;

@@ -21,27 +21,27 @@
 	// Background
 	&::before {
 		display: block;
-		content: "";
 		height: 2rem;
 		width: 100%;
 		border-radius: variables.$border-radius-3;
 		background-color: variables.$gray-300;
 		transition: all variables.$time-005;
+		content: "";
 	}
 
 	// Circle
 	&::after {
 		position: absolute;
-		z-index: variables.$z-index-1-screen-foreground;
 		left: 0.4rem;
 		top: calc(50% - 0.6rem);
+		z-index: variables.$z-index-1-screen-foreground;
 		display: block;
-		content: "";
 		height: 1.2rem;
 		width: 1.2rem;
 		border-radius: variables.$border-radius-circle;
 		background-color: variables.$pure-white;
 		transition: all variables.$time-005;
+		content: "";
 	}
 }
 

@@ -5,8 +5,8 @@
 
 	&__introduce-me {
 		display: grid;
-		gap: variables.$space-17;
 		grid-template-columns: auto 1fr;
+		gap: variables.$space-17;
 		width: fit-content;
 		margin-inline: auto;
 	}

@@ -1,5 +1,6 @@
 import '@utils/header';
 import '@styles/projects/style.scss';
+import '@utils/googleAnalytics.js';
 
 import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';

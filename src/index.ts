@@ -1,7 +1,7 @@
 import '@utils/header';
 import '@utils/typedjs';
 import '@utils/particles.js';
-import '@utils/analytics.js';
+import '@utils/googleAnalytics.js';
 import '@styles/index/style.scss';
 import '@styles/index/tablet.scss';
 import '@styles/index/desktop.scss';

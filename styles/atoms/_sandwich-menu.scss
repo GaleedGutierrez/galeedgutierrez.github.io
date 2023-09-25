@@ -14,12 +14,12 @@
 	border-radius: variables.$border-radius-circle;
 	background: none;
 	line-height: normal;
-	fill: var(--icon-color);
 	transition-duration: variables.$time-1;
+	fill: var(--icon-color);
 
 	&--active {
 		background-color: var(--background-color);
-		fill: var(--icon-active-color);
 		transition-duration: variables.$time-007;
+		fill: var(--icon-active-color);
 	}
 }
