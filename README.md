@@ -8,7 +8,7 @@
 git clone https://github.com/GaleedGutierrez/galeedgutierrez.github.io.git
 ```
 
-2. Ingresa a la capeta `Curso-CSS-Grid-a-fondo-Codely-2021`:
+2. Ingresa a la capeta `galeedgutierrez.github.io`:
 
 ```bash
 cd galeedgutierrez.github.io
