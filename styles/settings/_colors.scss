@@ -1,17 +1,34 @@
+/* stylelint-disable color-no-hex */
+// Se lo desactiva de forma forma temporal, hay que agregar postCSS para que sea compatible con todos los navegadores OKLCH.
+
 // Base colors
-$_white: #fff;
-$_ghost-white: #f8f9fa;
-$_cultured: #f5f5f5;
-$_bright-gray: #e9ecef;
-$_platinum: #dee2e6;
-$_light-gray: #ced4da;
-$_cadet-blue-crayola: #adb5bd;
-$_auro-metals-saurus: #6c757d;
-$_dark-liver: #505050;
-$_davys-grey: #495057;
-$_onyx: #343a40;
-$_dark-gunmetal: #212529;
-$_chinese-black: #171616;
+$_white: oklch(100% 0 0deg);
+$_ghost-white: oklch(98.16% 0.002 247.84deg);
+$_cultured: oklch(97.02% 0 0deg);
+$_bright-gray: oklch(94.17% 0.005 247.88deg);
+$_platinum: oklch(91.09% 0.007 247.9deg);
+$_light-gray: oklch(86.71% 0.011 247.95deg);
+$_cadet-blue-crayola: oklch(76.92% 0.015 248.02deg);
+$_auro-metals-saurus: oklch(55.75% 0.016 244.89deg);
+$_dark-liver: oklch(43.13% 0 0deg);
+$_davys-grey: oklch(42.76% 0.015 248.17deg);
+$_onyx: oklch(34.51% 0.013 248.21deg);
+$_dark-gunmetal: oklch(26.21% 0.009 248.19deg);
+$_chinese-black: oklch(20.13% 0.002 17.29deg);
+
+// $_white: #fff;
+// $_ghost-white: #f8f9fa;
+// $_cultured: #f5f5f5;
+// $_bright-gray: #e9ecef;
+// $_platinum: #dee2e6;
+// $_light-gray: #ced4da;
+// $_cadet-blue-crayola: #adb5bd;
+// $_auro-metals-saurus: #6c757d;
+// $_dark-liver: #505050;
+// $_davys-grey: #495057;
+// $_onyx: #343a40;
+// $_dark-gunmetal: #212529;
+// $_chinese-black: #171616;
 
 // Gral
 // Gral__White

@@ -16,7 +16,9 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		color: var(--hover-text-color);
+		@media (hover: hover) {
+			color: var(--hover-text-color);
+		}
 	}
 
 	&:focus-visible {

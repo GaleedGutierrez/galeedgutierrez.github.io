@@ -50,15 +50,8 @@ import {
 
 // 	if (SECTION) OBSERVER_SECTIONS.observe(SECTION);
 // });
+const TABLET_MEDIA_QUERY = globalThis.matchMedia('(min-width: 768px)');
 const CURRENT_SCREEN_SIZE = globalThis.innerWidth;
-
-window.addEventListener('resize', () => {
-	if (screen.width < ScreenSize.TABLET) {
-		hiddenOptionsMenu();
-	} else {
-		hiddenMenu();
-	}
-});
 
 if (CURRENT_SCREEN_SIZE >= ScreenSize.TABLET) {
 	MENU_ELEMENTS_CONTAINER.ariaHidden = 'false';
@@ -70,3 +63,11 @@ MENU_ELEMENTS_CONTAINER.addEventListener('click', hiddenMenu);
 
 OPTIONS_MENU.onclick = () => showOptionsMenu();
 OPTIONS_MENU_CONTAINER.onclick = () => hiddenOptionsMenu();
+
+TABLET_MEDIA_QUERY.addEventListener('change', (event) => {
+	if (event.matches) {
+		hiddenMenu();
+	} else {
+		hiddenOptionsMenu();
+	}
+});

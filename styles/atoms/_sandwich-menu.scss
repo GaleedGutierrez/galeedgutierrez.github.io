@@ -2,24 +2,31 @@
 @use "../tools/functions";
 @use "../tools/mixins";
 
+.a-sandwich-menu-button {
+	color: var(--icon-color);
+
+	&--active {
+		color: var(--icon-active-color);
+	}
+}
+
 .a-sandwich-menu {
 	--background-color: #{functions.light-dark(
 			variables.$background-dark-color,
 			variables.$background-lightest-color
 		)};
 
-	width: 4.4rem;
 	height: 4.4rem;
+	width: 4.4rem;
 	padding: variables.$space-05;
 	border-radius: variables.$border-radius-circle;
 	background: none;
-	fill: var(--icon-color);
-	transition-duration: variables.$time-1;
 	line-height: normal;
+	transition-duration: variables.$time-002;
+	fill: currentcolor;
 
 	&--active {
 		background-color: var(--background-color);
-		fill: var(--icon-active-color);
-		transition-duration: variables.$time-007;
+		transition-duration: variables.$time-002;
 	}
 }

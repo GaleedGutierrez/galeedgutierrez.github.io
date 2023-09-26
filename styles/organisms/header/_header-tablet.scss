@@ -11,8 +11,8 @@
 		left: initial;
 		bottom: initial;
 		padding: 0;
-		opacity: 1;
 		transition-duration: 0s;
+		opacity: 1;
 	}
 
 	&__nav {
@@ -20,7 +20,7 @@
 		z-index: variables.$z-index-1-screen-foreground;
 		display: flex;
 		gap: 2.4rem;
-		justify-content: end;
+		justify-content: flex-end;
 		align-items: center;
 	}
 
@@ -37,8 +37,8 @@
 	}
 
 	&__changes-options-menu {
-		width: 3.6rem;
 		height: 3.6rem;
+		width: 3.6rem;
 		padding: variables.$space-05;
 		border: none;
 		background: none;
@@ -52,19 +52,19 @@
 	}
 
 	&__options-container {
-		position: absolute;
+		position: fixed;
+		top: -3rem;
 		right: 0;
-		bottom: 8rem;
 		width: 100%;
 		background-color: var(--background-color);
+		transition-duration: variables.$time-002;
 		opacity: 0;
-		transition-duration: 250ms;
 	}
 
 	&__menu--visible {
-		opacity: 1;
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(27.5rem);
+		opacity: 1;
 	}
 
 	&__options {
@@ -73,9 +73,9 @@
 	}
 
 	&__options--visible {
-		opacity: 1;
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(11.8rem);
+		opacity: 1;
 	}
 
 	&__change-theme-container {

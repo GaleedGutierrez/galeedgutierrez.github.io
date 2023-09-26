@@ -3,8 +3,8 @@
 @use "../tools/mixins";
 
 %a-button-base {
-	padding-inline: variables.$space-6;
 	padding-block: variables.$space-4;
+	padding-inline: variables.$space-6;
 	border-width: variables.$border-05;
 	border-style: solid;
 	border-radius: variables.$border-radius-3;
@@ -33,14 +33,16 @@
 	border-color: var(--border-color);
 	color: var(--text-color);
 
-	&:hover {
-		border-color: var(--hover-color);
-		background-color: var(--hover-color);
-		color: var(--text-hover-color);
-	}
-
 	&:focus-visible {
 		@include mixins.focus-button;
+	}
+
+	&:hover {
+		@media (hover: hover) {
+			border-color: var(--hover-color);
+			background-color: var(--hover-color);
+			color: var(--text-hover-color);
+		}
 	}
 
 	&:active {
@@ -56,16 +58,18 @@
 	border-color: variables.$background-dark-color;
 	color: variables.$text-color;
 
-	&:hover {
-		border-color: variables.$background-dark-gray-color;
-		background-color: variables.$background-dark-gray-color;
-		color: variables.$text-color-pure-white;
+	&:focus-visible {
+		outline: variables.$border-1 solid variables.$background-dark-color;
+
+		@include mixins.focus-button;
 	}
 
-	&:focus-visible {
-		@include mixins.focus-button;
-		/* stylelint-disable-next-line order/order */
-		outline: variables.$border-1 solid variables.$background-dark-color;
+	&:hover {
+		@media (hover: hover) {
+			border-color: variables.$background-dark-gray-color;
+			background-color: variables.$background-dark-gray-color;
+			color: variables.$text-color-pure-white;
+		}
 	}
 
 	&:active {

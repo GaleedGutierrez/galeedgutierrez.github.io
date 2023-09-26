@@ -1,5 +1,5 @@
 /dist/*
 /build/*
-/src/utils/particles.js
-/src/utils/analytics.js
-*.bundle.*.js
+/node_modules/*
+/*.bundle.*.js
+/src/**/googleAnalytics.js

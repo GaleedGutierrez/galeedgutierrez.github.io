@@ -13,10 +13,10 @@
 	}
 
 	&__projects-container {
-		display: flex;
-		overflow-wrap: break-word;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 		gap: 4rem;
-		flex-direction: column;
+		overflow-wrap: break-word;
 		padding-block-start: 3.6rem;
 	}
 
@@ -31,7 +31,7 @@
 .project-container__technologies-container {
 	display: flex;
 	gap: 0.4rem;
-	justify-content: end;
+	justify-content: flex-end;
 	align-items: center;
 	margin-block-start: 0.8rem;
 	margin-inline-end: 1.6rem;

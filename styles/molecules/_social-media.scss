@@ -3,8 +3,8 @@
 @use "../tools/functions";
 
 .m-social-media {
-	gap: variables.$space-7;
 	flex-wrap: wrap;
+	gap: variables.$space-7;
 
 	&__icons {
 		width: variables.$space-8;
@@ -25,14 +25,24 @@
 		align-items: center;
 		cursor: pointer;
 
+		&:hover {
+			@media (hover: hover) {
+				color: var(--hover-text-color);
+			}
+		}
+
 		&:hover .m-social-media__icons {
-			color: var(--hover-text-color);
-			fill: var(--hover-text-color);
+			@media (hover: hover) {
+				fill: currentcolor;
+			}
+		}
+
+		&:active {
+			color: var(--active-text-color);
 		}
 
 		&:active .m-social-media__icons {
-			color: var(--active-text-color);
-			fill: var(--active-text-color);
+			fill: currentcolor;
 		}
 	}
 

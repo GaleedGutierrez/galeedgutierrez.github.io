@@ -1,5 +1,6 @@
 import '@utils/header';
 import '@styles/projects/style.scss';
+import '@utils/googleAnalytics.js';
 
 import showProjects from '@templates/showProjects';
 import setTheme from '@utils/darkMode';
@@ -8,7 +9,7 @@ import { PROJECTS } from '@utils/projects';
 
 import { ScreenSize } from './enum/enums';
 
-const CHECK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
+const CHECK_THEME = globalThis.matchMedia('(prefers-color-scheme: dark)');
 const CURRENT_SCREEN_SIZE = globalThis.innerWidth;
 
 if (CURRENT_SCREEN_SIZE >= ScreenSize.TABLET) {

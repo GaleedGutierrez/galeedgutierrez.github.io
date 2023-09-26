@@ -4,11 +4,12 @@
 	"description": "My personal webpage",
 	"main": "index.js",
 	"scripts": {
-		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
 		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details",
+		"preview": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts && npx http-server ./build --gzip",
+		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
 		"prepare": "husky install",
-		"lint": "eslint ./src/** webpack.common.ts webpack.dev.ts webpack.prod.ts .eslintrc.cjs",
-		"lint:fix": "npx eslint --fix ./",
+		"lint": "npx eslint ./**.{js,mjs,cjs,ts,mts}",
+		"lint:fix": "npx eslint --fix ./**.{js,mjs,cjs,ts,mts}",
 		"stylelint": "npx stylelint \"**/*.scss\"",
 		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
 		"pug": "pug --watch ./pug --out ./public -P"
@@ -77,8 +78,12 @@
 		"glob-all": "^3.3.1",
 		"html-loader": "^4.2.0",
 		"html-webpack-plugin": "^5.5.3",
+		"http-server": "^14.1.1",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.2.3",
+		"postcss": "^8.4.30",
+		"postcss-loader": "^7.3.3",
+		"postcss-preset-env": "^9.1.4",
 		"prettier": "^2.8.8",
 		"pug": "^3.0.2",
 		"pug-cli2": "^1.0.0-alpha6.1",
@@ -95,7 +100,7 @@
 		"maintained node versions"
 	],
 	"lint-staged": {
-		"*.(j|t)s": "eslint --fix",
-		"*.s(a|c)ss": "stylelint --fix"
+		"*.(j|t)s": "npm run lint:fix",
+		"*.s(a|c)ss": "npm run stylelint:fix"
 	}
 }

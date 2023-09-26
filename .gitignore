@@ -228,3 +228,5 @@ $RECYCLE.BIN/
 *.rar
 *.zip
 prepros.config
+/dist/*
+/build/*
