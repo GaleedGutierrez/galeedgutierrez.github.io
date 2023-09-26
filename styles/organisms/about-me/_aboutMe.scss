@@ -1,4 +1,5 @@
 @use "../../settings/variables";
+@use "../../tools/mixins";
 @use "../../tools/functions";
 
 .g-about-me {
@@ -66,9 +67,10 @@
 	}
 
 	&__otter-icon {
-		position: absolute;
-		left: calc(50% - 2rem);
-		bottom: calc(100% - 2rem);
+		@include mixins.center-position-absolute;
+
+		/* stylelint-disable-next-line order/order */
+		top: 0;
 	}
 }
 
@@ -84,7 +86,6 @@
 	&::before {
 		position: absolute;
 		inset: -1.5rem;
-		content: "";
 		border-width: variables.$border-1;
 		border-style: solid;
 		border-inline-color: transparent;
@@ -92,5 +93,6 @@
 		border-block-end-color: variables.$light-gray-400;
 		border-radius: calc(variables.$border-radius-circle - 1%);
 		animation: spin variables.$time-11 linear infinite;
+		content: "";
 	}
 }

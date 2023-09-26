@@ -1,11 +1,6 @@
 @use "../../settings/variables";
 
 .g-portfolio {
-	&__projects-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-	}
-
 	&__button {
 		display: block;
 		width: fit-content;

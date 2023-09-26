@@ -1,5 +1,8 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
-@media screen and (width >= 768px) {
+@use "../settings/variables";
+
+/* stylelint-disable-next-line media-feature-name-no-unknown */
+@media screen and (width >= variables.$screen-tablet) {
 	// Organisms
 	@import "../organisms/header/header-tablet";
 	@import "../organisms/porfolio/portfolio-tablet";

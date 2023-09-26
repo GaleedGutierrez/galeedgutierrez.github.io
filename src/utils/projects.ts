@@ -20,6 +20,7 @@ import CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON from '@images/ic
 import CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD from '@images/icons/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp';
 import TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI from '@images/icons/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp';
 import ALURA_ICON from '@images/icons/platform/alura.webp';
+import CODELY_ICON from '@images/icons/platform/codely.webp';
 // icons Technologies
 import CSS_ICON from '@images/icons/technologies/css/icons-css3-small.webp';
 import HTML_ICON from '@images/icons/technologies/html/icon-html-small.webp';
@@ -29,10 +30,10 @@ import SASS_ICON from '@images/icons/technologies/sass/icons-sass-small.webp';
 import TYPESCRIPT_ICON from '@images/icons/technologies/typescript/icons-typescript-small.webp';
 import VITEJS_ICON from '@images/icons/technologies/vitejs/vitejs.webp';
 import WEBPACK_ICON from '@images/icons/technologies/webpack/icons-webpack-small.webp';
-import CIENTIFICO_CO_L from '@images/screenshot-projects/large/100rifi.co.webp';
-import APEPERIA_ALURA_L from '@images/screenshot-projects/large/apeperia-alura.webp';
 // Projects Images
 // Projects Images - Large
+import CIENTIFICO_CO_L from '@images/screenshot-projects/large/100rifi.co.webp';
+import APEPERIA_ALURA_L from '@images/screenshot-projects/large/apeperia-alura.webp';
 import BATABIT_L from '@images/screenshot-projects/large/batabit.webp';
 import BRAND_L from '@images/screenshot-projects/large/brand.webp';
 import CHECK_THE_BEST_FOOD_L from '@images/screenshot-projects/large/check-the-best-food.webp';
@@ -42,6 +43,7 @@ import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L from 
 import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_L from '@images/screenshot-projects/large/curso-practico-de-javascript-02.webp';
 import ENCRIPTADOR_DE_TEXT_ALURA_ONE_L from '@images/screenshot-projects/large/encriptador-de-texto-alura-challenges-one.webp';
 import GOOGLE_CLONE_L from '@images/screenshot-projects/large/google-clone.webp';
+import HELVETICA_NEUE_CODELY_2021_L from '@images/screenshot-projects/large/helvetica-neue-css-gird-codely.webp';
 import LEGO_L from '@images/screenshot-projects/large/lego.webp';
 import MY_BLOG_L from '@images/screenshot-projects/large/mi-blog.webp';
 import MI_PORTAFOLIO_JULIANA_GOMEZ_L from '@images/screenshot-projects/large/mi-portafolio-juliana-gomez.webp';
@@ -57,9 +59,9 @@ import GENERADOR_DE_FIGURAS_L from '@images/screenshot-projects/large/proyecto-g
 import STREAM_BURGER_L from '@images/screenshot-projects/large/steam.webp';
 import VILLA_PLATZI_L from '@images/screenshot-projects/large/villa-platzi.webp';
 import WIKIPEDIA_CLONE_L from '@images/screenshot-projects/large/wikipedia-clone.webp';
+// Projects Images - Medium
 import CIENTIFICO_CO_M from '@images/screenshot-projects/medium/100rifi.co.webp';
 import APEPERIA_ALURA_M from '@images/screenshot-projects/medium/apeperia-alura.webp';
-// Projects Images - Medium
 import BATABIT_M from '@images/screenshot-projects/medium/batabit.webp';
 import BRAND_M from '@images/screenshot-projects/medium/brand.webp';
 import CHECK_THE_BEST_FOOD_M from '@images/screenshot-projects/medium/check-the-best-food.webp';
@@ -69,6 +71,7 @@ import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M from 
 import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_M from '@images/screenshot-projects/medium/curso-practico-de-javascript-02.webp';
 import ENCRIPTADOR_DE_TEXT_ALURA_ONE_M from '@images/screenshot-projects/medium/encriptador-de-texto-alura-challenges-one.webp';
 import GOOGLE_CLONE_M from '@images/screenshot-projects/medium/google-clone.webp';
+import HELVETICA_NEUE_CODELY_2021_M from '@images/screenshot-projects/medium/helvetica-neue-css-gird-codely.webp';
 import LEGO_M from '@images/screenshot-projects/medium/lego.webp';
 import MY_BLOG_M from '@images/screenshot-projects/medium/mi-blog.webp';
 import MI_PORTAFOLIO_JULIANA_GOMEZ_M from '@images/screenshot-projects/medium/mi-portafolio-juliana-gomez.webp';
@@ -96,6 +99,7 @@ import TALLER_N1_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S from 
 import TALLER_N2_CURSO_DE_PROGRAMACION_ORIENTADA_A_OBJETOS_EN_JAVASCRIPT_S from '@images/screenshot-projects/small/curso-practico-de-javascript-02.webp';
 import ENCRIPTADOR_DE_TEXT_ALURA_ONE_S from '@images/screenshot-projects/small/encriptador-de-texto-alura-challenges-one.webp';
 import GOOGLE_CLONE_S from '@images/screenshot-projects/small/google-clone.webp';
+import HELVETICA_NEUE_CODELY_2021_S from '@images/screenshot-projects/small/helvetica-neue-css-gird-codely.webp';
 import LEGO_S from '@images/screenshot-projects/small/lego.webp';
 import MY_BLOG_S from '@images/screenshot-projects/small/mi-blog.webp';
 import MI_PORTAFOLIO_JULIANA_GOMEZ_S from '@images/screenshot-projects/small/mi-portafolio-juliana-gomez.webp';
@@ -114,6 +118,30 @@ import WIKIPEDIA_CLONE_S from '@images/screenshot-projects/small/wikipedia-clone
 import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
+	{
+		id: 26,
+		name: 'Helvetica Neue',
+		technologies: ['SASS', 'HTML', 'Webpack'],
+		technologiesIcons: [SASS_ICON, HTML_ICON, WEBPACK_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/Curso-CSS-Grid-a-fondo-Codely-2021',
+		url: 'https://galeedgutierrez.com/Curso-CSS-Grid-a-fondo-Codely-2021/',
+		images: {
+			small: HELVETICA_NEUE_CODELY_2021_S,
+			medium: HELVETICA_NEUE_CODELY_2021_M,
+			large: HELVETICA_NEUE_CODELY_2021_L,
+		},
+		date: '2023-09-25T03:00:00.000Z',
+		course: {
+			name: 'CSS Grid a fondo',
+			platform: 'Codely',
+			url: 'https://pro.codely.com/library/css-grid-a-fondo-126731/307888/path/',
+			img: CODELY_ICON,
+		},
+		description:
+			'Creación de un póster elegante utilizando CSS Grid, destacando la versatilidad y fama de la fuente Helvetica Neue, un ícono en el mundo del diseño. <span aria-hidden="true" tabindex="-1">🖌️</span>',
+		author: 'Galeed Gutierrez',
+	},
 	{
 		id: 25,
 		name: 'Apeperia',

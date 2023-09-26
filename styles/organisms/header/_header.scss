@@ -9,8 +9,8 @@
 		)};
 
 	position: sticky;
-	z-index: variables.$z-index-2-surface-over;
 	top: 0;
+	z-index: variables.$z-index-2-surface-over;
 	width: 100%;
 	border-block-end: variables.$border-025 solid var(--border-color);
 	background-color: var(--background-color);
@@ -45,8 +45,8 @@
 
 	&__ul-container {
 		display: flex;
-		gap: variables.$space-4;
 		flex-direction: column;
+		gap: variables.$space-4;
 	}
 
 	&__menu-options-button {
@@ -77,9 +77,9 @@
 	}
 
 	&__options--visible {
-		opacity: 1;
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(11.8rem);
+		opacity: 1;
 	}
 
 	&__link {
@@ -91,17 +91,17 @@
 }
 
 .g-header__menu-container {
-	position: absolute;
+	position: fixed;
 	left: 0;
-	bottom: 6.7rem;
+	top: -21rem;
 	width: 100%;
 	background-color: var(--background-color);
+	transition-duration: variables.$time-002;
 	opacity: 0;
-	transition-duration: 750ms;
 
 	&--visible {
-		opacity: 1;
-		transition-duration: 750ms;
+		transition-duration: variables.$time-002;
 		transform: translateY(27.5rem);
+		opacity: 1;
 	}
 }

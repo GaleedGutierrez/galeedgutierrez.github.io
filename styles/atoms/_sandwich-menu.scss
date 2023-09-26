@@ -2,6 +2,14 @@
 @use "../tools/functions";
 @use "../tools/mixins";
 
+.a-sandwich-menu-button {
+	color: var(--icon-color);
+
+	&--active {
+		color: var(--icon-active-color);
+	}
+}
+
 .a-sandwich-menu {
 	--background-color: #{functions.light-dark(
 			variables.$background-dark-color,
@@ -14,12 +22,11 @@
 	border-radius: variables.$border-radius-circle;
 	background: none;
 	line-height: normal;
-	fill: var(--icon-color);
-	transition-duration: variables.$time-1;
+	transition-duration: variables.$time-002;
+	fill: currentcolor;
 
 	&--active {
 		background-color: var(--background-color);
-		fill: var(--icon-active-color);
-		transition-duration: variables.$time-007;
+		transition-duration: variables.$time-002;
 	}
 }
