@@ -1,4 +1,4 @@
 **/*_normalize.scss
 /node_modules/*
-/main.css
-/index.css
+/**/main.css
+/**/index.css
