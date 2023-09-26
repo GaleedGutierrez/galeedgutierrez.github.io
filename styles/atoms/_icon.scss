@@ -18,7 +18,9 @@
 	fill: var(--icon-color);
 
 	&:hover {
-		fill: var(--hover-color);
+		@media (hover: hover) {
+			fill: var(--hover-color);
+		}
 	}
 
 	&:active {

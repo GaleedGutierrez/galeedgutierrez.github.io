@@ -27,8 +27,8 @@
 	transform: translateY(-200%);
 
 	&:focus-visible {
-		@include mixins.focus-skip-link;
-
 		transform: translateY(0%);
+
+		@include mixins.focus-skip-link;
 	}
 }

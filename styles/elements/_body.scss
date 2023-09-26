@@ -2,9 +2,9 @@
 @use "../tools/mixins";
 
 body {
-	@include mixins.body-lg;
-
 	background-color: var(--background-color);
 	color: var(--text-color);
 	font-family: variables.$primary-font;
+
+	@include mixins.body-lg;
 }

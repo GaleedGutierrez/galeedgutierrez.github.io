@@ -13,8 +13,6 @@
 }
 
 .a-button {
-	@extend %a-button-base;
-
 	--border-color: #{functions.light-dark(
 			variables.$background-dark-color,
 			variables.$background-lighter-gray-color
@@ -35,14 +33,16 @@
 	border-color: var(--border-color);
 	color: var(--text-color);
 
-	&:hover {
-		border-color: var(--hover-color);
-		background-color: var(--hover-color);
-		color: var(--text-hover-color);
-	}
-
 	&:focus-visible {
 		@include mixins.focus-button;
+	}
+
+	&:hover {
+		@media (hover: hover) {
+			border-color: var(--hover-color);
+			background-color: var(--hover-color);
+			color: var(--text-hover-color);
+		}
 	}
 
 	&:active {
@@ -50,24 +50,26 @@
 		background-color: var(--active-color);
 		color: var(--text-hover-color);
 	}
+
+	@extend %a-button-base;
 }
 
 .a-button--unique {
-	@extend %a-button-base;
-
 	border-color: variables.$background-dark-color;
 	color: variables.$text-color;
 
-	&:hover {
-		border-color: variables.$background-dark-gray-color;
-		background-color: variables.$background-dark-gray-color;
-		color: variables.$text-color-pure-white;
+	&:focus-visible {
+		outline: variables.$border-1 solid variables.$background-dark-color;
+
+		@include mixins.focus-button;
 	}
 
-	&:focus-visible {
-		@include mixins.focus-button;
-
-		outline: variables.$border-1 solid variables.$background-dark-color;
+	&:hover {
+		@media (hover: hover) {
+			border-color: variables.$background-dark-gray-color;
+			background-color: variables.$background-dark-gray-color;
+			color: variables.$text-color-pure-white;
+		}
 	}
 
 	&:active {
@@ -75,4 +77,6 @@
 		background-color: variables.$background-dark-color;
 		color: variables.$text-color-pure-white;
 	}
+
+	@extend %a-button-base;
 }

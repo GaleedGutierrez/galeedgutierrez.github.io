@@ -69,6 +69,7 @@
 	&__otter-icon {
 		@include mixins.center-position-absolute;
 
+		/* stylelint-disable-next-line order/order */
 		top: 0;
 	}
 }
