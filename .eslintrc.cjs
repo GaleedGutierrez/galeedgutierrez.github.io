@@ -1,5 +1,3 @@
-// @ts-check
-
 const env = {
 	es2022: true,
 	browser: true,
@@ -19,12 +17,27 @@ const plugins = [
 	"import",
 	"simple-import-sort",
 	"unused-imports",
-	// 'folders',
 	"check-file",
 	"editorconfig",
-	// 'prettier',
+	"sort-class-members",
 ];
-const overrides = [];
+const overrides = [
+	// TSDoc
+	{
+		files: ["*.ts", "*.tsx", "*.mts", "*.cts"],
+		plugins: ["eslint-plugin-tsdoc"],
+		rules: {
+			"tsdoc/syntax": "warn",
+		},
+	},
+
+	// JSDoc
+	{
+		files: ["*.js", "*.jsx", "*.mjs", "*.cjs"],
+		extends: ["plugin:jsdoc/recommended"],
+		plugins: ["jsdoc"],
+	},
+];
 const parserOptions = {
 	ecmaVersion: "latest",
 	sourceType: "module",
@@ -33,47 +46,219 @@ const parserOptions = {
 const rules = {
 	"prettier/prettier": "error",
 
-	//? ESLint
-	semi: ["error", "always"],
-	// 'space-before-function-paren': ['error', 'always'],
-	// quotes: [
-	// 	'error',
-	// 	'single',
-	// 	{
-	// 		allowTemplateLiterals: true,
-	// 	},
-	// ],
-	// indent: ['error', 'tab', { SwitchCase: 1 }],
-	"comma-spacing": [
+	//? TypeScript
+	"@typescript-eslint/no-explicit-any": "error",
+	"@typescript-eslint/no-non-null-assertion": "warn",
+	"@typescript-eslint/consistent-type-definitions": "error",
+	"@typescript-eslint/naming-convention": [
 		"error",
 		{
-			before: false,
-			after: true,
+			selector: "class",
+			format: ["PascalCase"],
 		},
 	],
-	// 'key-spacing' : [
-	// 	'error',
-	// 	{
-	// 		multiLine : {
-	// 			beforeColon : true,
-	// 			afterColon  : true,
-	// 		},
-	// 		singleLine : {
-	// 			beforeColon : false,
-	// 			afterColon  : true,
-	// 		},
-	// 		align : {
-	// 			beforeColon : true,
-	// 			afterColon  : true,
-	// 			on          : 'colon',
-	// 		},
-	// 	},
-	// ],
-	"no-multi-spaces": [
+	"@typescript-eslint/member-ordering": [
 		"error",
 		{
-			ignoreEOLComments: false,
+			default: [
+				// Index signature for interfaces
+				"signature",
+				"call-signature",
+
+				// Fields o variables
+				"public-instance-field",
+				"protected-instance-field",
+				"private-instance-field",
+				"#private-instance-field",
+
+				"public-static-field",
+				"protected-static-field",
+				"private-static-field",
+				"#private-static-field",
+
+				"public-decorated-field",
+				"protected-decorated-field",
+				"private-decorated-field",
+
+				"public-abstract-field",
+				"protected-abstract-field",
+
+				"public-field",
+				"protected-field",
+				"private-field",
+				"#private-field",
+
+				"instance-field",
+				"static-field",
+				"decorated-field",
+				"abstract-field",
+
+				"field",
+
+				// Static initialization
+				"static-initialization",
+
+				// Constructors
+				"public-constructor",
+				"protected-constructor",
+				"private-constructor",
+
+				"constructor",
+
+				// Methods
+				"public-instance-method",
+				"protected-instance-method",
+				"private-instance-method",
+				"#private-instance-method",
+
+				"public-static-method",
+				"protected-static-method",
+				"private-static-method",
+				"#private-static-method",
+
+				"public-decorated-method",
+				"protected-decorated-method",
+				"private-decorated-method",
+
+				"public-abstract-method",
+				"protected-abstract-method",
+
+				"public-method",
+				"protected-method",
+				"private-method",
+				"#private-method",
+
+				"instance-method",
+				"static-method",
+				"decorated-method",
+				"abstract-method",
+
+				"method",
+
+				// Getters
+				"public-instance-get",
+				"protected-instance-get",
+				"private-instance-get",
+				"#private-instance-get",
+
+				"public-static-get",
+				"protected-static-get",
+				"private-static-get",
+				"#private-static-get",
+
+				"public-decorated-get",
+				"protected-decorated-get",
+				"private-decorated-get",
+
+				"public-abstract-get",
+				"protected-abstract-get",
+
+				"public-get",
+				"protected-get",
+				"private-get",
+				"#private-get",
+
+				"instance-get",
+				"static-get",
+				"decorated-get",
+				"abstract-get",
+
+				"get",
+
+				// Setters
+				"public-instance-set",
+				"protected-instance-set",
+				"private-instance-set",
+				"#private-instance-set",
+
+				"public-static-set",
+				"protected-static-set",
+				"private-static-set",
+				"#private-static-set",
+
+				"public-decorated-set",
+				"protected-decorated-set",
+				"private-decorated-set",
+
+				"public-abstract-set",
+				"protected-abstract-set",
+
+				"public-set",
+				"protected-set",
+				"private-set",
+				"#private-set",
+
+				"instance-set",
+				"static-set",
+				"decorated-set",
+				"abstract-set",
+
+				"set",
+			],
 		},
+	],
+
+	//? Codely
+	"check-file/folder-naming-convention": [
+		"error",
+		{
+			"./src/**/": "KEBAB_CASE",
+		},
+	],
+
+	//error prevention
+	"array-callback-return": ["error", { checkForEach: true }],
+	"no-await-in-loop": "error",
+	"no-constant-binary-expression": "error",
+	"no-constructor-return": "error",
+	"no-promise-executor-return": "error",
+	"no-self-compare": "error",
+	"no-template-curly-in-string": "error",
+	"no-unmodified-loop-condition": "error",
+	"no-unreachable-loop": "error",
+	"no-unused-private-class-members": "error",
+	"no-use-before-define": [
+		"error",
+		{
+			functions: false,
+			classes: true,
+			variables: true,
+			allowNamedExports: false,
+		},
+	],
+	"require-atomic-updates": "error",
+	"no-lone-blocks": "error",
+	"no-underscore-dangle": "error", // Opcional
+
+	// good practices
+	camelcase: "error",
+	eqeqeq: "error",
+	"new-cap": "error",
+	"no-array-constructor": "error",
+	"no-console": ["error", { allow: ["error"] }],
+	"no-else-return": ["error", { allowElseIf: false }],
+	"no-extend-native": "error",
+	"no-lonely-if": "error",
+	"no-param-reassign": "error",
+	"no-return-assign": "error",
+	"no-throw-literal": "error",
+	"no-var": "error",
+	"object-shorthand": "error",
+	"prefer-const": "error",
+	"prefer-rest-params": "error",
+	"prefer-spread": "error",
+	"prefer-template": "error",
+	radix: "error",
+	yoda: "error",
+	"no-unneeded-ternary": "error",
+	"prefer-arrow-callback": "error", // Opcional
+
+	// style
+	curly: "error",
+	"lines-between-class-members": [
+		"error",
+		"always",
+		{ exceptAfterSingleLine: true },
 	],
 	"padding-line-between-statements": [
 		"error",
@@ -92,10 +277,6 @@ const rules = {
 			prev: ["const", "let", "var"],
 			next: ["const", "let", "var"],
 		},
-		// { 'blankLine': 'always', 'prev': ['const', 'let', 'var'], 'next': 'block-like'},
-		// { 'blankLine': 'any',    'prev': ['const', 'let', 'var'], 'next': 'expression'},
-		// { 'blankLine': 'always', 'prev': 'block-like', 'next': ['const', 'let', 'var']},
-		// { 'blankLine': 'always', 'prev': 'block-like', 'next': 'block-like'},
 		{ blankLine: "always", prev: "block-like", next: "*" },
 		{ blankLine: "always", prev: "expression", next: "*" }, // veremos
 		{ blankLine: "always", prev: "*", next: "expression" }, // veremos
@@ -105,87 +286,33 @@ const rules = {
 		{ blankLine: "always", prev: "export", next: "*" },
 		{ blankLine: "always", prev: "*", next: "export" },
 		{ blankLine: "always", prev: "if", next: "*" },
-		// { 'blankLine': 'any', 'prev': 'export', 'next': 'export' }
 	],
-	"arrow-spacing": ["error", { before: true, after: true }],
-	"lines-between-class-members": [
-		"error",
-		"always",
-		{ exceptAfterSingleLine: true },
-	],
-	"object-curly-spacing": ["error", "always"],
-	"computed-property-spacing": [
-		"error",
-		"never",
-		{ enforceForClassMembers: true },
-	],
-	// 'array-bracket-spacing': [
-	// 	'error',
-	// 	'always',
-	// 	{
-	// 		singleValue: false,
-	// 	},
-	// ],
-	"keyword-spacing": ["error", { before: true }],
-	"space-before-blocks": "error",
-	// 'multiline-ternary': ['error', 'always'],
-	"no-unneeded-ternary": "error",
-	"no-lone-blocks": "error",
-	// 'camelcase': ['error', {'properties': 'never' ,'ignoreDestructuring': true}] // Opcional
-	"space-in-parens": ["error", "never"],
-	"func-call-spacing": ["error", "never"],
-	// 'quote-props': ['error', 'consistent-as-needed'],
-	// 'brace-style': 'error',
-	"no-console": ["warn", { allow: ["warn", "error"] }], // Opcional
-	// 'space-in-brackets': ['error', 'always'],
-
-	//? TypeScript ESLint
-	"@typescript-eslint/type-annotation-spacing": "error",
-	"@typescript-eslint/no-non-null-assertion": "warn",
-	// '@typescript-eslint/indent': ['error', 'tab', { SwitchCase: 1 }],
-	"@typescript-eslint/consistent-type-definitions": "warn",
-	"@typescript-eslint/naming-convention": [
-		"error",
+	"sort-class-members/sort-class-members": [
+		2,
 		{
-			selector: "class",
-			format: ["PascalCase"],
+			order: [
+				"[properties]",
+				"[conventional-private-properties]",
+				"[static-properties]",
+				"constructor",
+				"[methods]",
+				"[conventional-private-methods]",
+				"[static-methods]",
+			],
+			accessorPairPositioning: "getThenSet",
 		},
-		// {
-		// 	selector: "typeLike",
-		// 	format: ["PascalCase"],
-		// 	prefix: ["T"],
-		// },
-		// {
-		// 	selector: "interface",
-		// 	format: ["PascalCase"],
-		// 	prefix: ["I"],
-		// },
-		// {
-		// 	selector: "enum",
-		// 	format: ["PascalCase"],
-		// 	prefix: ["E"],
-		// },
 	],
 
-	//? Codely: plugins
+	// plugins
 	"import/first": "error",
 	"import/newline-after-import": "error",
 	"import/no-duplicates": "error",
-	"import/no-unresolved": ["error", { ignore: ["\\.mjs"] }],
+	"import/no-unresolved": "error",
 	"import/no-webpack-loader-syntax": "error",
-	"simple-import-sort/imports": "error",
 	"simple-import-sort/exports": "error",
-
-	// 'folders/match-regex' : [ 'error', '^[a-z-]+$', `${process.cwd()}/` ],
-	"check-file/folder-naming-convention": [
-		"error",
-		{
-			"./src/**/": "KEBAB_CASE",
-		},
-	],
-
-	//? ya incorporado en eslint (lo ponemos a prueba)
+	"simple-import-sort/imports": "error",
 	"unused-imports/no-unused-imports": "error",
+	// 'no-unused-vars': 'off', // Opcional
 	"unused-imports/no-unused-vars": [
 		"warn",
 		{
@@ -195,58 +322,12 @@ const rules = {
 			argsIgnorePattern: "^_",
 		},
 	],
-
-	//? Codely: error prevention
-	"array-callback-return": ["error", { checkForEach: true }],
-	"no-await-in-loop": "error",
-	"no-constant-binary-expression": "error",
-	"no-constructor-return": "error",
-	"no-promise-executor-return": "error",
-	"no-self-compare": "error",
-	"no-template-curly-in-string": "error",
-	"no-unmodified-loop-condition": "error",
-	"no-unreachable-loop": "error",
-	"no-unused-private-class-members": "error",
-	"no-use-before-define": [
-		"error",
-		// {
-		// 	functions: true,
-		// 	classes: true,
-		// 	variables: false,
-		// 	allowNamedExports: true,
-		// },
-	],
-	"require-atomic-updates": "error",
-
-	//? good practices
-	camelcase: "error",
-	eqeqeq: "error",
-	"new-cap": "error",
-	"no-array-constructor": "error",
-	"no-else-return": ["error", { allowElseIf: false }],
-	"no-extend-native": "error",
-	"no-lonely-if": "error",
-	"no-param-reassign": "error",
-	"no-return-assign": "error",
-	"no-throw-literal": "error",
-	"no-var": "error",
-	"object-shorthand": "error",
-	"prefer-const": "error",
-	"prefer-rest-params": "error",
-	"prefer-spread": "error",
-	"prefer-template": "error",
-	radix: "error",
-	yoda: "error",
-
-	// ? Reglas que están a prueba
 };
 const settings = {
-	// Para poder usar alias @
 	"import/resolver": {
-		typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+		typescript: {},
 	},
 };
-// const ignorePatterns = ["/dist/*"];
 
 module.exports = {
 	root: true,
@@ -256,10 +337,6 @@ module.exports = {
 	overrides,
 	parserOptions,
 	parser: "@typescript-eslint/parser",
-	// ignorePatterns,
 	rules,
-	// Para poder usar alias @
 	settings,
-	// '@typescript-eslint/comma-dangle': ['error', 'only-multiline']
-	// 'hexagonal-architecture/enforce': ['error']
 };

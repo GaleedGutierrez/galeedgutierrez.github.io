@@ -18,6 +18,7 @@ import CURSO_PRACTICO_DE_JAVASCRIPT_PLATZI from '@images/icons/courses/curso-pra
 import CURSO_PRACTICO_DE_MAQUETACION_CSS from '@images/icons/courses/curso-practico-de-maquetacion-en-css.webp';
 import CURSO_PRACTICO_DE_MAQUETACION_Y_ANIMACIONES_CON_CSS_ICON from '@images/icons/courses/curso-practico-de-maquetacion-y-animaciones-con-css.webp';
 import CURSO_PROFESIONAL_DE_CONSUMO_DE_API_REST_CON_JAVASCRIPT_PERFORMANCE_Y_USABILIDAD from '@images/icons/courses/curso-profesional-consumo-api-rest-con-javascript-performance-y-usabilidad-2022.webp';
+import LABORATORIO_PROFESIONAL_JAVASCRIPT_PRUEBA_TECNICA from '@images/icons/courses/laboratorio-profesional-javascript-prueba-tecnica.webp';
 import TALLER_PRACTICO_DE_JAVASCRIPT_CREA_TU_PRIMER_VIDEOJUEGO_PLATZI from '@images/icons/courses/Taller-Practico-de-JavaScript-Crea-tu-Primer-Videojuego.webp';
 import ALURA_ICON from '@images/icons/platform/alura.webp';
 import CODELY_ICON from '@images/icons/platform/codely.webp';
@@ -50,6 +51,7 @@ import MI_PORTAFOLIO_JULIANA_GOMEZ_L from '@images/screenshot-projects/large/mi-
 import MICHI_APP_L from '@images/screenshot-projects/large/michis-app.webp';
 import MOVIE_ES_L from '@images/screenshot-projects/large/movie.es.webp';
 import MY_LINK_IN_BIO_L from '@images/screenshot-projects/large/my-link-in-bio.webp';
+import MY_DAY_APP_JS_L from '@images/screenshot-projects/large/mydayapp-js.webp';
 import PLATZI_MOVIES_2022_L from '@images/screenshot-projects/large/platzi-movies-2022.webp';
 import PLATZI_VIDEO_2017_L from '@images/screenshot-projects/large/platzi-video.webp';
 import PLATZI_VIDEO_L from '@images/screenshot-projects/large/platzi-video-curso-frontend-developer-2019.webp';
@@ -78,6 +80,7 @@ import MI_PORTAFOLIO_JULIANA_GOMEZ_M from '@images/screenshot-projects/medium/mi
 import MICHI_APP_M from '@images/screenshot-projects/medium/michis-app.webp';
 import MOVIE_ES_M from '@images/screenshot-projects/medium/movie.es.webp';
 import MY_LINK_IN_BIO_M from '@images/screenshot-projects/medium/my-link-in-bio.webp';
+import MY_DAY_APP_JS_M from '@images/screenshot-projects/medium/mydayapp-js.webp';
 import PLATZI_MOVIES_2022_M from '@images/screenshot-projects/medium/platzi-movies-2022.webp';
 import PLATZI_VIDEO_2017_M from '@images/screenshot-projects/medium/platzi-video.webp';
 import PLATZI_VIDEO_M from '@images/screenshot-projects/medium/platzi-video-curso-frontend-developer-2019.webp';
@@ -106,6 +109,7 @@ import MI_PORTAFOLIO_JULIANA_GOMEZ_S from '@images/screenshot-projects/small/mi-
 import MICHI_APP_S from '@images/screenshot-projects/small/michis-app.webp';
 import MOVIE_ES_S from '@images/screenshot-projects/small/movie.es.webp';
 import MY_LINK_IN_BIO_S from '@images/screenshot-projects/small/my-link-in-bio.webp';
+import MY_DAY_APP_JS_S from '@images/screenshot-projects/small/mydayapp-js.webp';
 import PLATZI_MOVIES_2022_S from '@images/screenshot-projects/small/platzi-movies-2022.webp';
 import PLATZI_VIDEO_2017_S from '@images/screenshot-projects/small/platzi-video.webp';
 import PLATZI_VIDEO_S from '@images/screenshot-projects/small/platzi-video-curso-frontend-developer-2019.webp';
@@ -118,6 +122,30 @@ import WIKIPEDIA_CLONE_S from '@images/screenshot-projects/small/wikipedia-clone
 import { Project } from '@interface/interfaces';
 
 export const PROJECTS: Project[] = [
+	{
+		id: 27,
+		name: 'My Day App - JS',
+		technologies: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
+		technologiesIcons: [JAVASCRIPT_ICON, HTML_ICON, CSS_ICON, WEBPACK_ICON],
+		repository:
+			'https://github.com/GaleedGutierrez/laboratorio-mydayapp-js',
+		url: 'https://galeedgutierrez.com/laboratorio-mydayapp-js/',
+		images: {
+			small: MY_DAY_APP_JS_S,
+			medium: MY_DAY_APP_JS_M,
+			large: MY_DAY_APP_JS_L,
+		},
+		date: '2024-01-02T03:00:00.000Z',
+		course: {
+			name: 'Prueba Técnica: Desarrollo Frontend con JavaScript',
+			platform: 'Platzi',
+			url: 'https://platzi.com/cursos/laboratorio-javascript-prueba/',
+			img: LABORATORIO_PROFESIONAL_JAVASCRIPT_PRUEBA_TECNICA,
+		},
+		description:
+			'Creación de funcionalidades de una Todo List, permitiendo la persistencia de la misma. <span aria-hidden="true" tabindex="-1">📄</span>',
+		author: 'Galeed Gutierrez',
+	},
 	{
 		id: 26,
 		name: 'Helvetica Neue',
