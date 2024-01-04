@@ -88,7 +88,7 @@
 		"pug": "^3.0.2",
 		"pug-cli2": "^1.0.0-alpha6.1",
 		"purgecss-webpack-plugin": "^5.0.0",
-		"stylelint": "^15.10.1",
+		"stylelint": "^15.11.0",
 		"stylelint-prettier": "^3.0.0",
 		"stylelint-scss": "^5.0.1",
 		"webpack": "^5.88.1",
