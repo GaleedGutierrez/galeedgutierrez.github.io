@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+import path from 'node:path';
+
 import HTMLWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
 import { Configuration } from 'webpack';
 
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
